@@ -17,8 +17,8 @@ I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_can_map.h)(0x5BFF342C)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can.h)(0x5BFF3421)
 I (..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can_conf.h)(0x5BFF3421)
@@ -28,7 +28,7 @@ I (..\..\Applications\Bsp\CAN_NODE\can_node_extern.h)(0x5BFF3421)
 F (..\..\Applications\App\src\app_dac.c)(0x5BFF3420)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\app_dac.o --omf_browse .\objects\app_dac.crf --depend .\objects\app_dac.d)
 I (..\..\Applications\App\inc\app_dac.h)(0x5BFF341F)
 I (..\..\Applications\Bsp\inc\bsp_dac.h)(0x5BFF3421)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -40,7 +40,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_dac.h)(0x5BFF342C)
 F (..\..\Applications\App\src\app_delay.c)(0x5BFF3420)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\app_delay.o --omf_browse .\objects\app_delay.crf --depend .\objects\app_delay.d)
@@ -64,7 +64,7 @@ F (..\..\Applications\App\src\app_gpio.c)(0x5BFF3420)(--c99 --gnu -c --cpu Corte
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -75,7 +75,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 F (..\..\Applications\App\src\app_pwm.c)(0x5BFF3420)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\app_pwm.o --omf_browse .\objects\app_pwm.crf --depend .\objects\app_pwm.d)
 F (..\..\Applications\App\src\app_uart.c)(0x5BFF3420)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\app_uart.o --omf_browse .\objects\app_uart.crf --depend .\objects\app_uart.d)
@@ -100,8 +100,8 @@ I (..\..\Libraries\XMCLib\inc\xmc_dma.h)(0x5BFF342D)
 I (..\..\Libraries\XMCLib\inc\xmc_dma_map.h)(0x5BFF342D)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_spi.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
@@ -124,8 +124,8 @@ I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include
 I (..\..\Libraries\XMCLib\inc\xmc_dma_map.h)(0x5BFF342D)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_spi.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
@@ -147,8 +147,8 @@ I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
 I (..\..\Applications\Bsp\inc\bsp_pwm.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Applications\Bsp\inc\bsp_adc.h)(0x5BFF3421)
 I (..\..\Libraries\XMCLib\inc\xmc_vadc.h)(0x5BFF342E)
@@ -187,7 +187,7 @@ I (..\..\Applications\Bsp\CAN_NODE\can_node_conf.h)(0x5BFF3421)
 I (..\..\Applications\Bsp\CAN_NODE\can_node_extern.h)(0x5BFF3421)
 F (..\..\Applications\Bsp\src\bsp_adc.c)(0x5BFF3422)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_adc.o --omf_browse .\objects\bsp_adc.crf --depend .\objects\bsp_adc.d)
 I (..\..\Applications\Bsp\inc\bsp_adc.h)(0x5BFF3421)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -199,7 +199,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_vadc.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
@@ -208,7 +208,7 @@ I (..\..\Libraries\XMCLib\inc\xmc_vadc_map.h)(0x5BFF342E)
 F (..\..\Applications\Bsp\src\bsp_can.c)(0x5BFF3422)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_can.o --omf_browse .\objects\bsp_can.crf --depend .\objects\bsp_can.d)
 F (..\..\Applications\Bsp\src\bsp_dac.c)(0x5BFF3422)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_dac.o --omf_browse .\objects\bsp_dac.crf --depend .\objects\bsp_dac.d)
 I (..\..\Applications\Bsp\inc\bsp_dac.h)(0x5BFF3421)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -220,7 +220,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_dac.h)(0x5BFF342C)
 F (..\..\Applications\Bsp\src\bsp_flash.c)(0x5BFF3423)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_flash.o --omf_browse .\objects\bsp_flash.crf --depend .\objects\bsp_flash.d)
@@ -243,17 +243,17 @@ I (..\..\Libraries\XMCLib\inc\xmc_dma.h)(0x5BFF342D)
 I (..\..\Libraries\XMCLib\inc\xmc_dma_map.h)(0x5BFF342D)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_spi.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_usic_map.h)(0x5BFF342C)
-F (..\..\Applications\Bsp\src\bsp_gpio.c)(0x5BFF5957)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_gpio.o --omf_browse .\objects\bsp_gpio.crf --depend .\objects\bsp_gpio.d)
+F (..\..\Applications\Bsp\src\bsp_gpio.c)(0x5C11C71F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_gpio.o --omf_browse .\objects\bsp_gpio.crf --depend .\objects\bsp_gpio.d)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -264,14 +264,14 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 F (..\..\Applications\Bsp\src\bsp_iic.c)(0x5BFF3423)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_iic.o --omf_browse .\objects\bsp_iic.crf --depend .\objects\bsp_iic.d)
 I (..\..\Applications\Bsp\inc\bsp_iic.h)(0x5BFF3422)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -282,11 +282,11 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 F (..\..\Applications\Bsp\src\bsp_pwm.c)(0x5BFF3423)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_pwm.o --omf_browse .\objects\bsp_pwm.crf --depend .\objects\bsp_pwm.d)
 I (..\..\Applications\Bsp\inc\bsp_pwm.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -298,14 +298,14 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 F (..\..\Applications\Bsp\src\bsp_rs485.c)(0x5BFF3423)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\bsp_rs485.o --omf_browse .\objects\bsp_rs485.crf --depend .\objects\bsp_rs485.d)
 I (..\..\Applications\Bsp\inc\bsp_rs485.h)(0x5BFF64BF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -316,7 +316,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_uart.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
@@ -326,7 +326,7 @@ I (..\..\Applications\Bsp\inc\bsp_uart.h)(0x5BFF3422)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -337,7 +337,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_uart.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
@@ -346,7 +346,7 @@ F (..\..\Applications\Bsp\src\bsp_spibus.c)(0x5BFF3423)(--c99 --gnu -c --cpu Cor
 I (..\..\Applications\Bsp\inc\bsp_spibus.h)(0x5BFF3422)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\Bsp\inc\spi_master.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -357,7 +357,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
@@ -383,8 +383,8 @@ I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include
 I (..\..\Libraries\XMCLib\inc\xmc_dma_map.h)(0x5BFF342D)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_spi.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
@@ -421,7 +421,7 @@ I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include
 I (..\..\Libraries\XMCLib\inc\xmc4_ccu4_map.h)(0x5BFF342B)
 F (..\..\Applications\Bsp\SPI_MASTER\spi_master.c)(0x5BFF3422)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\spi_master.o --omf_browse .\objects\spi_master.crf --depend .\objects\spi_master.d)
 I (..\..\Applications\Bsp\SPI_MASTER\spi_master.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -433,7 +433,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
@@ -444,7 +444,7 @@ I (..\..\Applications\Bsp\SPI_MASTER\spi_master_conf.h)(0x5BFF3422)
 I (..\..\Applications\Bsp\SPI_MASTER\spi_master_extern.h)(0x5BFF3422)
 F (..\..\Applications\Bsp\SPI_MASTER\spi_master_conf.c)(0x5BFF3422)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\spi_master_conf.o --omf_browse .\objects\spi_master_conf.crf --depend .\objects\spi_master_conf.d)
 I (..\..\Applications\Bsp\SPI_MASTER\spi_master.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -456,7 +456,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
@@ -470,7 +470,7 @@ I (..\..\Applications\Bsp\inc\bsp_watch.h)(0x5BFF3422)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -481,7 +481,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_ccu4.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc4_ccu4_map.h)(0x5BFF342B)
@@ -502,8 +502,8 @@ I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_can_map.h)(0x5BFF342C)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can.h)(0x5BFF3421)
 I (..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can_conf.h)(0x5BFF3421)
@@ -527,8 +527,8 @@ I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_can_map.h)(0x5BFF342C)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can.h)(0x5BFF3421)
 I (..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can_conf.h)(0x5BFF3421)
@@ -581,7 +581,7 @@ I (..\..\Applications\Motor\inc\mc_driver.h)(0x5BFF3423)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -592,7 +592,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_posif.h)(0x5BFF342D)
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
@@ -627,8 +627,8 @@ I (..\..\Libraries\XMCLib\inc\xmc_dma.h)(0x5BFF342D)
 I (..\..\Libraries\XMCLib\inc\xmc_dma_map.h)(0x5BFF342D)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_spi.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
@@ -673,7 +673,7 @@ I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\Bsp\inc\bsp_watch.h)(0x5BFF3422)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -684,7 +684,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_ccu4.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc4_ccu4_map.h)(0x5BFF342B)
@@ -721,8 +721,8 @@ I (..\..\Libraries\XMCLib\inc\xmc_dma.h)(0x5BFF342D)
 I (..\..\Libraries\XMCLib\inc\xmc_dma_map.h)(0x5BFF342D)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_spi.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
@@ -760,7 +760,7 @@ I (..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can_extern.h)(0x5BFF3421
 I (..\..\Applications\Bsp\CAN_NODE\can_node_conf.h)(0x5BFF3421)
 I (..\..\Applications\Bsp\CAN_NODE\can_node_extern.h)(0x5BFF3421)
 I (..\..\Applications\Bsp\inc\bsp_uart.h)(0x5BFF3422)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\system.h)(0x5BFCD298)
 I (..\..\Applications\System\inc\sys_variable.h)(0x5C031BA4)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
@@ -769,12 +769,12 @@ I (..\..\Applications\User\inc\delay.h)(0x5BFE3F34)
 I (..\..\Applications\User\inc\initial.h)(0x5BFE7183)
 I (..\..\Applications\User\inc\step_motor_drv.h)(0x5C04AA4C)
 I (..\..\Applications\User\inc\communication.h)(0x5BFF8720)
-I (..\..\Applications\User\inc\io_function.h)(0x5C10EA2C)
+I (..\..\Applications\User\inc\io_function.h)(0x5C11F503)
 F (..\..\Applications\User\inc\main.h)(0x5BFF3426)()
 F (..\..\Applications\User\src\action.c)(0x5C04AAA5)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\action.o --omf_browse .\objects\action.crf --depend .\objects\action.d)
 I (..\..\Applications\App\inc\app_dac.h)(0x5BFF341F)
 I (..\..\Applications\Bsp\inc\bsp_dac.h)(0x5BFF3421)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -786,13 +786,13 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_dac.h)(0x5BFF342C)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (..\..\Applications\System\inc\sys_variable.h)(0x5C031BA4)
-I (..\..\Applications\User\inc\io_function.h)(0x5C10EA2C)
+I (..\..\Applications\User\inc\io_function.h)(0x5C11F503)
 I (..\..\Applications\User\inc\delay.h)(0x5BFE3F34)
 I (..\..\Applications\User\inc\step_motor_drv.h)(0x5C04AA4C)
 I (..\..\Applications\User\inc\communication.h)(0x5BFF8720)
@@ -801,7 +801,7 @@ I (..\..\Applications\Bsp\inc\bsp_rs485.h)(0x5BFF64BF)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\App\inc\app_gpio.h)(0x5C0F0A58)
 I (..\..\Applications\Bsp\inc\bsp_gpio.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -812,12 +812,12 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_uart.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_usic_map.h)(0x5BFF342C)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (..\..\Applications\System\inc\sys_variable.h)(0x5C031BA4)
 I (..\..\Applications\User\inc\action.h)(0x5C04AAA5)
@@ -839,24 +839,24 @@ I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
 I (..\..\Libraries\XMCLib\inc\xmc4_ccu4_map.h)(0x5BFF342B)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (..\..\Applications\User\inc\communication.h)(0x5BFF8720)
 F (..\..\Applications\User\src\initial.c)(0x5C00F1FB)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\initial.o --omf_browse .\objects\initial.crf --depend .\objects\initial.d)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\System\inc\sys_variable.h)(0x5C031BA4)
 I (..\..\Applications\User\inc\communication.h)(0x5BFF8720)
 F (..\..\Applications\User\src\parameter.c)(0x5C04A5FF)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\parameter.o --omf_browse .\objects\parameter.crf --depend .\objects\parameter.d)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 F (..\..\Applications\User\src\step_motor_drv.c)(0x5C04A98C)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\step_motor_drv.o --omf_browse .\objects\step_motor_drv.crf --depend .\objects\step_motor_drv.d)
 I (..\..\Applications\Bsp\inc\bsp_spibus.h)(0x5BFF3422)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\..\Applications\Bsp\inc\spi_master.h)(0x5BFF3422)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -867,7 +867,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
@@ -876,17 +876,17 @@ I (..\..\Libraries\XMCLib\inc\xmc_usic.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_usic_map.h)(0x5BFF342C)
 I (..\..\Applications\Bsp\inc\spi_master_conf.h)(0x5BFF3422)
 I (..\..\Applications\Bsp\inc\spi_master_extern.h)(0x5BFF3422)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (..\..\Applications\System\inc\sys_variable.h)(0x5C031BA4)
 I (..\..\Applications\User\inc\delay.h)(0x5BFE3F34)
 I (..\..\Applications\User\inc\communication.h)(0x5BFF8720)
-I (..\..\Applications\User\inc\io_function.h)(0x5C10EA2C)
+I (..\..\Applications\User\inc\io_function.h)(0x5C11F503)
 I (..\..\Applications\User\inc\parameter.h)(0x5C04A5FF)
 F (..\..\Applications\User\src\system.c)(0x5C04B04F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\system.o --omf_browse .\objects\system.crf --depend .\objects\system.d)
 I (..\..\Applications\App\inc\app_dac.h)(0x5BFF341F)
 I (..\..\Applications\Bsp\inc\bsp_dac.h)(0x5BFF3421)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -898,21 +898,21 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 I (..\..\Libraries\XMCLib\inc\xmc_dac.h)(0x5BFF342C)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (..\..\Applications\System\inc\sys_variable.h)(0x5C031BA4)
 I (..\..\Applications\User\inc\communication.h)(0x5BFF8720)
 I (..\..\Applications\User\inc\action.h)(0x5C04AAA5)
-I (..\..\Applications\User\inc\io_function.h)(0x5C10EA2C)
+I (..\..\Applications\User\inc\io_function.h)(0x5C11F503)
 I (..\..\Applications\User\inc\delay.h)(0x5BFE3F34)
 I (..\..\Applications\User\inc\step_motor_drv.h)(0x5C04AA4C)
 I (..\..\Applications\User\inc\parameter.h)(0x5C04A5FF)
 F (..\..\Applications\User\inc\communication.h)(0x5BFF8720)()
-F (..\..\Applications\User\src\io_function.c)(0x5C10FD88)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\io_function.o --omf_browse .\objects\io_function.crf --depend .\objects\io_function.d)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+F (..\..\Applications\User\src\io_function.c)(0x5C11F522)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\io_function.o --omf_browse .\objects\io_function.crf --depend .\objects\io_function.d)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -924,12 +924,12 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
-I (..\..\Applications\User\inc\common.h)(0x5C03A614)
+I (..\..\Applications\User\inc\common.h)(0x5C10FE17)
 I (..\..\Applications\User\inc\typedef.h)(0x5C028D90)
 I (..\..\Applications\System\inc\sys_variable.h)(0x5C031BA4)
-I (..\..\Applications\User\inc\io_function.h)(0x5C10EA2C)
+I (..\..\Applications\User\inc\io_function.h)(0x5C11F503)
 F (..\..\Applications\User\inc\typedef.h)(0x5C028D90)()
 F (..\..\Applications\User\inc\action.h)(0x5C04AAA5)()
 F (..\..\Applications\User\inc\step_motor_drv.h)(0x5C04AA4C)()
@@ -1136,7 +1136,7 @@ I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include
 I (..\..\Libraries\XMCLib\inc\xmc_scu.h)(0x5BFF342E)
 I (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)
 F (..\..\Libraries\XMCLib\src\xmc_gpio.c)(0x5BFF342F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\xmc_gpio.o --omf_browse .\objects\xmc_gpio.crf --depend .\objects\xmc_gpio.d)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1148,7 +1148,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 F (..\..\Libraries\XMCLib\src\xmc_math.c)(0x5BFF3430)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\xmc_math.o --omf_browse .\objects\xmc_math.crf --depend .\objects\xmc_math.d)
 I (..\..\Libraries\XMCLib\inc\xmc_math.h)(0x5BFF342D)
@@ -1316,8 +1316,8 @@ I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
 I (..\..\Libraries\XMCLib\inc\xmc4_flash.h)(0x5BFF342B)
-F (..\..\Libraries\XMCLib\src\xmc4_gpio.c)(0x5BFF342F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\xmc4_gpio.o --omf_browse .\objects\xmc4_gpio.crf --depend .\objects\xmc4_gpio.d)
-I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)
+F (..\..\Libraries\XMCLib\src\xmc4_gpio.c)(0x5C11C126)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\xmc4_gpio.o --omf_browse .\objects\xmc4_gpio.crf --depend .\objects\xmc4_gpio.d)
+I (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)
 I (..\..\Libraries\XMCLib\inc\xmc_common.h)(0x5BFF342C)
 I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1329,7 +1329,7 @@ I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5BFF342B)
 I (..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5BFF342A)
 I (D:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include\system_XMC4400.h)(0x5786F3A4)
-I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)
+I (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)
 I (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)
 F (..\..\Libraries\XMCLib\src\xmc4_rtc.c)(0x5BFF342F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\..\Libraries\XMCLib\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include -I ..\..\Applications\App\inc -I ..\..\Applications\Bsp\inc -I ..\..\Applications\System\inc -I ..\..\Applications\Unit\inc -I ..\..\Applications\User\inc -I ..\..\Applications\Motor\inc -I ..\..\Applications\Test -I ..\..\Applications\Bsp\CAN_NODE -I ..\..\Applications\Bsp\GLOBAL_CAN-I.\RTE\_Debug-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Infineon\XMC4000_DFP\2.10.0\Device\XMC4400_series\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DXMC4402_F100x256 -DXMC4402_F100x256-o .\objects\xmc4_rtc.o --omf_browse .\objects\xmc4_rtc.crf --depend .\objects\xmc4_rtc.d)
 I (..\..\Libraries\XMCLib\inc\xmc_rtc.h)(0x5BFF342E)
@@ -1378,7 +1378,7 @@ F (..\..\Libraries\XMCLib\inc\xmc_ebu.h)(0x5BFF342D)()
 F (..\..\Libraries\XMCLib\inc\xmc_eru.h)(0x5BFF342D)()
 F (..\..\Libraries\XMCLib\inc\xmc_fce.h)(0x5BFF342D)()
 F (..\..\Libraries\XMCLib\inc\xmc_flash.h)(0x5BFF342D)()
-F (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5BFF342D)()
+F (..\..\Libraries\XMCLib\inc\xmc_gpio.h)(0x5C11AEFF)()
 F (..\..\Libraries\XMCLib\inc\xmc_hrpwm.h)(0x5BFF342D)()
 F (..\..\Libraries\XMCLib\inc\xmc_hrpwm_map.h)(0x5BFF342D)()
 F (..\..\Libraries\XMCLib\inc\xmc_math.h)(0x5BFF342D)()
@@ -1398,7 +1398,7 @@ F (..\..\Libraries\XMCLib\inc\xmc4_ccu4_map.h)(0x5BFF342B)()
 F (..\..\Libraries\XMCLib\inc\xmc4_ccu8_map.h)(0x5BFF342B)()
 F (..\..\Libraries\XMCLib\inc\xmc4_eru_map.h)(0x5BFF342B)()
 F (..\..\Libraries\XMCLib\inc\xmc4_flash.h)(0x5BFF342B)()
-F (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5BFF342C)()
+F (..\..\Libraries\XMCLib\inc\xmc4_gpio.h)(0x5C11C0B3)()
 F (..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h)(0x5BFF342C)()
 F (..\..\Libraries\XMCLib\inc\xmc4_rtc.h)(0x5BFF342C)()
 F (..\..\Libraries\XMCLib\inc\xmc4_scu.h)(0x5BFF342C)()
