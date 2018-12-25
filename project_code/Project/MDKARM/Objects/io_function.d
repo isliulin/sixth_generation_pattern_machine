@@ -17,3 +17,4 @@
 .\objects\io_function.o: ..\..\Applications\User\inc\typedef.h
 .\objects\io_function.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\io_function.o: ..\..\Applications\User\inc\io_function.h
+.\objects\io_function.o: ..\..\Applications\User\inc\io_file_struct.h

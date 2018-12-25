@@ -686,6 +686,11 @@
               <FileType>5</FileType>
               <FilePath>..\..\Applications\System\inc\sys_variable.h</FilePath>
             </File>
+            <File>
+              <FileName>io_file_struct.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\io_file_struct.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1743,6 +1748,11 @@
               <FileType>5</FileType>
               <FilePath>..\..\Applications\System\inc\sys_variable.h</FilePath>
             </File>
+            <File>
+              <FileName>io_file_struct.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\io_file_struct.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2799,6 +2809,11 @@
               <FileName>sys_variable.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\Applications\System\inc\sys_variable.h</FilePath>
+            </File>
+            <File>
+              <FileName>io_file_struct.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\io_file_struct.c</FilePath>
             </File>
           </Files>
         </Group>

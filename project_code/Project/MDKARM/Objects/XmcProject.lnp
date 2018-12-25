@@ -47,6 +47,7 @@
 ".\objects\step_motor_drv.o"
 ".\objects\system.o"
 ".\objects\io_function.o"
+".\objects\io_file_struct.o"
 ".\objects\startup_xmc4402.o"
 ".\objects\system_xmc4400.o"
 ".\objects\xmc_acmp.o"
