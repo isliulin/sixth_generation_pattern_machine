@@ -30,6 +30,7 @@
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\common.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\typedef.h
 .\objects\step_motor_drv.o: ..\..\Applications\System\inc\sys_variable.h
+.\objects\step_motor_drv.o: ..\..\Applications\Motor\motor_drive.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\delay.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\communication.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\io_function.h

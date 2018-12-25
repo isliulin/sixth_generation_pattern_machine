@@ -22,6 +22,7 @@
 .\objects\communication.o: ..\..\Applications\User\inc\common.h
 .\objects\communication.o: ..\..\Applications\User\inc\typedef.h
 .\objects\communication.o: ..\..\Applications\System\inc\sys_variable.h
+.\objects\communication.o: ..\..\Applications\Motor\motor_drive.h
 .\objects\communication.o: ..\..\Applications\User\inc\action.h
 .\objects\communication.o: ..\..\Applications\User\inc\delay.h
 .\objects\communication.o: ..\..\Applications\User\inc\parameter.h

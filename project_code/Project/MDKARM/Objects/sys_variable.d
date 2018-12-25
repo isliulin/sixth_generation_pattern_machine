@@ -65,3 +65,4 @@
 .\objects\sys_variable.o: ..\..\Applications\Bsp\CAN_NODE\can_node_extern.h
 .\objects\sys_variable.o: ..\..\Applications\Bsp\inc\bsp_uart.h
 .\objects\sys_variable.o: ..\..\Applications\User\inc\typedef.h
+.\objects\sys_variable.o: ..\..\Applications\Motor\motor_drive.h

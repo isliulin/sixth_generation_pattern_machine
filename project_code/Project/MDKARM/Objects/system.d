@@ -19,6 +19,7 @@
 .\objects\system.o: ..\..\Applications\User\inc\common.h
 .\objects\system.o: ..\..\Applications\User\inc\typedef.h
 .\objects\system.o: ..\..\Applications\System\inc\sys_variable.h
+.\objects\system.o: ..\..\Applications\Motor\motor_drive.h
 .\objects\system.o: ..\..\Applications\User\inc\communication.h
 .\objects\system.o: ..\..\Applications\User\inc\action.h
 .\objects\system.o: ..\..\Applications\User\inc\io_function.h

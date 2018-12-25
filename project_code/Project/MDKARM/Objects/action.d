@@ -19,7 +19,9 @@
 .\objects\action.o: ..\..\Applications\User\inc\common.h
 .\objects\action.o: ..\..\Applications\User\inc\typedef.h
 .\objects\action.o: ..\..\Applications\System\inc\sys_variable.h
+.\objects\action.o: ..\..\Applications\Motor\motor_drive.h
 .\objects\action.o: ..\..\Applications\User\inc\io_function.h
 .\objects\action.o: ..\..\Applications\User\inc\delay.h
 .\objects\action.o: ..\..\Applications\User\inc\step_motor_drv.h
 .\objects\action.o: ..\..\Applications\User\inc\communication.h
+.\objects\action.o: ..\..\Applications\User\inc\initial.h

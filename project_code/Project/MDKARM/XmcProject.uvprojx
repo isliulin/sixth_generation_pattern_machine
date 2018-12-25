@@ -437,11 +437,6 @@
           <GroupName>Applications/Bsp</GroupName>
           <Files>
             <File>
-              <FileName>bsp_adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Bsp\src\bsp_adc.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_can.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Applications\Bsp\src\bsp_can.c</FilePath>
@@ -542,24 +537,14 @@
           <GroupName>Applications/Motor</GroupName>
           <Files>
             <File>
-              <FileName>mc_config.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_config.c</FilePath>
+              <FileName>motor_drive.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
             </File>
             <File>
-              <FileName>mc_control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_control.c</FilePath>
-            </File>
-            <File>
-              <FileName>mc_curve.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_curve.c</FilePath>
-            </File>
-            <File>
-              <FileName>mc_driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_driver.c</FilePath>
+              <FileName>motor_drive.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1399,7 +1384,7 @@
               <MiscControls></MiscControls>
               <Define>XMC4402_F100x256</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\XMCLib\inc;..\..\Libraries\CMSIS\Include;..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include;..\..\Applications\App\inc;..\..\Applications\Bsp\inc;..\..\Applications\System\inc;..\..\Applications\Unit\inc;..\..\Applications\User\inc;..\..\Applications\Motor\inc;..\..\Applications\Test;..\..\Applications\Bsp\CAN_NODE;..\..\Applications\Bsp\GLOBAL_CAN</IncludePath>
+              <IncludePath>..\..\Libraries\XMCLib\inc;..\..\Libraries\CMSIS\Include;..\..\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include;..\..\Applications\App\inc;..\..\Applications\Bsp\inc;..\..\Applications\System\inc;..\..\Applications\Unit\inc;..\..\Applications\User\inc;..\..\Applications\Bsp\CAN_NODE;..\..\Applications\Bsp\GLOBAL_CAN;..\..\Applications\Motor</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1498,11 +1483,6 @@
         <Group>
           <GroupName>Applications/Bsp</GroupName>
           <Files>
-            <File>
-              <FileName>bsp_adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Bsp\src\bsp_adc.c</FilePath>
-            </File>
             <File>
               <FileName>bsp_can.c</FileName>
               <FileType>1</FileType>
@@ -1604,24 +1584,14 @@
           <GroupName>Applications/Motor</GroupName>
           <Files>
             <File>
-              <FileName>mc_config.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_config.c</FilePath>
+              <FileName>motor_drive.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
             </File>
             <File>
-              <FileName>mc_control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_control.c</FilePath>
-            </File>
-            <File>
-              <FileName>mc_curve.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_curve.c</FilePath>
-            </File>
-            <File>
-              <FileName>mc_driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_driver.c</FilePath>
+              <FileName>motor_drive.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2561,11 +2531,6 @@
           <GroupName>Applications/Bsp</GroupName>
           <Files>
             <File>
-              <FileName>bsp_adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Bsp\src\bsp_adc.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_can.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Applications\Bsp\src\bsp_can.c</FilePath>
@@ -2666,24 +2631,14 @@
           <GroupName>Applications/Motor</GroupName>
           <Files>
             <File>
-              <FileName>mc_config.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_config.c</FilePath>
+              <FileName>motor_drive.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
             </File>
             <File>
-              <FileName>mc_control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_control.c</FilePath>
-            </File>
-            <File>
-              <FileName>mc_curve.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_curve.c</FilePath>
-            </File>
-            <File>
-              <FileName>mc_driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Applications\Motor\src\mc_driver.c</FilePath>
+              <FileName>motor_drive.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
             </File>
           </Files>
         </Group>

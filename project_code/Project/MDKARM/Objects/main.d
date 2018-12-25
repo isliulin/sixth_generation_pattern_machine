@@ -68,9 +68,11 @@
 .\objects\main.o: ..\..\Applications\User\inc\system.h
 .\objects\main.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\main.o: ..\..\Applications\User\inc\typedef.h
+.\objects\main.o: ..\..\Applications\Motor\motor_drive.h
 .\objects\main.o: ..\..\Applications\User\inc\parameter.h
 .\objects\main.o: ..\..\Applications\User\inc\delay.h
 .\objects\main.o: ..\..\Applications\User\inc\initial.h
 .\objects\main.o: ..\..\Applications\User\inc\step_motor_drv.h
 .\objects\main.o: ..\..\Applications\User\inc\communication.h
 .\objects\main.o: ..\..\Applications\User\inc\io_function.h
+.\objects\main.o: ..\..\Applications\User\inc\action.h
