@@ -676,6 +676,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\io_file_struct.c</FilePath>
             </File>
+            <File>
+              <FileName>io_file_struct.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Applications\User\inc\io_file_struct.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1723,6 +1728,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\io_file_struct.c</FilePath>
             </File>
+            <File>
+              <FileName>io_file_struct.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Applications\User\inc\io_file_struct.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2769,6 +2779,11 @@
               <FileName>io_file_struct.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\io_file_struct.c</FilePath>
+            </File>
+            <File>
+              <FileName>io_file_struct.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Applications\User\inc\io_file_struct.h</FilePath>
             </File>
           </Files>
         </Group>
