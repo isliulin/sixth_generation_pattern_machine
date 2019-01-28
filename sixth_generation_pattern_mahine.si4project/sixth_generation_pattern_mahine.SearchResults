@@ -1,0 +1,17 @@
+---- move_single_step Matches (6 in 2 files) ----
+step_motor_drv.c (project_code\Applications\User\src) line 309 : void move_single_step(uint8_t port,uint8_t dir,int16_t distence,uint16_t time)
+movestep_x in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP1A,x_motor_dir,x_data,movestepx_time);
+movestep_y in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP1B,y_motor_dir,y_data,movestepy_time);
+movestep_zx in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP2B,z_motor_dir,zx_data,time);
+movestep_yj in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP2A,sys_para.yj_org_direction,zx_data,time);
+ready_status in system.c (project_code\Applications\User\src) : 		move_single_step(DSP1A,x_motor_dir,stepper_debug_dis,stepper_debug_time);
+---- move_single_step Search Errors Encountered (8) ----
+The following 8 files could not be processed:
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_config.c : File could not be opened.
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_config.h : File could not be opened.
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_control.c : File could not be opened.
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_control.h : File could not be opened.
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_curve.c : File could not be opened.
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_curve.h : File could not be opened.
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_driver.c : File could not be opened.
+E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_driver.h : File could not be opened.
