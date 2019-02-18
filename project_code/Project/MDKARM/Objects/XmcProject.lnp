@@ -44,6 +44,7 @@
 ".\objects\system.o"
 ".\objects\io_function.o"
 ".\objects\io_file_struct.o"
+".\objects\stepper_function.o"
 ".\objects\startup_xmc4402.o"
 ".\objects\system_xmc4400.o"
 ".\objects\xmc_acmp.o"

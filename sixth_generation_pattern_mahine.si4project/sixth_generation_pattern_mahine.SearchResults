@@ -1,11 +1,15 @@
----- move_single_step Matches (6 in 2 files) ----
-step_motor_drv.c (project_code\Applications\User\src) line 309 : void move_single_step(uint8_t port,uint8_t dir,int16_t distence,uint16_t time)
-movestep_x in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP1A,x_motor_dir,x_data,movestepx_time);
-movestep_y in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP1B,y_motor_dir,y_data,movestepy_time);
-movestep_zx in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP2B,z_motor_dir,zx_data,time);
-movestep_yj in step_motor_drv.c (project_code\Applications\User\src) : 	move_single_step(DSP2A,sys_para.yj_org_direction,zx_data,time);
-ready_status in system.c (project_code\Applications\User\src) : 		move_single_step(DSP1A,x_motor_dir,stepper_debug_dis,stepper_debug_time);
----- move_single_step Search Errors Encountered (8) ----
+---- __PACKED Matches (10 in 6 files) ----
+cmsis_armcc.h (project_code\Libraries\CMSIS\Include) line 76 : #ifndef   __PACKED
+cmsis_armcc.h (project_code\Libraries\CMSIS\Include) line 77 :   #define __PACKED                  __attribute__((packed))
+cmsis_armclang.h (project_code\Libraries\CMSIS\Include) line 61 : #ifndef   __PACKED
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 85 :   #ifndef   __PACKED
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 124 :   #ifndef   __PACKED
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 167 :   #ifndef   __PACKED
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 209 :   #ifndef   __PACKED
+cmsis_gcc.h (project_code\Libraries\CMSIS\Include) line 64 : #ifndef   __PACKED
+stepper_function.h (project_code\Applications\User\inc) line 181 : //typedef __PACKED struct
+typedef.h (project_code\Applications\User\inc) line 57 : typedef __PACKED struct SYSTEM_PARA
+---- __PACKED Search Errors Encountered (8) ----
 The following 8 files could not be processed:
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_config.c : File could not be opened.
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_config.h : File could not be opened.

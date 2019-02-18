@@ -681,6 +681,11 @@
               <FileType>5</FileType>
               <FilePath>..\..\Applications\User\inc\io_file_struct.h</FilePath>
             </File>
+            <File>
+              <FileName>stepper_function.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\stepper_function.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1733,6 +1738,11 @@
               <FileType>5</FileType>
               <FilePath>..\..\Applications\User\inc\io_file_struct.h</FilePath>
             </File>
+            <File>
+              <FileName>stepper_function.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\stepper_function.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2784,6 +2794,11 @@
               <FileName>io_file_struct.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\Applications\User\inc\io_file_struct.h</FilePath>
+            </File>
+            <File>
+              <FileName>stepper_function.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\stepper_function.c</FilePath>
             </File>
           </Files>
         </Group>
