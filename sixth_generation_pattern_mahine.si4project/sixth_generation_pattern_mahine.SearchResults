@@ -1,15 +1,14 @@
----- __PACKED Matches (10 in 6 files) ----
-cmsis_armcc.h (project_code\Libraries\CMSIS\Include) line 76 : #ifndef   __PACKED
-cmsis_armcc.h (project_code\Libraries\CMSIS\Include) line 77 :   #define __PACKED                  __attribute__((packed))
-cmsis_armclang.h (project_code\Libraries\CMSIS\Include) line 61 : #ifndef   __PACKED
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 85 :   #ifndef   __PACKED
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 124 :   #ifndef   __PACKED
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 167 :   #ifndef   __PACKED
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 209 :   #ifndef   __PACKED
-cmsis_gcc.h (project_code\Libraries\CMSIS\Include) line 64 : #ifndef   __PACKED
-stepper_function.h (project_code\Applications\User\inc) line 181 : //typedef __PACKED struct
-typedef.h (project_code\Applications\User\inc) line 57 : typedef __PACKED struct SYSTEM_PARA
----- __PACKED Search Errors Encountered (8) ----
+---- __PACKED_STRUCT Matches (9 in 5 files) ----
+cmsis_armcc.h (project_code\Libraries\CMSIS\Include) line 79 : #ifndef   __PACKED_STRUCT
+cmsis_armclang.h (project_code\Libraries\CMSIS\Include) line 64 : #ifndef   __PACKED_STRUCT
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 88 :   #ifndef   __PACKED_STRUCT
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 127 :   #ifndef   __PACKED_STRUCT
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 170 :   #ifndef   __PACKED_STRUCT
+cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 212 :   #ifndef   __PACKED_STRUCT
+cmsis_gcc.h (project_code\Libraries\CMSIS\Include) line 67 : #ifndef   __PACKED_STRUCT
+typedef.h (project_code\Applications\User\inc) line 59 : typedef  __PACKED_STRUCT//字节紧凑排布，方便按字节复制
+typedef.h (project_code\Applications\User\inc) line 159 : //typedef  __PACKED_STRUCT//字节紧凑排布，方便按字节复制
+---- __PACKED_STRUCT Search Errors Encountered (8) ----
 The following 8 files could not be processed:
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_config.c : File could not be opened.
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_config.h : File could not be opened.

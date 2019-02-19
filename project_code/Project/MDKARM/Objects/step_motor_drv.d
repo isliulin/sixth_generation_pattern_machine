@@ -35,3 +35,4 @@
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\communication.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\io_function.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\parameter.h
+.\objects\step_motor_drv.o: ..\..\Applications\User\inc\stepper_function.h
