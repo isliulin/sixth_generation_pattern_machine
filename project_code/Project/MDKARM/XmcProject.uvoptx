@@ -662,7 +662,6 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>L瑬w????趏m]</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -776,6 +775,21 @@
           <count>14</count>
           <WinNumber>1</WinNumber>
           <ItemText>\\XmcProject\../../Applications/System/src/sys_variable.c\stepper_debug_time</ItemText>
+        </Ww>
+        <Ww>
+          <count>15</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>\\XmcProject\../../Applications/System/src/sys_variable.c\stepper_debug_time</ItemText>
+        </Ww>
+        <Ww>
+          <count>16</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>g_SpiMode</ItemText>
+        </Ww>
+        <Ww>
+          <count>17</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>subsection1</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -1550,7 +1564,7 @@
 
   <Group>
     <GroupName>Applications/Bsp</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
