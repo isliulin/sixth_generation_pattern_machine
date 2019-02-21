@@ -1,14 +1,16 @@
----- __PACKED_STRUCT Matches (9 in 5 files) ----
-cmsis_armcc.h (project_code\Libraries\CMSIS\Include) line 79 : #ifndef   __PACKED_STRUCT
-cmsis_armclang.h (project_code\Libraries\CMSIS\Include) line 64 : #ifndef   __PACKED_STRUCT
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 88 :   #ifndef   __PACKED_STRUCT
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 127 :   #ifndef   __PACKED_STRUCT
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 170 :   #ifndef   __PACKED_STRUCT
-cmsis_compiler.h (project_code\Libraries\CMSIS\Include) line 212 :   #ifndef   __PACKED_STRUCT
-cmsis_gcc.h (project_code\Libraries\CMSIS\Include) line 67 : #ifndef   __PACKED_STRUCT
-typedef.h (project_code\Applications\User\inc) line 59 : typedef  __PACKED_STRUCT//字节紧凑排布，方便按字节复制
-typedef.h (project_code\Applications\User\inc) line 159 : //typedef  __PACKED_STRUCT//字节紧凑排布，方便按字节复制
----- __PACKED_STRUCT Search Errors Encountered (8) ----
+---- LOGIC_OUT_VALVE1 Matches (11 in 5 files) ----
+remove_12 in action.c (project_code\Applications\User\src) : 			io_toggle_logic_output(LOGIC_OUT_VALVE1);//翻转一下气阀1
+remove_03 in action.c (project_code\Applications\User\src) : 			io_toggle_logic_output(LOGIC_OUT_VALVE1);//翻转一下气阀1
+remove_06 in action.c (project_code\Applications\User\src) : 			io_toggle_logic_output(LOGIC_OUT_VALVE1);//翻转一下气阀1
+remove_09 in action.c (project_code\Applications\User\src) : 			io_toggle_logic_output(LOGIC_OUT_VALVE1);//翻转一下气阀1
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_VALVE1)].physical_number = 13;//PHYSICAL_OUT_13
+io_function.h (project_code\Applications\User\inc) line 103 : #define	LOGIC_OUT_VALVE1						LOGIC_OUTPUT_NUMBER_ADD_DIR(40)	//	气阀输出1
+stepper_motor_move in stepper_function.c (project_code\Applications\User\src) : 	io_toggle_logic_output(LOGIC_OUT_VALVE1);//翻转一下气阀1
+ready_status in system.c (project_code\Applications\User\src) : 	io_set_logic_output(LOGIC_OUT_VALVE1, LOGIC_IO_ACTIVE);
+ready_status in system.c (project_code\Applications\User\src) : 	io_set_logic_output(LOGIC_OUT_VALVE1, LOGIC_IO_INACTIVE);
+checki05_status in system.c (project_code\Applications\User\src) : 			 io_set_logic_output(LOGIC_OUT_VALVE1, LOGIC_IO_ACTIVE);
+checki05_status in system.c (project_code\Applications\User\src) : 			 io_set_logic_output(LOGIC_OUT_VALVE1, LOGIC_IO_INACTIVE);
+---- LOGIC_OUT_VALVE1 Search Errors Encountered (8) ----
 The following 8 files could not be processed:
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_config.c : File could not be opened.
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_config.h : File could not be opened.

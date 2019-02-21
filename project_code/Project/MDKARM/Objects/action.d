@@ -25,3 +25,4 @@
 .\objects\action.o: ..\..\Applications\User\inc\step_motor_drv.h
 .\objects\action.o: ..\..\Applications\User\inc\communication.h
 .\objects\action.o: ..\..\Applications\User\inc\initial.h
+.\objects\action.o: ..\..\Applications\User\inc\stepper_function.h
