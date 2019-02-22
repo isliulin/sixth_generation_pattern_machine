@@ -7,3 +7,4 @@
 .\objects\initial.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\initial.o: ..\..\Applications\Motor\motor_drive.h
 .\objects\initial.o: ..\..\Applications\User\inc\communication.h
+.\objects\initial.o: ..\..\Applications\User\inc\parameter.h

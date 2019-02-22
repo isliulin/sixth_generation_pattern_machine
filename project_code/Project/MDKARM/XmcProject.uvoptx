@@ -710,8 +710,6 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>Lw\T?\T?趏K
-</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -902,6 +900,11 @@
           <count>9</count>
           <WinNumber>2</WinNumber>
           <ItemText>\\XmcProject\../../Applications/User/src/stepper_function.c\x_motor_handle</ItemText>
+        </Ww>
+        <Ww>
+          <count>10</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>sys_para</ItemText>
         </Ww>
       </WatchWindow2>
       <MemoryWindow1>
