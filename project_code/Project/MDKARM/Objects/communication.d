@@ -28,3 +28,4 @@
 .\objects\communication.o: ..\..\Applications\User\inc\parameter.h
 .\objects\communication.o: ..\..\Applications\User\inc\step_motor_drv.h
 .\objects\communication.o: ..\..\Applications\User\inc\io_function.h
+.\objects\communication.o: ..\..\Applications\User\inc\stepper_function.h
