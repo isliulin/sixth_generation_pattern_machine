@@ -686,6 +686,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\stepper_function.c</FilePath>
             </File>
+            <File>
+              <FileName>debug.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\debug.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1743,6 +1748,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\stepper_function.c</FilePath>
             </File>
+            <File>
+              <FileName>debug.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\debug.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2799,6 +2809,11 @@
               <FileName>stepper_function.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\stepper_function.c</FilePath>
+            </File>
+            <File>
+              <FileName>debug.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\debug.c</FilePath>
             </File>
           </Files>
         </Group>

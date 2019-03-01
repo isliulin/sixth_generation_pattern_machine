@@ -77,3 +77,4 @@
 .\objects\main.o: ..\..\Applications\User\inc\io_function.h
 .\objects\main.o: ..\..\Applications\User\inc\action.h
 .\objects\main.o: ..\..\Applications\User\inc\stepper_function.h
+.\objects\main.o: ..\..\Applications\User\inc\debug.h
