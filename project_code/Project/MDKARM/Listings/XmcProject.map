@@ -1260,8 +1260,8 @@ Section Cross References
     system.o(i.run_status) refers to action.o(i.find_dead_center) for find_dead_center
     system.o(i.run_status) refers to step_motor_drv.o(i.movestep_x) for movestep_x
     system.o(i.run_status) refers to delay.o(i.delay_us) for delay_us
-    system.o(i.run_status) refers to step_motor_drv.o(i.movestep_y) for movestep_y
     system.o(i.run_status) refers to action.o(.constdata) for spdlimit_10080_345_tab
+    system.o(i.run_status) refers to step_motor_drv.o(i.movestep_y) for movestep_y
     system.o(i.run_status) refers to step_motor_drv.o(i.movestep_zx) for movestep_zx
     system.o(i.run_status) refers to action.o(i.check_data) for check_data
     system.o(i.run_status) refers to action.o(i.move_xy) for move_xy
@@ -3734,189 +3734,189 @@ Image Symbol Table
     i.find_dead_center                       0x0800b7b8   Section        0  action.o(i.find_dead_center)
     i.finish_status                          0x0800b8cc   Section        0  system.o(i.finish_status)
     i.foot_down                              0x0800bbdc   Section        0  action.o(i.foot_down)
-    i.foot_half_down                         0x0800bc34   Section        0  action.o(i.foot_half_down)
-    i.foot_half_up                           0x0800bc64   Section        0  action.o(i.foot_half_up)
-    i.foot_up                                0x0800bc8c   Section        0  action.o(i.foot_up)
-    i.footer_both_down                       0x0800bce8   Section        0  action.o(i.footer_both_down)
-    i.footer_both_up                         0x0800bd40   Section        0  action.o(i.footer_both_up)
-    i.footer_procedure                       0x0800bd98   Section        0  action.o(i.footer_procedure)
-    i.function_1ms_hook                      0x0800bec8   Section        0  main.o(i.function_1ms_hook)
-    i.g_SpiMode_CmdTip                       0x0800c57c   Section        0  app_spi.o(i.g_SpiMode_CmdTip)
-    i.get_motor_cfg                          0x0800c5b4   Section        0  stepper_function.o(i.get_motor_cfg)
-    get_motor_cfg                            0x0800c5b5   Thumb Code    64  stepper_function.o(i.get_motor_cfg)
-    i.get_origin_state                       0x0800c5f4   Section        0  stepper_function.o(i.get_origin_state)
-    i.get_physical_num_and_channel           0x0800c622   Section        0  stepper_function.o(i.get_physical_num_and_channel)
-    get_physical_num_and_channel             0x0800c623   Thumb Code   146  stepper_function.o(i.get_physical_num_and_channel)
-    i.get_x_distance                         0x0800c6b4   Section        0  step_motor_drv.o(i.get_x_distance)
-    i.get_y_distance                         0x0800c6cc   Section        0  step_motor_drv.o(i.get_y_distance)
-    i.go_beginpoint                          0x0800c6e4   Section        0  action.o(i.go_beginpoint)
-    i.go_commandpoint                        0x0800cd34   Section        0  action.o(i.go_commandpoint)
-    i.go_origin_allmotor                     0x0800ce68   Section        0  action.o(i.go_origin_allmotor)
-    i.go_origin_x                            0x0800cf50   Section        0  action.o(i.go_origin_x)
-    i.go_origin_xy                           0x0800cf8c   Section        0  action.o(i.go_origin_xy)
-    i.go_origin_xy_both                      0x0800d1e4   Section        0  action.o(i.go_origin_xy_both)
-    i.go_origin_y                            0x0800d258   Section        0  action.o(i.go_origin_y)
-    i.go_origin_zx                           0x0800d294   Section        0  action.o(i.go_origin_zx)
-    i.go_setoutpoint                         0x0800d2ec   Section        0  action.o(i.go_setoutpoint)
-    i.go_startpoint                          0x0800d5d0   Section        0  action.o(i.go_startpoint)
-    i.holding_axes                           0x0800d734   Section        0  mc_pmsm.o(i.holding_axes)
-    i.init_comm                              0x0800d7b4   Section        0  communication.o(i.init_comm)
-    i.init_motor_handler_sturct              0x0800d804   Section        0  stepper_function.o(i.init_motor_handler_sturct)
-    init_motor_handler_sturct                0x0800d805   Thumb Code    84  stepper_function.o(i.init_motor_handler_sturct)
-    i.init_var                               0x0800d858   Section        0  initial.o(i.init_var)
-    i.initial                                0x0800e978   Section        0  initial.o(i.initial)
-    i.initial_mainmotor                      0x0800e98c   Section        0  action.o(i.initial_mainmotor)
-    i.inpress_down                           0x0800e9c8   Section        0  action.o(i.inpress_down)
-    i.inpress_to                             0x0800ea60   Section        0  action.o(i.inpress_to)
-    i.inpress_up                             0x0800eb08   Section        0  action.o(i.inpress_up)
-    i.io_function_init                       0x0800ebb0   Section        0  io_function.o(i.io_function_init)
-    i.io_get_logic_inout                     0x0800f018   Section        0  io_function.o(i.io_get_logic_inout)
-    i.io_get_physical_input                  0x0800f0a8   Section        0  io_function.o(i.io_get_physical_input)
-    i.io_get_physical_output                 0x0800f24c   Section        0  io_function.o(i.io_get_physical_output)
-    i.io_sc0719_bsp_init                     0x0800f410   Section        0  io_function.o(i.io_sc0719_bsp_init)
-    io_sc0719_bsp_init                       0x0800f411   Thumb Code   318  io_function.o(i.io_sc0719_bsp_init)
-    i.io_sc0720_bsp_init                     0x0800f56c   Section        0  io_function.o(i.io_sc0720_bsp_init)
-    io_sc0720_bsp_init                       0x0800f56d   Thumb Code   308  io_function.o(i.io_sc0720_bsp_init)
-    i.io_set_logic_output                    0x0800f6bc   Section        0  io_function.o(i.io_set_logic_output)
-    i.io_set_physical_output                 0x0800f750   Section        0  io_function.o(i.io_set_physical_output)
-    i.io_toggle_logic_output                 0x0800f998   Section        0  io_function.o(i.io_toggle_logic_output)
-    i.io_toggle_physical_output              0x0800f9f8   Section        0  io_function.o(i.io_toggle_physical_output)
-    i.io_translate_logic_to_physical         0x0800fbec   Section        0  io_function.o(i.io_translate_logic_to_physical)
-    i.ipark_calc                             0x0800fc34   Section        0  app_svpwm.o(i.ipark_calc)
-    i.jump_to_begin                          0x0800fcc0   Section        0  step_motor_drv.o(i.jump_to_begin)
-    i.keep_running_for_dead_center           0x0800fda4   Section        0  action.o(i.keep_running_for_dead_center)
-    i.mPmsm1ParaActive                       0x0800fe8c   Section        0  mc_pmsm.o(i.mPmsm1ParaActive)
-    i.m_start                                0x0800fec4   Section        0  mc_pmsm.o(i.m_start)
-    i.main                                   0x08010300   Section        0  main.o(i.main)
-    i.min                                    0x080104b8   Section        0  xmc_can.o(i.min)
-    min                                      0x080104b9   Thumb Code    14  xmc_can.o(i.min)
-    i.motor1_control                         0x080104c8   Section        0  mc_pmsm.o(i.motor1_control)
-    i.move_back                              0x08010b7c   Section        0  action.o(i.move_back)
-    i.move_continue_back                     0x08010bfc   Section        0  action.o(i.move_continue_back)
-    i.move_continue_next                     0x08010cf0   Section        0  action.o(i.move_continue_next)
-    i.move_next                              0x08010de0   Section        0  action.o(i.move_next)
-    i.move_startpoint                        0x08010e48   Section        0  action.o(i.move_startpoint)
-    i.move_xy                                0x08010eac   Section        0  action.o(i.move_xy)
-    i.movestep_x                             0x080111d4   Section        0  step_motor_drv.o(i.movestep_x)
-    i.movestep_y                             0x080111f4   Section        0  step_motor_drv.o(i.movestep_y)
-    i.movestep_zx                            0x08011214   Section        0  step_motor_drv.o(i.movestep_zx)
-    i.multipule_program_beginning            0x08011230   Section        0  step_motor_drv.o(i.multipule_program_beginning)
-    i.multipule_program_end                  0x0801125c   Section        0  step_motor_drv.o(i.multipule_program_end)
-    i.mymemcpy                               0x08011284   Section        0  parameter.o(i.mymemcpy)
-    i.mymemset                               0x08011298   Section        0  parameter.o(i.mymemset)
-    i.needle_down                            0x080112a8   Section        0  action.o(i.needle_down)
-    i.nop_move_emergency                     0x08011318   Section        0  step_motor_drv.o(i.nop_move_emergency)
-    i.park_calc                              0x0801135c   Section        0  app_svpwm.o(i.park_calc)
-    i.pause_stop                             0x080113ec   Section        0  action.o(i.pause_stop)
-    i.pmsm1_100us_task                       0x080115dc   Section        0  mc_pmsm.o(i.pmsm1_100us_task)
-    i.poweroff_status                        0x08011b58   Section        0  system.o(i.poweroff_status)
-    i.pre_running                            0x08011b5c   Section        0  system.o(i.pre_running)
-    i.preedit_status                         0x08011f1c   Section        0  system.o(i.preedit_status)
-    i.prewind_status                         0x080124f4   Section        0  system.o(i.prewind_status)
-    i.process_data                           0x08012684   Section        0  action.o(i.process_data)
-    i.process_making_pen_signal              0x08012a50   Section        0  action.o(i.process_making_pen_signal)
-    i.process_nop_move_pause                 0x08012d9c   Section        0  action.o(i.process_nop_move_pause)
-    i.protocol                               0x08013150   Section        0  communication.o(i.protocol)
-    i.read_multipule_program_status          0x080167fc   Section        0  step_motor_drv.o(i.read_multipule_program_status)
-    i.read_par                               0x08016828   Section        0  parameter.o(i.read_par)
-    i.read_para_group                        0x0801682e   Section        0  parameter.o(i.read_para_group)
-    i.read_stepmotor_config_para             0x08016844   Section        0  step_motor_drv.o(i.read_stepmotor_config_para)
-    i.read_stepmotor_curve_crc               0x080168d4   Section        0  step_motor_drv.o(i.read_stepmotor_curve_crc)
-    i.read_stepmotor_up_drv                  0x08016928   Section        0  step_motor_drv.o(i.read_stepmotor_up_drv)
-    i.ready_status                           0x08016980   Section        0  system.o(i.ready_status)
-    i.rec_com                                0x08017998   Section        0  communication.o(i.rec_com)
-    i.remove_01                              0x08017a24   Section        0  action.o(i.remove_01)
-    i.remove_03                              0x08017aa4   Section        0  action.o(i.remove_03)
-    i.remove_04                              0x08017af0   Section        0  action.o(i.remove_04)
-    i.remove_06                              0x08017b70   Section        0  action.o(i.remove_06)
-    i.remove_07                              0x08017bb8   Section        0  action.o(i.remove_07)
-    i.remove_09                              0x08017c38   Section        0  action.o(i.remove_09)
-    i.remove_10                              0x08017c80   Section        0  action.o(i.remove_10)
-    i.remove_12                              0x08017d00   Section        0  action.o(i.remove_12)
-    i.remove_stop                            0x08017d48   Section        0  action.o(i.remove_stop)
-    i.restore_para45_from_eeprom             0x08017d64   Section        0  parameter.o(i.restore_para45_from_eeprom)
-    i.restore_para_from_eeprom               0x08017dd4   Section        0  parameter.o(i.restore_para_from_eeprom)
-    i.run_status                             0x08017e10   Section        0  system.o(i.run_status)
-    i.send_dsp1_command                      0x08019508   Section        0  step_motor_drv.o(i.send_dsp1_command)
-    i.send_dsp2_command                      0x08019538   Section        0  step_motor_drv.o(i.send_dsp2_command)
-    i.send_dsp3_command                      0x08019568   Section        0  step_motor_drv.o(i.send_dsp3_command)
-    i.send_dsp4_command                      0x08019598   Section        0  step_motor_drv.o(i.send_dsp4_command)
-    i.send_dsp_command                       0x080195c8   Section        0  step_motor_drv.o(i.send_dsp_command)
-    i.send_multipule_program_data            0x08019690   Section        0  step_motor_drv.o(i.send_multipule_program_data)
-    i.send_stepmotor_end_drv                 0x080196ec   Section        0  step_motor_drv.o(i.send_stepmotor_end_drv)
-    i.send_stepmotor_up_drv                  0x08019718   Section        0  step_motor_drv.o(i.send_stepmotor_up_drv)
-    i.set_mainmotor_stop_angle               0x08019778   Section        0  action.o(i.set_mainmotor_stop_angle)
-    i.setout_status                          0x080197bc   Section        0  system.o(i.setout_status)
-    i.sewing_stop                            0x08019c50   Section        0  action.o(i.sewing_stop)
-    i.shift_01                               0x08019c68   Section        0  action.o(i.shift_01)
-    i.shift_03                               0x08019cf8   Section        0  action.o(i.shift_03)
-    i.shift_04                               0x08019d54   Section        0  action.o(i.shift_04)
-    i.shift_06                               0x08019de0   Section        0  action.o(i.shift_06)
-    i.shift_07                               0x08019e38   Section        0  action.o(i.shift_07)
-    i.shift_09                               0x08019ec4   Section        0  action.o(i.shift_09)
-    i.shift_10                               0x08019f1c   Section        0  action.o(i.shift_10)
-    i.shift_12                               0x08019fa8   Section        0  action.o(i.shift_12)
-    i.shift_func                             0x0801a004   Section        0  action.o(i.shift_func)
-    i.single_back                            0x0801a15c   Section        0  action.o(i.single_back)
-    i.single_continue_back                   0x0801a160   Section        0  action.o(i.single_continue_back)
-    i.single_continue_next                   0x0801a300   Section        0  action.o(i.single_continue_next)
-    i.single_end                             0x0801a550   Section        0  action.o(i.single_end)
-    i.single_move_func                       0x0801a554   Section        0  action.o(i.single_move_func)
-    i.single_move_xy                         0x0801aad8   Section        0  action.o(i.single_move_xy)
-    i.single_next                            0x0801ac1c   Section        0  action.o(i.single_next)
-    i.single_start                           0x0801ac1e   Section        0  action.o(i.single_start)
-    i.single_stop                            0x0801ac20   Section        0  action.o(i.single_stop)
-    i.slack_status                           0x0801ac50   Section        0  system.o(i.slack_status)
-    i.special_sewing                         0x0801b0d4   Section        0  action.o(i.special_sewing)
-    i.spi_fifo_recISR                        0x0801b464   Section        0  app_spi.o(i.spi_fifo_recISR)
-    i.spi_flash_dma_rx_handler               0x0801c4c4   Section        0  bsp_spiflash.o(i.spi_flash_dma_rx_handler)
-    i.spi_flash_dma_tx_handler               0x0801c4e8   Section        0  bsp_spiflash.o(i.spi_flash_dma_tx_handler)
-    i.spi_read_wirte_lowlevel                0x0801c4ec   Section        0  step_motor_drv.o(i.spi_read_wirte_lowlevel)
-    i.stepper_check_error                    0x0801c58c   Section        0  stepper_function.o(i.stepper_check_error)
-    i.stepper_check_motion_done              0x0801c854   Section        0  stepper_function.o(i.stepper_check_motion_done)
-    i.stepper_get_z_status                   0x0801c8cc   Section        0  stepper_function.o(i.stepper_get_z_status)
-    i.stepper_go_origin                      0x0801c980   Section        0  stepper_function.o(i.stepper_go_origin)
-    i.stepper_go_origin_multiple             0x0801cb18   Section        0  stepper_function.o(i.stepper_go_origin_multiple)
-    i.stepper_init                           0x0801d40c   Section        0  stepper_function.o(i.stepper_init)
-    i.stepper_motor_move                     0x0801d64c   Section        0  stepper_function.o(i.stepper_motor_move)
-    i.stepper_refresh_para                   0x0801d7ac   Section        0  stepper_function.o(i.stepper_refresh_para)
-    i.stepper_setup_motor                    0x0801d8a4   Section        0  stepper_function.o(i.stepper_setup_motor)
-    stepper_setup_motor                      0x0801d8a5   Thumb Code   240  stepper_function.o(i.stepper_setup_motor)
-    i.stretch_foot_in                        0x0801d994   Section        0  action.o(i.stretch_foot_in)
-    i.stretch_foot_out                       0x0801d9d4   Section        0  action.o(i.stretch_foot_out)
-    i.tail_sewing                            0x0801da14   Section        0  action.o(i.tail_sewing)
-    i.tra_com                                0x0801db08   Section        0  communication.o(i.tra_com)
-    i.trim_action                            0x0801db8c   Section        0  action.o(i.trim_action)
-    i.verify                                 0x0801dbb8   Section        0  communication.o(i.verify)
-    i.verify_code                            0x0801dbd4   Section        0  communication.o(i.verify_code)
-    i.version_check                          0x0801dbf4   Section        0  step_motor_drv.o(i.version_check)
-    i.wind_status                            0x0801dc60   Section        0  system.o(i.wind_status)
-    i.write_par                              0x0801dd48   Section        0  parameter.o(i.write_par)
-    i.write_para_group                       0x0801dd4a   Section        0  parameter.o(i.write_para_group)
-    i.write_stepmotor_config_para            0x0801dd60   Section        0  step_motor_drv.o(i.write_stepmotor_config_para)
-    i.write_stepmotor_curve                  0x0801de00   Section        0  step_motor_drv.o(i.write_stepmotor_curve)
-    i.x_quickmove                            0x0801deec   Section        0  step_motor_drv.o(i.x_quickmove)
-    i.y_quickmove                            0x0801df04   Section        0  step_motor_drv.o(i.y_quickmove)
-    i.zoom_in_one_stitch                     0x0801df1c   Section        0  action.o(i.zoom_in_one_stitch)
-    i.zpl_process                            0x0801e094   Section        0  action.o(i.zpl_process)
-    i.zx_quickmove                           0x0801e164   Section        0  step_motor_drv.o(i.zx_quickmove)
-    isqrt_table                              0x0801e17c   Section     2048  IQtables.o(isqrt_table)
-    x$fpl$fpinit                             0x0801e97c   Section       10  fpinit.o(x$fpl$fpinit)
-    $v0                                      0x0801e97c   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$usenofp                            0x0801e986   Section        0  usenofp.o(x$fpl$usenofp)
-    .constdata                               0x0801e988   Section       24  bsp_gpio.o(.constdata)
-    .constdata                               0x0801e9a0   Section       48  bsp_rs485.o(.constdata)
-    .constdata                               0x0801e9d0   Section      108  bsp_spibus.o(.constdata)
-    .constdata                               0x0801ea3c   Section      116  bsp_spiflash.o(.constdata)
-    .constdata                               0x0801eab0   Section       20  bsp_scu.o(.constdata)
-    .constdata                               0x0801eac4   Section      248  spi_master_conf.o(.constdata)
-    .constdata                               0x0801ebbc   Section       12  bsp_watch.o(.constdata)
-    .constdata                               0x0801ebc8   Section      224  can_node_conf.o(.constdata)
-    .constdata                               0x0801eca8   Section      999  action.o(.constdata)
-    .constdata                               0x0801f090   Section    10000  stepper_function.o(.constdata)
-    .constdata                               0x080217a0   Section       16  xmc_vadc.o(.constdata)
-    g_xmc_vadc_group_array                   0x080217a0   Data          16  xmc_vadc.o(.constdata)
-    .constdata                               0x080217b0   Section     2052  arm_common_tables.o(.constdata)
+    i.foot_half_down                         0x0800bc3c   Section        0  action.o(i.foot_half_down)
+    i.foot_half_up                           0x0800bc6c   Section        0  action.o(i.foot_half_up)
+    i.foot_up                                0x0800bc94   Section        0  action.o(i.foot_up)
+    i.footer_both_down                       0x0800bcfc   Section        0  action.o(i.footer_both_down)
+    i.footer_both_up                         0x0800bd54   Section        0  action.o(i.footer_both_up)
+    i.footer_procedure                       0x0800bdac   Section        0  action.o(i.footer_procedure)
+    i.function_1ms_hook                      0x0800bedc   Section        0  main.o(i.function_1ms_hook)
+    i.g_SpiMode_CmdTip                       0x0800c5c4   Section        0  app_spi.o(i.g_SpiMode_CmdTip)
+    i.get_motor_cfg                          0x0800c5fc   Section        0  stepper_function.o(i.get_motor_cfg)
+    get_motor_cfg                            0x0800c5fd   Thumb Code    64  stepper_function.o(i.get_motor_cfg)
+    i.get_origin_state                       0x0800c63c   Section        0  stepper_function.o(i.get_origin_state)
+    i.get_physical_num_and_channel           0x0800c66a   Section        0  stepper_function.o(i.get_physical_num_and_channel)
+    get_physical_num_and_channel             0x0800c66b   Thumb Code   146  stepper_function.o(i.get_physical_num_and_channel)
+    i.get_x_distance                         0x0800c6fc   Section        0  step_motor_drv.o(i.get_x_distance)
+    i.get_y_distance                         0x0800c714   Section        0  step_motor_drv.o(i.get_y_distance)
+    i.go_beginpoint                          0x0800c72c   Section        0  action.o(i.go_beginpoint)
+    i.go_commandpoint                        0x0800cd7c   Section        0  action.o(i.go_commandpoint)
+    i.go_origin_allmotor                     0x0800ceb0   Section        0  action.o(i.go_origin_allmotor)
+    i.go_origin_x                            0x0800cf98   Section        0  action.o(i.go_origin_x)
+    i.go_origin_xy                           0x0800cfd4   Section        0  action.o(i.go_origin_xy)
+    i.go_origin_xy_both                      0x0800d22c   Section        0  action.o(i.go_origin_xy_both)
+    i.go_origin_y                            0x0800d2a0   Section        0  action.o(i.go_origin_y)
+    i.go_origin_zx                           0x0800d2dc   Section        0  action.o(i.go_origin_zx)
+    i.go_setoutpoint                         0x0800d334   Section        0  action.o(i.go_setoutpoint)
+    i.go_startpoint                          0x0800d618   Section        0  action.o(i.go_startpoint)
+    i.holding_axes                           0x0800d77c   Section        0  mc_pmsm.o(i.holding_axes)
+    i.init_comm                              0x0800d7fc   Section        0  communication.o(i.init_comm)
+    i.init_motor_handler_sturct              0x0800d84c   Section        0  stepper_function.o(i.init_motor_handler_sturct)
+    init_motor_handler_sturct                0x0800d84d   Thumb Code    84  stepper_function.o(i.init_motor_handler_sturct)
+    i.init_var                               0x0800d8a0   Section        0  initial.o(i.init_var)
+    i.initial                                0x0800e9c0   Section        0  initial.o(i.initial)
+    i.initial_mainmotor                      0x0800e9d4   Section        0  action.o(i.initial_mainmotor)
+    i.inpress_down                           0x0800ea10   Section        0  action.o(i.inpress_down)
+    i.inpress_to                             0x0800eaa8   Section        0  action.o(i.inpress_to)
+    i.inpress_up                             0x0800eb50   Section        0  action.o(i.inpress_up)
+    i.io_function_init                       0x0800ebf8   Section        0  io_function.o(i.io_function_init)
+    i.io_get_logic_inout                     0x0800f074   Section        0  io_function.o(i.io_get_logic_inout)
+    i.io_get_physical_input                  0x0800f104   Section        0  io_function.o(i.io_get_physical_input)
+    i.io_get_physical_output                 0x0800f2a8   Section        0  io_function.o(i.io_get_physical_output)
+    i.io_sc0719_bsp_init                     0x0800f46c   Section        0  io_function.o(i.io_sc0719_bsp_init)
+    io_sc0719_bsp_init                       0x0800f46d   Thumb Code   318  io_function.o(i.io_sc0719_bsp_init)
+    i.io_sc0720_bsp_init                     0x0800f5c8   Section        0  io_function.o(i.io_sc0720_bsp_init)
+    io_sc0720_bsp_init                       0x0800f5c9   Thumb Code   308  io_function.o(i.io_sc0720_bsp_init)
+    i.io_set_logic_output                    0x0800f718   Section        0  io_function.o(i.io_set_logic_output)
+    i.io_set_physical_output                 0x0800f7ac   Section        0  io_function.o(i.io_set_physical_output)
+    i.io_toggle_logic_output                 0x0800f9f4   Section        0  io_function.o(i.io_toggle_logic_output)
+    i.io_toggle_physical_output              0x0800fa54   Section        0  io_function.o(i.io_toggle_physical_output)
+    i.io_translate_logic_to_physical         0x0800fc48   Section        0  io_function.o(i.io_translate_logic_to_physical)
+    i.ipark_calc                             0x0800fc90   Section        0  app_svpwm.o(i.ipark_calc)
+    i.jump_to_begin                          0x0800fd1c   Section        0  step_motor_drv.o(i.jump_to_begin)
+    i.keep_running_for_dead_center           0x0800fe00   Section        0  action.o(i.keep_running_for_dead_center)
+    i.mPmsm1ParaActive                       0x0800fee8   Section        0  mc_pmsm.o(i.mPmsm1ParaActive)
+    i.m_start                                0x0800ff20   Section        0  mc_pmsm.o(i.m_start)
+    i.main                                   0x0801035c   Section        0  main.o(i.main)
+    i.min                                    0x08010514   Section        0  xmc_can.o(i.min)
+    min                                      0x08010515   Thumb Code    14  xmc_can.o(i.min)
+    i.motor1_control                         0x08010524   Section        0  mc_pmsm.o(i.motor1_control)
+    i.move_back                              0x08010bd8   Section        0  action.o(i.move_back)
+    i.move_continue_back                     0x08010c58   Section        0  action.o(i.move_continue_back)
+    i.move_continue_next                     0x08010d4c   Section        0  action.o(i.move_continue_next)
+    i.move_next                              0x08010e3c   Section        0  action.o(i.move_next)
+    i.move_startpoint                        0x08010ea4   Section        0  action.o(i.move_startpoint)
+    i.move_xy                                0x08010f08   Section        0  action.o(i.move_xy)
+    i.movestep_x                             0x08011230   Section        0  step_motor_drv.o(i.movestep_x)
+    i.movestep_y                             0x08011250   Section        0  step_motor_drv.o(i.movestep_y)
+    i.movestep_zx                            0x08011270   Section        0  step_motor_drv.o(i.movestep_zx)
+    i.multipule_program_beginning            0x0801128c   Section        0  step_motor_drv.o(i.multipule_program_beginning)
+    i.multipule_program_end                  0x080112b8   Section        0  step_motor_drv.o(i.multipule_program_end)
+    i.mymemcpy                               0x080112e0   Section        0  parameter.o(i.mymemcpy)
+    i.mymemset                               0x080112f4   Section        0  parameter.o(i.mymemset)
+    i.needle_down                            0x08011304   Section        0  action.o(i.needle_down)
+    i.nop_move_emergency                     0x08011374   Section        0  step_motor_drv.o(i.nop_move_emergency)
+    i.park_calc                              0x080113b8   Section        0  app_svpwm.o(i.park_calc)
+    i.pause_stop                             0x08011448   Section        0  action.o(i.pause_stop)
+    i.pmsm1_100us_task                       0x08011638   Section        0  mc_pmsm.o(i.pmsm1_100us_task)
+    i.poweroff_status                        0x08011bb4   Section        0  system.o(i.poweroff_status)
+    i.pre_running                            0x08011bb8   Section        0  system.o(i.pre_running)
+    i.preedit_status                         0x08011f78   Section        0  system.o(i.preedit_status)
+    i.prewind_status                         0x08012550   Section        0  system.o(i.prewind_status)
+    i.process_data                           0x080126e0   Section        0  action.o(i.process_data)
+    i.process_making_pen_signal              0x08012aac   Section        0  action.o(i.process_making_pen_signal)
+    i.process_nop_move_pause                 0x08012df8   Section        0  action.o(i.process_nop_move_pause)
+    i.protocol                               0x080131ac   Section        0  communication.o(i.protocol)
+    i.read_multipule_program_status          0x08016858   Section        0  step_motor_drv.o(i.read_multipule_program_status)
+    i.read_par                               0x08016884   Section        0  parameter.o(i.read_par)
+    i.read_para_group                        0x0801688a   Section        0  parameter.o(i.read_para_group)
+    i.read_stepmotor_config_para             0x080168a0   Section        0  step_motor_drv.o(i.read_stepmotor_config_para)
+    i.read_stepmotor_curve_crc               0x08016930   Section        0  step_motor_drv.o(i.read_stepmotor_curve_crc)
+    i.read_stepmotor_up_drv                  0x08016984   Section        0  step_motor_drv.o(i.read_stepmotor_up_drv)
+    i.ready_status                           0x080169dc   Section        0  system.o(i.ready_status)
+    i.rec_com                                0x080179f4   Section        0  communication.o(i.rec_com)
+    i.remove_01                              0x08017a80   Section        0  action.o(i.remove_01)
+    i.remove_03                              0x08017b00   Section        0  action.o(i.remove_03)
+    i.remove_04                              0x08017b4c   Section        0  action.o(i.remove_04)
+    i.remove_06                              0x08017bcc   Section        0  action.o(i.remove_06)
+    i.remove_07                              0x08017c14   Section        0  action.o(i.remove_07)
+    i.remove_09                              0x08017c94   Section        0  action.o(i.remove_09)
+    i.remove_10                              0x08017cdc   Section        0  action.o(i.remove_10)
+    i.remove_12                              0x08017d5c   Section        0  action.o(i.remove_12)
+    i.remove_stop                            0x08017da4   Section        0  action.o(i.remove_stop)
+    i.restore_para45_from_eeprom             0x08017dc0   Section        0  parameter.o(i.restore_para45_from_eeprom)
+    i.restore_para_from_eeprom               0x08017e30   Section        0  parameter.o(i.restore_para_from_eeprom)
+    i.run_status                             0x08017e6c   Section        0  system.o(i.run_status)
+    i.send_dsp1_command                      0x08019578   Section        0  step_motor_drv.o(i.send_dsp1_command)
+    i.send_dsp2_command                      0x080195a8   Section        0  step_motor_drv.o(i.send_dsp2_command)
+    i.send_dsp3_command                      0x080195d8   Section        0  step_motor_drv.o(i.send_dsp3_command)
+    i.send_dsp4_command                      0x08019608   Section        0  step_motor_drv.o(i.send_dsp4_command)
+    i.send_dsp_command                       0x08019638   Section        0  step_motor_drv.o(i.send_dsp_command)
+    i.send_multipule_program_data            0x08019700   Section        0  step_motor_drv.o(i.send_multipule_program_data)
+    i.send_stepmotor_end_drv                 0x0801975c   Section        0  step_motor_drv.o(i.send_stepmotor_end_drv)
+    i.send_stepmotor_up_drv                  0x08019788   Section        0  step_motor_drv.o(i.send_stepmotor_up_drv)
+    i.set_mainmotor_stop_angle               0x080197e8   Section        0  action.o(i.set_mainmotor_stop_angle)
+    i.setout_status                          0x0801982c   Section        0  system.o(i.setout_status)
+    i.sewing_stop                            0x08019cc0   Section        0  action.o(i.sewing_stop)
+    i.shift_01                               0x08019cd8   Section        0  action.o(i.shift_01)
+    i.shift_03                               0x08019d68   Section        0  action.o(i.shift_03)
+    i.shift_04                               0x08019dc4   Section        0  action.o(i.shift_04)
+    i.shift_06                               0x08019e50   Section        0  action.o(i.shift_06)
+    i.shift_07                               0x08019ea8   Section        0  action.o(i.shift_07)
+    i.shift_09                               0x08019f34   Section        0  action.o(i.shift_09)
+    i.shift_10                               0x08019f8c   Section        0  action.o(i.shift_10)
+    i.shift_12                               0x0801a018   Section        0  action.o(i.shift_12)
+    i.shift_func                             0x0801a074   Section        0  action.o(i.shift_func)
+    i.single_back                            0x0801a1cc   Section        0  action.o(i.single_back)
+    i.single_continue_back                   0x0801a1d0   Section        0  action.o(i.single_continue_back)
+    i.single_continue_next                   0x0801a370   Section        0  action.o(i.single_continue_next)
+    i.single_end                             0x0801a5c0   Section        0  action.o(i.single_end)
+    i.single_move_func                       0x0801a5c4   Section        0  action.o(i.single_move_func)
+    i.single_move_xy                         0x0801ab48   Section        0  action.o(i.single_move_xy)
+    i.single_next                            0x0801ac8c   Section        0  action.o(i.single_next)
+    i.single_start                           0x0801ac8e   Section        0  action.o(i.single_start)
+    i.single_stop                            0x0801ac90   Section        0  action.o(i.single_stop)
+    i.slack_status                           0x0801acc0   Section        0  system.o(i.slack_status)
+    i.special_sewing                         0x0801b144   Section        0  action.o(i.special_sewing)
+    i.spi_fifo_recISR                        0x0801b4d4   Section        0  app_spi.o(i.spi_fifo_recISR)
+    i.spi_flash_dma_rx_handler               0x0801c534   Section        0  bsp_spiflash.o(i.spi_flash_dma_rx_handler)
+    i.spi_flash_dma_tx_handler               0x0801c558   Section        0  bsp_spiflash.o(i.spi_flash_dma_tx_handler)
+    i.spi_read_wirte_lowlevel                0x0801c55c   Section        0  step_motor_drv.o(i.spi_read_wirte_lowlevel)
+    i.stepper_check_error                    0x0801c5fc   Section        0  stepper_function.o(i.stepper_check_error)
+    i.stepper_check_motion_done              0x0801c8c4   Section        0  stepper_function.o(i.stepper_check_motion_done)
+    i.stepper_get_z_status                   0x0801c93c   Section        0  stepper_function.o(i.stepper_get_z_status)
+    i.stepper_go_origin                      0x0801c9f0   Section        0  stepper_function.o(i.stepper_go_origin)
+    i.stepper_go_origin_multiple             0x0801cb88   Section        0  stepper_function.o(i.stepper_go_origin_multiple)
+    i.stepper_init                           0x0801d47c   Section        0  stepper_function.o(i.stepper_init)
+    i.stepper_motor_move                     0x0801d6bc   Section        0  stepper_function.o(i.stepper_motor_move)
+    i.stepper_refresh_para                   0x0801d81c   Section        0  stepper_function.o(i.stepper_refresh_para)
+    i.stepper_setup_motor                    0x0801d914   Section        0  stepper_function.o(i.stepper_setup_motor)
+    stepper_setup_motor                      0x0801d915   Thumb Code   240  stepper_function.o(i.stepper_setup_motor)
+    i.stretch_foot_in                        0x0801da04   Section        0  action.o(i.stretch_foot_in)
+    i.stretch_foot_out                       0x0801da44   Section        0  action.o(i.stretch_foot_out)
+    i.tail_sewing                            0x0801da84   Section        0  action.o(i.tail_sewing)
+    i.tra_com                                0x0801db78   Section        0  communication.o(i.tra_com)
+    i.trim_action                            0x0801dbfc   Section        0  action.o(i.trim_action)
+    i.verify                                 0x0801dc28   Section        0  communication.o(i.verify)
+    i.verify_code                            0x0801dc44   Section        0  communication.o(i.verify_code)
+    i.version_check                          0x0801dc64   Section        0  step_motor_drv.o(i.version_check)
+    i.wind_status                            0x0801dcd0   Section        0  system.o(i.wind_status)
+    i.write_par                              0x0801ddb8   Section        0  parameter.o(i.write_par)
+    i.write_para_group                       0x0801ddba   Section        0  parameter.o(i.write_para_group)
+    i.write_stepmotor_config_para            0x0801ddd0   Section        0  step_motor_drv.o(i.write_stepmotor_config_para)
+    i.write_stepmotor_curve                  0x0801de70   Section        0  step_motor_drv.o(i.write_stepmotor_curve)
+    i.x_quickmove                            0x0801df5c   Section        0  step_motor_drv.o(i.x_quickmove)
+    i.y_quickmove                            0x0801df74   Section        0  step_motor_drv.o(i.y_quickmove)
+    i.zoom_in_one_stitch                     0x0801df8c   Section        0  action.o(i.zoom_in_one_stitch)
+    i.zpl_process                            0x0801e104   Section        0  action.o(i.zpl_process)
+    i.zx_quickmove                           0x0801e1d4   Section        0  step_motor_drv.o(i.zx_quickmove)
+    isqrt_table                              0x0801e1ec   Section     2048  IQtables.o(isqrt_table)
+    x$fpl$fpinit                             0x0801e9ec   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x0801e9ec   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$usenofp                            0x0801e9f6   Section        0  usenofp.o(x$fpl$usenofp)
+    .constdata                               0x0801e9f8   Section       24  bsp_gpio.o(.constdata)
+    .constdata                               0x0801ea10   Section       48  bsp_rs485.o(.constdata)
+    .constdata                               0x0801ea40   Section      108  bsp_spibus.o(.constdata)
+    .constdata                               0x0801eaac   Section      116  bsp_spiflash.o(.constdata)
+    .constdata                               0x0801eb20   Section       20  bsp_scu.o(.constdata)
+    .constdata                               0x0801eb34   Section      248  spi_master_conf.o(.constdata)
+    .constdata                               0x0801ec2c   Section       12  bsp_watch.o(.constdata)
+    .constdata                               0x0801ec38   Section      224  can_node_conf.o(.constdata)
+    .constdata                               0x0801ed18   Section      999  action.o(.constdata)
+    .constdata                               0x0801f100   Section    10000  stepper_function.o(.constdata)
+    .constdata                               0x08021810   Section       16  xmc_vadc.o(.constdata)
+    g_xmc_vadc_group_array                   0x08021810   Data          16  xmc_vadc.o(.constdata)
+    .constdata                               0x08021820   Section     2052  arm_common_tables.o(.constdata)
     .data                                    0x20000000   Section        7  bsp_spiflash.o(.data)
     dma_ch_tx_number                         0x20000004   Data           1  bsp_spiflash.o(.data)
     dma_ch_rx_number                         0x20000005   Data           1  bsp_spiflash.o(.data)
@@ -4475,195 +4475,195 @@ Image Symbol Table
     error_status                             0x0800b461   Thumb Code   756  system.o(i.error_status)
     find_dead_center                         0x0800b7b9   Thumb Code   256  action.o(i.find_dead_center)
     finish_status                            0x0800b8cd   Thumb Code   660  system.o(i.finish_status)
-    foot_down                                0x0800bbdd   Thumb Code    70  action.o(i.foot_down)
-    foot_half_down                           0x0800bc35   Thumb Code    38  action.o(i.foot_half_down)
-    foot_half_up                             0x0800bc65   Thumb Code    30  action.o(i.foot_half_up)
-    foot_up                                  0x0800bc8d   Thumb Code    72  action.o(i.foot_up)
-    footer_both_down                         0x0800bce9   Thumb Code    76  action.o(i.footer_both_down)
-    footer_both_up                           0x0800bd41   Thumb Code    76  action.o(i.footer_both_up)
-    footer_procedure                         0x0800bd99   Thumb Code   280  action.o(i.footer_procedure)
-    function_1ms_hook                        0x0800bec9   Thumb Code  1660  main.o(i.function_1ms_hook)
-    g_SpiMode_CmdTip                         0x0800c57d   Thumb Code    52  app_spi.o(i.g_SpiMode_CmdTip)
-    get_origin_state                         0x0800c5f5   Thumb Code    46  stepper_function.o(i.get_origin_state)
-    get_x_distance                           0x0800c6b5   Thumb Code    20  step_motor_drv.o(i.get_x_distance)
-    get_y_distance                           0x0800c6cd   Thumb Code    20  step_motor_drv.o(i.get_y_distance)
-    go_beginpoint                            0x0800c6e5   Thumb Code  1552  action.o(i.go_beginpoint)
-    go_commandpoint                          0x0800cd35   Thumb Code   276  action.o(i.go_commandpoint)
-    go_origin_allmotor                       0x0800ce69   Thumb Code   148  action.o(i.go_origin_allmotor)
-    go_origin_x                              0x0800cf51   Thumb Code    44  action.o(i.go_origin_x)
-    go_origin_xy                             0x0800cf8d   Thumb Code   518  action.o(i.go_origin_xy)
-    go_origin_xy_both                        0x0800d1e5   Thumb Code    90  action.o(i.go_origin_xy_both)
-    go_origin_y                              0x0800d259   Thumb Code    44  action.o(i.go_origin_y)
-    go_origin_zx                             0x0800d295   Thumb Code    62  action.o(i.go_origin_zx)
-    go_setoutpoint                           0x0800d2ed   Thumb Code   612  action.o(i.go_setoutpoint)
-    go_startpoint                            0x0800d5d1   Thumb Code   292  action.o(i.go_startpoint)
-    holding_axes                             0x0800d735   Thumb Code   126  mc_pmsm.o(i.holding_axes)
-    init_comm                                0x0800d7b5   Thumb Code    50  communication.o(i.init_comm)
-    init_var                                 0x0800d859   Thumb Code  4078  initial.o(i.init_var)
-    initial                                  0x0800e979   Thumb Code    20  initial.o(i.initial)
-    initial_mainmotor                        0x0800e98d   Thumb Code    56  action.o(i.initial_mainmotor)
-    inpress_down                             0x0800e9c9   Thumb Code   118  action.o(i.inpress_down)
-    inpress_to                               0x0800ea61   Thumb Code   158  action.o(i.inpress_to)
-    inpress_up                               0x0800eb09   Thumb Code   126  action.o(i.inpress_up)
-    io_function_init                         0x0800ebb1   Thumb Code  1120  io_function.o(i.io_function_init)
-    io_get_logic_inout                       0x0800f019   Thumb Code   132  io_function.o(i.io_get_logic_inout)
-    io_get_physical_input                    0x0800f0a9   Thumb Code   382  io_function.o(i.io_get_physical_input)
-    io_get_physical_output                   0x0800f24d   Thumb Code   406  io_function.o(i.io_get_physical_output)
-    io_set_logic_output                      0x0800f6bd   Thumb Code   138  io_function.o(i.io_set_logic_output)
-    io_set_physical_output                   0x0800f751   Thumb Code   540  io_function.o(i.io_set_physical_output)
-    io_toggle_logic_output                   0x0800f999   Thumb Code    92  io_function.o(i.io_toggle_logic_output)
-    io_toggle_physical_output                0x0800f9f9   Thumb Code   456  io_function.o(i.io_toggle_physical_output)
-    io_translate_logic_to_physical           0x0800fbed   Thumb Code    58  io_function.o(i.io_translate_logic_to_physical)
-    ipark_calc                               0x0800fc35   Thumb Code   134  app_svpwm.o(i.ipark_calc)
-    jump_to_begin                            0x0800fcc1   Thumb Code   204  step_motor_drv.o(i.jump_to_begin)
-    keep_running_for_dead_center             0x0800fda5   Thumb Code   206  action.o(i.keep_running_for_dead_center)
-    mPmsm1ParaActive                         0x0800fe8d   Thumb Code    38  mc_pmsm.o(i.mPmsm1ParaActive)
-    m_start                                  0x0800fec5   Thumb Code  1082  mc_pmsm.o(i.m_start)
-    main                                     0x08010301   Thumb Code   398  main.o(i.main)
-    motor1_control                           0x080104c9   Thumb Code  1638  mc_pmsm.o(i.motor1_control)
-    move_back                                0x08010b7d   Thumb Code    94  action.o(i.move_back)
-    move_continue_back                       0x08010bfd   Thumb Code   206  action.o(i.move_continue_back)
-    move_continue_next                       0x08010cf1   Thumb Code   202  action.o(i.move_continue_next)
-    move_next                                0x08010de1   Thumb Code    70  action.o(i.move_next)
-    move_startpoint                          0x08010e49   Thumb Code    82  action.o(i.move_startpoint)
-    move_xy                                  0x08010ead   Thumb Code   732  action.o(i.move_xy)
-    movestep_x                               0x080111d5   Thumb Code    24  step_motor_drv.o(i.movestep_x)
-    movestep_y                               0x080111f5   Thumb Code    24  step_motor_drv.o(i.movestep_y)
-    movestep_zx                              0x08011215   Thumb Code    24  step_motor_drv.o(i.movestep_zx)
-    multipule_program_beginning              0x08011231   Thumb Code    38  step_motor_drv.o(i.multipule_program_beginning)
-    multipule_program_end                    0x0801125d   Thumb Code    36  step_motor_drv.o(i.multipule_program_end)
-    mymemcpy                                 0x08011285   Thumb Code    20  parameter.o(i.mymemcpy)
-    mymemset                                 0x08011299   Thumb Code    16  parameter.o(i.mymemset)
-    needle_down                              0x080112a9   Thumb Code   102  action.o(i.needle_down)
-    nop_move_emergency                       0x08011319   Thumb Code    62  step_motor_drv.o(i.nop_move_emergency)
-    park_calc                                0x0801135d   Thumb Code   138  app_svpwm.o(i.park_calc)
-    pause_stop                               0x080113ed   Thumb Code   416  action.o(i.pause_stop)
-    pmsm1_100us_task                         0x080115dd   Thumb Code  1376  mc_pmsm.o(i.pmsm1_100us_task)
-    poweroff_status                          0x08011b59   Thumb Code     2  system.o(i.poweroff_status)
-    pre_running                              0x08011b5d   Thumb Code   780  system.o(i.pre_running)
-    preedit_status                           0x08011f1d   Thumb Code  1424  system.o(i.preedit_status)
-    prewind_status                           0x080124f5   Thumb Code   344  system.o(i.prewind_status)
-    process_data                             0x08012685   Thumb Code   818  action.o(i.process_data)
-    process_making_pen_signal                0x08012a51   Thumb Code   766  action.o(i.process_making_pen_signal)
-    process_nop_move_pause                   0x08012d9d   Thumb Code   860  action.o(i.process_nop_move_pause)
-    protocol                                 0x08013151   Thumb Code 13918  communication.o(i.protocol)
-    read_multipule_program_status            0x080167fd   Thumb Code    38  step_motor_drv.o(i.read_multipule_program_status)
-    read_par                                 0x08016829   Thumb Code     6  parameter.o(i.read_par)
-    read_para_group                          0x0801682f   Thumb Code    20  parameter.o(i.read_para_group)
-    read_stepmotor_config_para               0x08016845   Thumb Code   132  step_motor_drv.o(i.read_stepmotor_config_para)
-    read_stepmotor_curve_crc                 0x080168d5   Thumb Code    78  step_motor_drv.o(i.read_stepmotor_curve_crc)
-    read_stepmotor_up_drv                    0x08016929   Thumb Code    80  step_motor_drv.o(i.read_stepmotor_up_drv)
-    ready_status                             0x08016981   Thumb Code  4016  system.o(i.ready_status)
-    rec_com                                  0x08017999   Thumb Code   120  communication.o(i.rec_com)
-    remove_01                                0x08017a25   Thumb Code   110  action.o(i.remove_01)
-    remove_03                                0x08017aa5   Thumb Code    66  action.o(i.remove_03)
-    remove_04                                0x08017af1   Thumb Code   110  action.o(i.remove_04)
-    remove_06                                0x08017b71   Thumb Code    64  action.o(i.remove_06)
-    remove_07                                0x08017bb9   Thumb Code   110  action.o(i.remove_07)
-    remove_09                                0x08017c39   Thumb Code    64  action.o(i.remove_09)
-    remove_10                                0x08017c81   Thumb Code   110  action.o(i.remove_10)
-    remove_12                                0x08017d01   Thumb Code    64  action.o(i.remove_12)
-    remove_stop                              0x08017d49   Thumb Code    16  action.o(i.remove_stop)
-    restore_para45_from_eeprom               0x08017d65   Thumb Code   100  parameter.o(i.restore_para45_from_eeprom)
-    restore_para_from_eeprom                 0x08017dd5   Thumb Code    50  parameter.o(i.restore_para_from_eeprom)
-    run_status                               0x08017e11   Thumb Code  5746  system.o(i.run_status)
-    send_dsp1_command                        0x08019509   Thumb Code    42  step_motor_drv.o(i.send_dsp1_command)
-    send_dsp2_command                        0x08019539   Thumb Code    42  step_motor_drv.o(i.send_dsp2_command)
-    send_dsp3_command                        0x08019569   Thumb Code    42  step_motor_drv.o(i.send_dsp3_command)
-    send_dsp4_command                        0x08019599   Thumb Code    42  step_motor_drv.o(i.send_dsp4_command)
-    send_dsp_command                         0x080195c9   Thumb Code   160  step_motor_drv.o(i.send_dsp_command)
-    send_multipule_program_data              0x08019691   Thumb Code    78  step_motor_drv.o(i.send_multipule_program_data)
-    send_stepmotor_end_drv                   0x080196ed   Thumb Code    34  step_motor_drv.o(i.send_stepmotor_end_drv)
-    send_stepmotor_up_drv                    0x08019719   Thumb Code    78  step_motor_drv.o(i.send_stepmotor_up_drv)
-    set_mainmotor_stop_angle                 0x08019779   Thumb Code    60  action.o(i.set_mainmotor_stop_angle)
-    setout_status                            0x080197bd   Thumb Code   928  system.o(i.setout_status)
-    sewing_stop                              0x08019c51   Thumb Code    16  action.o(i.sewing_stop)
-    shift_01                                 0x08019c69   Thumb Code   118  action.o(i.shift_01)
-    shift_03                                 0x08019cf9   Thumb Code    74  action.o(i.shift_03)
-    shift_04                                 0x08019d55   Thumb Code   116  action.o(i.shift_04)
-    shift_06                                 0x08019de1   Thumb Code    72  action.o(i.shift_06)
-    shift_07                                 0x08019e39   Thumb Code   114  action.o(i.shift_07)
-    shift_09                                 0x08019ec5   Thumb Code    72  action.o(i.shift_09)
-    shift_10                                 0x08019f1d   Thumb Code   116  action.o(i.shift_10)
-    shift_12                                 0x08019fa9   Thumb Code    74  action.o(i.shift_12)
-    shift_func                               0x0801a005   Thumb Code   330  action.o(i.shift_func)
-    single_back                              0x0801a15d   Thumb Code     2  action.o(i.single_back)
-    single_continue_back                     0x0801a161   Thumb Code   332  action.o(i.single_continue_back)
-    single_continue_next                     0x0801a301   Thumb Code   482  action.o(i.single_continue_next)
-    single_end                               0x0801a551   Thumb Code     2  action.o(i.single_end)
-    single_move_func                         0x0801a555   Thumb Code  1366  action.o(i.single_move_func)
-    single_move_xy                           0x0801aad9   Thumb Code   270  action.o(i.single_move_xy)
-    single_next                              0x0801ac1d   Thumb Code     2  action.o(i.single_next)
-    single_start                             0x0801ac1f   Thumb Code     2  action.o(i.single_start)
-    single_stop                              0x0801ac21   Thumb Code    34  action.o(i.single_stop)
-    slack_status                             0x0801ac51   Thumb Code  1156  system.o(i.slack_status)
-    special_sewing                           0x0801b0d5   Thumb Code   808  action.o(i.special_sewing)
-    spi_fifo_recISR                          0x0801b465   Thumb Code  4124  app_spi.o(i.spi_fifo_recISR)
-    spi_flash_dma_rx_handler                 0x0801c4c5   Thumb Code    26  bsp_spiflash.o(i.spi_flash_dma_rx_handler)
-    spi_flash_dma_tx_handler                 0x0801c4e9   Thumb Code     2  bsp_spiflash.o(i.spi_flash_dma_tx_handler)
-    spi_read_wirte_lowlevel                  0x0801c4ed   Thumb Code   118  step_motor_drv.o(i.spi_read_wirte_lowlevel)
-    stepper_check_error                      0x0801c58d   Thumb Code   662  stepper_function.o(i.stepper_check_error)
-    stepper_check_motion_done                0x0801c855   Thumb Code   116  stepper_function.o(i.stepper_check_motion_done)
-    stepper_get_z_status                     0x0801c8cd   Thumb Code   176  stepper_function.o(i.stepper_get_z_status)
-    stepper_go_origin                        0x0801c981   Thumb Code   408  stepper_function.o(i.stepper_go_origin)
-    stepper_go_origin_multiple               0x0801cb19   Thumb Code  2288  stepper_function.o(i.stepper_go_origin_multiple)
-    stepper_init                             0x0801d40d   Thumb Code   552  stepper_function.o(i.stepper_init)
-    stepper_motor_move                       0x0801d64d   Thumb Code   352  stepper_function.o(i.stepper_motor_move)
-    stepper_refresh_para                     0x0801d7ad   Thumb Code   228  stepper_function.o(i.stepper_refresh_para)
-    stretch_foot_in                          0x0801d995   Thumb Code    46  action.o(i.stretch_foot_in)
-    stretch_foot_out                         0x0801d9d5   Thumb Code    48  action.o(i.stretch_foot_out)
-    tail_sewing                              0x0801da15   Thumb Code   190  action.o(i.tail_sewing)
-    tra_com                                  0x0801db09   Thumb Code   110  communication.o(i.tra_com)
-    trim_action                              0x0801db8d   Thumb Code    44  action.o(i.trim_action)
-    verify                                   0x0801dbb9   Thumb Code    26  communication.o(i.verify)
-    verify_code                              0x0801dbd5   Thumb Code    26  communication.o(i.verify_code)
-    version_check                            0x0801dbf5   Thumb Code    96  step_motor_drv.o(i.version_check)
-    wind_status                              0x0801dc61   Thumb Code   198  system.o(i.wind_status)
-    write_par                                0x0801dd49   Thumb Code     2  parameter.o(i.write_par)
-    write_para_group                         0x0801dd4b   Thumb Code    20  parameter.o(i.write_para_group)
-    write_stepmotor_config_para              0x0801dd61   Thumb Code   156  step_motor_drv.o(i.write_stepmotor_config_para)
-    write_stepmotor_curve                    0x0801de01   Thumb Code   222  step_motor_drv.o(i.write_stepmotor_curve)
-    x_quickmove                              0x0801deed   Thumb Code    18  step_motor_drv.o(i.x_quickmove)
-    y_quickmove                              0x0801df05   Thumb Code    18  step_motor_drv.o(i.y_quickmove)
-    zoom_in_one_stitch                       0x0801df1d   Thumb Code   336  action.o(i.zoom_in_one_stitch)
-    zpl_process                              0x0801e095   Thumb Code   166  action.o(i.zpl_process)
-    zx_quickmove                             0x0801e165   Thumb Code    18  step_motor_drv.o(i.zx_quickmove)
-    isqrt_table                              0x0801e17c   Data           0  IQtables.o(isqrt_table)
-    _fp_init                                 0x0801e97d   Thumb Code    10  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x0801e985   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x0801e985   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __I$use$fp                               0x0801e986   Number         0  usenofp.o(x$fpl$usenofp)
-    gpio_out_pin_config                      0x0801e988   Data          12  bsp_gpio.o(.constdata)
-    gpio_in_pin_config                       0x0801e994   Data          12  bsp_gpio.o(.constdata)
-    SCUclock_config                          0x0801eab0   Data          20  bsp_scu.o(.constdata)
-    SPI_MASTER_0_MOSI                        0x0801eac4   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_MISO                        0x0801eacc   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SCLKOUT                     0x0801ead4   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SCLKOUT_Config              0x0801eadc   Data          20  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_0                        0x0801eaf0   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_0_Config                 0x0801eaf8   Data          20  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_1                        0x0801eb0c   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_2                        0x0801eb14   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_2_Config                 0x0801eb1c   Data          20  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_Config                      0x0801eb30   Data         140  spi_master_conf.o(.constdata)
-    CAN_NODE_0_gpio_out                      0x0801ebc8   Data           8  can_node_conf.o(.constdata)
-    CAN_NODE_0_gpio_out_config               0x0801ebd0   Data          12  can_node_conf.o(.constdata)
-    CAN_NODE_0_gpio_in                       0x0801ebdc   Data           8  can_node_conf.o(.constdata)
-    CAN_NODE_0_gpio_in_config                0x0801ebe4   Data          12  can_node_conf.o(.constdata)
-    CAN_NODE_0_sr                            0x0801ebf0   Data           4  can_node_conf.o(.constdata)
-    CAN_NODE_0_LMO_01_Config                 0x0801ebf4   Data          12  can_node_conf.o(.constdata)
-    CAN_NODE_0                               0x0801ec00   Data         168  can_node_conf.o(.constdata)
-    X2_tab                                   0x0801eca8   Data         512  action.o(.constdata)
-    spdlimit_10080_345_tab                   0x0801eea8   Data         254  action.o(.constdata)
-    MoveTime_Limtit                          0x0801efa6   Data          33  action.o(.constdata)
-    MoveStartAngle_10080_y                   0x0801efc8   Data          66  action.o(.constdata)
-    MoveTime_Speed_10080_y                   0x0801f00a   Data          33  action.o(.constdata)
-    MoveStartAngle_10080_x                   0x0801f02c   Data          66  action.o(.constdata)
-    MoveTime_Speed_10080_x                   0x0801f06e   Data          33  action.o(.constdata)
-    mc_stepper_curve                         0x0801f090   Data       10000  stepper_function.o(.constdata)
-    sinTable_f32                             0x080217b0   Data        2052  arm_common_tables.o(.constdata)
-    Region$$Table$$Base                      0x08021fb4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08021fd4   Number         0  anon$$obj.o(Region$$Table)
+    foot_down                                0x0800bbdd   Thumb Code    76  action.o(i.foot_down)
+    foot_half_down                           0x0800bc3d   Thumb Code    38  action.o(i.foot_half_down)
+    foot_half_up                             0x0800bc6d   Thumb Code    30  action.o(i.foot_half_up)
+    foot_up                                  0x0800bc95   Thumb Code    78  action.o(i.foot_up)
+    footer_both_down                         0x0800bcfd   Thumb Code    76  action.o(i.footer_both_down)
+    footer_both_up                           0x0800bd55   Thumb Code    76  action.o(i.footer_both_up)
+    footer_procedure                         0x0800bdad   Thumb Code   280  action.o(i.footer_procedure)
+    function_1ms_hook                        0x0800bedd   Thumb Code  1696  main.o(i.function_1ms_hook)
+    g_SpiMode_CmdTip                         0x0800c5c5   Thumb Code    52  app_spi.o(i.g_SpiMode_CmdTip)
+    get_origin_state                         0x0800c63d   Thumb Code    46  stepper_function.o(i.get_origin_state)
+    get_x_distance                           0x0800c6fd   Thumb Code    20  step_motor_drv.o(i.get_x_distance)
+    get_y_distance                           0x0800c715   Thumb Code    20  step_motor_drv.o(i.get_y_distance)
+    go_beginpoint                            0x0800c72d   Thumb Code  1552  action.o(i.go_beginpoint)
+    go_commandpoint                          0x0800cd7d   Thumb Code   276  action.o(i.go_commandpoint)
+    go_origin_allmotor                       0x0800ceb1   Thumb Code   148  action.o(i.go_origin_allmotor)
+    go_origin_x                              0x0800cf99   Thumb Code    44  action.o(i.go_origin_x)
+    go_origin_xy                             0x0800cfd5   Thumb Code   518  action.o(i.go_origin_xy)
+    go_origin_xy_both                        0x0800d22d   Thumb Code    90  action.o(i.go_origin_xy_both)
+    go_origin_y                              0x0800d2a1   Thumb Code    44  action.o(i.go_origin_y)
+    go_origin_zx                             0x0800d2dd   Thumb Code    62  action.o(i.go_origin_zx)
+    go_setoutpoint                           0x0800d335   Thumb Code   612  action.o(i.go_setoutpoint)
+    go_startpoint                            0x0800d619   Thumb Code   292  action.o(i.go_startpoint)
+    holding_axes                             0x0800d77d   Thumb Code   126  mc_pmsm.o(i.holding_axes)
+    init_comm                                0x0800d7fd   Thumb Code    50  communication.o(i.init_comm)
+    init_var                                 0x0800d8a1   Thumb Code  4078  initial.o(i.init_var)
+    initial                                  0x0800e9c1   Thumb Code    20  initial.o(i.initial)
+    initial_mainmotor                        0x0800e9d5   Thumb Code    56  action.o(i.initial_mainmotor)
+    inpress_down                             0x0800ea11   Thumb Code   118  action.o(i.inpress_down)
+    inpress_to                               0x0800eaa9   Thumb Code   158  action.o(i.inpress_to)
+    inpress_up                               0x0800eb51   Thumb Code   126  action.o(i.inpress_up)
+    io_function_init                         0x0800ebf9   Thumb Code  1138  io_function.o(i.io_function_init)
+    io_get_logic_inout                       0x0800f075   Thumb Code   132  io_function.o(i.io_get_logic_inout)
+    io_get_physical_input                    0x0800f105   Thumb Code   382  io_function.o(i.io_get_physical_input)
+    io_get_physical_output                   0x0800f2a9   Thumb Code   406  io_function.o(i.io_get_physical_output)
+    io_set_logic_output                      0x0800f719   Thumb Code   138  io_function.o(i.io_set_logic_output)
+    io_set_physical_output                   0x0800f7ad   Thumb Code   540  io_function.o(i.io_set_physical_output)
+    io_toggle_logic_output                   0x0800f9f5   Thumb Code    92  io_function.o(i.io_toggle_logic_output)
+    io_toggle_physical_output                0x0800fa55   Thumb Code   456  io_function.o(i.io_toggle_physical_output)
+    io_translate_logic_to_physical           0x0800fc49   Thumb Code    58  io_function.o(i.io_translate_logic_to_physical)
+    ipark_calc                               0x0800fc91   Thumb Code   134  app_svpwm.o(i.ipark_calc)
+    jump_to_begin                            0x0800fd1d   Thumb Code   204  step_motor_drv.o(i.jump_to_begin)
+    keep_running_for_dead_center             0x0800fe01   Thumb Code   206  action.o(i.keep_running_for_dead_center)
+    mPmsm1ParaActive                         0x0800fee9   Thumb Code    38  mc_pmsm.o(i.mPmsm1ParaActive)
+    m_start                                  0x0800ff21   Thumb Code  1082  mc_pmsm.o(i.m_start)
+    main                                     0x0801035d   Thumb Code   398  main.o(i.main)
+    motor1_control                           0x08010525   Thumb Code  1638  mc_pmsm.o(i.motor1_control)
+    move_back                                0x08010bd9   Thumb Code    94  action.o(i.move_back)
+    move_continue_back                       0x08010c59   Thumb Code   206  action.o(i.move_continue_back)
+    move_continue_next                       0x08010d4d   Thumb Code   202  action.o(i.move_continue_next)
+    move_next                                0x08010e3d   Thumb Code    70  action.o(i.move_next)
+    move_startpoint                          0x08010ea5   Thumb Code    82  action.o(i.move_startpoint)
+    move_xy                                  0x08010f09   Thumb Code   732  action.o(i.move_xy)
+    movestep_x                               0x08011231   Thumb Code    24  step_motor_drv.o(i.movestep_x)
+    movestep_y                               0x08011251   Thumb Code    24  step_motor_drv.o(i.movestep_y)
+    movestep_zx                              0x08011271   Thumb Code    24  step_motor_drv.o(i.movestep_zx)
+    multipule_program_beginning              0x0801128d   Thumb Code    38  step_motor_drv.o(i.multipule_program_beginning)
+    multipule_program_end                    0x080112b9   Thumb Code    36  step_motor_drv.o(i.multipule_program_end)
+    mymemcpy                                 0x080112e1   Thumb Code    20  parameter.o(i.mymemcpy)
+    mymemset                                 0x080112f5   Thumb Code    16  parameter.o(i.mymemset)
+    needle_down                              0x08011305   Thumb Code   102  action.o(i.needle_down)
+    nop_move_emergency                       0x08011375   Thumb Code    62  step_motor_drv.o(i.nop_move_emergency)
+    park_calc                                0x080113b9   Thumb Code   138  app_svpwm.o(i.park_calc)
+    pause_stop                               0x08011449   Thumb Code   416  action.o(i.pause_stop)
+    pmsm1_100us_task                         0x08011639   Thumb Code  1376  mc_pmsm.o(i.pmsm1_100us_task)
+    poweroff_status                          0x08011bb5   Thumb Code     2  system.o(i.poweroff_status)
+    pre_running                              0x08011bb9   Thumb Code   780  system.o(i.pre_running)
+    preedit_status                           0x08011f79   Thumb Code  1424  system.o(i.preedit_status)
+    prewind_status                           0x08012551   Thumb Code   344  system.o(i.prewind_status)
+    process_data                             0x080126e1   Thumb Code   818  action.o(i.process_data)
+    process_making_pen_signal                0x08012aad   Thumb Code   766  action.o(i.process_making_pen_signal)
+    process_nop_move_pause                   0x08012df9   Thumb Code   860  action.o(i.process_nop_move_pause)
+    protocol                                 0x080131ad   Thumb Code 13918  communication.o(i.protocol)
+    read_multipule_program_status            0x08016859   Thumb Code    38  step_motor_drv.o(i.read_multipule_program_status)
+    read_par                                 0x08016885   Thumb Code     6  parameter.o(i.read_par)
+    read_para_group                          0x0801688b   Thumb Code    20  parameter.o(i.read_para_group)
+    read_stepmotor_config_para               0x080168a1   Thumb Code   132  step_motor_drv.o(i.read_stepmotor_config_para)
+    read_stepmotor_curve_crc                 0x08016931   Thumb Code    78  step_motor_drv.o(i.read_stepmotor_curve_crc)
+    read_stepmotor_up_drv                    0x08016985   Thumb Code    80  step_motor_drv.o(i.read_stepmotor_up_drv)
+    ready_status                             0x080169dd   Thumb Code  4016  system.o(i.ready_status)
+    rec_com                                  0x080179f5   Thumb Code   120  communication.o(i.rec_com)
+    remove_01                                0x08017a81   Thumb Code   110  action.o(i.remove_01)
+    remove_03                                0x08017b01   Thumb Code    66  action.o(i.remove_03)
+    remove_04                                0x08017b4d   Thumb Code   110  action.o(i.remove_04)
+    remove_06                                0x08017bcd   Thumb Code    64  action.o(i.remove_06)
+    remove_07                                0x08017c15   Thumb Code   110  action.o(i.remove_07)
+    remove_09                                0x08017c95   Thumb Code    64  action.o(i.remove_09)
+    remove_10                                0x08017cdd   Thumb Code   110  action.o(i.remove_10)
+    remove_12                                0x08017d5d   Thumb Code    64  action.o(i.remove_12)
+    remove_stop                              0x08017da5   Thumb Code    16  action.o(i.remove_stop)
+    restore_para45_from_eeprom               0x08017dc1   Thumb Code   100  parameter.o(i.restore_para45_from_eeprom)
+    restore_para_from_eeprom                 0x08017e31   Thumb Code    50  parameter.o(i.restore_para_from_eeprom)
+    run_status                               0x08017e6d   Thumb Code  5766  system.o(i.run_status)
+    send_dsp1_command                        0x08019579   Thumb Code    42  step_motor_drv.o(i.send_dsp1_command)
+    send_dsp2_command                        0x080195a9   Thumb Code    42  step_motor_drv.o(i.send_dsp2_command)
+    send_dsp3_command                        0x080195d9   Thumb Code    42  step_motor_drv.o(i.send_dsp3_command)
+    send_dsp4_command                        0x08019609   Thumb Code    42  step_motor_drv.o(i.send_dsp4_command)
+    send_dsp_command                         0x08019639   Thumb Code   160  step_motor_drv.o(i.send_dsp_command)
+    send_multipule_program_data              0x08019701   Thumb Code    78  step_motor_drv.o(i.send_multipule_program_data)
+    send_stepmotor_end_drv                   0x0801975d   Thumb Code    34  step_motor_drv.o(i.send_stepmotor_end_drv)
+    send_stepmotor_up_drv                    0x08019789   Thumb Code    78  step_motor_drv.o(i.send_stepmotor_up_drv)
+    set_mainmotor_stop_angle                 0x080197e9   Thumb Code    60  action.o(i.set_mainmotor_stop_angle)
+    setout_status                            0x0801982d   Thumb Code   928  system.o(i.setout_status)
+    sewing_stop                              0x08019cc1   Thumb Code    16  action.o(i.sewing_stop)
+    shift_01                                 0x08019cd9   Thumb Code   118  action.o(i.shift_01)
+    shift_03                                 0x08019d69   Thumb Code    74  action.o(i.shift_03)
+    shift_04                                 0x08019dc5   Thumb Code   116  action.o(i.shift_04)
+    shift_06                                 0x08019e51   Thumb Code    72  action.o(i.shift_06)
+    shift_07                                 0x08019ea9   Thumb Code   114  action.o(i.shift_07)
+    shift_09                                 0x08019f35   Thumb Code    72  action.o(i.shift_09)
+    shift_10                                 0x08019f8d   Thumb Code   116  action.o(i.shift_10)
+    shift_12                                 0x0801a019   Thumb Code    74  action.o(i.shift_12)
+    shift_func                               0x0801a075   Thumb Code   330  action.o(i.shift_func)
+    single_back                              0x0801a1cd   Thumb Code     2  action.o(i.single_back)
+    single_continue_back                     0x0801a1d1   Thumb Code   332  action.o(i.single_continue_back)
+    single_continue_next                     0x0801a371   Thumb Code   482  action.o(i.single_continue_next)
+    single_end                               0x0801a5c1   Thumb Code     2  action.o(i.single_end)
+    single_move_func                         0x0801a5c5   Thumb Code  1366  action.o(i.single_move_func)
+    single_move_xy                           0x0801ab49   Thumb Code   270  action.o(i.single_move_xy)
+    single_next                              0x0801ac8d   Thumb Code     2  action.o(i.single_next)
+    single_start                             0x0801ac8f   Thumb Code     2  action.o(i.single_start)
+    single_stop                              0x0801ac91   Thumb Code    34  action.o(i.single_stop)
+    slack_status                             0x0801acc1   Thumb Code  1156  system.o(i.slack_status)
+    special_sewing                           0x0801b145   Thumb Code   808  action.o(i.special_sewing)
+    spi_fifo_recISR                          0x0801b4d5   Thumb Code  4124  app_spi.o(i.spi_fifo_recISR)
+    spi_flash_dma_rx_handler                 0x0801c535   Thumb Code    26  bsp_spiflash.o(i.spi_flash_dma_rx_handler)
+    spi_flash_dma_tx_handler                 0x0801c559   Thumb Code     2  bsp_spiflash.o(i.spi_flash_dma_tx_handler)
+    spi_read_wirte_lowlevel                  0x0801c55d   Thumb Code   118  step_motor_drv.o(i.spi_read_wirte_lowlevel)
+    stepper_check_error                      0x0801c5fd   Thumb Code   662  stepper_function.o(i.stepper_check_error)
+    stepper_check_motion_done                0x0801c8c5   Thumb Code   116  stepper_function.o(i.stepper_check_motion_done)
+    stepper_get_z_status                     0x0801c93d   Thumb Code   176  stepper_function.o(i.stepper_get_z_status)
+    stepper_go_origin                        0x0801c9f1   Thumb Code   408  stepper_function.o(i.stepper_go_origin)
+    stepper_go_origin_multiple               0x0801cb89   Thumb Code  2288  stepper_function.o(i.stepper_go_origin_multiple)
+    stepper_init                             0x0801d47d   Thumb Code   552  stepper_function.o(i.stepper_init)
+    stepper_motor_move                       0x0801d6bd   Thumb Code   352  stepper_function.o(i.stepper_motor_move)
+    stepper_refresh_para                     0x0801d81d   Thumb Code   228  stepper_function.o(i.stepper_refresh_para)
+    stretch_foot_in                          0x0801da05   Thumb Code    46  action.o(i.stretch_foot_in)
+    stretch_foot_out                         0x0801da45   Thumb Code    48  action.o(i.stretch_foot_out)
+    tail_sewing                              0x0801da85   Thumb Code   190  action.o(i.tail_sewing)
+    tra_com                                  0x0801db79   Thumb Code   110  communication.o(i.tra_com)
+    trim_action                              0x0801dbfd   Thumb Code    44  action.o(i.trim_action)
+    verify                                   0x0801dc29   Thumb Code    26  communication.o(i.verify)
+    verify_code                              0x0801dc45   Thumb Code    26  communication.o(i.verify_code)
+    version_check                            0x0801dc65   Thumb Code    96  step_motor_drv.o(i.version_check)
+    wind_status                              0x0801dcd1   Thumb Code   198  system.o(i.wind_status)
+    write_par                                0x0801ddb9   Thumb Code     2  parameter.o(i.write_par)
+    write_para_group                         0x0801ddbb   Thumb Code    20  parameter.o(i.write_para_group)
+    write_stepmotor_config_para              0x0801ddd1   Thumb Code   156  step_motor_drv.o(i.write_stepmotor_config_para)
+    write_stepmotor_curve                    0x0801de71   Thumb Code   222  step_motor_drv.o(i.write_stepmotor_curve)
+    x_quickmove                              0x0801df5d   Thumb Code    18  step_motor_drv.o(i.x_quickmove)
+    y_quickmove                              0x0801df75   Thumb Code    18  step_motor_drv.o(i.y_quickmove)
+    zoom_in_one_stitch                       0x0801df8d   Thumb Code   336  action.o(i.zoom_in_one_stitch)
+    zpl_process                              0x0801e105   Thumb Code   166  action.o(i.zpl_process)
+    zx_quickmove                             0x0801e1d5   Thumb Code    18  step_motor_drv.o(i.zx_quickmove)
+    isqrt_table                              0x0801e1ec   Data           0  IQtables.o(isqrt_table)
+    _fp_init                                 0x0801e9ed   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x0801e9f5   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x0801e9f5   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __I$use$fp                               0x0801e9f6   Number         0  usenofp.o(x$fpl$usenofp)
+    gpio_out_pin_config                      0x0801e9f8   Data          12  bsp_gpio.o(.constdata)
+    gpio_in_pin_config                       0x0801ea04   Data          12  bsp_gpio.o(.constdata)
+    SCUclock_config                          0x0801eb20   Data          20  bsp_scu.o(.constdata)
+    SPI_MASTER_0_MOSI                        0x0801eb34   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_MISO                        0x0801eb3c   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SCLKOUT                     0x0801eb44   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SCLKOUT_Config              0x0801eb4c   Data          20  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_0                        0x0801eb60   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_0_Config                 0x0801eb68   Data          20  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_1                        0x0801eb7c   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_2                        0x0801eb84   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_2_Config                 0x0801eb8c   Data          20  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_Config                      0x0801eba0   Data         140  spi_master_conf.o(.constdata)
+    CAN_NODE_0_gpio_out                      0x0801ec38   Data           8  can_node_conf.o(.constdata)
+    CAN_NODE_0_gpio_out_config               0x0801ec40   Data          12  can_node_conf.o(.constdata)
+    CAN_NODE_0_gpio_in                       0x0801ec4c   Data           8  can_node_conf.o(.constdata)
+    CAN_NODE_0_gpio_in_config                0x0801ec54   Data          12  can_node_conf.o(.constdata)
+    CAN_NODE_0_sr                            0x0801ec60   Data           4  can_node_conf.o(.constdata)
+    CAN_NODE_0_LMO_01_Config                 0x0801ec64   Data          12  can_node_conf.o(.constdata)
+    CAN_NODE_0                               0x0801ec70   Data         168  can_node_conf.o(.constdata)
+    X2_tab                                   0x0801ed18   Data         512  action.o(.constdata)
+    spdlimit_10080_345_tab                   0x0801ef18   Data         254  action.o(.constdata)
+    MoveTime_Limtit                          0x0801f016   Data          33  action.o(.constdata)
+    MoveStartAngle_10080_y                   0x0801f038   Data          66  action.o(.constdata)
+    MoveTime_Speed_10080_y                   0x0801f07a   Data          33  action.o(.constdata)
+    MoveStartAngle_10080_x                   0x0801f09c   Data          66  action.o(.constdata)
+    MoveTime_Speed_10080_x                   0x0801f0de   Data          33  action.o(.constdata)
+    mc_stepper_curve                         0x0801f100   Data       10000  stepper_function.o(.constdata)
+    sinTable_f32                             0x08021820   Data        2052  arm_common_tables.o(.constdata)
+    Region$$Table$$Base                      0x08022024   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08022044   Number         0  anon$$obj.o(Region$$Table)
     g_SpiFlashChipID                         0x20000000   Data           4  bsp_spiflash.o(.data)
     unit_multiplicator                       0x20000008   Data           4  bsp_delay.o(.data)
     slice3_config                            0x2000000c   Data           8  bsp_delay.o(.data)
@@ -5685,9 +5685,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000201
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000254c8, Max: 0x00040000, ABSOLUTE, COMPRESSED[0x00022964])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00025538, Max: 0x00040000, ABSOLUTE, COMPRESSED[0x000229d4])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00021fd4, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00022044, Max: 0x00040000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -6109,197 +6109,197 @@ Memory Map of the image
     0x0800b460   0x0800b460   0x00000358   Code   RO         3056    i.error_status      system.o
     0x0800b7b8   0x0800b7b8   0x00000114   Code   RO         2021    i.find_dead_center  action.o
     0x0800b8cc   0x0800b8cc   0x00000310   Code   RO         3057    i.finish_status     system.o
-    0x0800bbdc   0x0800bbdc   0x00000058   Code   RO         2022    i.foot_down         action.o
-    0x0800bc34   0x0800bc34   0x00000030   Code   RO         2023    i.foot_half_down    action.o
-    0x0800bc64   0x0800bc64   0x00000028   Code   RO         2024    i.foot_half_up      action.o
-    0x0800bc8c   0x0800bc8c   0x0000005c   Code   RO         2025    i.foot_up           action.o
-    0x0800bce8   0x0800bce8   0x00000058   Code   RO         2026    i.footer_both_down  action.o
-    0x0800bd40   0x0800bd40   0x00000058   Code   RO         2027    i.footer_both_up    action.o
-    0x0800bd98   0x0800bd98   0x00000130   Code   RO         2028    i.footer_procedure  action.o
-    0x0800bec8   0x0800bec8   0x000006b4   Code   RO         1924    i.function_1ms_hook  main.o
-    0x0800c57c   0x0800c57c   0x00000038   Code   RO         8017    i.g_SpiMode_CmdTip  motor_drive.lib(app_spi.o)
-    0x0800c5b4   0x0800c5b4   0x00000040   Code   RO         3372    i.get_motor_cfg     stepper_function.o
-    0x0800c5f4   0x0800c5f4   0x0000002e   Code   RO         3373    i.get_origin_state  stepper_function.o
-    0x0800c622   0x0800c622   0x00000092   Code   RO         3374    i.get_physical_num_and_channel  stepper_function.o
-    0x0800c6b4   0x0800c6b4   0x00000018   Code   RO         2807    i.get_x_distance    step_motor_drv.o
-    0x0800c6cc   0x0800c6cc   0x00000018   Code   RO         2808    i.get_y_distance    step_motor_drv.o
-    0x0800c6e4   0x0800c6e4   0x00000650   Code   RO         2029    i.go_beginpoint     action.o
-    0x0800cd34   0x0800cd34   0x00000134   Code   RO         2030    i.go_commandpoint   action.o
-    0x0800ce68   0x0800ce68   0x000000e8   Code   RO         2031    i.go_origin_allmotor  action.o
-    0x0800cf50   0x0800cf50   0x0000003c   Code   RO         2032    i.go_origin_x       action.o
-    0x0800cf8c   0x0800cf8c   0x00000258   Code   RO         2033    i.go_origin_xy      action.o
-    0x0800d1e4   0x0800d1e4   0x00000074   Code   RO         2034    i.go_origin_xy_both  action.o
-    0x0800d258   0x0800d258   0x0000003c   Code   RO         2035    i.go_origin_y       action.o
-    0x0800d294   0x0800d294   0x00000058   Code   RO         2036    i.go_origin_zx      action.o
-    0x0800d2ec   0x0800d2ec   0x000002e4   Code   RO         2037    i.go_setoutpoint    action.o
-    0x0800d5d0   0x0800d5d0   0x00000164   Code   RO         2038    i.go_startpoint     action.o
-    0x0800d734   0x0800d734   0x0000007e   Code   RO         7411    i.holding_axes      motor_drive.lib(mc_pmsm.o)
-    0x0800d7b2   0x0800d7b2   0x00000002   PAD
-    0x0800d7b4   0x0800d7b4   0x00000050   Code   RO         2576    i.init_comm         communication.o
-    0x0800d804   0x0800d804   0x00000054   Code   RO         3375    i.init_motor_handler_sturct  stepper_function.o
-    0x0800d858   0x0800d858   0x00001120   Code   RO         2680    i.init_var          initial.o
-    0x0800e978   0x0800e978   0x00000014   Code   RO         2681    i.initial           initial.o
-    0x0800e98c   0x0800e98c   0x0000003c   Code   RO         2039    i.initial_mainmotor  action.o
-    0x0800e9c8   0x0800e9c8   0x00000098   Code   RO         2040    i.inpress_down      action.o
-    0x0800ea60   0x0800ea60   0x000000a8   Code   RO         2041    i.inpress_to        action.o
-    0x0800eb08   0x0800eb08   0x000000a8   Code   RO         2043    i.inpress_up        action.o
-    0x0800ebb0   0x0800ebb0   0x00000468   Code   RO         3207    i.io_function_init  io_function.o
-    0x0800f018   0x0800f018   0x00000090   Code   RO         3208    i.io_get_logic_inout  io_function.o
-    0x0800f0a8   0x0800f0a8   0x000001a4   Code   RO         3209    i.io_get_physical_input  io_function.o
-    0x0800f24c   0x0800f24c   0x000001c4   Code   RO         3210    i.io_get_physical_output  io_function.o
-    0x0800f410   0x0800f410   0x0000015c   Code   RO         3212    i.io_sc0719_bsp_init  io_function.o
-    0x0800f56c   0x0800f56c   0x00000150   Code   RO         3213    i.io_sc0720_bsp_init  io_function.o
-    0x0800f6bc   0x0800f6bc   0x00000094   Code   RO         3214    i.io_set_logic_output  io_function.o
-    0x0800f750   0x0800f750   0x00000248   Code   RO         3215    i.io_set_physical_output  io_function.o
-    0x0800f998   0x0800f998   0x00000060   Code   RO         3216    i.io_toggle_logic_output  io_function.o
-    0x0800f9f8   0x0800f9f8   0x000001f4   Code   RO         3217    i.io_toggle_physical_output  io_function.o
-    0x0800fbec   0x0800fbec   0x00000048   Code   RO         3218    i.io_translate_logic_to_physical  io_function.o
-    0x0800fc34   0x0800fc34   0x0000008c   Code   RO         7934    i.ipark_calc        motor_drive.lib(app_svpwm.o)
-    0x0800fcc0   0x0800fcc0   0x000000e4   Code   RO         2809    i.jump_to_begin     step_motor_drv.o
-    0x0800fda4   0x0800fda4   0x000000e8   Code   RO         2044    i.keep_running_for_dead_center  action.o
-    0x0800fe8c   0x0800fe8c   0x00000038   Code   RO         7412    i.mPmsm1ParaActive  motor_drive.lib(mc_pmsm.o)
-    0x0800fec4   0x0800fec4   0x0000043a   Code   RO         7413    i.m_start           motor_drive.lib(mc_pmsm.o)
-    0x080102fe   0x080102fe   0x00000002   PAD
-    0x08010300   0x08010300   0x000001b8   Code   RO         1925    i.main              main.o
-    0x080104b8   0x080104b8   0x0000000e   Code   RO         3678    i.min               xmc_can.o
-    0x080104c6   0x080104c6   0x00000002   PAD
-    0x080104c8   0x080104c8   0x000006b4   Code   RO         7415    i.motor1_control    motor_drive.lib(mc_pmsm.o)
-    0x08010b7c   0x08010b7c   0x00000080   Code   RO         2045    i.move_back         action.o
-    0x08010bfc   0x08010bfc   0x000000f4   Code   RO         2046    i.move_continue_back  action.o
-    0x08010cf0   0x08010cf0   0x000000f0   Code   RO         2047    i.move_continue_next  action.o
-    0x08010de0   0x08010de0   0x00000068   Code   RO         2048    i.move_next         action.o
-    0x08010e48   0x08010e48   0x00000064   Code   RO         2049    i.move_startpoint   action.o
-    0x08010eac   0x08010eac   0x00000328   Code   RO         2050    i.move_xy           action.o
-    0x080111d4   0x080111d4   0x00000020   Code   RO         2811    i.movestep_x        step_motor_drv.o
-    0x080111f4   0x080111f4   0x00000020   Code   RO         2812    i.movestep_y        step_motor_drv.o
-    0x08011214   0x08011214   0x0000001c   Code   RO         2814    i.movestep_zx       step_motor_drv.o
-    0x08011230   0x08011230   0x0000002c   Code   RO         2815    i.multipule_program_beginning  step_motor_drv.o
-    0x0801125c   0x0801125c   0x00000028   Code   RO         2816    i.multipule_program_end  step_motor_drv.o
-    0x08011284   0x08011284   0x00000014   Code   RO         2724    i.mymemcpy          parameter.o
-    0x08011298   0x08011298   0x00000010   Code   RO         2725    i.mymemset          parameter.o
-    0x080112a8   0x080112a8   0x00000070   Code   RO         2051    i.needle_down       action.o
-    0x08011318   0x08011318   0x00000044   Code   RO         2817    i.nop_move_emergency  step_motor_drv.o
-    0x0801135c   0x0801135c   0x00000090   Code   RO         7935    i.park_calc         motor_drive.lib(app_svpwm.o)
-    0x080113ec   0x080113ec   0x000001f0   Code   RO         2052    i.pause_stop        action.o
-    0x080115dc   0x080115dc   0x0000057c   Code   RO         7416    i.pmsm1_100us_task  motor_drive.lib(mc_pmsm.o)
-    0x08011b58   0x08011b58   0x00000002   Code   RO         3058    i.poweroff_status   system.o
-    0x08011b5a   0x08011b5a   0x00000002   PAD
-    0x08011b5c   0x08011b5c   0x000003c0   Code   RO         3059    i.pre_running       system.o
-    0x08011f1c   0x08011f1c   0x000005d8   Code   RO         3060    i.preedit_status    system.o
-    0x080124f4   0x080124f4   0x00000190   Code   RO         3061    i.prewind_status    system.o
-    0x08012684   0x08012684   0x000003cc   Code   RO         2053    i.process_data      action.o
-    0x08012a50   0x08012a50   0x0000034c   Code   RO         2054    i.process_making_pen_signal  action.o
-    0x08012d9c   0x08012d9c   0x000003b4   Code   RO         2055    i.process_nop_move_pause  action.o
-    0x08013150   0x08013150   0x000036ac   Code   RO         2577    i.protocol          communication.o
-    0x080167fc   0x080167fc   0x0000002c   Code   RO         2818    i.read_multipule_program_status  step_motor_drv.o
-    0x08016828   0x08016828   0x00000006   Code   RO         2726    i.read_par          parameter.o
-    0x0801682e   0x0801682e   0x00000014   Code   RO         2727    i.read_para_group   parameter.o
-    0x08016842   0x08016842   0x00000002   PAD
-    0x08016844   0x08016844   0x00000090   Code   RO         2819    i.read_stepmotor_config_para  step_motor_drv.o
-    0x080168d4   0x080168d4   0x00000054   Code   RO         2820    i.read_stepmotor_curve_crc  step_motor_drv.o
-    0x08016928   0x08016928   0x00000058   Code   RO         2821    i.read_stepmotor_up_drv  step_motor_drv.o
-    0x08016980   0x08016980   0x00001018   Code   RO         3062    i.ready_status      system.o
-    0x08017998   0x08017998   0x0000008c   Code   RO         2578    i.rec_com           communication.o
-    0x08017a24   0x08017a24   0x00000080   Code   RO         2056    i.remove_01         action.o
-    0x08017aa4   0x08017aa4   0x0000004c   Code   RO         2057    i.remove_03         action.o
-    0x08017af0   0x08017af0   0x00000080   Code   RO         2058    i.remove_04         action.o
-    0x08017b70   0x08017b70   0x00000048   Code   RO         2059    i.remove_06         action.o
-    0x08017bb8   0x08017bb8   0x00000080   Code   RO         2060    i.remove_07         action.o
-    0x08017c38   0x08017c38   0x00000048   Code   RO         2061    i.remove_09         action.o
-    0x08017c80   0x08017c80   0x00000080   Code   RO         2062    i.remove_10         action.o
-    0x08017d00   0x08017d00   0x00000048   Code   RO         2063    i.remove_12         action.o
-    0x08017d48   0x08017d48   0x0000001c   Code   RO         2064    i.remove_stop       action.o
-    0x08017d64   0x08017d64   0x00000070   Code   RO         2728    i.restore_para45_from_eeprom  parameter.o
-    0x08017dd4   0x08017dd4   0x0000003c   Code   RO         2729    i.restore_para_from_eeprom  parameter.o
-    0x08017e10   0x08017e10   0x000016f8   Code   RO         3063    i.run_status        system.o
-    0x08019508   0x08019508   0x00000030   Code   RO         2822    i.send_dsp1_command  step_motor_drv.o
-    0x08019538   0x08019538   0x00000030   Code   RO         2823    i.send_dsp2_command  step_motor_drv.o
-    0x08019568   0x08019568   0x00000030   Code   RO         2824    i.send_dsp3_command  step_motor_drv.o
-    0x08019598   0x08019598   0x00000030   Code   RO         2825    i.send_dsp4_command  step_motor_drv.o
-    0x080195c8   0x080195c8   0x000000c8   Code   RO         2826    i.send_dsp_command  step_motor_drv.o
-    0x08019690   0x08019690   0x0000005c   Code   RO         2827    i.send_multipule_program_data  step_motor_drv.o
-    0x080196ec   0x080196ec   0x0000002c   Code   RO         2828    i.send_stepmotor_end_drv  step_motor_drv.o
-    0x08019718   0x08019718   0x00000060   Code   RO         2829    i.send_stepmotor_up_drv  step_motor_drv.o
-    0x08019778   0x08019778   0x00000044   Code   RO         2065    i.set_mainmotor_stop_angle  action.o
-    0x080197bc   0x080197bc   0x00000494   Code   RO         3064    i.setout_status     system.o
-    0x08019c50   0x08019c50   0x00000018   Code   RO         2066    i.sewing_stop       action.o
-    0x08019c68   0x08019c68   0x00000090   Code   RO         2067    i.shift_01          action.o
-    0x08019cf8   0x08019cf8   0x0000005c   Code   RO         2068    i.shift_03          action.o
-    0x08019d54   0x08019d54   0x0000008c   Code   RO         2069    i.shift_04          action.o
-    0x08019de0   0x08019de0   0x00000058   Code   RO         2070    i.shift_06          action.o
-    0x08019e38   0x08019e38   0x0000008c   Code   RO         2071    i.shift_07          action.o
-    0x08019ec4   0x08019ec4   0x00000058   Code   RO         2072    i.shift_09          action.o
-    0x08019f1c   0x08019f1c   0x0000008c   Code   RO         2073    i.shift_10          action.o
-    0x08019fa8   0x08019fa8   0x0000005c   Code   RO         2074    i.shift_12          action.o
-    0x0801a004   0x0801a004   0x00000158   Code   RO         2075    i.shift_func        action.o
-    0x0801a15c   0x0801a15c   0x00000002   Code   RO         2076    i.single_back       action.o
-    0x0801a15e   0x0801a15e   0x00000002   PAD
-    0x0801a160   0x0801a160   0x000001a0   Code   RO         2077    i.single_continue_back  action.o
-    0x0801a300   0x0801a300   0x00000250   Code   RO         2078    i.single_continue_next  action.o
-    0x0801a550   0x0801a550   0x00000002   Code   RO         2079    i.single_end        action.o
-    0x0801a552   0x0801a552   0x00000002   PAD
-    0x0801a554   0x0801a554   0x00000584   Code   RO         2080    i.single_move_func  action.o
-    0x0801aad8   0x0801aad8   0x00000144   Code   RO         2081    i.single_move_xy    action.o
-    0x0801ac1c   0x0801ac1c   0x00000002   Code   RO         2082    i.single_next       action.o
-    0x0801ac1e   0x0801ac1e   0x00000002   Code   RO         2083    i.single_start      action.o
-    0x0801ac20   0x0801ac20   0x00000030   Code   RO         2084    i.single_stop       action.o
-    0x0801ac50   0x0801ac50   0x00000484   Code   RO         3065    i.slack_status      system.o
-    0x0801b0d4   0x0801b0d4   0x00000390   Code   RO         2085    i.special_sewing    action.o
-    0x0801b464   0x0801b464   0x00001060   Code   RO         8018    i.spi_fifo_recISR   motor_drive.lib(app_spi.o)
-    0x0801c4c4   0x0801c4c4   0x00000024   Code   RO         1052    i.spi_flash_dma_rx_handler  bsp_spiflash.o
-    0x0801c4e8   0x0801c4e8   0x00000002   Code   RO         1053    i.spi_flash_dma_tx_handler  bsp_spiflash.o
-    0x0801c4ea   0x0801c4ea   0x00000002   PAD
-    0x0801c4ec   0x0801c4ec   0x000000a0   Code   RO         2831    i.spi_read_wirte_lowlevel  step_motor_drv.o
-    0x0801c58c   0x0801c58c   0x000002c8   Code   RO         3376    i.stepper_check_error  stepper_function.o
-    0x0801c854   0x0801c854   0x00000078   Code   RO         3377    i.stepper_check_motion_done  stepper_function.o
-    0x0801c8cc   0x0801c8cc   0x000000b4   Code   RO         3378    i.stepper_get_z_status  stepper_function.o
-    0x0801c980   0x0801c980   0x00000198   Code   RO         3379    i.stepper_go_origin  stepper_function.o
-    0x0801cb18   0x0801cb18   0x000008f4   Code   RO         3380    i.stepper_go_origin_multiple  stepper_function.o
-    0x0801d40c   0x0801d40c   0x00000240   Code   RO         3381    i.stepper_init      stepper_function.o
-    0x0801d64c   0x0801d64c   0x00000160   Code   RO         3382    i.stepper_motor_move  stepper_function.o
-    0x0801d7ac   0x0801d7ac   0x000000f8   Code   RO         3384    i.stepper_refresh_para  stepper_function.o
-    0x0801d8a4   0x0801d8a4   0x000000f0   Code   RO         3385    i.stepper_setup_motor  stepper_function.o
-    0x0801d994   0x0801d994   0x00000040   Code   RO         2086    i.stretch_foot_in   action.o
-    0x0801d9d4   0x0801d9d4   0x00000040   Code   RO         2087    i.stretch_foot_out  action.o
-    0x0801da14   0x0801da14   0x000000f4   Code   RO         2088    i.tail_sewing       action.o
-    0x0801db08   0x0801db08   0x00000084   Code   RO         2579    i.tra_com           communication.o
-    0x0801db8c   0x0801db8c   0x0000002c   Code   RO         2089    i.trim_action       action.o
-    0x0801dbb8   0x0801dbb8   0x0000001a   Code   RO         2580    i.verify            communication.o
-    0x0801dbd2   0x0801dbd2   0x00000002   PAD
-    0x0801dbd4   0x0801dbd4   0x00000020   Code   RO         2581    i.verify_code       communication.o
-    0x0801dbf4   0x0801dbf4   0x0000006c   Code   RO         2832    i.version_check     step_motor_drv.o
-    0x0801dc60   0x0801dc60   0x000000e8   Code   RO         3066    i.wind_status       system.o
-    0x0801dd48   0x0801dd48   0x00000002   Code   RO         2731    i.write_par         parameter.o
-    0x0801dd4a   0x0801dd4a   0x00000014   Code   RO         2732    i.write_para_group  parameter.o
-    0x0801dd5e   0x0801dd5e   0x00000002   PAD
-    0x0801dd60   0x0801dd60   0x000000a0   Code   RO         2833    i.write_stepmotor_config_para  step_motor_drv.o
-    0x0801de00   0x0801de00   0x000000ec   Code   RO         2834    i.write_stepmotor_curve  step_motor_drv.o
-    0x0801deec   0x0801deec   0x00000018   Code   RO         2835    i.x_quickmove       step_motor_drv.o
-    0x0801df04   0x0801df04   0x00000018   Code   RO         2836    i.y_quickmove       step_motor_drv.o
-    0x0801df1c   0x0801df1c   0x00000178   Code   RO         2090    i.zoom_in_one_stitch  action.o
-    0x0801e094   0x0801e094   0x000000d0   Code   RO         2091    i.zpl_process       action.o
-    0x0801e164   0x0801e164   0x00000018   Code   RO         2837    i.zx_quickmove      step_motor_drv.o
-    0x0801e17c   0x0801e17c   0x00000800   Code   RO         9031    isqrt_table         motor_drive.lib(IQtables.o)
-    0x0801e97c   0x0801e97c   0x0000000a   Code   RO         9209    x$fpl$fpinit        g_wm.l(fpinit.o)
-    0x0801e986   0x0801e986   0x00000000   Code   RO         9094    x$fpl$usenofp       g_wm.l(usenofp.o)
-    0x0801e986   0x0801e986   0x00000002   PAD
-    0x0801e988   0x0801e988   0x00000018   Data   RO          651    .constdata          bsp_gpio.o
-    0x0801e9a0   0x0801e9a0   0x00000030   Data   RO          789    .constdata          bsp_rs485.o
-    0x0801e9d0   0x0801e9d0   0x0000006c   Data   RO          948    .constdata          bsp_spibus.o
-    0x0801ea3c   0x0801ea3c   0x00000074   Data   RO         1055    .constdata          bsp_spiflash.o
-    0x0801eab0   0x0801eab0   0x00000014   Data   RO         1202    .constdata          bsp_scu.o
-    0x0801eac4   0x0801eac4   0x000000f8   Data   RO         1457    .constdata          spi_master_conf.o
-    0x0801ebbc   0x0801ebbc   0x0000000c   Data   RO         1504    .constdata          bsp_watch.o
-    0x0801ebc8   0x0801ebc8   0x000000e0   Data   RO         1681    .constdata          can_node_conf.o
-    0x0801eca8   0x0801eca8   0x000003e7   Data   RO         2092    .constdata          action.o
-    0x0801f08f   0x0801f08f   0x00000001   PAD
-    0x0801f090   0x0801f090   0x00002710   Data   RO         3387    .constdata          stepper_function.o
-    0x080217a0   0x080217a0   0x00000010   Data   RO         5592    .constdata          xmc_vadc.o
-    0x080217b0   0x080217b0   0x00000804   Data   RO         9004    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
-    0x08021fb4   0x08021fb4   0x00000020   Data   RO         9271    Region$$Table       anon$$obj.o
+    0x0800bbdc   0x0800bbdc   0x00000060   Code   RO         2022    i.foot_down         action.o
+    0x0800bc3c   0x0800bc3c   0x00000030   Code   RO         2023    i.foot_half_down    action.o
+    0x0800bc6c   0x0800bc6c   0x00000028   Code   RO         2024    i.foot_half_up      action.o
+    0x0800bc94   0x0800bc94   0x00000068   Code   RO         2025    i.foot_up           action.o
+    0x0800bcfc   0x0800bcfc   0x00000058   Code   RO         2026    i.footer_both_down  action.o
+    0x0800bd54   0x0800bd54   0x00000058   Code   RO         2027    i.footer_both_up    action.o
+    0x0800bdac   0x0800bdac   0x00000130   Code   RO         2028    i.footer_procedure  action.o
+    0x0800bedc   0x0800bedc   0x000006e8   Code   RO         1924    i.function_1ms_hook  main.o
+    0x0800c5c4   0x0800c5c4   0x00000038   Code   RO         8017    i.g_SpiMode_CmdTip  motor_drive.lib(app_spi.o)
+    0x0800c5fc   0x0800c5fc   0x00000040   Code   RO         3372    i.get_motor_cfg     stepper_function.o
+    0x0800c63c   0x0800c63c   0x0000002e   Code   RO         3373    i.get_origin_state  stepper_function.o
+    0x0800c66a   0x0800c66a   0x00000092   Code   RO         3374    i.get_physical_num_and_channel  stepper_function.o
+    0x0800c6fc   0x0800c6fc   0x00000018   Code   RO         2807    i.get_x_distance    step_motor_drv.o
+    0x0800c714   0x0800c714   0x00000018   Code   RO         2808    i.get_y_distance    step_motor_drv.o
+    0x0800c72c   0x0800c72c   0x00000650   Code   RO         2029    i.go_beginpoint     action.o
+    0x0800cd7c   0x0800cd7c   0x00000134   Code   RO         2030    i.go_commandpoint   action.o
+    0x0800ceb0   0x0800ceb0   0x000000e8   Code   RO         2031    i.go_origin_allmotor  action.o
+    0x0800cf98   0x0800cf98   0x0000003c   Code   RO         2032    i.go_origin_x       action.o
+    0x0800cfd4   0x0800cfd4   0x00000258   Code   RO         2033    i.go_origin_xy      action.o
+    0x0800d22c   0x0800d22c   0x00000074   Code   RO         2034    i.go_origin_xy_both  action.o
+    0x0800d2a0   0x0800d2a0   0x0000003c   Code   RO         2035    i.go_origin_y       action.o
+    0x0800d2dc   0x0800d2dc   0x00000058   Code   RO         2036    i.go_origin_zx      action.o
+    0x0800d334   0x0800d334   0x000002e4   Code   RO         2037    i.go_setoutpoint    action.o
+    0x0800d618   0x0800d618   0x00000164   Code   RO         2038    i.go_startpoint     action.o
+    0x0800d77c   0x0800d77c   0x0000007e   Code   RO         7411    i.holding_axes      motor_drive.lib(mc_pmsm.o)
+    0x0800d7fa   0x0800d7fa   0x00000002   PAD
+    0x0800d7fc   0x0800d7fc   0x00000050   Code   RO         2576    i.init_comm         communication.o
+    0x0800d84c   0x0800d84c   0x00000054   Code   RO         3375    i.init_motor_handler_sturct  stepper_function.o
+    0x0800d8a0   0x0800d8a0   0x00001120   Code   RO         2680    i.init_var          initial.o
+    0x0800e9c0   0x0800e9c0   0x00000014   Code   RO         2681    i.initial           initial.o
+    0x0800e9d4   0x0800e9d4   0x0000003c   Code   RO         2039    i.initial_mainmotor  action.o
+    0x0800ea10   0x0800ea10   0x00000098   Code   RO         2040    i.inpress_down      action.o
+    0x0800eaa8   0x0800eaa8   0x000000a8   Code   RO         2041    i.inpress_to        action.o
+    0x0800eb50   0x0800eb50   0x000000a8   Code   RO         2043    i.inpress_up        action.o
+    0x0800ebf8   0x0800ebf8   0x0000047c   Code   RO         3207    i.io_function_init  io_function.o
+    0x0800f074   0x0800f074   0x00000090   Code   RO         3208    i.io_get_logic_inout  io_function.o
+    0x0800f104   0x0800f104   0x000001a4   Code   RO         3209    i.io_get_physical_input  io_function.o
+    0x0800f2a8   0x0800f2a8   0x000001c4   Code   RO         3210    i.io_get_physical_output  io_function.o
+    0x0800f46c   0x0800f46c   0x0000015c   Code   RO         3212    i.io_sc0719_bsp_init  io_function.o
+    0x0800f5c8   0x0800f5c8   0x00000150   Code   RO         3213    i.io_sc0720_bsp_init  io_function.o
+    0x0800f718   0x0800f718   0x00000094   Code   RO         3214    i.io_set_logic_output  io_function.o
+    0x0800f7ac   0x0800f7ac   0x00000248   Code   RO         3215    i.io_set_physical_output  io_function.o
+    0x0800f9f4   0x0800f9f4   0x00000060   Code   RO         3216    i.io_toggle_logic_output  io_function.o
+    0x0800fa54   0x0800fa54   0x000001f4   Code   RO         3217    i.io_toggle_physical_output  io_function.o
+    0x0800fc48   0x0800fc48   0x00000048   Code   RO         3218    i.io_translate_logic_to_physical  io_function.o
+    0x0800fc90   0x0800fc90   0x0000008c   Code   RO         7934    i.ipark_calc        motor_drive.lib(app_svpwm.o)
+    0x0800fd1c   0x0800fd1c   0x000000e4   Code   RO         2809    i.jump_to_begin     step_motor_drv.o
+    0x0800fe00   0x0800fe00   0x000000e8   Code   RO         2044    i.keep_running_for_dead_center  action.o
+    0x0800fee8   0x0800fee8   0x00000038   Code   RO         7412    i.mPmsm1ParaActive  motor_drive.lib(mc_pmsm.o)
+    0x0800ff20   0x0800ff20   0x0000043a   Code   RO         7413    i.m_start           motor_drive.lib(mc_pmsm.o)
+    0x0801035a   0x0801035a   0x00000002   PAD
+    0x0801035c   0x0801035c   0x000001b8   Code   RO         1925    i.main              main.o
+    0x08010514   0x08010514   0x0000000e   Code   RO         3678    i.min               xmc_can.o
+    0x08010522   0x08010522   0x00000002   PAD
+    0x08010524   0x08010524   0x000006b4   Code   RO         7415    i.motor1_control    motor_drive.lib(mc_pmsm.o)
+    0x08010bd8   0x08010bd8   0x00000080   Code   RO         2045    i.move_back         action.o
+    0x08010c58   0x08010c58   0x000000f4   Code   RO         2046    i.move_continue_back  action.o
+    0x08010d4c   0x08010d4c   0x000000f0   Code   RO         2047    i.move_continue_next  action.o
+    0x08010e3c   0x08010e3c   0x00000068   Code   RO         2048    i.move_next         action.o
+    0x08010ea4   0x08010ea4   0x00000064   Code   RO         2049    i.move_startpoint   action.o
+    0x08010f08   0x08010f08   0x00000328   Code   RO         2050    i.move_xy           action.o
+    0x08011230   0x08011230   0x00000020   Code   RO         2811    i.movestep_x        step_motor_drv.o
+    0x08011250   0x08011250   0x00000020   Code   RO         2812    i.movestep_y        step_motor_drv.o
+    0x08011270   0x08011270   0x0000001c   Code   RO         2814    i.movestep_zx       step_motor_drv.o
+    0x0801128c   0x0801128c   0x0000002c   Code   RO         2815    i.multipule_program_beginning  step_motor_drv.o
+    0x080112b8   0x080112b8   0x00000028   Code   RO         2816    i.multipule_program_end  step_motor_drv.o
+    0x080112e0   0x080112e0   0x00000014   Code   RO         2724    i.mymemcpy          parameter.o
+    0x080112f4   0x080112f4   0x00000010   Code   RO         2725    i.mymemset          parameter.o
+    0x08011304   0x08011304   0x00000070   Code   RO         2051    i.needle_down       action.o
+    0x08011374   0x08011374   0x00000044   Code   RO         2817    i.nop_move_emergency  step_motor_drv.o
+    0x080113b8   0x080113b8   0x00000090   Code   RO         7935    i.park_calc         motor_drive.lib(app_svpwm.o)
+    0x08011448   0x08011448   0x000001f0   Code   RO         2052    i.pause_stop        action.o
+    0x08011638   0x08011638   0x0000057c   Code   RO         7416    i.pmsm1_100us_task  motor_drive.lib(mc_pmsm.o)
+    0x08011bb4   0x08011bb4   0x00000002   Code   RO         3058    i.poweroff_status   system.o
+    0x08011bb6   0x08011bb6   0x00000002   PAD
+    0x08011bb8   0x08011bb8   0x000003c0   Code   RO         3059    i.pre_running       system.o
+    0x08011f78   0x08011f78   0x000005d8   Code   RO         3060    i.preedit_status    system.o
+    0x08012550   0x08012550   0x00000190   Code   RO         3061    i.prewind_status    system.o
+    0x080126e0   0x080126e0   0x000003cc   Code   RO         2053    i.process_data      action.o
+    0x08012aac   0x08012aac   0x0000034c   Code   RO         2054    i.process_making_pen_signal  action.o
+    0x08012df8   0x08012df8   0x000003b4   Code   RO         2055    i.process_nop_move_pause  action.o
+    0x080131ac   0x080131ac   0x000036ac   Code   RO         2577    i.protocol          communication.o
+    0x08016858   0x08016858   0x0000002c   Code   RO         2818    i.read_multipule_program_status  step_motor_drv.o
+    0x08016884   0x08016884   0x00000006   Code   RO         2726    i.read_par          parameter.o
+    0x0801688a   0x0801688a   0x00000014   Code   RO         2727    i.read_para_group   parameter.o
+    0x0801689e   0x0801689e   0x00000002   PAD
+    0x080168a0   0x080168a0   0x00000090   Code   RO         2819    i.read_stepmotor_config_para  step_motor_drv.o
+    0x08016930   0x08016930   0x00000054   Code   RO         2820    i.read_stepmotor_curve_crc  step_motor_drv.o
+    0x08016984   0x08016984   0x00000058   Code   RO         2821    i.read_stepmotor_up_drv  step_motor_drv.o
+    0x080169dc   0x080169dc   0x00001018   Code   RO         3062    i.ready_status      system.o
+    0x080179f4   0x080179f4   0x0000008c   Code   RO         2578    i.rec_com           communication.o
+    0x08017a80   0x08017a80   0x00000080   Code   RO         2056    i.remove_01         action.o
+    0x08017b00   0x08017b00   0x0000004c   Code   RO         2057    i.remove_03         action.o
+    0x08017b4c   0x08017b4c   0x00000080   Code   RO         2058    i.remove_04         action.o
+    0x08017bcc   0x08017bcc   0x00000048   Code   RO         2059    i.remove_06         action.o
+    0x08017c14   0x08017c14   0x00000080   Code   RO         2060    i.remove_07         action.o
+    0x08017c94   0x08017c94   0x00000048   Code   RO         2061    i.remove_09         action.o
+    0x08017cdc   0x08017cdc   0x00000080   Code   RO         2062    i.remove_10         action.o
+    0x08017d5c   0x08017d5c   0x00000048   Code   RO         2063    i.remove_12         action.o
+    0x08017da4   0x08017da4   0x0000001c   Code   RO         2064    i.remove_stop       action.o
+    0x08017dc0   0x08017dc0   0x00000070   Code   RO         2728    i.restore_para45_from_eeprom  parameter.o
+    0x08017e30   0x08017e30   0x0000003c   Code   RO         2729    i.restore_para_from_eeprom  parameter.o
+    0x08017e6c   0x08017e6c   0x0000170c   Code   RO         3063    i.run_status        system.o
+    0x08019578   0x08019578   0x00000030   Code   RO         2822    i.send_dsp1_command  step_motor_drv.o
+    0x080195a8   0x080195a8   0x00000030   Code   RO         2823    i.send_dsp2_command  step_motor_drv.o
+    0x080195d8   0x080195d8   0x00000030   Code   RO         2824    i.send_dsp3_command  step_motor_drv.o
+    0x08019608   0x08019608   0x00000030   Code   RO         2825    i.send_dsp4_command  step_motor_drv.o
+    0x08019638   0x08019638   0x000000c8   Code   RO         2826    i.send_dsp_command  step_motor_drv.o
+    0x08019700   0x08019700   0x0000005c   Code   RO         2827    i.send_multipule_program_data  step_motor_drv.o
+    0x0801975c   0x0801975c   0x0000002c   Code   RO         2828    i.send_stepmotor_end_drv  step_motor_drv.o
+    0x08019788   0x08019788   0x00000060   Code   RO         2829    i.send_stepmotor_up_drv  step_motor_drv.o
+    0x080197e8   0x080197e8   0x00000044   Code   RO         2065    i.set_mainmotor_stop_angle  action.o
+    0x0801982c   0x0801982c   0x00000494   Code   RO         3064    i.setout_status     system.o
+    0x08019cc0   0x08019cc0   0x00000018   Code   RO         2066    i.sewing_stop       action.o
+    0x08019cd8   0x08019cd8   0x00000090   Code   RO         2067    i.shift_01          action.o
+    0x08019d68   0x08019d68   0x0000005c   Code   RO         2068    i.shift_03          action.o
+    0x08019dc4   0x08019dc4   0x0000008c   Code   RO         2069    i.shift_04          action.o
+    0x08019e50   0x08019e50   0x00000058   Code   RO         2070    i.shift_06          action.o
+    0x08019ea8   0x08019ea8   0x0000008c   Code   RO         2071    i.shift_07          action.o
+    0x08019f34   0x08019f34   0x00000058   Code   RO         2072    i.shift_09          action.o
+    0x08019f8c   0x08019f8c   0x0000008c   Code   RO         2073    i.shift_10          action.o
+    0x0801a018   0x0801a018   0x0000005c   Code   RO         2074    i.shift_12          action.o
+    0x0801a074   0x0801a074   0x00000158   Code   RO         2075    i.shift_func        action.o
+    0x0801a1cc   0x0801a1cc   0x00000002   Code   RO         2076    i.single_back       action.o
+    0x0801a1ce   0x0801a1ce   0x00000002   PAD
+    0x0801a1d0   0x0801a1d0   0x000001a0   Code   RO         2077    i.single_continue_back  action.o
+    0x0801a370   0x0801a370   0x00000250   Code   RO         2078    i.single_continue_next  action.o
+    0x0801a5c0   0x0801a5c0   0x00000002   Code   RO         2079    i.single_end        action.o
+    0x0801a5c2   0x0801a5c2   0x00000002   PAD
+    0x0801a5c4   0x0801a5c4   0x00000584   Code   RO         2080    i.single_move_func  action.o
+    0x0801ab48   0x0801ab48   0x00000144   Code   RO         2081    i.single_move_xy    action.o
+    0x0801ac8c   0x0801ac8c   0x00000002   Code   RO         2082    i.single_next       action.o
+    0x0801ac8e   0x0801ac8e   0x00000002   Code   RO         2083    i.single_start      action.o
+    0x0801ac90   0x0801ac90   0x00000030   Code   RO         2084    i.single_stop       action.o
+    0x0801acc0   0x0801acc0   0x00000484   Code   RO         3065    i.slack_status      system.o
+    0x0801b144   0x0801b144   0x00000390   Code   RO         2085    i.special_sewing    action.o
+    0x0801b4d4   0x0801b4d4   0x00001060   Code   RO         8018    i.spi_fifo_recISR   motor_drive.lib(app_spi.o)
+    0x0801c534   0x0801c534   0x00000024   Code   RO         1052    i.spi_flash_dma_rx_handler  bsp_spiflash.o
+    0x0801c558   0x0801c558   0x00000002   Code   RO         1053    i.spi_flash_dma_tx_handler  bsp_spiflash.o
+    0x0801c55a   0x0801c55a   0x00000002   PAD
+    0x0801c55c   0x0801c55c   0x000000a0   Code   RO         2831    i.spi_read_wirte_lowlevel  step_motor_drv.o
+    0x0801c5fc   0x0801c5fc   0x000002c8   Code   RO         3376    i.stepper_check_error  stepper_function.o
+    0x0801c8c4   0x0801c8c4   0x00000078   Code   RO         3377    i.stepper_check_motion_done  stepper_function.o
+    0x0801c93c   0x0801c93c   0x000000b4   Code   RO         3378    i.stepper_get_z_status  stepper_function.o
+    0x0801c9f0   0x0801c9f0   0x00000198   Code   RO         3379    i.stepper_go_origin  stepper_function.o
+    0x0801cb88   0x0801cb88   0x000008f4   Code   RO         3380    i.stepper_go_origin_multiple  stepper_function.o
+    0x0801d47c   0x0801d47c   0x00000240   Code   RO         3381    i.stepper_init      stepper_function.o
+    0x0801d6bc   0x0801d6bc   0x00000160   Code   RO         3382    i.stepper_motor_move  stepper_function.o
+    0x0801d81c   0x0801d81c   0x000000f8   Code   RO         3384    i.stepper_refresh_para  stepper_function.o
+    0x0801d914   0x0801d914   0x000000f0   Code   RO         3385    i.stepper_setup_motor  stepper_function.o
+    0x0801da04   0x0801da04   0x00000040   Code   RO         2086    i.stretch_foot_in   action.o
+    0x0801da44   0x0801da44   0x00000040   Code   RO         2087    i.stretch_foot_out  action.o
+    0x0801da84   0x0801da84   0x000000f4   Code   RO         2088    i.tail_sewing       action.o
+    0x0801db78   0x0801db78   0x00000084   Code   RO         2579    i.tra_com           communication.o
+    0x0801dbfc   0x0801dbfc   0x0000002c   Code   RO         2089    i.trim_action       action.o
+    0x0801dc28   0x0801dc28   0x0000001a   Code   RO         2580    i.verify            communication.o
+    0x0801dc42   0x0801dc42   0x00000002   PAD
+    0x0801dc44   0x0801dc44   0x00000020   Code   RO         2581    i.verify_code       communication.o
+    0x0801dc64   0x0801dc64   0x0000006c   Code   RO         2832    i.version_check     step_motor_drv.o
+    0x0801dcd0   0x0801dcd0   0x000000e8   Code   RO         3066    i.wind_status       system.o
+    0x0801ddb8   0x0801ddb8   0x00000002   Code   RO         2731    i.write_par         parameter.o
+    0x0801ddba   0x0801ddba   0x00000014   Code   RO         2732    i.write_para_group  parameter.o
+    0x0801ddce   0x0801ddce   0x00000002   PAD
+    0x0801ddd0   0x0801ddd0   0x000000a0   Code   RO         2833    i.write_stepmotor_config_para  step_motor_drv.o
+    0x0801de70   0x0801de70   0x000000ec   Code   RO         2834    i.write_stepmotor_curve  step_motor_drv.o
+    0x0801df5c   0x0801df5c   0x00000018   Code   RO         2835    i.x_quickmove       step_motor_drv.o
+    0x0801df74   0x0801df74   0x00000018   Code   RO         2836    i.y_quickmove       step_motor_drv.o
+    0x0801df8c   0x0801df8c   0x00000178   Code   RO         2090    i.zoom_in_one_stitch  action.o
+    0x0801e104   0x0801e104   0x000000d0   Code   RO         2091    i.zpl_process       action.o
+    0x0801e1d4   0x0801e1d4   0x00000018   Code   RO         2837    i.zx_quickmove      step_motor_drv.o
+    0x0801e1ec   0x0801e1ec   0x00000800   Code   RO         9031    isqrt_table         motor_drive.lib(IQtables.o)
+    0x0801e9ec   0x0801e9ec   0x0000000a   Code   RO         9209    x$fpl$fpinit        g_wm.l(fpinit.o)
+    0x0801e9f6   0x0801e9f6   0x00000000   Code   RO         9094    x$fpl$usenofp       g_wm.l(usenofp.o)
+    0x0801e9f6   0x0801e9f6   0x00000002   PAD
+    0x0801e9f8   0x0801e9f8   0x00000018   Data   RO          651    .constdata          bsp_gpio.o
+    0x0801ea10   0x0801ea10   0x00000030   Data   RO          789    .constdata          bsp_rs485.o
+    0x0801ea40   0x0801ea40   0x0000006c   Data   RO          948    .constdata          bsp_spibus.o
+    0x0801eaac   0x0801eaac   0x00000074   Data   RO         1055    .constdata          bsp_spiflash.o
+    0x0801eb20   0x0801eb20   0x00000014   Data   RO         1202    .constdata          bsp_scu.o
+    0x0801eb34   0x0801eb34   0x000000f8   Data   RO         1457    .constdata          spi_master_conf.o
+    0x0801ec2c   0x0801ec2c   0x0000000c   Data   RO         1504    .constdata          bsp_watch.o
+    0x0801ec38   0x0801ec38   0x000000e0   Data   RO         1681    .constdata          can_node_conf.o
+    0x0801ed18   0x0801ed18   0x000003e7   Data   RO         2092    .constdata          action.o
+    0x0801f0ff   0x0801f0ff   0x00000001   PAD
+    0x0801f100   0x0801f100   0x00002710   Data   RO         3387    .constdata          stepper_function.o
+    0x08021810   0x08021810   0x00000010   Data   RO         5592    .constdata          xmc_vadc.o
+    0x08021820   0x08021820   0x00000804   Data   RO         9004    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
+    0x08022024   0x08022024   0x00000020   Data   RO         9271    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08021fd4, Size: 0x0000bcf0, Max: 0x0000ffc0, ABSOLUTE, COMPRESSED[0x00000990])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08022044, Size: 0x0000bcf0, Max: 0x0000ffc0, ABSOLUTE, COMPRESSED[0x00000990])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -6394,7 +6394,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-     24524       3594        999          0          0      70085   action.o
+     24544       3602        999          0          0      70101   action.o
         16          6          0          0          0     505891   app_can.o
         30          0          0          0          0       1116   app_dac.o
        126         14          0          0          0       8126   app_init.o
@@ -6416,8 +6416,8 @@ Image component sizes
         30          0          0          0          0       1826   global_can.o
          0          0          0         12          0        275   global_can_conf.o
       4552       2036          0         18          9       5068   initial.o
-      4312        422          0         10       1024      19161   io_function.o
-      2156        338          0         32          0      15846   main.o
+      4332        424          0         10       1024      19173   io_function.o
+      2208        346          0         32          0      15890   main.o
        288         30          0          0          0       6274   parameter.o
        760          0          0          0          0      30282   spi_master.o
        384         46        248         96         20      14746   spi_master_conf.o
@@ -6425,7 +6425,7 @@ Image component sizes
       2606        334          0         44          0      22017   step_motor_drv.o
       5984        124      10000        192        216      21730   stepper_function.o
          0          0          0       1043      25294      39306   sys_variable.o
-     21054       3144          0          0          0      29409   system.o
+     21074       3144          0          0          0      29425   system.o
        860         96          0          0         32       7176   system_xmc4400.o
        368         48          0         19          0      19886   watch.o
         32          4          0          0          0        597   xmc4_eru.o
@@ -6444,7 +6444,7 @@ Image component sizes
        658          4         16          0          0      26785   xmc_vadc.o
 
     ----------------------------------------------------------------------
-     95332      13124      12360       1560      34200    1335846   Object Totals
+     95444      13142      12360       1560      34200    1335934   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         56          0          1          7          2          0   (incl. Padding)
 
@@ -6531,15 +6531,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    124808      17960      14412      13556      34844    2565136   Grand Totals
-    124808      17960      14412       2448      34844    2565136   ELF Image Totals (compressed)
-    124808      17960      14412       2448          0          0   ROM Totals
+    124920      17978      14412      13556      34844    2565224   Grand Totals
+    124920      17978      14412       2448      34844    2565224   ELF Image Totals (compressed)
+    124920      17978      14412       2448          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               139220 ( 135.96kB)
+    Total RO  Size (Code + RO Data)               139332 ( 136.07kB)
     Total RW  Size (RW Data + ZI Data)             48400 (  47.27kB)
-    Total ROM Size (Code + RO Data + RW Data)     141668 ( 138.35kB)
+    Total ROM Size (Code + RO Data + RW Data)     141780 ( 138.46kB)
 
 ==============================================================================
 
