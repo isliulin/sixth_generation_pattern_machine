@@ -53,3 +53,4 @@
 .\objects\app_init.o: ..\..\Applications\Bsp\CAN_NODE\../GLOBAL_CAN/global_can_extern.h
 .\objects\app_init.o: ..\..\Applications\Bsp\CAN_NODE\can_node_conf.h
 .\objects\app_init.o: ..\..\Applications\Bsp\CAN_NODE\can_node_extern.h
+.\objects\app_init.o: ..\..\Applications\Bsp\inc\bsp_uart.h

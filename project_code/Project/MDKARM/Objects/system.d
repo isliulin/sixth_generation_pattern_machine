@@ -16,6 +16,17 @@
 .\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc4_gpio.h
 .\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h
 .\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc_dac.h
+.\objects\system.o: ..\..\Applications\Bsp\inc\bsp_flash.h
+.\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc_flash.h
+.\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc4_flash.h
+.\objects\system.o: ..\..\Applications\Bsp\inc\bsp_spiflash.h
+.\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc_dma.h
+.\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc_dma_map.h
+.\objects\system.o: ..\..\Applications\App\inc\app_gpio.h
+.\objects\system.o: ..\..\Applications\Bsp\inc\bsp_gpio.h
+.\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc_spi.h
+.\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc_usic.h
+.\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc4_usic_map.h
 .\objects\system.o: ..\..\Applications\User\inc\common.h
 .\objects\system.o: ..\..\Applications\User\inc\typedef.h
 .\objects\system.o: ..\..\Applications\System\inc\sys_variable.h

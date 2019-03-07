@@ -68,3 +68,5 @@
 .\objects\debug.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\debug.o: ..\..\Applications\User\inc\typedef.h
 .\objects\debug.o: ..\..\Applications\Motor\motor_drive.h
+.\objects\debug.o: ..\..\Applications\User\inc\action.h
+.\objects\debug.o: ..\..\Applications\User\inc\step_motor_drv.h

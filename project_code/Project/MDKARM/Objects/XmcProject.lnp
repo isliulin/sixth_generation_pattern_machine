@@ -46,6 +46,7 @@
 ".\objects\io_file_struct.o"
 ".\objects\stepper_function.o"
 ".\objects\debug.o"
+".\objects\rc522_codebar.o"
 ".\objects\startup_xmc4402.o"
 ".\objects\system_xmc4400.o"
 ".\objects\xmc_acmp.o"

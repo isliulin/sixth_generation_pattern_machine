@@ -78,3 +78,4 @@
 .\objects\main.o: ..\..\Applications\User\inc\action.h
 .\objects\main.o: ..\..\Applications\User\inc\stepper_function.h
 .\objects\main.o: ..\..\Applications\User\inc\debug.h
+.\objects\main.o: ..\..\Applications\User\inc\rc522_barcoder.h
