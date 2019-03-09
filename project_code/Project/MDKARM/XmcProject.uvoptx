@@ -661,6 +661,22 @@
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
+        <Bp>
+          <Number>32</Number>
+          <Type>0</Type>
+          <LineNumber>438</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\..\Applications\User\src\rc522_codebar.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
       </Breakpoint>
       <Tracepoint>
         <THDelay>0</THDelay>
@@ -806,7 +822,6 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>Lw碄9碄9趏?</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -848,34 +863,18 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>110</LineNumber>
+          <LineNumber>438</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134254616</Address>
+          <Address>134226944</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\Applications\Bsp\src\bsp_uart.c</Filename>
+          <Filename>..\..\Applications\User\src\rc522_codebar.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\XmcProject\../../Applications/Bsp/src/bsp_uart.c\110</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>117</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\..\Applications\Bsp\src\bsp_uart.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\XmcProject\../../Applications/User/src/rc522_codebar.c\438</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -998,6 +997,16 @@
           <count>23</count>
           <WinNumber>1</WinNumber>
           <ItemText>serial_number,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>24</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>auto_function_flag</ItemText>
+        </Ww>
+        <Ww>
+          <count>25</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>formwork_identify_device</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -1780,6 +1789,22 @@
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
+        <Bp>
+          <Number>32</Number>
+          <Type>0</Type>
+          <LineNumber>438</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\..\Applications\User\src\rc522_codebar.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
       </Breakpoint>
       <Tracepoint>
         <THDelay>0</THDelay>
@@ -1956,7 +1981,7 @@
 
   <Group>
     <GroupName>Applications/Bsp</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -2440,7 +2465,7 @@
       <GroupNumber>6</GroupNumber>
       <FileNumber>48</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Applications\User\src\io_function.c</PathWithFileName>
@@ -2572,7 +2597,7 @@
 
   <Group>
     <GroupName>Libraries/CMSIS</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -2592,7 +2617,7 @@
       <GroupNumber>7</GroupNumber>
       <FileNumber>60</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\RTE\_Debug\system_XMC4400.c</PathWithFileName>
