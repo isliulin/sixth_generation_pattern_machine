@@ -28,18 +28,20 @@ Project File Date:  03/06/2019
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Debug'
 compiling rc522_codebar.c...
-..\..\Applications\User\src\rc522_codebar.c(161): warning:  #550-D: variable "ret"  was set but never used
-   	 uint8_t ucAddr,ch,ret;
-..\..\Applications\User\src\rc522_codebar.c(178): warning:  #550-D: variable "ret"  was set but never used
-     uint8_t ucAddr,ret,ch;   
-..\..\Applications\User\src\rc522_codebar.c(402): warning:  #550-D: variable "status"  was set but never used
+..\..\Applications\User\src\rc522_codebar.c(169): warning:  #550-D: variable "ret"  was set but never used
+  	uint8_t ucAddr,ch,ret;
+..\..\Applications\User\src\rc522_codebar.c(192): warning:  #120-D: return value type does not match the function type
+  		return 0;
+..\..\Applications\User\src\rc522_codebar.c(188): warning:  #550-D: variable "ret"  was set but never used
+  	uint8_t ucAddr,ret,ch;   
+..\..\Applications\User\src\rc522_codebar.c(416): warning:  #550-D: variable "status"  was set but never used
       int8_t status;
-..\..\Applications\User\src\rc522_codebar.c: 3 warnings, 0 errors
+..\..\Applications\User\src\rc522_codebar.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=130356 RO-data=14448 RW-data=13600 ZI-data=35448  
+Program Size: Code=130568 RO-data=14448 RW-data=13600 ZI-data=35448  
 FromELF: creating hex file...
 After Build - User command #1: fromelf --bin --output "E:\zla_git\sixth_generation_pattern_machine\project_code\Project\MDKARM\Objects\XmcProject.bin"  "E:\zla_git\sixth_generation_pattern_machine\project_code\Project\MDKARM\Objects\XmcProject.axf"
-".\Objects\XmcProject.axf" - 0 Error(s), 3 Warning(s).
+".\Objects\XmcProject.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 

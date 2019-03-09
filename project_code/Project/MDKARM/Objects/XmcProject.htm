@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\XmcProject.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\XmcProject.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Mar 09 16:51:27 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Mar 09 17:50:56 2019
 <BR><P>
 <H3>Maximum Stack Usage =        504 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1215,7 +1215,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Stp_StaMach
 </UL>
 
-<P><STRONG><a name="[f1]"></a>RFID_SCAN</STRONG> (Thumb, 286 bytes, Stack size 8 bytes, rc522_codebar.o(i.RFID_SCAN))
+<P><STRONG><a name="[f1]"></a>RFID_SCAN</STRONG> (Thumb, 358 bytes, Stack size 8 bytes, rc522_codebar.o(i.RFID_SCAN))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = RFID_SCAN &rArr; PcdAuthState &rArr; PcdComMF522 &rArr; SetBitMask &rArr; WriteRawRC &rArr; bsp_UartSendBuf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdWrite
@@ -1230,7 +1230,7 @@ Global Symbols
 <LI><a href="#[22f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rec1_com
 </UL>
 
-<P><STRONG><a name="[f2]"></a>RFID_initial</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, rc522_codebar.o(i.RFID_initial))
+<P><STRONG><a name="[f2]"></a>RFID_initial</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, rc522_codebar.o(i.RFID_initial))
 <BR><BR>[Stack]<UL><LI>Max Depth = 352 + Unknown Stack Size
 <LI>Call Chain = RFID_initial &rArr; PcdReset &rArr; delay_ms &rArr; rec_com &rArr; protocol &rArr; get_origin_state &rArr; stepper_get_z_status &rArr; send_dsp_command &rArr; spi_read_wirte_lowlevel &rArr; SimulateSpiCmd &rArr; spi_fifo_recISR &rArr; g_SpiMode_CmdTip &rArr; Run_quick &rArr; GetCurve &rArr; __aeabi_memcpy4
 </UL>
@@ -1244,7 +1244,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c5]"></a>ReadRawRC</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, rc522_codebar.o(i.ReadRawRC))
+<P><STRONG><a name="[c5]"></a>ReadRawRC</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, rc522_codebar.o(i.ReadRawRC))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ReadRawRC &rArr; bsp_UartSendBuf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_UartSendBuf
@@ -1661,7 +1661,7 @@ Global Symbols
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pmsm1Initial
 </UL>
 
-<P><STRONG><a name="[c6]"></a>WriteRawRC</STRONG> (Thumb, 52 bytes, Stack size 32 bytes, rc522_codebar.o(i.WriteRawRC))
+<P><STRONG><a name="[c6]"></a>WriteRawRC</STRONG> (Thumb, 64 bytes, Stack size 32 bytes, rc522_codebar.o(i.WriteRawRC))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = WriteRawRC &rArr; bsp_UartSendBuf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_UartSendBuf
@@ -2722,7 +2722,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Init
 </UL>
 
-<P><STRONG><a name="[f5]"></a>bsp_UartReadBuf</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, bsp_uart.o(i.bsp_UartReadBuf))
+<P><STRONG><a name="[f5]"></a>bsp_UartReadBuf</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, bsp_uart.o(i.bsp_UartReadBuf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = bsp_UartReadBuf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteRawRC
@@ -3375,7 +3375,7 @@ Global Symbols
 <LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;preedit_status
 </UL>
 
-<P><STRONG><a name="[9b]"></a>function_1ms_hook</STRONG> (Thumb, 1790 bytes, Stack size 8 bytes, main.o(i.function_1ms_hook))
+<P><STRONG><a name="[9b]"></a>function_1ms_hook</STRONG> (Thumb, 1828 bytes, Stack size 8 bytes, main.o(i.function_1ms_hook))
 <BR><BR>[Stack]<UL><LI>Max Depth = 296 + Unknown Stack Size
 <LI>Call Chain = function_1ms_hook &rArr; io_set_logic_output &rArr; io_set_physical_output &rArr; dsp1_output_control &rArr; send_dsp_command &rArr; spi_read_wirte_lowlevel &rArr; SimulateSpiCmd &rArr; spi_fifo_recISR &rArr; g_SpiMode_CmdTip &rArr; Run_quick &rArr; GetCurve &rArr; __aeabi_memcpy4
 </UL>
@@ -3619,7 +3619,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[217]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initial
 </UL>
 
-<P><STRONG><a name="[218]"></a>init_var</STRONG> (Thumb, 4098 bytes, Stack size 0 bytes, initial.o(i.init_var))
+<P><STRONG><a name="[218]"></a>init_var</STRONG> (Thumb, 4110 bytes, Stack size 0 bytes, initial.o(i.init_var))
 <BR><BR>[Called By]<UL><LI><a href="#[217]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initial
 </UL>
 
