@@ -1,8 +1,681 @@
----- USIC1_1_IRQHandler Matches (3 in 3 files) ----
-bsp_uart.c (project_code\Applications\Bsp\src) line 148 : void USIC1_1_IRQHandler(void)//串口接收中断 
-XMC4400.h (project_code\Libraries\CMSIS\Device\Infineon\XMC4400_series\Include) line 321 : #define IRQ_Hdlr_91  USIC1_1_IRQHandler
-XMC4500.h (project_code\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include) line 321 : #define IRQ_Hdlr_91  USIC1_1_IRQHandler
----- USIC1_1_IRQHandler Search Errors Encountered (8) ----
+---- enum Matches (676 in 42 files) ----
+app_gpio.h (project_code\Applications\App\inc) line 59 : typedef enum 
+arm_math.h (project_code\Libraries\CMSIS\Include) line 387 :   typedef enum
+bsp_adc.h (project_code\Applications\Bsp\inc) line 42 : typedef enum 
+bsp_dac.h (project_code\Applications\Bsp\inc) line 19 : typedef enum 
+bsp_pwm.h (project_code\Applications\Bsp\inc) line 35 : typedef enum 
+bsp_spiflash.c (project_code\Applications\Bsp\src) line 17 : typedef enum
+can_node.h (project_code\Applications\Bsp\CAN_NODE) line 99 : typedef enum CAN_NODE_STATUS
+can_node.h (project_code\Applications\Bsp\CAN_NODE) line 605 :  * @param can_node_status  is a node status enum. @ref XMC_CAN_NODE_STATUS_t <br>
+global_can.h (project_code\Applications\Bsp\GLOBAL_CAN) line 85 :  *  enum to describe the possible status values, returned by GLOBAL_CAN APIs.
+global_can.h (project_code\Applications\Bsp\GLOBAL_CAN) line 87 : typedef enum GLOBAL_CAN_STATUS
+spi_master.h (project_code\Applications\Bsp\inc) line 53 :  *     - "SPI_MASTER_STATUS_BUFFER_INVALID" is added in SPI_MASTER_STATUS_t enum<br>
+spi_master.h (project_code\Applications\Bsp\inc) line 125 : typedef enum SPI_MASTER_STATUS
+spi_master.h (project_code\Applications\Bsp\inc) line 140 : typedef enum SPI_MASTER_SR_ID
+spi_master.h (project_code\Applications\Bsp\inc) line 153 : typedef enum SPI_MASTER_SS_SIGNAL
+spi_master.h (project_code\Applications\Bsp\inc) line 168 : typedef enum SPI_MASTER_INPUT
+spi_master.h (project_code\Applications\Bsp\inc) line 183 : typedef enum SPI_MASTER_TRANSFER_MODE
+spi_master.h (project_code\Applications\Bsp\inc) line 1393 :  *              Refer @ XMC_SPI_CH_EVENT_t for valid values. <b>OR</b> combinations of these enum items can be used
+spi_master.h (project_code\Applications\Bsp\inc) line 1414 :  *              Refer @ XMC_SPI_CH_EVENT_t for valid values. <b>OR</b> combinations of these enum item can be used
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 53 :  *     - "SPI_MASTER_STATUS_BUFFER_INVALID" is added in SPI_MASTER_STATUS_t enum<br>
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 125 : typedef enum SPI_MASTER_STATUS
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 140 : typedef enum SPI_MASTER_SR_ID
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 153 : typedef enum SPI_MASTER_SS_SIGNAL
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 168 : typedef enum SPI_MASTER_INPUT
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 183 : typedef enum SPI_MASTER_TRANSFER_MODE
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 1393 :  *              Refer @ XMC_SPI_CH_EVENT_t for valid values. <b>OR</b> combinations of these enum items can be used
+spi_master.h (project_code\Applications\Bsp\SPI_MASTER) line 1414 :  *              Refer @ XMC_SPI_CH_EVENT_t for valid values. <b>OR</b> combinations of these enum item can be used
+typedef.h (project_code\Applications\User\inc) line 230 : typedef enum
+XMC4400.h (project_code\Libraries\CMSIS\Device\Infineon\XMC4400_series\Include) line 64 : typedef enum {
+XMC4500.h (project_code\Libraries\CMSIS\Device\Infineon\XMC4500_series\Include) line 64 : typedef enum {
+xmc4_flash.h (project_code\Libraries\XMCLib\inc) line 155 : typedef enum XMC_FLASH_STATUS
+xmc4_flash.h (project_code\Libraries\XMCLib\inc) line 195 : typedef enum XMC_FLASH_MARGIN
+xmc4_flash.h (project_code\Libraries\XMCLib\inc) line 205 : typedef enum XMC_FLASH_EVENT
+xmc4_flash.h (project_code\Libraries\XMCLib\inc) line 221 : typedef enum XMC_FLASH_PROTECTION
+xmc4_flash.h (project_code\Libraries\XMCLib\inc) line 510 :  * @param protection_mask ORed values of @ref XMC_FLASH_PROTECTION_t enum type, for which sectors the protection
+xmc4_flash.h (project_code\Libraries\XMCLib\inc) line 578 :  * @param protection_mask ORed values of @ref XMC_FLASH_PROTECTION_t enum type, for which sectors the protection
+xmc4_gpio.h (project_code\Libraries\XMCLib\inc) line 201 :  * Defines the direction and characteristics of a pin. Use type \a XMC_GPIO_MODE_t for this enum. For the operation
+xmc4_gpio.h (project_code\Libraries\XMCLib\inc) line 205 : typedef enum XMC_GPIO_MODE
+xmc4_gpio.h (project_code\Libraries\XMCLib\inc) line 232 :  * Defines output strength and slew rate of a pin. Use type \a XMC_GPIO_OUTPUT_STRENGTH_t for this enum.
+xmc4_gpio.h (project_code\Libraries\XMCLib\inc) line 235 : typedef enum XMC_GPIO_OUTPUT_STRENGTH
+xmc4_rtc.h (project_code\Libraries\XMCLib\inc) line 69 : typedef enum XMC_RTC_WAKEUP_EVENT
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 166 :  *  CCUCON register. Use type \a XMC_SCU_CCU_TRIGGER_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 168 : typedef enum XMC_SCU_CCU_TRIGGER
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 200 :  *  Use type \a XMC_SCU_TRAP_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 202 : typedef enum XMC_SCU_TRAP 
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 227 :  *  All the enum items are tabulated as per bits present in \a PETE register.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 228 :  *  Use type \a XMC_SCU_PARITY_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 230 : typedef enum XMC_SCU_PARITY
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 264 :  *  purpose. All the enum items are tabulated as per bits present in \a SCU_RSTSTAT register.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 265 :  *  Use type \a XMC_SCU_RESET_REASON_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 267 : typedef enum XMC_SCU_RESET_REASON
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 281 :  *  Use type \a XMC_SCU_INTERRUPT_EVENT_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 291 :  *  All the enum items are tabulated as per bits present in \a NMIREQEN register.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 292 :  *  Use type \a XMC_SCU_NMIREQ_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 294 : typedef enum XMC_SCU_NMIREQ
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 308 :  *  All the enum items are tabulated as per bits present in \a PRSTAT0,  \a PRSTAT1,  \a PRSTAT2,
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 309 :  *  \a PRSTAT3 registers. Use type \a XMC_SCU_PERIPHERAL_RESET_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 313 : typedef enum XMC_SCU_PERIPHERAL_RESET
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 390 :  *  Use type \a XMC_SCU_PERIPHERAL_CLOCK_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 392 : typedef enum XMC_SCU_CLOCK
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 412 :  * All the enum items are tabulated as per bits present in \a CGATSTAT0 register.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 413 :  * Use type \a XMC_SCU_PERIPHERAL_CLOCK_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 415 : typedef enum XMC_SCU_PERIPHERAL_CLOCK
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 493 :  *  Use type \a XMC_SCU_CLOCK_SYSCLKSRC_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 495 : typedef enum XMC_SCU_CLOCK_SYSCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 506 :  *  Use type \a XMC_SCU_CLOCK_OSCCLKSRC_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 508 : typedef enum XMC_SCU_CLOCK_SYSPLLCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 520 :  * Use type \a XMC_SCU_CLOCK_USBCLKSRC_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 522 : typedef enum XMC_SCU_CLOCK_USBCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 534 : typedef enum XMC_SCU_CLOCK_ECATCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 544 :  *  Use type \a XMC_SCU_CLOCK_USBCLKSRC_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 546 : typedef enum XMC_SCU_CLOCK_WDTCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 559 :  *  Use type \a XMC_SCU_CLOCK_EXTOUTCLKSRC_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 561 : typedef enum XMC_SCU_CLOCK_EXTOUTCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 578 :  *  Use type \a XMC_SCU_HIB_RTCCLKSRC_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 580 : typedef enum XMC_SCU_HIB_RTCCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 591 :  *  Use type \a XMC_SCU_HIB_STDBYCLKSRC_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 593 : typedef enum XMC_SCU_HIB_STDBYCLKSRC
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 605 :  *  PLLCON0 register. Use type \a XMC_SCU_CLOCK_BACKUP_TRIM_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 607 : typedef enum XMC_SCU_CLOCK_FOFI_CALIBRATION_MODE
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 618 :  *  Use type \a XMC_SCU_BOOTMODE_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 620 : typedef enum XMC_SCU_BOOTMODE 
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 640 :  *  Use type \a XMC_SCU_PLL_MODE_t for accessing these enum parameters.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 642 : typedef enum XMC_SCU_CLOCK_SYSPLL_MODE
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 651 :  *  Use this enum as parameter of XMC_SCU_CLOCK_SetSleepConfig before going to SLEEP state.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 663 : typedef enum XMC_SCU_CLOCK_SLEEP_MODE_CONFIG
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 692 :  *  Use this enum as parameter of XMC_SCU_CLOCK_SetDeepSleepConfig before going to DEEPSLEEP state.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 706 : typedef enum XMC_SCU_CLOCK_DEEPSLEEP_MODE_CONFIG
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 738 : typedef enum XMC_SCU_POWER_EVR_STATUS
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 747 : typedef enum XMC_SCU_HIB_CTRL_STATUS
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 756 : typedef enum XMC_SCU_HIB_EVENT
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 777 : typedef enum XMC_SCU_HIB_IO
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 791 : typedef enum XMC_SCU_HIB_PIN_MODE
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 807 : typedef enum XMC_SCU_HIB_IO_OUTPUT_LEVEL
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 816 : typedef enum XMC_SCU_HIB_HIBERNATE_MODE
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 827 : typedef enum XMC_SCU_HIB_SR0_INPUT
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 844 : typedef enum XMC_SCU_HIB_SR1_INPUT
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 856 : typedef enum XMC_SCU_HIB_LPAC_INPUT
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 869 : typedef enum XMC_SCU_HIB_LPAC_TRIGGER
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 883 : typedef enum XMC_SCU_HIB_LPAC_STATUS
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 942 : typedef enum XMC_SCU_POWER_MODE_t
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 1493 :  * can be cleared by combining the enum values using \a OR operation.
+xmc4_scu.h (project_code\Libraries\XMCLib\inc) line 3448 :  * Use this enum as parameter of XMC_SCU_CLOCK_SetDeepSleepConfig before going to DEEPSLEEP state.
+xmc_acmp.h (project_code\Libraries\XMCLib\inc) line 130 : typedef enum XMC_ACMP_STATUS
+xmc_acmp.h (project_code\Libraries\XMCLib\inc) line 139 : typedef enum XMC_ACMP_HYSTERESIS
+xmc_acmp.h (project_code\Libraries\XMCLib\inc) line 150 : typedef enum XMC_ACMP_COMP_OUT
+xmc_acmp.h (project_code\Libraries\XMCLib\inc) line 161 : typedef enum XMC_ACMP_INP_SOURCE
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 148 :  * Defines the status of BCCU driver, to verify the related API calls. Use type \a XMC_BCCU_STATUS_t for this enum.
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 150 :  typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 158 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 166 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 174 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 183 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 194 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 203 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 215 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 227 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 235 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 243 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 251 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 259 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 267 : typedef enum{
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 275 : typedef enum
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 284 : typedef enum
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 307 : typedef enum
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 316 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 324 : typedef enum {
+xmc_bccu.h (project_code\Libraries\XMCLib\inc) line 334 : typedef enum {
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 46 :  *     - XMC_CAN_STATUS_t enum structure has updated. <br>
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 136 :  * -# Allows CAN node events enable/ disable by enum structure XMC_CAN_NODE_EVENT_t and functions XMC_CAN_NODE_EnableEvent()
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 173 :  *  Defines the status of CAN, to verify the CAN related API calls. Use type \a XMC_CAN_STATUS_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 175 : typedef enum XMC_CAN_STATUS
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 185 : * Defines CAN module Panel Commands . Use type \a XMC_CAN_PANCMD_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 187 : typedef enum XMC_CAN_PANCMD
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 201 : * Use type \a XMC_CAN_LOOKBACKMODE_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 203 : typedef enum XMC_CAN_LOOKBACKMODE
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 210 :  * Defines Message Object direction. Use type \a XMC_CAN_MO_TYPE_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 212 : typedef enum XMC_CAN_MO_TYPE
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 219 :  * Defines Data frame types. Use type \a XMC_CAN_FRAME_TYPE_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 221 : typedef enum XMC_CAN_FRAME_TYPE
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 229 :  * Defines arbitration mode for transmit acceptance filtering. Use type \a XMC_CAN_ARBITRATION_MODE_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 231 : typedef enum XMC_CAN_ARBITRATION_MODE
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 239 :  * Defines the operation mode of the frame counter. Use type \a XMC_CAN_FRAME_COUNT_MODE_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 241 : typedef enum XMC_CAN_FRAME_COUNT_MODE
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 249 :  * Defines the Divider Modes. Use type \a XMC_CAN_DM_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 251 : typedef enum XMC_CAN_DM
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 259 :  * Defines mask value for CAN Message Object set status. Use type \a XMC_CAN_MO_SET_STATUS_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 261 : typedef enum XMC_CAN_MO_SET_STATUS
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 278 :  * Defines mask value for CAN Message Object reset status. Use type \a XMC_CAN_MO_RESET_STATUS_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 280 : typedef enum XMC_CAN_MO_RESET_STATUS
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 297 :  * Defines mask value for CAN Message Object status. Use type \a XMC_CAN_MO_STATUS_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 299 : typedef enum XMC_CAN_MO_STATUS
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 319 :  * Defines mask value for CAN Node status. Use type \a XMC_CAN_NODE_STATUS_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 321 : typedef enum XMC_CAN_NODE_STATUS
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 338 :  * Use type \a XMC_CAN_NODE_CONTROL_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 340 : typedef enum XMC_CAN_NODE_CONTROL
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 355 :  * Defines mask value for CAN Node events. Use type \a XMC_CAN_NODE_EVENT_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 357 : typedef enum XMC_CAN_NODE_EVENT
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 366 :  * Defines mask value for CAN node pointer events position. Use type \a XMC_CAN_NODE_POINTER_EVENT_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 368 : typedef enum XMC_CAN_NODE_POINTER_EVENT
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 377 :  * Defines CAN Message Object event node pointer position. Use type \a XMC_CAN_MO_POINTER_EVENT_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 379 : typedef enum XMC_CAN_MO_POINTER_EVENT
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 386 :  * Defines mask value for CAN Message Object event type. Use type \a XMC_CAN_MO_EVENT_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 388 : typedef enum XMC_CAN_MO_EVENT
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 396 :  * Defines the possible receive inputs. Use type \a XMC_CAN_NODE_RECEIVE_INPUT_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 398 : typedef enum XMC_CAN_NODE_RECEIVE_INPUT
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 411 :  * Defines last error transfer direction. Use type \a XMC_CAN_NODE_LAST_ERROR_DIR_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 413 : typedef enum XMC_CAN_NODE_LAST_ERROR_DIR
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 421 :  * Defines last error increment. Use type \a XMC_CAN_NODE_LAST_ERROR_INC_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 423 : typedef enum XMC_CAN_NODE_LAST_ERROR_INC
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 430 :  * Defines interrupt request on interrupt output line INT_O[n]. Use type \a XMC_CAN_NODE_INTERRUPT_TRIGGER_t for this enum.
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 432 : typedef enum XMC_CAN_NODE_INTERRUPT_TRIGGER
+xmc_can.h (project_code\Libraries\XMCLib\inc) line 448 : typedef enum XMC_CAN_CANCLKSRC
+xmc_ccu4.c (project_code\Libraries\XMCLib\src) line 96 : /** Macro to check if the clock selected enum passed is valid */
+xmc_ccu4.c (project_code\Libraries\XMCLib\src) line 137 : /** Macro to check if the end mode enum passed is valid */
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 50 :  *     - XMC_CCU4_SLICE_PRESCALER_t enum is added to set the prescaler divider. <br>
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 51 :  *     - XMC_CCU4_SLICE_SHADOW_TRANSFER_MODE_t enum item names are updated according to the guidelines. <br>
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 55 :  *     - In XMC_CCU4_SLICE_EVENT_LEVEL_SENSITIVITY_t, two more enum items are added to support external count direction
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 157 : /* Macro to check if the interrupt enum passed is valid */
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 185 : typedef enum XMC_CCU4_STATUS
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 196 : typedef enum XMC_CCU4_CLOCK
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 207 : typedef enum XMC_CCU4_MULTI_CHANNEL_SHADOW_TRANSFER
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 230 : typedef enum XMC_CCU4_SLICE_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 239 : typedef enum XMC_CCU4_SLICE_TIMER_COUNT_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 248 : typedef enum XMC_CCU4_SLICE_TIMER_REPEAT_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 258 : typedef enum XMC_CCU4_SLICE_TIMER_COUNT_DIR
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 267 : typedef enum XMC_CCU4_SLICE_CAP_REG_SET
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 276 : typedef enum XMC_CCU4_SLICE_PRESCALER_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 285 : typedef enum XMC_CCU4_SLICE_OUTPUT_PASSIVE_LEVEL
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 294 : typedef enum XMC_CCU4_SLICE_PRESCALER
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 317 : typedef enum XMC_CCU4_SLICE_FUNCTION
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 337 : typedef enum XMC_CCU4_SLICE_EVENT
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 348 : typedef enum XMC_CCU4_SLICE_EVENT_EDGE_SENSITIVITY
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 360 : typedef enum XMC_CCU4_SLICE_EVENT_LEVEL_SENSITIVITY
+XMC_CCU4_SLICE_EVENT_LEVEL_SENSITIVITY in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :   /* Below enum items can be utilised specific to the functionality */
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 372 : typedef enum XMC_CCU4_SLICE_EVENT_FILTER
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 389 : typedef enum XMC_CCU4_SLICE_END_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 399 : typedef enum XMC_CCU4_SLICE_START_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 408 : typedef enum XMC_CCU4_SLICE_MODULATION_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 417 : typedef enum XMC_CCU4_SLICE_TRAP_EXIT_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 426 : typedef enum XMC_CCU4_SLICE_TIMER_CLEAR_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 437 : typedef enum XMC_CCU4_SLICE_MCMS_ACTION
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 452 : typedef enum XMC_CCU4_SLICE_IRQ_ID
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 467 : typedef enum XMC_CCU4_SLICE_MULTI_IRQ_ID
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 481 : typedef enum XMC_CCU4_SLICE_SR_ID
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 492 : typedef enum XMC_CCU4_SHADOW_TRANSFER
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 529 : typedef enum XMC_CCU4_SLICE_SHADOW_TRANSFER_MODE
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 542 : typedef enum XMC_CCU4_SLICE_WRITE_INTO
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 566 : typedef enum XMC_CCU4_SLICE_AUTOMAIC_SHADOW_TRANSFER_WRITE_INTO
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 592 : typedef enum XMC_CCU4_SLICE_MASK
+XMC_CCU4_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :                                              Accepts enum ::XMC_CCU4_SLICE_TIMER_COUNT_MODE_t */
+XMC_CCU4_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :                                              Accepts enum :: XMC_CCU4_SLICE_TIMER_REPEAT_MODE_t*/
+XMC_CCU4_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :                                              Accepts enum :: XMC_CCU4_SLICE_PRESCALER_MODE_t*/
+XMC_CCU4_SLICE_COMPARE_CONFIG in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU4_SLICE_PRESCALER_t */
+XMC_CCU4_SLICE_COMPARE_CONFIG in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :                                              Accepts enum :: XMC_CCU4_SLICE_OUTPUT_PASSIVE_LEVEL_t*/
+XMC_CCU4_SLICE_CAPTURE_CONFIG::{anon_struct} in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :                                           Accepts enum ::XMC_CCU4_SLICE_TIMER_CLEAR_MODE_t*/
+XMC_CCU4_SLICE_CAPTURE_CONFIG::{anon_struct} in xmc_ccu4.h (project_code\Libraries\XMCLib\inc) :       uint32_t prescaler_mode: 1;    /**< Normal or floating prescaler Accepts enum :: XMC_CCU4_SLICE_PRESCALER_MODE_t*/
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 1690 :  *                             Use ::XMC_CCU4_SHADOW_TRANSFER_t enum items to create a mask of choice,
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 1865 :  * @param div_val Prescaler divider value. Accepts enum :: XMC_CCU4_SLICE_PRESCALER_t
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 1947 :  *                       Use ::XMC_CCU4_MULTI_CHANNEL_SHADOW_TRANSFER_t enum items to create a mask of choice,
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 2031 :  *                  Use ::XMC_CCU4_SLICE_MULTI_IRQ_ID_t enum items to create a mask of choice,
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 2076 :  *             Use ::XMC_CCU4_SLICE_MULTI_IRQ_ID_t enum items to create a mask of choice,
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 2246 :  *        Use :: XMC_CCU4_SLICE_SHADOW_TRANSFER_MODE_t enum items for mode
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 2274 :  *        Use :: XMC_CCU4_SLICE_WRITE_INTO_t enum items to create a mask of choice, using a bit wise OR operation.
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 2300 :  *        Use :: XMC_CCU4_SLICE_WRITE_INTO_t enum items to create a mask of choice, using a bit wise OR operation.
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 2325 :  *        Use :: XMC_CCU4_SLICE_AUTOMAIC_SHADOW_TRANSFER_WRITE_INTO_t enum items to create a mask of choice, using a 
+xmc_ccu4.h (project_code\Libraries\XMCLib\inc) line 2352 :  *        Use :: XMC_CCU4_SLICE_AUTOMAIC_SHADOW_TRANSFER_WRITE_INTO_t enum items to create a mask of choice, using a 
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 55 :  *     - XMC_CCU8_SLICE_PRESCALER_t enum is added to set the prescaler divider. <br>
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 67 :  *     - In XMC_CCU8_SLICE_EVENT_LEVEL_SENSITIVITY_t, two more enum items are added to support external count direction
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 209 : typedef enum XMC_CCU8_STATUS
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 220 : typedef enum XMC_CCU8_CLOCK
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 231 : typedef enum XMC_CCU8_MULTI_CHANNEL_SHADOW_TRANSFER
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 254 : typedef enum XMC_CCU8_SLICE_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 263 : typedef enum XMC_CCU8_SLICE_OUTPUT
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 274 : typedef enum XMC_CCU8_SLICE_TIMER_COUNT_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 283 : typedef enum XMC_CCU8_SLICE_TIMER_REPEAT_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 293 : typedef enum XMC_CCU8_SLICE_TIMER_COUNT_DIR
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 302 : typedef enum XMC_CCU8_SLICE_CAP_REG_SET
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 311 : typedef enum XMC_CCU8_SLICE_PRESCALER_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 320 : typedef enum XMC_CCU8_SLICE_OUTPUT_PASSIVE_LEVEL
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 329 : typedef enum XMC_CCU8_SLICE_COMPARE_CHANNEL
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 338 : typedef enum XMC_CCU8_SLICE_PRESCALER
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 361 : typedef enum XMC_CCU8_SLICE_DTC_DIV
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 373 : typedef enum XMC_CCU8_SLICE_STATUS
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 388 : typedef enum XMC_CCU8_SLICE_MODULATION_CHANNEL
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 399 : typedef enum XMC_CCU8_SLICE_FUNCTION
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 419 : typedef enum XMC_CCU8_SLICE_EVENT
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 430 : typedef enum XMC_CCU8_SLICE_EVENT_EDGE_SENSITIVITY
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 443 : typedef enum XMC_CCU8_SLICE_EVENT_LEVEL_SENSITIVITY
+XMC_CCU8_SLICE_EVENT_LEVEL_SENSITIVITY in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :     /* Below enum items can be utilised specific to the functionality */
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 455 : typedef enum XMC_CCU8_SLICE_EVENT_FILTER
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 473 : typedef enum XMC_CCU8_SLICE_END_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 483 : typedef enum XMC_CCU8_SLICE_START_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 492 : typedef enum XMC_CCU8_SLICE_MODULATION_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 501 : typedef enum XMC_CCU8_SLICE_TRAP_EXIT_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 510 : typedef enum XMC_CCU8_SLICE_TIMER_CLEAR_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 521 : typedef enum XMC_CCU8_SLICE_MCMS_ACTION
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 536 : typedef enum XMC_CCU8_SLICE_IRQ_ID
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 553 : typedef enum XMC_CCU8_SLICE_MULTI_IRQ_ID
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 569 : typedef enum XMC_CCU8_SLICE_SR_ID
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 581 : typedef enum XMC_CCU8_SHADOW_TRANSFER
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 618 : typedef enum XMC_CCU8_SLICE_SHADOW_TRANSFER_MODE
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 632 :  typedef enum XMC_CCU8_SOURCE_OUT0
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 644 :  typedef enum XMC_CCU8_SOURCE_OUT1
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 656 :  typedef enum XMC_CCU8_SOURCE_OUT2
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 668 :  typedef enum XMC_CCU8_SOURCE_OUT3
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 682 : typedef enum XMC_CCU8_OUT_PATH
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 694 : typedef enum XMC_CCU8_OUT_PATH
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 718 : typedef enum XMC_CCU8_SLICE_WRITE_INTO
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 745 : typedef enum XMC_CCU8_SLICE_AUTOMAIC_SHADOW_TRANSFER_WRITE_INTO
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 775 : typedef enum XMC_CCU8_SLICE_MASK
+XMC_CCU8_SLICE_DEAD_TIME_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                                    Accepts enum ::XMC_CCU8_SLICE_DTC_DIV_t*/
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SLICE_TIMER_COUNT_MODE_t */
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SLICE_TIMER_REPEAT_MODE_t */
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SLICE_PRESCALER_MODE_t */
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) : 	                                          Accepts enum :: XMC_CCU8_SLICE_STATUS_t*/
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) : 	                                          Accepts enum :: XMC_CCU8_SLICE_OUTPUT_PASSIVE_LEVEL_t */
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) : 	                                          Accepts enum :: XMC_CCU8_SLICE_OUTPUT_PASSIVE_LEVEL_t */
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) : 	                                          Accepts enum :: XMC_CCU8_SLICE_OUTPUT_PASSIVE_LEVEL_t */
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) : 	                                          Accepts enum :: XMC_CCU8_SLICE_OUTPUT_PASSIVE_LEVEL_t */
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SOURCE_OUT0_t 
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SOURCE_OUT1_t 
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SOURCE_OUT2_t 
+XMC_CCU8_SLICE_COMPARE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SOURCE_OUT3_t 
+XMC_CCU8_SLICE_COMPARE_CONFIG in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                             Accepts enum :: XMC_CCU8_SLICE_PRESCALER_t */
+XMC_CCU8_SLICE_CAPTURE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :                                           Accepts enum ::XMC_CCU8_SLICE_TIMER_CLEAR_MODE_t */
+XMC_CCU8_SLICE_CAPTURE_CONFIG::{anon_struct} in xmc_ccu8.h (project_code\Libraries\XMCLib\inc) :       uint32_t prescaler_mode: 1;    /**< Normal or floating prescaler Accepts enum :: XMC_CCU8_SLICE_PRESCALER_MODE_t*/
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 1273 :  *        combination of XMC_CCU8_OUT_PATH_t enum items can be used to create a mask.
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 1641 :  *                   Use ::XMC_CCU8_SLICE_OUTPUT_t enum items to create a mask of choice,
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 1666 :  *                   Use ::XMC_CCU8_SLICE_OUTPUT_t enum items to create a mask of choice,
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2065 :  *                            Use ::XMC_CCU8_SHADOW_TRANSFER_t enum items to create a mask of choice,
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2242 :  * @param div_val Prescaler divider value. Accepts enum :: XMC_CCU8_SLICE_PRESCALER_t
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2334 :  *                       Use ::XMC_CCU8_MULTI_CHANNEL_SHADOW_TRANSFER_t enum items to create a mask of choice,
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2418 :  *                  Use ::XMC_CCU8_SLICE_MULTI_IRQ_ID_t enum items to create a mask of choice,
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2463 :  *             Use ::XMC_CCU8_SLICE_MULTI_IRQ_ID_t enum items to create a mask of choice,
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2785 :  *        Use :: XMC_CCU8_SLICE_SHADOW_TRANSFER_MODE_t enum items for mode
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2815 :  *        Use :: XMC_CCU8_SLICE_WRITE_INTO_t enum items to create a mask of choice, using a bit wise OR operation.
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2840 :  *        Use :: XMC_CCU8_SLICE_WRITE_INTO_t enum items to create a mask of choice, using a bit wise OR operation.
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2866 :  *        Use :: XMC_CCU8_SLICE_AUTOMAIC_SHADOW_TRANSFER_WRITE_INTO_t enum items to create a mask of choice, using a 
+xmc_ccu8.h (project_code\Libraries\XMCLib\inc) line 2893 :  *        Use :: XMC_CCU8_SLICE_AUTOMAIC_SHADOW_TRANSFER_WRITE_INTO_t enum items to create a mask of choice, using a 
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 169 : typedef enum XMC_DAC_CH_STATUS
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 181 : typedef enum XMC_DAC_CH_MODE
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 195 : typedef enum XMC_DAC_CH_TRIGGER
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 220 : typedef enum XMC_DAC_CH_DATA_TYPE
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 229 : typedef enum XMC_DAC_CH_OUTPUT_SCALE
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 266 : typedef enum XMC_DAC_CH_OUTPUT_NEGATION
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 275 : typedef enum XMC_DAC_CH_PATTERN_SIGN_OUTPUT
+xmc_dac.h (project_code\Libraries\XMCLib\inc) line 1022 :  * Different modes of DAC operation are defined by enum XMC_DAC_CH_MODE_t.
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 113 : typedef enum XMC_DMA_CH_TRANSFER_TYPE
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 129 : typedef enum XMC_DMA_CH_TRANSFER_FLOW
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 144 : typedef enum XMC_DMA_CH_BURST_LENGTH
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 154 : typedef enum XMC_DMA_CH_TRANSFER_WIDTH
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 164 : typedef enum XMC_DMA_CH_ADDRESS_COUNT_MODE
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 174 : typedef enum XMC_DMA_CH_PRIORITY
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 189 : typedef enum XMC_DMA_CH_SRC_HANDSHAKING
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 198 : typedef enum XMC_DMA_CH_DST_HANDSHAKING
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 208 : typedef enum XMC_DMA_CH_HARDWARE_HANDSHAKING_IF
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 223 : typedef enum XMC_DMA_CH_EVENT
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 235 : typedef enum XMC_DMA_CH_TRANSACTION_TYPE
+xmc_dma.h (project_code\Libraries\XMCLib\inc) line 244 : typedef enum XMC_DMA_CH_STATUS
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 124 :  * Return types of the API's.Use type @ref XMC_DSD_STATUS_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 126 : typedef enum XMC_DSD_STATUS
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 138 :  * Use type @ref XMC_DSD_GENERATOR_CLKDIV_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 140 : typedef enum XMC_DSD_GENERATOR_CLKDIV
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 164 :  * Use type @ref XMC_DSD_GENERATOR_MODE_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 166 : typedef enum XMC_DSD_GENERATOR_MODE
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 178 :  * Use type @ref XMC_DSD_CH_FILTER_TYPE_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 180 : typedef enum XMC_DSD_CH_FILTER_TYPE
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 192 :  * Use type @ref XMC_DSD_CH_DATA_SOURCE_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 194 : typedef enum XMC_DSD_CH_DATA_SOURCE
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 207 :  * Use type @ref XMC_DSD_CH_CLOCK_SOURCE_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 209 : typedef enum XMC_DSD_CH_CLOCK_SOURCE
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 223 :  * Use type @ref XMC_DSD_CH_STROBE_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 225 : typedef enum XMC_DSD_CH_STROBE
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 241 :  * Use type @ref XMC_DSD_CH_CLK_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 243 : typedef enum XMC_DSD_CH_CLK_DIV
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 267 :  * Use type @ref XMC_DSD_CH_INTEGRATOR_START_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 269 : typedef enum XMC_DSD_CH_INTEGRATOR_START
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 280 :  * Use type @ref XMC_DSD_CH_INTEGRATOR_STOP_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 282 : typedef enum XMC_DSD_CH_INTEGRATOR_STOP
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 292 :  * Use type @ref XMC_DSD_CH_TRIGGER_SOURCE_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 294 : typedef enum XMC_DSD_CH_TRIGGER_SOURCE
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 310 :  * Use type @ref XMC_DSD_CH_TIMESTAMP_TRIGGER_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 312 : typedef enum XMC_DSD_CH_TIMESTAMP_TRIGGER
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 323 :  * Use type @ref XMC_DSD_CH_SIGN_SOURCE_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 325 : typedef enum XMC_DSD_CH_SIGN_SOURCE
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 336 :  * Use type @ref XMC_DSD_CH_ID_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 338 : typedef enum XMC_DSD_CH_ID
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 349 :  * Use type @ref XMC_DSD_CH_AUX_EVENT_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 352 : typedef enum XMC_DSD_CH_AUX_EVENT
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 364 :  * Use type @ref XMC_DSD_CH_RESULT_EVENT_t for this enum.
+xmc_dsd.h (project_code\Libraries\XMCLib\inc) line 366 : typedef enum XMC_DSD_CH_RESULT_EVENT
+XMC_DSD_CH_AUX_FILTER_CONFIG::{anon_struct} in xmc_dsd.h (project_code\Libraries\XMCLib\inc) :                                                      Use enum XMC_DSD_CH_AUX_EVENT_t */
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 109 : typedef enum XMC_EBU_STATUS
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 119 : typedef enum  XMC_EBU_CLOCK_DIVIDE_RATIO
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 130 : typedef enum  XMC_EBU_DIV2_CLK_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 139 : typedef enum  XMC_EBU_CLK_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 148 : typedef enum  XMC_EBU_ARB_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 159 : typedef enum  XMC_EBU_ALE_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 168 : typedef enum XMC_EBU_CLK_STATUS
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 179 : typedef enum XMC_EBU_ADDRESS_SELECT
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 189 : typedef enum XMC_EBU_BUSWCON_SELECT
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 198 : typedef enum XMC_EBU_BURST_LENGTH_SYNC
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 209 : typedef enum XMC_EBU_BURST_BUFFER_SYNC_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 218 : typedef enum XMC_EBU_READ_STAGES_SYNC
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 227 : typedef enum XMC_EBU_BURST_FLASH_CLOCK_FEEDBACK
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 236 : typedef enum XMC_EBU_BURST_FLASH_CLOCK_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 245 : typedef enum XMC_EBU_FLASH_NON_ARRAY_ACCESS
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 254 : typedef enum XMC_EBU_EARLY_CHIP_SELECT_SYNC_BURST
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 263 : typedef enum XMC_EBU_BURST_SIGNAL_SYNC_BURST
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 272 : typedef enum XMC_EBU_BURST_ADDRESS_WRAPPING
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 281 : typedef enum XMC_EBU_WAIT_SIGNAL_POLARITY
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 290 : typedef enum XMC_EBU_BYTE_CONTROL
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 300 : typedef enum XMC_EBU_DEVICE_ADDRESSING_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 310 : typedef enum XMC_EBU_WAIT_CONTROL
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 323 : typedef enum XMC_EBU_ASYNCHRONOUS_ADDRESS_PHASE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 332 : typedef enum XMC_EBU_DEVICE_TYPE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 348 : typedef enum XMC_EBU_LOCK_CHIP_SELECT
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 357 : typedef enum XMC_EBU_FREQUENCY_EXT_CLK_PIN
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 368 : typedef enum XMC_EBU_EXT_DATA
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 379 : typedef enum XMC_EBU_SDRAM_CLK_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 388 : typedef enum XMC_EBU_SDRAM_PWR_MODE
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 399 : typedef enum XMC_EBU_SDRAM_CLK_OUTPUT
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 408 : typedef enum XMC_EBU_SDRAM_MASK_FOR_BANKM_TAG
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 422 : typedef enum XMC_EBU_SDRAM_MASK_FOR_ROW_TAG
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 434 : typedef enum XMC_EBU_SDRAM_WIDTH_OF_COLUMN_ADDRESS
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 444 : typedef enum XMC_EBU_SDRAM_CAS_LATENCY
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 453 : typedef enum XMC_EBU_SDRAM_BURST_LENGTH
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 465 : typedef enum XMC_EBU_SDRAM_STATUS
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 475 : typedef enum XMC_EBU_SDRAM_RFRSH_STATUS
+xmc_ebu.h (project_code\Libraries\XMCLib\inc) line 1509 :  * @param sdram_rfrsh_status Constant enum of type ::XMC_EBU_SDRAM_RFRSH_STATUS_t
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 137 : typedef enum XMC_ERU_ETL_INPUT_A
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 149 : typedef enum XMC_ERU_ETL_INPUT_B
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 162 : typedef enum XMC_ERU_ETL_SOURCE
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 184 : typedef enum XMC_ERU_ETL_EDGE_DETECTION
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 198 : typedef enum XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 208 :  * Use type XMC_ERU_ETL_OUTPUT_TRIGGER_t for this enum.
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 210 : typedef enum XMC_ERU_ETL_OUTPUT_TRIGGER
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 218 :  * Use type XMC_ERU_ETL_STATUS_FLAG_MODE_t for this enum.
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 220 : typedef enum XMC_ERU_ETL_STATUS_FLAG_MODE
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 235 : typedef enum XMC_ERU_OGU_PATTERN_DETECTION
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 247 : typedef enum XMC_ERU_OGU_PATTERN_DETECTION_INPUT
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 259 : typedef enum XMC_ERU_OGU_PERIPHERAL_TRIGGER
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 271 : typedef enum XMC_ERU_OGU_SERVICE_REQUEST
+XMC_ERU_OGU_CONFIG::{anon_struct} in xmc_eru.h (project_code\Libraries\XMCLib\inc) :                                                  <b>OR</b> combination of the enum items given as input */
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 535 :  *               Refer @ref XMC_ERU_ETL_SOURCE_t enum for valid input values.
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 556 :  *                       Refer @ref XMC_ERU_ETL_EDGE_DETECTION_t enum for valid values.
+xmc_eru.h (project_code\Libraries\XMCLib\inc) line 752 :  *              enum items can be passed as the input. 
+xmc_fce.h (project_code\Libraries\XMCLib\inc) line 121 : typedef enum XMC_FCE_CONFIG_INTERRUPT
+xmc_fce.h (project_code\Libraries\XMCLib\inc) line 132 : typedef enum XMC_FCE_CONFIG_OPERATION
+xmc_fce.h (project_code\Libraries\XMCLib\inc) line 141 : typedef enum XMC_FCE_CONFIG_ALGO
+xmc_fce.h (project_code\Libraries\XMCLib\inc) line 151 : typedef enum XMC_FCE_STS_FLAG
+xmc_fce.h (project_code\Libraries\XMCLib\inc) line 162 : typedef enum XMC_FCE_CTR_TEST
+xmc_fce.h (project_code\Libraries\XMCLib\inc) line 172 : typedef enum XMC_FCE_STATUS
+xmc_gpio.h (project_code\Libraries\XMCLib\inc) line 116 :  * Defines output level of a pin. Use type \a XMC_GPIO_OUTPUT_LEVEL_t for this enum.
+xmc_gpio.h (project_code\Libraries\XMCLib\inc) line 118 : typedef enum XMC_GPIO_OUTPUT_LEVEL
+xmc_gpio.h (project_code\Libraries\XMCLib\inc) line 125 :  * Defines direct hardware control characteristics of the pin . Use type \a XMC_GPIO_HWCTRL_t for this enum.
+xmc_gpio.h (project_code\Libraries\XMCLib\inc) line 127 : typedef enum XMC_GPIO_HWCTRL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 155 : typedef enum XMC_HRPWM_STATUS
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 168 : typedef enum XMC_HRPWM_CLK_FREQ
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 182 : typedef enum XMC_HRPWM_HRC_HR_EDGE
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 193 : typedef enum XMC_HRPWM_HRC_SRC_INPUT
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 202 : typedef enum XMC_HRPWM_HRC_CMP_SEL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 212 : typedef enum XMC_HRPWM_HRC_TIMER_SEL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 223 : typedef enum XMC_HRPWM_HRC_SRC_EDGE_SEL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 234 : typedef enum XMC_HRPWM_FUNC_STATUS
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 243 : typedef enum XMC_HRPWM_HR_LOGIC
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 252 : typedef enum XMC_HRPWM_HR_PATH
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 263 : typedef enum XMC_HRPWM_LR_PATH
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 273 :  * The enum is used to access the bitfields of registers HRCSTRG, HRCCTRG, HRCSTSG
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 275 : typedef enum XMC_HRPWM_HRC_SHADOW_TX
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 290 : typedef enum XMC_HRPWM_HRC_SOURCE
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 299 : typedef enum XMC_HRPWM_HRC_DT_TR_SEL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 308 : typedef enum XMC_HRPWM_HRC_OUT_PASSIVE_LVL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 320 :  typedef enum XMC_HRPWM_CSG_POWER_MODE
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 329 :  * The enum is used to access the bitfields of registers CSGSETG, CSGCLRG, CSGSTATG
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 331 : typedef enum XMC_HRPWM_CSG_RUN_BIT
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 347 : typedef enum XMC_HRPWM_CSG_SLOPE_START
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 357 : typedef enum XMC_HRPWM_CSG_SLOPE_STOP
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 367 : typedef enum XMC_HRPWM_CSG_PRESCALER_START
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 377 : typedef enum XMC_HRPWM_CSG_PRESCALER_STOP
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 387 : typedef enum XMC_HRPWM_CSG_PRESCALER_CLR
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 397 : typedef enum XMC_HRPWM_DAC_SLOPE_GEN_STATUS
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 407 : typedef enum XMC_HRPWM_CSG_PRESCALER_STATUS
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 417 : typedef enum XMC_HRPWM_CSG_CMP_INPUT
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 426 : typedef enum XMC_HRPWM_CSG_SWITCH_CMP_INPUT
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 436 : typedef enum XMC_HRPWM_CSG_CMP_INVERTING_INPUT
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 446 : typedef enum XMC_HRPWM_CSG_INPUT_SEL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 469 : typedef enum XMC_HRPWM_CSG_EDGE_SEL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 480 : typedef enum XMC_HRPWM_CSG_LVL_SEL
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 490 : typedef enum XMC_HRPWM_CSG_CLK_INPUT
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 500 :  * The enum is used to access the bitfields of registers CSGySRE, CSGySRS, CSGySWS, CSGySWC, CSGyISTAT
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 502 : typedef enum XMC_HRPWM_CSG_IRQ_ID
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 518 : typedef enum XMC_HRPWM_CSG_SWSM
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 529 : typedef enum XMC_HRPWM_CSG_CLK
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 539 : typedef enum XMC_HRPWM_SHADOW_TX
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 549 : typedef enum XMC_HRPWM_CSG_IRQ_SR_LINE
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 560 : typedef enum XMC_HRPWM_CSG_SLOPE_CTRL_MODE
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 571 : typedef enum XMC_HRPWM_CSG_PRESCALER_EXT_START
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 582 : typedef enum XMC_HRPWM_CSG_PRESCALER_EXT_STOP
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 593 : typedef enum XMC_HRPWM_CSG_SLOPE_EXT_START
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 603 : typedef enum XMC_HRPWM_CSG_SLOPE_EXT_STOP
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 614 : typedef enum XMC_HRPWM_CSG_SLICE
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 624 : typedef enum XMC_HRPWM_CSG_CMP_FILTER_WINDOW
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 647 : typedef enum XMC_HRPWM_CSG_SLOPE_STEP_GAIN
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 658 : typedef enum XMC_HRPWM_CSG_PRESCALER_DIVISION
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t dt_enable: 1;                   /**< Enables dead time. Accepts enum @ref XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t hr_out0_trap_enable: 1;         /**< Enables trap for HROUT0. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t hr_out1_trap_enable: 1;         /**< Enables trap for HROUT1. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :                                                     Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :                                                     Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t hr_out0_inv_enable: 1;          /**< Enables inversion of HROUT0 output pin. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t hr_out1_inv_enable: 1;          /**< Enables inversion of HROUT1 output pin. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t dt_trigger_sel: 1;              /**< Selection of trigger for dead time shadow transfer. Accepts enum XMC_HRPWM_HRC_DT_TR_SEL_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t hr_out0_passive_level_out: 1;   /**< Selection of HROUT0 passive level. Accepts enum XMC_HRPWM_HRC_OUT_PASSIVE_LVL_t */
+XMC_HRPWM_HRC_CONFIG::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t hr_out1_passive_level_out: 1;   /**< Selection of HROUT0 passive level. Accepts enum XMC_HRPWM_HRC_OUT_PASSIVE_LVL_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t cmp_input_sel: 1;      /**< Comparator input pin selection. Accepts enum XMC_HRPWM_CSG_CMP_INPUT_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t cmp_input_sw: 2;       /**< Comparator input switching configuration. Accepts enum XMC_HRPWM_CSG_LVL_SEL_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :                                            Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t cmp_out_inv: 1;        /**< Invert comparator output. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t blanking_mode: 2;      /**< Select the edge for blanking. Accepts enum XMC_HRPWM_CSG_EDGE_SEL_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t blank_ext_enable: 1;   /**< Enable blanking via external trigger. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t filter_enable: 1;      /**< Enable comparator output filter. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_CSG_CMP::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :                                               Accepts enum XMC_HRPWM_CSG_LVL_SEL_t */
+XMC_HRPWM_CSG_SGEN::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t prescaler_ext_start_mode: 2;  /**< Pre-scaler external start mode. Accepts enum XMC_HRPWM_CSG_PRESCALER_EXT_START_t */
+XMC_HRPWM_CSG_SGEN::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t prescaler_ext_stop_mode: 2;   /**< Pre-scaler external stop mode. Accepts enum XMC_HRPWM_CSG_PRESCALER_EXT_STOP_t */
+XMC_HRPWM_CSG_SGEN::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t ctrl_mode: 2;                 /**< Slope control mode. Accepts enum XMC_HRPWM_CSG_SLOPE_CTRL_MODE_t */
+XMC_HRPWM_CSG_SGEN::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t ext_start_mode: 2;            /**< Slope external start mode. Accepts enum XMC_HRPWM_CSG_SLOPE_EXT_START_t */
+XMC_HRPWM_CSG_SGEN::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t ext_stop_mode: 2;             /**< Slope external stop mode. Accepts enum XMC_HRPWM_CSG_SLOPE_EXT_STOP_t */
+XMC_HRPWM_CSG_SGEN::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t static_mode_ist_enable: 1;    /**< Immediate shadow transfer in static mode enabled. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+XMC_HRPWM_CSG_SGEN::{anon_struct} in xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) :       uint32_t pulse_swallow_enable: 1;      /**< Pulse swallow enable / disable. Accepts enum XMC_HRPWM_FUNC_STATUS_t */
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 973 :  * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_HR_PATH_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1000 :  * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_HR_PATH_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1022 :  * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_LR_PATH_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1048 :  * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_LR_PATH_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1070 :   * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_HRC_SHADOW_TX_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1093 :  * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_HRC_SHADOW_TX_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1114 :  * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_HRC_SHADOW_TX_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1178 :  * @param clk_freq The operating clock frequency of HRPWM module. Use the enum type @ref XMC_HRPWM_CLK_FREQ_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1202 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1223 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1243 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1276 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1298 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1319 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1339 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1362 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1384 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1407 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1430 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1453 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1475 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_RUN_BIT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1509 :  * @param mask masked values of selected HRC modules. Use the enum type @ref XMC_HRPWM_SHADOW_TX_DAC_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1530 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_SHADOW_TX_DAC_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1572 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_PRESCALER_STATUS_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1591 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_PRESCALER_STATUS_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1612 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_SWITCH_CMP_INPUT_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1657 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_CLK_t to generate the mask.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 1870 :  * @param input Input to comparator. Use the enum type @ref XMC_HRPWM_CSG_CMP_INPUT_t to generate the input.
+xmc_hrpwm.h (project_code\Libraries\XMCLib\inc) line 2038 :  * @param mask masked values of selected CSG modules. Use the enum type @ref XMC_HRPWM_CSG_IRQ_ID_t to generate the input.
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 151 : typedef enum XMC_MATH_EVENT
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 162 : typedef enum XMC_MATH_DIV_DVDRC
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 175 : typedef enum XMC_MATH_DIV_DVSRC
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 188 : typedef enum XMC_MATH_CORDIC_CORDXRC
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 198 : typedef enum XMC_MATH_CORDIC_CORDYRC
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 208 : typedef enum XMC_MATH_CORDIC_CORDZRC
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 217 : typedef enum XMC_MATH_CORDIC_OPERATING_MODE
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 227 : typedef enum XMC_MATH_CORDIC_ROTVEC_MODE
+xmc_math.h (project_code\Libraries\XMCLib\inc) line 236 : typedef enum XMC_MATH_CORDIC_MAGNITUDE
+xmc_pau.h (project_code\Libraries\XMCLib\inc) line 103 : typedef enum XMC_PAU_STATUS
+xmc_pau.h (project_code\Libraries\XMCLib\inc) line 113 : typedef enum XMC_PAU_PERIPHERAL
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 128 :  *  Defines the return status, to verify the POSIF related API calls. Use type @ref XMC_POSIF_STATUS_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 130 : typedef enum XMC_POSIF_STATUS
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 137 :  * Defines POSIF configurable modes.Use type @ref XMC_POSIF_MODE_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 140 : typedef enum XMC_POSIF_MODE
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 149 :  * Defines POSIF configurable input ports.Use type @ref XMC_POSIF_INPUT_PORT_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 152 :  * Quadrature Decoder or Hall Sensor Mode). Same enum can be used to configure pattern update signal select by configuring
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 155 : typedef enum XMC_POSIF_INPUT_PORT
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 168 :  *  Defines active level of an input signal.Use type @ref XMC_POSIF_INPUT_ACTIVE_LEVEL_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 170 : typedef enum XMC_POSIF_INPUT_ACTIVE_LEVEL
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 178 :  * this enum is used to configure low pass filters cut off frequency.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 179 :  * Use type @ref XMC_POSIF_FILTER_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 182 : typedef enum XMC_POSIF_FILTER
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 195 :  * Defines POSIF events.Use type @ref XMC_POSIF_IRQ_EVENT_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 199 : typedef enum XMC_POSIF_IRQ_EVENT
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 213 :  * Defines POSIF service request lines.Use type @ref XMC_POSIF_SR_ID_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 217 : typedef enum XMC_POSIF_SR_ID
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 224 :  * Defines position decoder mode selection.Use type @ref XMC_POSIF_QD_MODE_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 228 : typedef enum XMC_POSIF_QD_MODE
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 235 :  * Defines motor rotation direction.Use type @ref XMC_POSIF_QD_DIR_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 238 : typedef enum XMC_POSIF_QD_DIR
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 245 :  * Defines frequency of index signal generation.Use type @ref XMC_POSIF_QD_INDEX_GENERATION_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 248 : typedef enum XMC_POSIF_QD_INDEX_GENERATION
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 256 :  *  Defines trigger edge in hall sensor mode.Use type @ref XMC_POSIF_HSC_TRIGGER_EDGE_t for this enum.
+xmc_posif.h (project_code\Libraries\XMCLib\inc) line 259 : typedef enum XMC_POSIF_HSC_TRIGGER_EDGE
+xmc_prng.h (project_code\Libraries\XMCLib\inc) line 95 : typedef enum XMC_PRNG_KEY_LOAD_OP_MODE {
+xmc_prng.h (project_code\Libraries\XMCLib\inc) line 103 : typedef enum XMC_PRNG_DATA_BLOCK_SIZE {
+xmc_prng.h (project_code\Libraries\XMCLib\inc) line 112 : typedef enum XMC_PRNG_INIT_STATUS {
+xmc_rtc.h (project_code\Libraries\XMCLib\inc) line 100 : typedef enum XMC_RTC_STATUS
+xmc_rtc.h (project_code\Libraries\XMCLib\inc) line 110 : typedef enum XMC_RTC_EVENT
+xmc_rtc.h (project_code\Libraries\XMCLib\inc) line 124 : typedef enum XMC_RTC_MONTH
+xmc_rtc.h (project_code\Libraries\XMCLib\inc) line 143 : typedef enum XMC_RTC_WEEKDAY
+xmc_scu.h (project_code\Libraries\XMCLib\inc) line 170 : typedef enum XMC_SCU_STATUS 
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 60 :  *     - Modified XMC_SPI_CH_EVENT_t enum for supporting XMC_SPI_CH_EnableEvent() and XMC_SPI_CH_DisableEvent()
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 139 : typedef enum XMC_SPI_CH_STATUS
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 148 : typedef enum XMC_SPI_CH_BUS_MODE
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 157 : typedef enum XMC_SPI_CH_SLAVE_SEL_MSLS_INV
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 169 : typedef enum XMC_SPI_CH_DATA_POLARITY
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 178 : typedef enum XMC_SPI_CH_SLAVE_SELECT
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 193 : typedef enum XMC_SPI_CH_EVENT
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 211 : typedef enum XMC_SPI_CH_STATUS_FLAG
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 240 : typedef enum XMC_SPI_CH_INPUT_FREQ_SLAVE_SELECT_DELAY
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 251 : typedef enum XMC_SPI_CH_INPUT
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 264 : typedef enum XMC_SPI_CH_MODE
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 276 : typedef enum XMC_SPI_CH_BRG_SHIFT_CLOCK_PASSIVE_LEVEL
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 291 : typedef enum XMC_SPI_CH_BRG_SHIFT_CLOCK_OUTPUT
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 300 : typedef enum XMC_SPI_CH_INTERRUPT_NODE_POINTER
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 565 :  *              Refer @ XMC_SPI_CH_EVENT_t for valid values. <b>OR</b> combinations of these enum items can be used 
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 583 :  *              Refer @ XMC_SPI_CH_EVENT_t for valid values. <b>OR</b> combinations of these enum item can be used 
+xmc_spi.h (project_code\Libraries\XMCLib\inc) line 617 :  *              Refer @ XMC_SPI_CH_STATUS_FLAG_t for valid values. <b>OR</b> combinations of these enum item can be used 
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 51 :  *     - Modified XMC_UART_CH_EVENT_t enum for supporting XMC_UART_CH_EnableEvent() and XMC_UART_CH_DisableEvent()
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 122 : typedef enum XMC_UART_CH_STATUS
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 130 : * UART portocol status. The enum values can be used for getting the status of UART channel.
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 133 : typedef enum XMC_UART_CH_STATUS_FLAG
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 157 : typedef enum XMC_CH_UART_EVENT
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 177 : typedef enum XMC_UART_CH_INPUT_SAMPLING_FREQ
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 186 : typedef enum XMC_UART_CH_INPUT
+xmc_uart.h (project_code\Libraries\XMCLib\inc) line 200 : typedef enum XMC_UART_CH_INTERRUPT_NODE_POINTER
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 168 : typedef enum XMC_USIC_CH_STATUS
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 178 : typedef enum XMC_USIC_CH_KERNEL_MODE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 189 : typedef enum XMC_USIC_CH_OPERATING_MODE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 201 : typedef enum XMC_USIC_CH_INPUT
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 214 : typedef enum XMC_USIC_CH_INPUT_SAMPLING_FREQ
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 223 : typedef enum XMC_USIC_CH_INPUT_COMBINATION_MODE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 234 :  * TDEN bitfield of the TCSR register. Following enum values are used for configuring
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 237 : typedef enum XMC_USIC_CH_START_TRANSMISION_MODE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 248 : typedef enum XMC_USIC_CH_INTERRUPT_NODE_POINTER
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 260 : typedef enum XMC_USIC_CH_EVENT
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 274 : typedef enum XMC_USIC_CH_PARITY_MODE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 284 : typedef enum XMC_USIC_CH_DATA_OUTPUT_MODE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 293 : typedef enum XMC_USIC_CH_TBUF_STATUS
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 304 : typedef enum XMC_USIC_CH_TBUF_STATUS_SET
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 313 : typedef enum XMC_USIC_CH_RBUF_STATUS
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 322 : typedef enum XMC_USCI_CH_PASSIVE_DATA_LEVEL
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 331 : typedef enum XMC_USIC_CH_FIFO_SIZE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 345 : typedef enum XMC_USIC_CH_TXFIFO_INTERRUPT_NODE_POINTER
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 354 : typedef enum XMC_USIC_CH_TXFIFO_EVENT_CONF
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 363 : typedef enum XMC_USIC_CH_TXFIFO_EVENT
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 372 : typedef enum XMC_USIC_CH_RXFIFO_INTERRUPT_NODE_POINTER
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 381 : typedef enum XMC_USIC_CH_RXFIFO_EVENT_CONF
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 391 : typedef enum XMC_USIC_CH_RXFIFO_EVENT
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 401 : typedef enum XMC_USIC_CH_BRG_CLOCK_SOURCE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 410 : typedef enum XMC_USIC_CH_BRG_CLOCK_DIVIDER_MODE
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 420 : typedef enum XMC_USIC_CH_BRG_MASTER_CLOCK_PASSIVE_LEVEL
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 429 : typedef enum XMC_USIC_CH_BRG_SHIFT_CLOCK_PASSIVE_LEVEL
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 440 : typedef enum XMC_USIC_CH_BRG_SHIFT_CLOCK_OUTPUT
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 450 : typedef enum XMC_USIC_CH_SHIFT_DIRECTION
+xmc_usic.h (project_code\Libraries\XMCLib\inc) line 690 :  * @param  source Input source select for the input stage. The table below maps the enum value with the input channel.
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 310 : typedef enum XMC_VADC_STATUS
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 321 : typedef enum XMC_VADC_SR
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 337 : typedef enum XMC_VADC_STARTMODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 348 : typedef enum XMC_VADC_TRIGGER_EDGE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 362 : typedef enum XMC_VADC_TRIGGER_INPUT_SELECT
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 389 : typedef enum XMC_VADC_GATE_INPUT_SELECT
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 415 : typedef enum XMC_VADC_GATEMODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 426 : typedef enum XMC_VADC_DMM
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 437 : typedef enum XMC_VADC_CONVMODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 449 : typedef enum XMC_VADC_FAST_COMPARE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 460 : typedef enum XMC_VADC_SCAN_TYPE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 469 : typedef enum XMC_VADC_SCAN_LOAD
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 483 : typedef enum XMC_VADC_CHANNEL_CONV
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 496 : typedef enum XMC_VADC_CHANNEL_BOUNDARY
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 508 : typedef enum XMC_VADC_CHANNEL_BWDCH
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 517 : typedef enum XMC_VADC_CHANNEL_EVGEN
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 530 : typedef enum XMC_VADC_CHANNEL_REF
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 540 : typedef enum XMC_VADC_CHANNEL_BOUNDARY_CONDITION
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 550 : typedef enum XMC_VADC_GLOBAL_EVENT
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 559 : typedef enum XMC_VADC_GROUP_POWERMODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 570 : typedef enum XMC_VADC_GROUP_STATE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 580 : typedef enum XMC_VADC_GROUP_CONV
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 589 : typedef enum XMC_VADC_GROUP_ARBMODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 599 : typedef enum XMC_VADC_GROUP_EMUXMODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 610 : typedef enum XMC_VADC_GROUP_EMUXCODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 619 : typedef enum XMC_VADC_GROUP_IRQ
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 628 : typedef enum XMC_VADC_RESULT_ALIGN
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 634 : typedef enum XMC_VADC_RESULT_SUBTRATION 
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 647 : typedef enum XMC_VADC_GROUP_RS_PRIORITY
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 658 : typedef enum XMC_VADC_GROUP_BOUNDARY_FLAG_MODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 670 : typedef enum XMC_VADC_BOUNDARY_SELECT
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 680 : typedef enum XMC_VADC_GROUP_INDEX
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 692 : * All enum items are available for channels 0 and 1. Other Channels can accept only XMC_VADC_CHANNEL_ALIAS_DISABLED.
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 694 : typedef enum XMC_VADC_CHANNEL_ALIAS
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 712 : typedef enum XMC_VADC_GLOBAL_SHS_AREF
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 723 : typedef enum XMC_VADC_SHS_GAIN_LEVEL
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 735 : typedef enum XMC_VADC_SHS_LOOP_CH
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 744 : typedef enum XMC_VADC_GLOBAL_SHS_CALIBRATION_ORDER
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 755 : typedef enum XMC_VADC_BOUNDARY_NODE
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 772 : typedef enum XMC_VADC_SYNCTR_EVAL
+XMC_VADC_CHANNEL_CONFIG::{anon_struct} in xmc_vadc.h (project_code\Libraries\XMCLib\inc) :                                                          Accepts enum @ref XMC_VADC_CHANNEL_BOUNDARY_t */
+XMC_VADC_CHANNEL_CONFIG::{anon_struct} in xmc_vadc.h (project_code\Libraries\XMCLib\inc) :                                                          Accepts enum @ref XMC_VADC_CHANNEL_BOUNDARY_t */
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1609 :  *                      Range[0x0 to 0x3] Accepts the enum ::XMC_VADC_GROUP_INDEX_t
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1637 :  *                      Range[0x0 to 0x3] Accepts the enum ::XMC_VADC_GROUP_INDEX_t
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1788 :  * @return compare high or low. Refer @ref XMC_VADC_FAST_COMPARE_t enum
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1805 :  *                    Use the enum ::XMC_VADC_GLOBAL_EVENT_t to create a mask to be used with this argument
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1830 :  *                    Use the enum ::XMC_VADC_GLOBAL_EVENT_t to create a mask to be used with this argument
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1853 :  * @param sr The service request to which the global result event is connected. Refer @ref XMC_VADC_SR_t enum
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1869 :  * @param sr The service request to which the global request source event is connected. Refer @ref XMC_VADC_SR_t enum
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 1902 :  * @param aref    Analog reference used for conversions. Refer @ref XMC_VADC_GLOBAL_SHS_AREF_t enum
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 2262 :  * @param conv_type Use direct channels or EMUX channels. Refer @ref XMC_VADC_GROUP_CONV_t enum
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 2492 :  * @return retuns IDLE if converter is free else returns busy. Refer @ref XMC_VADC_GROUP_STATE_t enum
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 3264 :  *                   Accepts enum ::XMC_VADC_TRIGGER_INPUT_SELECT_t
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 3303 :  *                   Accepts enum ::XMC_VADC_GATE_INPUT_SELECT_t
+xmc_vadc.h (project_code\Libraries\XMCLib\inc) line 4739 :  *  ::XMC_VADC_FAST_COMPARE_t If the input is greater or lower than the compare value returns the appropriate enum.
+xmc_wdt.h (project_code\Libraries\XMCLib\inc) line 98 :  *  Defines working modes for watchdog. Use type XMC_WDT_MODE_t for this enum.
+xmc_wdt.h (project_code\Libraries\XMCLib\inc) line 100 : typedef enum XMC_WDT_MODE 
+xmc_wdt.h (project_code\Libraries\XMCLib\inc) line 110 :  *  Defines debug behaviour of watchdog when the CPU enters HALT mode. Use type XMC_WDT_DEBUG_MODE_t for this enum.
+xmc_wdt.h (project_code\Libraries\XMCLib\inc) line 112 : typedef enum XMC_WDT_DEBUG_MODE 
+---- enum Search Errors Encountered (8) ----
 The following 8 files could not be processed:
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_config.c : File could not be opened.
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_config.h : File could not be opened.
