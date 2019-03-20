@@ -1,6 +1,7 @@
----- 气阀1翻转 Matches (1 in 1 files) ----
-inpress_to in action.c (project_code\Applications\User\src) : 		io_toggle_logic_output(LOGIC_OUT_VALVE1);//气阀1翻转
----- 气阀1翻转 Search Errors Encountered (8) ----
+---- OPEN_LAST_5_STITCH_SPEED Matches (2 in 2 files) ----
+check_data in action.c (project_code\Applications\User\src) : 					#if OPEN_LAST_5_STITCH_SPEED
+common.h (project_code\Applications\User\inc) line 294 : #define OPEN_LAST_5_STITCH_SPEED	1
+---- OPEN_LAST_5_STITCH_SPEED Search Errors Encountered (8) ----
 The following 8 files could not be processed:
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_config.c : File could not be opened.
 E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_config.h : File could not be opened.

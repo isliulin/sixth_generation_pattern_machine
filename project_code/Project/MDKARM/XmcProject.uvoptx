@@ -822,7 +822,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>L珻w擰?擰?趏?</Name>
+          <Name>L現w黆?黆?趏婾</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -2389,7 +2389,7 @@
       <GroupNumber>6</GroupNumber>
       <FileNumber>48</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Applications\User\src\io_function.c</PathWithFileName>
@@ -2485,7 +2485,7 @@
       <GroupNumber>6</GroupNumber>
       <FileNumber>56</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Applications\User\src\stepper_function.c</PathWithFileName>
