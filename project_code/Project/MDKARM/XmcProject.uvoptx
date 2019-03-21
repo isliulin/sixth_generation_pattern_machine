@@ -822,7 +822,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>L現w黆?黆?趏婾</Name>
+          <Name>Lw????趏6^</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -987,7 +987,7 @@
         <Ww>
           <count>10</count>
           <WinNumber>2</WinNumber>
-          <ItemText>sys_para</ItemText>
+          <ItemText>sys_para,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>11</count>
@@ -1019,12 +1019,17 @@
           <WinNumber>2</WinNumber>
           <ItemText>y_move_frame_para</ItemText>
         </Ww>
+        <Ww>
+          <count>17</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>opl_origin_flag</ItemText>
+        </Ww>
       </WatchWindow2>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>0x0801CB9B</ItemText>
+          <ItemText>0x200047E8</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>
