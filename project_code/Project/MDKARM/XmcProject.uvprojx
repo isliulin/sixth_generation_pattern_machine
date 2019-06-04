@@ -537,14 +537,14 @@
           <GroupName>Applications/Motor</GroupName>
           <Files>
             <File>
-              <FileName>motor_drive.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
-            </File>
-            <File>
               <FileName>motor_drive.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
+            </File>
+            <File>
+              <FileName>motor_drive_6.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive_6.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -1604,14 +1604,14 @@
           <GroupName>Applications/Motor</GroupName>
           <Files>
             <File>
-              <FileName>motor_drive.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
-            </File>
-            <File>
               <FileName>motor_drive.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
+            </File>
+            <File>
+              <FileName>motor_drive_6.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive_6.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -2671,14 +2671,14 @@
           <GroupName>Applications/Motor</GroupName>
           <Files>
             <File>
-              <FileName>motor_drive.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
-            </File>
-            <File>
               <FileName>motor_drive.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
+            </File>
+            <File>
+              <FileName>motor_drive_6.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\Applications\Motor\motor_drive_6.lib</FilePath>
             </File>
           </Files>
         </Group>
