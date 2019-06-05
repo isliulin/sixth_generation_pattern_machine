@@ -1,13 +1,9 @@
----- OPEN_LAST_5_STITCH_SPEED Matches (2 in 2 files) ----
-check_data in action.c (project_code\Applications\User\src) : 					#if OPEN_LAST_5_STITCH_SPEED
-common.h (project_code\Applications\User\inc) line 294 : #define OPEN_LAST_5_STITCH_SPEED	1
----- OPEN_LAST_5_STITCH_SPEED Search Errors Encountered (8) ----
-The following 8 files could not be processed:
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_config.c : File could not be opened.
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_config.h : File could not be opened.
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_control.c : File could not be opened.
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_control.h : File could not be opened.
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_curve.c : File could not be opened.
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_curve.h : File could not be opened.
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\src\mc_driver.c : File could not be opened.
-E:\zla_git\sixth_generation_pattern_machine\project_code\Applications\Motor\inc\mc_driver.h : File could not be opened.
+---- LOGIC_OUT_INPRESS Matches (8 in 3 files) ----
+inpress_up in action.c (project_code\Applications\User\src) : 		io_set_logic_output(LOGIC_OUT_INPRESS, LOGIC_IO_INACTIVE);
+inpress_down in action.c (project_code\Applications\User\src) : 		io_set_logic_output(LOGIC_OUT_INPRESS, LOGIC_IO_ACTIVE);
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].physical_number = 14;//PHYSICAL_OUT_14
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].active_value = 0;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].inactive_value = 1;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		//io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].physical_number = 14;//PHYSICAL_OUT_14
+io_function.h (project_code\Applications\User\inc) line 90 : #define	LOGIC_OUT_INPRESS			LOGIC_OUTPUT_NUMBER_ADD_DIR(26)	//	气动中压脚，在中捷五代竖屏中，名字是INPRESS_PIN
+IS_LOGIC_OUT_NUMBER_METHOD1 in io_function.h (project_code\Applications\User\inc) : 													((LOGIC_NUM) == LOGIC_OUT_INPRESS) || ((LOGIC_NUM) == LOGIC_OUT_MARKING_PEN) || ((LOGIC_NUM) == LOGIC_OUT_LASER_POWER_SWITCH) || ((LOGIC_NUM) == LOGIC_OUT_LASER_POWER) || ((LOGIC_NUM) == LOGIC_OUT_LASER_FUN)	|| \
