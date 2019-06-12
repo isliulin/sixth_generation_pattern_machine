@@ -1,9 +1,9 @@
----- LOGIC_OUT_INPRESS Matches (8 in 3 files) ----
-inpress_up in action.c (project_code\Applications\User\src) : 		io_set_logic_output(LOGIC_OUT_INPRESS, LOGIC_IO_INACTIVE);
-inpress_down in action.c (project_code\Applications\User\src) : 		io_set_logic_output(LOGIC_OUT_INPRESS, LOGIC_IO_ACTIVE);
-io_function_init in io_function.c (project_code\Applications\User\src) : 		io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].physical_number = 14;//PHYSICAL_OUT_14
-io_function_init in io_function.c (project_code\Applications\User\src) : 		io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].active_value = 0;
-io_function_init in io_function.c (project_code\Applications\User\src) : 		io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].inactive_value = 1;
-io_function_init in io_function.c (project_code\Applications\User\src) : 		//io_out_reflection_table[LOGIC_OUTPUT_NUMBER_CLERA_DIR(LOGIC_OUT_INPRESS)].physical_number = 14;//PHYSICAL_OUT_14
-io_function.h (project_code\Applications\User\inc) line 90 : #define	LOGIC_OUT_INPRESS			LOGIC_OUTPUT_NUMBER_ADD_DIR(26)	//	气动中压脚，在中捷五代竖屏中，名字是INPRESS_PIN
-IS_LOGIC_OUT_NUMBER_METHOD1 in io_function.h (project_code\Applications\User\inc) : 													((LOGIC_NUM) == LOGIC_OUT_INPRESS) || ((LOGIC_NUM) == LOGIC_OUT_MARKING_PEN) || ((LOGIC_NUM) == LOGIC_OUT_LASER_POWER_SWITCH) || ((LOGIC_NUM) == LOGIC_OUT_LASER_POWER) || ((LOGIC_NUM) == LOGIC_OUT_LASER_FUN)	|| \
+---- sta_point Matches (8 in 3 files) ----
+go_origin_allmotor in action.c (project_code\Applications\User\src) : 	sta_point = pat_point;
+conprocess_data in action.c (project_code\Applications\User\src) : 		if( (pat_point == sta_point)&&(super_pattern_flag != 1) )
+pre_running in system.c (project_code\Applications\User\src) : 		if( pat_point == sta_point)
+run_status in system.c (project_code\Applications\User\src) : 				if( pat_point == sta_point && pat_buff_total_counter < TOTAL_STITCH_COUNTER)//
+setout_status in system.c (project_code\Applications\User\src) : 												while(pat_point != sta_point)
+setout_status in system.c (project_code\Applications\User\src) : 												while(pat_point != sta_point)
+setout_status in system.c (project_code\Applications\User\src) : 												while(pat_point != sta_point)
+sys_variable.h (project_code\Applications\System\inc) line 12 : extern PATTERN_DATA *pat_point,*sta_point;   				  // pattern point variable structure

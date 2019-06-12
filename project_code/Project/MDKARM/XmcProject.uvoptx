@@ -1345,6 +1345,11 @@
           <WinNumber>2</WinNumber>
           <ItemText>io_active_level_get</ItemText>
         </Ww>
+        <Ww>
+          <count>22</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>_debug_buf_disp,0x10</ItemText>
+        </Ww>
       </WatchWindow2>
       <MemoryWindow1>
         <Mm>
