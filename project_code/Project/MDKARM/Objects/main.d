@@ -65,6 +65,7 @@
 .\objects\main.o: ..\..\Applications\Bsp\CAN_NODE\can_node_extern.h
 .\objects\main.o: ..\..\Applications\Bsp\inc\bsp_uart.h
 .\objects\main.o: ..\..\Applications\User\inc\common.h
+.\objects\main.o: ..\..\Applications\User\inc\version.h
 .\objects\main.o: ..\..\Applications\User\inc\system.h
 .\objects\main.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\main.o: ..\..\Applications\User\inc\typedef.h

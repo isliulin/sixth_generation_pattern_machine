@@ -1077,6 +1077,11 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>DLGUARM</Key>
+          <Name>Lw琻?琻?趏?</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>PWSTATINFO</Key>
           <Name>200,50,700</Name>
         </SetRegEntry>
@@ -1232,6 +1237,21 @@
           <count>23</count>
           <WinNumber>1</WinNumber>
           <ItemText>x_motor_handle</ItemText>
+        </Ww>
+        <Ww>
+          <count>24</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>AdjustAngle,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>25</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>u42</ItemText>
+        </Ww>
+        <Ww>
+          <count>26</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>u236,0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -2751,8 +2771,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Applications\Motor\motor_drive_6.lib</PathWithFileName>
-      <FilenameWithoutPath>motor_drive_6.lib</FilenameWithoutPath>
+      <PathWithFileName>..\..\Applications\Motor\motor_drive.lib</PathWithFileName>
+      <FilenameWithoutPath>motor_drive.lib</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

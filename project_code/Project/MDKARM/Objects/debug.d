@@ -65,6 +65,7 @@
 .\objects\debug.o: ..\..\Applications\Bsp\CAN_NODE\can_node_extern.h
 .\objects\debug.o: ..\..\Applications\Bsp\inc\bsp_uart.h
 .\objects\debug.o: ..\..\Applications\User\inc\common.h
+.\objects\debug.o: ..\..\Applications\User\inc\version.h
 .\objects\debug.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\debug.o: ..\..\Applications\User\inc\typedef.h
 .\objects\debug.o: ..\..\Applications\Motor\motor_drive.h

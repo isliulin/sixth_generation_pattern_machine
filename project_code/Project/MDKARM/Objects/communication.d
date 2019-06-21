@@ -20,6 +20,7 @@
 .\objects\communication.o: ..\..\Libraries\XMCLib\inc\xmc_usic.h
 .\objects\communication.o: ..\..\Libraries\XMCLib\inc\xmc4_usic_map.h
 .\objects\communication.o: ..\..\Applications\User\inc\common.h
+.\objects\communication.o: ..\..\Applications\User\inc\version.h
 .\objects\communication.o: ..\..\Applications\User\inc\typedef.h
 .\objects\communication.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\communication.o: ..\..\Applications\Motor\motor_drive.h

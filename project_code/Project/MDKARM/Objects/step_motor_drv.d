@@ -31,6 +31,7 @@
 .\objects\step_motor_drv.o: ..\..\Applications\Bsp\inc\bsp_dac.h
 .\objects\step_motor_drv.o: ..\..\Libraries\XMCLib\inc\xmc_dac.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\common.h
+.\objects\step_motor_drv.o: ..\..\Applications\User\inc\version.h
 .\objects\step_motor_drv.o: ..\..\Applications\User\inc\typedef.h
 .\objects\step_motor_drv.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\step_motor_drv.o: ..\..\Applications\Motor\motor_drive.h

@@ -17,6 +17,7 @@
 .\objects\action.o: ..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h
 .\objects\action.o: ..\..\Libraries\XMCLib\inc\xmc_dac.h
 .\objects\action.o: ..\..\Applications\User\inc\common.h
+.\objects\action.o: ..\..\Applications\User\inc\version.h
 .\objects\action.o: ..\..\Applications\User\inc\typedef.h
 .\objects\action.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\action.o: ..\..\Applications\Motor\motor_drive.h

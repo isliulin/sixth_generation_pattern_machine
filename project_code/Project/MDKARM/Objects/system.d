@@ -28,6 +28,7 @@
 .\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc_usic.h
 .\objects\system.o: ..\..\Libraries\XMCLib\inc\xmc4_usic_map.h
 .\objects\system.o: ..\..\Applications\User\inc\common.h
+.\objects\system.o: ..\..\Applications\User\inc\version.h
 .\objects\system.o: ..\..\Applications\User\inc\typedef.h
 .\objects\system.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\system.o: ..\..\Applications\Motor\motor_drive.h

@@ -29,6 +29,7 @@
 .\objects\stepper_function.o: ..\..\Applications\App\inc\app_gpio.h
 .\objects\stepper_function.o: ..\..\Applications\Bsp\inc\bsp_gpio.h
 .\objects\stepper_function.o: ..\..\Applications\User\inc\common.h
+.\objects\stepper_function.o: ..\..\Applications\User\inc\version.h
 .\objects\stepper_function.o: ..\..\Applications\User\inc\typedef.h
 .\objects\stepper_function.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\stepper_function.o: ..\..\Applications\Motor\motor_drive.h

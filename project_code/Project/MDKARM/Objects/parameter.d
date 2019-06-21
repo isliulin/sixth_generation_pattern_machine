@@ -23,6 +23,7 @@
 .\objects\parameter.o: ..\..\Libraries\XMCLib\inc\xmc_usic.h
 .\objects\parameter.o: ..\..\Libraries\XMCLib\inc\xmc4_usic_map.h
 .\objects\parameter.o: ..\..\Applications\User\inc\common.h
+.\objects\parameter.o: ..\..\Applications\User\inc\version.h
 .\objects\parameter.o: ..\..\Applications\User\inc\typedef.h
 .\objects\parameter.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\parameter.o: ..\..\Applications\Motor\motor_drive.h

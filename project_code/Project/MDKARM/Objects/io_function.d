@@ -14,6 +14,7 @@
 .\objects\io_function.o: ..\..\Libraries\XMCLib\inc\xmc4_gpio.h
 .\objects\io_function.o: ..\..\Libraries\XMCLib\inc\xmc4_gpio_map.h
 .\objects\io_function.o: ..\..\Applications\User\inc\common.h
+.\objects\io_function.o: ..\..\Applications\User\inc\version.h
 .\objects\io_function.o: ..\..\Applications\User\inc\typedef.h
 .\objects\io_function.o: ..\..\Applications\System\inc\sys_variable.h
 .\objects\io_function.o: ..\..\Applications\Motor\motor_drive.h

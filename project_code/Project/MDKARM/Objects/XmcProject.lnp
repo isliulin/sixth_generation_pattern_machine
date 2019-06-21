@@ -28,7 +28,7 @@
 ".\objects\can_node_conf.o"
 ".\objects\global_can.o"
 ".\objects\global_can_conf.o"
-"..\..\Applications\Motor\motor_drive_6.lib"
+"..\..\Applications\Motor\motor_drive.lib"
 ".\objects\sys_variable.o"
 ".\objects\watch.o"
 "..\..\Applications\Unit\src\IQmathLib.lib"

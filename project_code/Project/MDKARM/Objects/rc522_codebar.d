@@ -65,6 +65,7 @@
 .\objects\rc522_codebar.o: ..\..\Applications\Bsp\CAN_NODE\can_node_extern.h
 .\objects\rc522_codebar.o: ..\..\Applications\Bsp\inc\bsp_uart.h
 .\objects\rc522_codebar.o: ..\..\Applications\User\inc\common.h
+.\objects\rc522_codebar.o: ..\..\Applications\User\inc\version.h
 .\objects\rc522_codebar.o: ..\..\Applications\User\inc\delay.h
 .\objects\rc522_codebar.o: ..\..\Applications\User\inc\rc522_barcoder.h
 .\objects\rc522_codebar.o: ..\..\Applications\System\inc\sys_variable.h

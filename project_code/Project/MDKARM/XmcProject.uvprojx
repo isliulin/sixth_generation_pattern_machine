@@ -542,9 +542,9 @@
               <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
             </File>
             <File>
-              <FileName>motor_drive_6.lib</FileName>
+              <FileName>motor_drive.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\Applications\Motor\motor_drive_6.lib</FilePath>
+              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -1609,9 +1609,9 @@
               <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
             </File>
             <File>
-              <FileName>motor_drive_6.lib</FileName>
+              <FileName>motor_drive.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\Applications\Motor\motor_drive_6.lib</FilePath>
+              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -2676,9 +2676,9 @@
               <FilePath>..\..\Applications\Motor\motor_drive.h</FilePath>
             </File>
             <File>
-              <FileName>motor_drive_6.lib</FileName>
+              <FileName>motor_drive.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\Applications\Motor\motor_drive_6.lib</FilePath>
+              <FilePath>..\..\Applications\Motor\motor_drive.lib</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,9 +1,6 @@
----- sta_point Matches (8 in 3 files) ----
-go_origin_allmotor in action.c (project_code\Applications\User\src) : 	sta_point = pat_point;
-conprocess_data in action.c (project_code\Applications\User\src) : 		if( (pat_point == sta_point)&&(super_pattern_flag != 1) )
-pre_running in system.c (project_code\Applications\User\src) : 		if( pat_point == sta_point)
-run_status in system.c (project_code\Applications\User\src) : 				if( pat_point == sta_point && pat_buff_total_counter < TOTAL_STITCH_COUNTER)//
-setout_status in system.c (project_code\Applications\User\src) : 												while(pat_point != sta_point)
-setout_status in system.c (project_code\Applications\User\src) : 												while(pat_point != sta_point)
-setout_status in system.c (project_code\Applications\User\src) : 												while(pat_point != sta_point)
-sys_variable.h (project_code\Applications\System\inc) line 12 : extern PATTERN_DATA *pat_point,*sta_point;   				  // pattern point variable structure
+---- bsp_DacSetValue Matches (5 in 2 files) ----
+app_DacInit in app_dac.c (project_code\Applications\App\src) :   bsp_DacSetValue(1, 0);//初始值设置为0
+app_DacInit in app_dac.c (project_code\Applications\App\src) :   bsp_DacSetValue(0, 0);//初始值设置为0
+app_DacSetValue in app_dac.c (project_code\Applications\App\src) :   bsp_DacSetValue(1, value);
+app_DacSetValue_da0 in app_dac.c (project_code\Applications\App\src) : 	bsp_DacSetValue(0, value);
+bsp_dac.h (project_code\Applications\Bsp\inc) line 29 : void bsp_DacSetValue(uint8_t channel, uint16_t value);
