@@ -1,6 +1,39 @@
----- bsp_DacSetValue Matches (5 in 2 files) ----
-app_DacInit in app_dac.c (project_code\Applications\App\src) :   bsp_DacSetValue(1, 0);//初始值设置为0
-app_DacInit in app_dac.c (project_code\Applications\App\src) :   bsp_DacSetValue(0, 0);//初始值设置为0
-app_DacSetValue in app_dac.c (project_code\Applications\App\src) :   bsp_DacSetValue(1, value);
-app_DacSetValue_da0 in app_dac.c (project_code\Applications\App\src) : 	bsp_DacSetValue(0, value);
-bsp_dac.h (project_code\Applications\Bsp\inc) line 29 : void bsp_DacSetValue(uint8_t channel, uint16_t value);
+---- pedal_state Matches (38 in 4 files) ----
+action.c (project_code\Applications\User\src) line 6208 : pedal_state:4        0         1         2		    3            
+yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 0;
+yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 1;
+yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 2;
+yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 3;
+yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 4;
+function_1ms_hook in main.c (project_code\Applications\User\src) : 				pedal_state = 0;
+function_1ms_hook in main.c (project_code\Applications\User\src) : 				pedal_state = 2;
+function_1ms_hook in main.c (project_code\Applications\User\src) : 				pedal_state = 3;					
+function_1ms_hook in main.c (project_code\Applications\User\src) : 					pedal_state = 3;
+function_1ms_hook in main.c (project_code\Applications\User\src) : 					pedal_state = 2;
+pre_running in system.c (project_code\Applications\User\src) : 	pedal_state = 0;   
+ready_status in system.c (project_code\Applications\User\src) : 		  	if( pedal_state == 2)           				
+ready_status in system.c (project_code\Applications\User\src) : 				pedal_state = 0;
+ready_status in system.c (project_code\Applications\User\src) : 			if(pedal_state == 2) 
+ready_status in system.c (project_code\Applications\User\src) : 				pedal_state=0;			
+ready_status in system.c (project_code\Applications\User\src) : 			if( ((pedal_state == 3)||(software_key_run == 1) )&&(single_flag ==0)&&(pattern_change_flag == 0) )
+ready_status in system.c (project_code\Applications\User\src) : 				pedal_state = 0;
+error_status in system.c (project_code\Applications\User\src) : 	pedal_state = 0;
+prewind_status in system.c (project_code\Applications\User\src) : 		if( pedal_state == 2)
+prewind_status in system.c (project_code\Applications\User\src) : 			pedal_state = 0;
+prewind_status in system.c (project_code\Applications\User\src) : 		if( pedal_state == 3)
+prewind_status in system.c (project_code\Applications\User\src) : 			pedal_state = 0;
+wind_status in system.c (project_code\Applications\User\src) : 	if( (pedal_state == 3)|| (pause_flag == 1) )
+wind_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
+preedit_status in system.c (project_code\Applications\User\src) : 	if(pedal_state == 2)           		
+preedit_status in system.c (project_code\Applications\User\src) :    	    pedal_state = 0;
+checki06_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 3)
+checki06_status in system.c (project_code\Applications\User\src) : 		pedal_state	= 0;	
+checki06_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 2)	
+checki06_status in system.c (project_code\Applications\User\src) : 		pedal_state	= 0;
+checki10_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 3 )   
+checki10_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
+download_drv_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 2)  
+download_drv_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
+download_drv_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 3)  
+download_drv_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
+sys_variable.h (project_code\Applications\System\inc) line 23 : extern uint8_t pedal_state;
