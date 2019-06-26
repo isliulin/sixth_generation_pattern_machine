@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\XmcProject.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\XmcProject.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Jun 24 20:13:08 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Jun 26 20:19:06 2019
 <BR><P>
 <H3>Maximum Stack Usage =        568 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -152,8 +152,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[75]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<BR><BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
 <P><STRONG><a name="[76]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
@@ -695,26 +695,26 @@ Global Symbols
 <P><STRONG><a name="[2ab]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
 <P><STRONG><a name="[c4]"></a>_IQ10div</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, IQNdiv.o(_IQ10div))
-<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_pattern
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_pattern
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
 </UL>
 
 <P><STRONG><a name="[c0]"></a>_IQ10mpy</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, IQNmpy.o(_IQ10mpy))
-<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve1
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_pattern
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_pattern
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ExtractionCurve
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve1
 </UL>
 
 <P><STRONG><a name="[c3]"></a>_IQ10sqrt</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, IQNsqrt.o(_IQ10sqrt))
-<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_pattern
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_pattern
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
 </UL>
 
 <P><STRONG><a name="[c1]"></a>_IQ20div</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, IQNdiv.o(_IQ20div))
-<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve1
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ExtractionCurve
+<BR><BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ExtractionCurve
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_step
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve1
 </UL>
 
 <P><STRONG><a name="[c2]"></a>_IQ20mpy</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, IQNmpy.o(_IQ20mpy))
@@ -814,10 +814,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 48 + Unknown Stack Size
 <LI>Call Chain = CalculateCurve1 &rArr; CalculateCurve_pattern1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_IQ20div
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_IQ20div
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_IQ10mpy
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_IQ20mpy
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve_pattern1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Stp_StaMach
 </UL>
@@ -1339,13 +1339,13 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = Stp_StaMach &rArr; StepLoop_Update_close &rArr; StepM_PosCtrl &rArr; StepM_SpdCtrl &rArr; StepM_CurCtrl
 </UL>
-<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StepLoop_Init
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StepLoop_Update_close
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Quard_decode_check_false
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_step
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StepLoop_Init
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalculateCurve1
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Find_StartPoint
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_floorf
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StepLoop_Update_close
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Quard_decode_check_false
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Run_step
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StepContrl
 </UL>
@@ -1469,10 +1469,10 @@ Global Symbols
 <LI>Call Chain = VADC0_G0_0_IRQHandler &rArr; pmsm1_100us_task &rArr; Svpwm_Update &rArr; SVPWM_t_calc &rArr; park_calc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU4_SLICE_GetCaptureRegisterValue
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_VADC_GROUP_GetResult
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmsm1_100us_task
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StepContrl
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder_Capt
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_VADC_GROUP_GetResult
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_xmc4402.o(RESET)
 </UL>
@@ -1512,9 +1512,9 @@ Global Symbols
 <P><STRONG><a name="[cc]"></a>XMC_CAN_Init</STRONG> (Thumb, 186 bytes, Stack size 56 bytes, xmc_can.o(i.XMC_CAN_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = XMC_CAN_Init &rArr; XMC_CAN_Enable &rArr; XMC_SCU_RESET_DeassertPeripheralReset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_GetPeripheralClockFrequency
+<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;min
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_GetPeripheralClockFrequency
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CAN_Enable
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;min
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLOBAL_CAN_Init
 </UL>
@@ -1544,9 +1544,9 @@ Global Symbols
 <P><STRONG><a name="[141]"></a>XMC_CCU4_EnableModule</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, xmc_ccu4.o(i.XMC_CCU4_EnableModule))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = XMC_CCU4_EnableModule &rArr; XMC_SCU_RESET_DeassertPeripheralReset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_DeassertPeripheralReset
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_EnableClock
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_DeassertPeripheralReset
 <LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_UngatePeripheralClock
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_EnableClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU4_Init
 </UL>
@@ -1620,9 +1620,9 @@ Global Symbols
 <P><STRONG><a name="[143]"></a>XMC_CCU8_EnableModule</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, xmc_ccu8.o(i.XMC_CCU8_EnableModule))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = XMC_CCU8_EnableModule &rArr; XMC_SCU_RESET_DeassertPeripheralReset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_DeassertPeripheralReset
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_EnableClock
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_DeassertPeripheralReset
 <LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_UngatePeripheralClock
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_EnableClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU8_Init
 </UL>
@@ -1726,7 +1726,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[14a]"></a>XMC_DMA_CH_Init</STRONG> (Thumb, 800 bytes, Stack size 32 bytes, xmc_dma.o(i.XMC_DMA_CH_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = XMC_DMA_CH_Init &rArr; XMC_DMA_IsEnabled &rArr; XMC_SCU_CLOCK_IsPeripheralClockGated
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = XMC_DMA_CH_Init &rArr; XMC_DMA_IsEnabled &rArr; XMC_SCU_RESET_IsPeripheralResetAsserted
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DMA_IsEnabled
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DMA_EnableRequestLine
@@ -1776,10 +1776,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[14b]"></a>XMC_DMA_IsEnabled</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, xmc_dma.o(i.XMC_DMA_IsEnabled))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = XMC_DMA_IsEnabled &rArr; XMC_SCU_CLOCK_IsPeripheralClockGated
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = XMC_DMA_IsEnabled &rArr; XMC_SCU_RESET_IsPeripheralResetAsserted
 </UL>
-<BR>[Calls]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_IsPeripheralClockGated
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_IsPeripheralResetAsserted
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_IsPeripheralResetAsserted
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_IsPeripheralClockGated
 </UL>
 <BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DMA_CH_Init
 </UL>
@@ -1834,9 +1834,9 @@ Global Symbols
 <P><STRONG><a name="[154]"></a>XMC_POSIF_Enable</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, xmc_posif.o(i.XMC_POSIF_Enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = XMC_POSIF_Enable &rArr; XMC_SCU_RESET_DeassertPeripheralReset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_DeassertPeripheralReset
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_EnableClock
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_RESET_DeassertPeripheralReset
 <LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_UngatePeripheralClock
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_SCU_CLOCK_EnableClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_POSIF_Init
 </UL>
@@ -1981,13 +1981,13 @@ Global Symbols
 <P><STRONG><a name="[13c]"></a>XMC_SCU_CLOCK_UngatePeripheralClock</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, xmc4_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = XMC_SCU_CLOCK_UngatePeripheralClock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CAN_Enable
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DMA_Enable
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DAC_Enable
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DAC_Enable
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU8_EnableModule
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU4_EnableModule
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CAN_Enable
 <LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_POSIF_Enable
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_ERU_Enable
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DMA_Enable
 <LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_VADC_GLOBAL_EnableModule
 <LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_USIC_Enable
 </UL>
@@ -2007,13 +2007,13 @@ Global Symbols
 <P><STRONG><a name="[13d]"></a>XMC_SCU_RESET_DeassertPeripheralReset</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, xmc4_scu.o(i.XMC_SCU_RESET_DeassertPeripheralReset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = XMC_SCU_RESET_DeassertPeripheralReset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CAN_Enable
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DMA_Enable
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DAC_Enable
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DAC_Enable
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU8_EnableModule
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU4_EnableModule
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CAN_Enable
 <LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_POSIF_Enable
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_ERU_Enable
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_DMA_Enable
 <LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_VADC_GLOBAL_EnableModule
 <LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_USIC_Enable
 </UL>
@@ -4807,8 +4807,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[23c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;single_move_func
 </UL>
 
-<P><STRONG><a name="[245]"></a>single_end</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, action.o(i.single_end))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = single_end
+<P><STRONG><a name="[245]"></a>single_end</STRONG> (Thumb, 56 bytes, Stack size 4 bytes, action.o(i.single_end))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = single_end
 </UL>
 <BR>[Calls]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_foot_status
 </UL>
@@ -4873,8 +4873,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;protocol
 </UL>
 
-<P><STRONG><a name="[246]"></a>single_start</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, action.o(i.single_start))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = single_start
+<P><STRONG><a name="[246]"></a>single_start</STRONG> (Thumb, 56 bytes, Stack size 4 bytes, action.o(i.single_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = single_start
 </UL>
 <BR>[Calls]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_foot_status
 </UL>

@@ -696,6 +696,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\rc522_codebar.c</FilePath>
             </File>
+            <File>
+              <FileName>nopmove_speed.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\nopmove_speed.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1763,6 +1768,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\rc522_codebar.c</FilePath>
             </File>
+            <File>
+              <FileName>nopmove_speed.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\nopmove_speed.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2829,6 +2839,11 @@
               <FileName>rc522_codebar.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Applications\User\src\rc522_codebar.c</FilePath>
+            </File>
+            <File>
+              <FileName>nopmove_speed.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Applications\User\src\nopmove_speed.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -1495,6 +1495,19 @@ Section Cross References
     rc522_codebar.o(i.pattern_process) refers to rc522_codebar.o(i.identify_pattern) for identify_pattern
     rc522_codebar.o(i.pattern_process) refers to delay.o(i.delay_ms) for delay_ms
     rc522_codebar.o(i.pattern_process) refers to sys_variable.o(.data) for formwork_identify_device
+    nopmove_speed.o(i.nopmove_calculate_move_time) refers to nopmove_speed.o(i._nopmove_get_speed) for _nopmove_get_speed
+    nopmove_speed.o(i.nopmove_calculate_move_time) refers to nopmove_speed.o(i._nopmove_get_length) for _nopmove_get_length
+    nopmove_speed.o(i.nopmove_calculate_move_time) refers to nopmove_speed.o(.bss) for nopmove_speed_para
+    nopmove_speed.o(i.nopmove_calculate_move_time) refers to nopmove_speed.o(.data) for speed_level_table
+    nopmove_speed.o(i.nopmove_init) refers to nopmove_speed.o(i.nopmove_refresh_para) for nopmove_refresh_para
+    nopmove_speed.o(i.nopmove_init) refers to parameter.o(i.mymemset) for mymemset
+    nopmove_speed.o(i.nopmove_init) refers to nopmove_speed.o(i._nopmove_sort_speed_point) for _nopmove_sort_speed_point
+    nopmove_speed.o(i.nopmove_init) refers to nopmove_speed.o(.bss) for nopmove_speed_para
+    nopmove_speed.o(i.nopmove_refresh_para) refers to app_spiflash.o(i.app_SpiFlashRead) for app_SpiFlashRead
+    nopmove_speed.o(i.nopmove_refresh_para) refers to parameter.o(i.mymemcpy) for mymemcpy
+    nopmove_speed.o(i.nopmove_refresh_para) refers to nopmove_speed.o(i._nopmove_sort_speed_point) for _nopmove_sort_speed_point
+    nopmove_speed.o(i.nopmove_refresh_para) refers to sys_variable.o(.bss) for svpara_disp_buf
+    nopmove_speed.o(i.nopmove_refresh_para) refers to nopmove_speed.o(.bss) for speed_group_1_sorted
     startup_xmc4402.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_xmc4402.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_xmc4402.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
@@ -2397,6 +2410,17 @@ Removing Unused input sections from the image.
     Removing rc522_codebar.o(i.identify_pattern), (108 bytes).
     Removing rc522_codebar.o(i.pattern_process), (260 bytes).
     Removing rc522_codebar.o(i.rec1_com), (2 bytes).
+    Removing nopmove_speed.o(.rev16_text), (4 bytes).
+    Removing nopmove_speed.o(.revsh_text), (4 bytes).
+    Removing nopmove_speed.o(.rrx_text), (6 bytes).
+    Removing nopmove_speed.o(i._nopmove_get_length), (106 bytes).
+    Removing nopmove_speed.o(i._nopmove_get_speed), (148 bytes).
+    Removing nopmove_speed.o(i._nopmove_sort_speed_point), (312 bytes).
+    Removing nopmove_speed.o(i.nopmove_calculate_move_time), (460 bytes).
+    Removing nopmove_speed.o(i.nopmove_init), (108 bytes).
+    Removing nopmove_speed.o(i.nopmove_refresh_para), (188 bytes).
+    Removing nopmove_speed.o(.bss), (360 bytes).
+    Removing nopmove_speed.o(.data), (10 bytes).
     Removing system_xmc4400.o(.rev16_text), (4 bytes).
     Removing system_xmc4400.o(.revsh_text), (4 bytes).
     Removing system_xmc4400.o(.rrx_text), (6 bytes).
@@ -3083,7 +3107,7 @@ Removing Unused input sections from the image.
     Removing IQtables.o(div_table), (2048 bytes).
     Removing IQtables.o(sincos_table), (2052 bytes).
 
-911 unused section(s) (total 265136 bytes) removed from the image.
+922 unused section(s) (total 266842 bytes) removed from the image.
 
 ==============================================================================
 
@@ -3093,62 +3117,62 @@ Image Symbol Table
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
     ../clib/angel/dczerorl2.s                0x00000000   Number         0  __dczerorl2.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0.o ABSOLUTE
-    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
     ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
     ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
-    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
     ../clib/fenv.c                           0x00000000   Number         0  _fptrap.o ABSOLUTE
     ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
     ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
-    ../clib/longlong.s                       0x00000000   Number         0  llsdiv.o ABSOLUTE
     ../clib/longlong.s                       0x00000000   Number         0  lludivv7m.o ABSOLUTE
+    ../clib/longlong.s                       0x00000000   Number         0  llsdiv.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
     ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_v6.o ABSOLUTE
     ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_w.o ABSOLUTE
-    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
     ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
     ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
     ../clib/string.c                         0x00000000   Number         0  memcmp.o ABSOLUTE
@@ -3228,6 +3252,7 @@ Image Symbol Table
     ..\..\Applications\User\src\io_file_struct.c 0x00000000   Number         0  io_file_struct.o ABSOLUTE
     ..\..\Applications\User\src\io_function.c 0x00000000   Number         0  io_function.o ABSOLUTE
     ..\..\Applications\User\src\main.c       0x00000000   Number         0  main.o ABSOLUTE
+    ..\..\Applications\User\src\nopmove_speed.c 0x00000000   Number         0  nopmove_speed.o ABSOLUTE
     ..\..\Applications\User\src\parameter.c  0x00000000   Number         0  parameter.o ABSOLUTE
     ..\..\Applications\User\src\rc522_codebar.c 0x00000000   Number         0  rc522_codebar.o ABSOLUTE
     ..\..\Applications\User\src\step_motor_drv.c 0x00000000   Number         0  step_motor_drv.o ABSOLUTE
@@ -3316,6 +3341,7 @@ Image Symbol Table
     ..\\..\\Applications\\User\\src\\initial.c 0x00000000   Number         0  initial.o ABSOLUTE
     ..\\..\\Applications\\User\\src\\io_function.c 0x00000000   Number         0  io_function.o ABSOLUTE
     ..\\..\\Applications\\User\\src\\main.c  0x00000000   Number         0  main.o ABSOLUTE
+    ..\\..\\Applications\\User\\src\\nopmove_speed.c 0x00000000   Number         0  nopmove_speed.o ABSOLUTE
     ..\\..\\Applications\\User\\src\\parameter.c 0x00000000   Number         0  parameter.o ABSOLUTE
     ..\\..\\Applications\\User\\src\\rc522_codebar.c 0x00000000   Number         0  rc522_codebar.o ABSOLUTE
     ..\\..\\Applications\\User\\src\\step_motor_drv.c 0x00000000   Number         0  step_motor_drv.o ABSOLUTE
@@ -5837,348 +5863,348 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x08000000   0x00000200   Data   RO         3671    RESET               startup_xmc4402.o
-    0x08000200   0x08000200   0x00000008   Code   RO         9196  * !!!main             c_w.l(__main.o)
-    0x08000208   0x08000208   0x00000034   Code   RO         9412    !!!scatter          c_w.l(__scatter.o)
-    0x0800023c   0x0800023c   0x0000005a   Code   RO         9410    !!dczerorl2         c_w.l(__dczerorl2.o)
+    0x08000000   0x08000000   0x00000200   Data   RO         3732    RESET               startup_xmc4402.o
+    0x08000200   0x08000200   0x00000008   Code   RO         9257  * !!!main             c_w.l(__main.o)
+    0x08000208   0x08000208   0x00000034   Code   RO         9473    !!!scatter          c_w.l(__scatter.o)
+    0x0800023c   0x0800023c   0x0000005a   Code   RO         9471    !!dczerorl2         c_w.l(__dczerorl2.o)
     0x08000296   0x08000296   0x00000002   PAD
-    0x08000298   0x08000298   0x0000001c   Code   RO         9414    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x080002b4   0x080002b4   0x00000002   Code   RO         9268    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x080002b6   0x080002b6   0x00000004   Code   RO         9286    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9289    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9292    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9294    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9296    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9299    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9301    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9303    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9305    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9307    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9309    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9311    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9313    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9315    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9317    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9319    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9323    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9325    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9327    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000000   Code   RO         9329    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x080002ba   0x080002ba   0x00000002   Code   RO         9330    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x080002bc   0x080002bc   0x00000002   Code   RO         9360    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x080002be   0x080002be   0x00000000   Code   RO         9377    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x080002be   0x080002be   0x00000000   Code   RO         9379    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x080002be   0x080002be   0x00000000   Code   RO         9382    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x080002be   0x080002be   0x00000000   Code   RO         9385    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x080002be   0x080002be   0x00000000   Code   RO         9387    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x080002be   0x080002be   0x00000000   Code   RO         9390    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x080002be   0x080002be   0x00000002   Code   RO         9391    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x080002c0   0x080002c0   0x00000000   Code   RO         9214    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x080002c0   0x080002c0   0x00000000   Code   RO         9233    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x080002c0   0x080002c0   0x00000006   Code   RO         9245    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x080002c6   0x080002c6   0x00000000   Code   RO         9235    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x080002c6   0x080002c6   0x00000004   Code   RO         9236    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x080002ca   0x080002ca   0x00000000   Code   RO         9238    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x080002ca   0x080002ca   0x00000008   Code   RO         9239    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x080002d2   0x080002d2   0x00000002   Code   RO         9278    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x080002d4   0x080002d4   0x00000000   Code   RO         9332    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x080002d4   0x080002d4   0x00000004   Code   RO         9333    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x080002d8   0x080002d8   0x00000006   Code   RO         9334    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x08000298   0x08000298   0x0000001c   Code   RO         9475    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x080002b4   0x080002b4   0x00000002   Code   RO         9329    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x080002b6   0x080002b6   0x00000004   Code   RO         9347    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9350    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9353    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9355    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9357    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9360    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9362    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9364    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9366    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9368    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9370    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9372    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9374    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9376    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9378    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9380    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9384    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9386    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9388    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000000   Code   RO         9390    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x080002ba   0x080002ba   0x00000002   Code   RO         9391    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x080002bc   0x080002bc   0x00000002   Code   RO         9421    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x080002be   0x080002be   0x00000000   Code   RO         9438    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x080002be   0x080002be   0x00000000   Code   RO         9440    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x080002be   0x080002be   0x00000000   Code   RO         9443    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x080002be   0x080002be   0x00000000   Code   RO         9446    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x080002be   0x080002be   0x00000000   Code   RO         9448    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x080002be   0x080002be   0x00000000   Code   RO         9451    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x080002be   0x080002be   0x00000002   Code   RO         9452    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x080002c0   0x080002c0   0x00000000   Code   RO         9275    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x080002c0   0x080002c0   0x00000000   Code   RO         9294    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x080002c0   0x080002c0   0x00000006   Code   RO         9306    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x080002c6   0x080002c6   0x00000000   Code   RO         9296    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x080002c6   0x080002c6   0x00000004   Code   RO         9297    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x080002ca   0x080002ca   0x00000000   Code   RO         9299    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x080002ca   0x080002ca   0x00000008   Code   RO         9300    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x080002d2   0x080002d2   0x00000002   Code   RO         9339    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x080002d4   0x080002d4   0x00000000   Code   RO         9393    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x080002d4   0x080002d4   0x00000004   Code   RO         9394    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x080002d8   0x080002d8   0x00000006   Code   RO         9395    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x080002de   0x080002de   0x00000002   PAD
-    0x080002e0   0x080002e0   0x00000038   Code   RO         3672    .text               startup_xmc4402.o
-    0x08000318   0x08000318   0x00000078   Code   RO         8921    .text               arm_cortexM4lf_math.lib(arm_cos_f32.o)
-    0x08000390   0x08000390   0x00000094   Code   RO         8971    .text               arm_cortexM4lf_math.lib(arm_sin_f32.o)
-    0x08000424   0x08000424   0x00000048   Code   RO         9184    .text               c_w.l(llsdiv.o)
-    0x0800046c   0x0800046c   0x00000058   Code   RO         9186    .text               c_w.l(memcmp.o)
-    0x080004c4   0x080004c4   0x0000008a   Code   RO         9188    .text               c_w.l(rt_memcpy_v6.o)
-    0x0800054e   0x0800054e   0x00000064   Code   RO         9190    .text               c_w.l(rt_memcpy_w.o)
-    0x080005b2   0x080005b2   0x0000004e   Code   RO         9192    .text               c_w.l(rt_memclr_w.o)
-    0x08000600   0x08000600   0x00000006   Code   RO         9194    .text               c_w.l(heapauxi.o)
-    0x08000606   0x08000606   0x000000ee   Code   RO         9215    .text               c_w.l(lludivv7m.o)
-    0x080006f4   0x080006f4   0x0000004a   Code   RO         9257    .text               c_w.l(sys_stackheap_outer.o)
-    0x0800073e   0x0800073e   0x00000012   Code   RO         9261    .text               c_w.l(exit.o)
-    0x08000750   0x08000750   0x00000008   Code   RO         9275    .text               c_w.l(libspace.o)
-    0x08000758   0x08000758   0x0000000c   Code   RO         9348    .text               c_w.l(sys_exit.o)
-    0x08000764   0x08000764   0x00000002   Code   RO         9365    .text               c_w.l(use_no_semi.o)
-    0x08000766   0x08000766   0x00000000   Code   RO         9367    .text               c_w.l(indicate_semi.o)
+    0x080002e0   0x080002e0   0x00000038   Code   RO         3733    .text               startup_xmc4402.o
+    0x08000318   0x08000318   0x00000078   Code   RO         8982    .text               arm_cortexM4lf_math.lib(arm_cos_f32.o)
+    0x08000390   0x08000390   0x00000094   Code   RO         9032    .text               arm_cortexM4lf_math.lib(arm_sin_f32.o)
+    0x08000424   0x08000424   0x00000048   Code   RO         9245    .text               c_w.l(llsdiv.o)
+    0x0800046c   0x0800046c   0x00000058   Code   RO         9247    .text               c_w.l(memcmp.o)
+    0x080004c4   0x080004c4   0x0000008a   Code   RO         9249    .text               c_w.l(rt_memcpy_v6.o)
+    0x0800054e   0x0800054e   0x00000064   Code   RO         9251    .text               c_w.l(rt_memcpy_w.o)
+    0x080005b2   0x080005b2   0x0000004e   Code   RO         9253    .text               c_w.l(rt_memclr_w.o)
+    0x08000600   0x08000600   0x00000006   Code   RO         9255    .text               c_w.l(heapauxi.o)
+    0x08000606   0x08000606   0x000000ee   Code   RO         9276    .text               c_w.l(lludivv7m.o)
+    0x080006f4   0x080006f4   0x0000004a   Code   RO         9318    .text               c_w.l(sys_stackheap_outer.o)
+    0x0800073e   0x0800073e   0x00000012   Code   RO         9322    .text               c_w.l(exit.o)
+    0x08000750   0x08000750   0x00000008   Code   RO         9336    .text               c_w.l(libspace.o)
+    0x08000758   0x08000758   0x0000000c   Code   RO         9409    .text               c_w.l(sys_exit.o)
+    0x08000764   0x08000764   0x00000002   Code   RO         9426    .text               c_w.l(use_no_semi.o)
+    0x08000766   0x08000766   0x00000000   Code   RO         9428    .text               c_w.l(indicate_semi.o)
     0x08000766   0x08000766   0x00000002   PAD
-    0x08000768   0x08000768   0x00000090   Code   RO         8747    _IQ10div            motor_drive.lib(IQNdiv.o)
-    0x080007f8   0x080007f8   0x00000010   Code   RO         8837    _IQ10mpy            motor_drive.lib(IQNmpy.o)
-    0x08000808   0x08000808   0x0000006c   Code   RO         9001    _IQ10sqrt           motor_drive.lib(IQNsqrt.o)
-    0x08000874   0x08000874   0x00000090   Code   RO         8757    _IQ20div            motor_drive.lib(IQNdiv.o)
-    0x08000904   0x08000904   0x00000010   Code   RO         8847    _IQ20mpy            motor_drive.lib(IQNmpy.o)
-    0x08000914   0x08000914   0x00000018   Code   RO         8175    i.BackData_version  motor_drive.lib(app_spi.o)
+    0x08000768   0x08000768   0x00000090   Code   RO         8808    _IQ10div            motor_drive.lib(IQNdiv.o)
+    0x080007f8   0x080007f8   0x00000010   Code   RO         8898    _IQ10mpy            motor_drive.lib(IQNmpy.o)
+    0x08000808   0x08000808   0x0000006c   Code   RO         9062    _IQ10sqrt           motor_drive.lib(IQNsqrt.o)
+    0x08000874   0x08000874   0x00000090   Code   RO         8818    _IQ20div            motor_drive.lib(IQNdiv.o)
+    0x08000904   0x08000904   0x00000010   Code   RO         8908    _IQ20mpy            motor_drive.lib(IQNmpy.o)
+    0x08000914   0x08000914   0x00000018   Code   RO         8236    i.BackData_version  motor_drive.lib(app_spi.o)
     0x0800092c   0x0800092c   0x000000d8   Code   RO         1626    i.CAN_NODE_Init     can_node.o
     0x08000a04   0x08000a04   0x0000004c   Code   RO         1629    i.CAN_NODE_MO_Init  can_node.o
     0x08000a50   0x08000a50   0x0000004c   Code   RO         1634    i.CAN_NODE_SetNodeEvents  can_node.o
     0x08000a9c   0x08000a9c   0x0000003e   Code   RO         1635    i.CAN_NODE_SetNodePointer  can_node.o
     0x08000ada   0x08000ada   0x00000002   PAD
-    0x08000adc   0x08000adc   0x000001b8   Code   RO         7574    i.CCU40_2_IRQHandler  motor_drive.lib(mc_pmsm.o)
+    0x08000adc   0x08000adc   0x000001b8   Code   RO         7635    i.CCU40_2_IRQHandler  motor_drive.lib(mc_pmsm.o)
     0x08000c94   0x08000c94   0x00000050   Code   RO         1881    i.CCU43_2_IRQHandler  watch.o
-    0x08000ce4   0x08000ce4   0x00000298   Code   RO         8522    i.CCU4_Config_Init  motor_drive.lib(bsp_ccu4.o)
-    0x08000f7c   0x08000f7c   0x000002f0   Code   RO         8313    i.CCU80_CC80_Config_Init  motor_drive.lib(bsp_svpwm.o)
-    0x0800126c   0x0800126c   0x00000308   Code   RO         8608    i.CalculateCurve1   motor_drive.lib(mc_curve.o)
-    0x08001574   0x08001574   0x00000178   Code   RO         8609    i.CalculateCurve_pattern1  motor_drive.lib(mc_curve.o)
-    0x080016ec   0x080016ec   0x00000134   Code   RO         2905    i.Calculate_QuickMove_Time  step_motor_drv.o
+    0x08000ce4   0x08000ce4   0x00000298   Code   RO         8583    i.CCU4_Config_Init  motor_drive.lib(bsp_ccu4.o)
+    0x08000f7c   0x08000f7c   0x000002f0   Code   RO         8374    i.CCU80_CC80_Config_Init  motor_drive.lib(bsp_svpwm.o)
+    0x0800126c   0x0800126c   0x00000308   Code   RO         8669    i.CalculateCurve1   motor_drive.lib(mc_curve.o)
+    0x08001574   0x08001574   0x00000178   Code   RO         8670    i.CalculateCurve_pattern1  motor_drive.lib(mc_curve.o)
+    0x080016ec   0x080016ec   0x00000134   Code   RO         2909    i.Calculate_QuickMove_Time  step_motor_drv.o
     0x08001820   0x08001820   0x00000020   Code   RO         2045    i.ChangeX           action.o
     0x08001840   0x08001840   0x00000022   Code   RO         2046    i.ChangeY           action.o
     0x08001862   0x08001862   0x00000002   PAD
-    0x08001864   0x08001864   0x00000034   Code   RO         8176    i.CheckOut          motor_drive.lib(app_spi.o)
-    0x08001898   0x08001898   0x0000008c   Code   RO         7575    i.ERU0_0_IRQHandler  motor_drive.lib(mc_pmsm.o)
-    0x08001924   0x08001924   0x000000dc   Code   RO         8148    i.Encoder_Capt      motor_drive.lib(app_stepposif.o)
-    0x08001a00   0x08001a00   0x00000080   Code   RO         8177    i.ExtractionCurve   motor_drive.lib(app_spi.o)
-    0x08001a80   0x08001a80   0x00000124   Code   RO         8577    i.Find_InitPos      motor_drive.lib(mc_config.o)
-    0x08001ba4   0x08001ba4   0x00000164   Code   RO         8578    i.Find_StartPoint   motor_drive.lib(mc_config.o)
-    0x08001d08   0x08001d08   0x00000068   Code   RO         7911    i.ForFunc           motor_drive.lib(motor_drive.o)
+    0x08001864   0x08001864   0x00000034   Code   RO         8237    i.CheckOut          motor_drive.lib(app_spi.o)
+    0x08001898   0x08001898   0x0000008c   Code   RO         7636    i.ERU0_0_IRQHandler  motor_drive.lib(mc_pmsm.o)
+    0x08001924   0x08001924   0x000000dc   Code   RO         8209    i.Encoder_Capt      motor_drive.lib(app_stepposif.o)
+    0x08001a00   0x08001a00   0x00000080   Code   RO         8238    i.ExtractionCurve   motor_drive.lib(app_spi.o)
+    0x08001a80   0x08001a80   0x00000124   Code   RO         8638    i.Find_InitPos      motor_drive.lib(mc_config.o)
+    0x08001ba4   0x08001ba4   0x00000164   Code   RO         8639    i.Find_StartPoint   motor_drive.lib(mc_config.o)
+    0x08001d08   0x08001d08   0x00000068   Code   RO         7972    i.ForFunc           motor_drive.lib(motor_drive.o)
     0x08001d70   0x08001d70   0x0000001e   Code   RO         1784    i.GLOBAL_CAN_Init   global_can.o
     0x08001d8e   0x08001d8e   0x00000002   PAD
     0x08001d90   0x08001d90   0x00000010   Code   RO         1108    i.GPDMA0_0_IRQHandler  bsp_spiflash.o
-    0x08001da0   0x08001da0   0x000000ec   Code   RO         8178    i.GetCurve          motor_drive.lib(app_spi.o)
-    0x08001e8c   0x08001e8c   0x0000000c   Code   RO         7578    i.GetPmsm1Angle     motor_drive.lib(mc_pmsm.o)
+    0x08001da0   0x08001da0   0x000000ec   Code   RO         8239    i.GetCurve          motor_drive.lib(app_spi.o)
+    0x08001e8c   0x08001e8c   0x0000000c   Code   RO         7639    i.GetPmsm1Angle     motor_drive.lib(mc_pmsm.o)
     0x08001e98   0x08001e98   0x00000030   Code   RO         2047    i.GetPmsm1Angle_Adjust  action.o
-    0x08001ec8   0x08001ec8   0x0000000c   Code   RO         7580    i.GetPmsm1SpeedRef  motor_drive.lib(mc_pmsm.o)
-    0x08001ed4   0x08001ed4   0x00000008   Code   RO         7581    i.GetPmsm1Version   motor_drive.lib(mc_pmsm.o)
-    0x08001edc   0x08001edc   0x00000020   Code   RO         7582    i.Install_MC_Int_Fun  motor_drive.lib(mc_pmsm.o)
+    0x08001ec8   0x08001ec8   0x0000000c   Code   RO         7641    i.GetPmsm1SpeedRef  motor_drive.lib(mc_pmsm.o)
+    0x08001ed4   0x08001ed4   0x00000008   Code   RO         7642    i.GetPmsm1Version   motor_drive.lib(mc_pmsm.o)
+    0x08001edc   0x08001edc   0x00000020   Code   RO         7643    i.Install_MC_Int_Fun  motor_drive.lib(mc_pmsm.o)
     0x08001efc   0x08001efc   0x0000001e   Code   RO         2048    i.Judge_Quadrant    action.o
     0x08001f1a   0x08001f1a   0x00000040   Code   RO         1016    i.NVIC_EncodePriority  bsp_spibus.o
     0x08001f5a   0x08001f5a   0x00000002   PAD
-    0x08001f5c   0x08001f5c   0x00000008   Code   RO         3679    i.OSCHP_GetFrequency  system_xmc4400.o
+    0x08001f5c   0x08001f5c   0x00000008   Code   RO         3740    i.OSCHP_GetFrequency  system_xmc4400.o
     0x08001f64   0x08001f64   0x000000e4   Code   RO         2049    i.PBP_Line          action.o
-    0x08002048   0x08002048   0x000000ae   Code   RO         7584    i.Pid_calc          motor_drive.lib(mc_pmsm.o)
+    0x08002048   0x08002048   0x000000ae   Code   RO         7645    i.Pid_calc          motor_drive.lib(mc_pmsm.o)
     0x080020f6   0x080020f6   0x00000002   PAD
-    0x080020f8   0x080020f8   0x0000007c   Code   RO         7585    i.Pmsm1Control      motor_drive.lib(mc_pmsm.o)
-    0x08002174   0x08002174   0x000000b0   Code   RO         7586    i.Pmsm1FindZero     motor_drive.lib(mc_pmsm.o)
-    0x08002224   0x08002224   0x00000058   Code   RO         7587    i.Pmsm1Initial      motor_drive.lib(mc_pmsm.o)
-    0x0800227c   0x0800227c   0x0000003c   Code   RO         7588    i.Pmsm1ParaAddSend  motor_drive.lib(mc_pmsm.o)
-    0x080022b8   0x080022b8   0x00000018   Code   RO         7589    i.Pmsm1PowerOnWatch  motor_drive.lib(mc_pmsm.o)
-    0x080022d0   0x080022d0   0x00000054   Code   RO         7590    i.Pmsm1RunningWatch  motor_drive.lib(mc_pmsm.o)
-    0x08002324   0x08002324   0x0000000c   Code   RO         7591    i.Pmsm1TaskCheck    motor_drive.lib(mc_pmsm.o)
-    0x08002330   0x08002330   0x0000000c   Code   RO         7592    i.Pmsm1_Run_State   motor_drive.lib(mc_pmsm.o)
-    0x0800233c   0x0800233c   0x00000170   Code   RO         8268    i.Posif_Config_Init  motor_drive.lib(bsp_posif.o)
-    0x080024ac   0x080024ac   0x00000038   Code   RO         8701    i.Quard_decode_check_false  motor_drive.lib(mc_stamach.o)
+    0x080020f8   0x080020f8   0x0000007c   Code   RO         7646    i.Pmsm1Control      motor_drive.lib(mc_pmsm.o)
+    0x08002174   0x08002174   0x000000b0   Code   RO         7647    i.Pmsm1FindZero     motor_drive.lib(mc_pmsm.o)
+    0x08002224   0x08002224   0x00000058   Code   RO         7648    i.Pmsm1Initial      motor_drive.lib(mc_pmsm.o)
+    0x0800227c   0x0800227c   0x0000003c   Code   RO         7649    i.Pmsm1ParaAddSend  motor_drive.lib(mc_pmsm.o)
+    0x080022b8   0x080022b8   0x00000018   Code   RO         7650    i.Pmsm1PowerOnWatch  motor_drive.lib(mc_pmsm.o)
+    0x080022d0   0x080022d0   0x00000054   Code   RO         7651    i.Pmsm1RunningWatch  motor_drive.lib(mc_pmsm.o)
+    0x08002324   0x08002324   0x0000000c   Code   RO         7652    i.Pmsm1TaskCheck    motor_drive.lib(mc_pmsm.o)
+    0x08002330   0x08002330   0x0000000c   Code   RO         7653    i.Pmsm1_Run_State   motor_drive.lib(mc_pmsm.o)
+    0x0800233c   0x0800233c   0x00000170   Code   RO         8329    i.Posif_Config_Init  motor_drive.lib(bsp_posif.o)
+    0x080024ac   0x080024ac   0x00000038   Code   RO         8762    i.Quard_decode_check_false  motor_drive.lib(mc_stamach.o)
     0x080024e4   0x080024e4   0x00000010   Code   RO          786    i.Rs485_ReceiveEn   bsp_rs485.o
     0x080024f4   0x080024f4   0x00000010   Code   RO          787    i.Rs485_WriteEn     bsp_rs485.o
-    0x08002504   0x08002504   0x00000274   Code   RO         8659    i.Run_move          motor_drive.lib(mc_driver.o)
-    0x08002778   0x08002778   0x00000130   Code   RO         8660    i.Run_pattern       motor_drive.lib(mc_driver.o)
-    0x080028a8   0x080028a8   0x000002e0   Code   RO         8661    i.Run_quick         motor_drive.lib(mc_driver.o)
-    0x08002b88   0x08002b88   0x000001b0   Code   RO         8662    i.Run_step          motor_drive.lib(mc_driver.o)
+    0x08002504   0x08002504   0x00000274   Code   RO         8720    i.Run_move          motor_drive.lib(mc_driver.o)
+    0x08002778   0x08002778   0x00000130   Code   RO         8721    i.Run_pattern       motor_drive.lib(mc_driver.o)
+    0x080028a8   0x080028a8   0x000002e0   Code   RO         8722    i.Run_quick         motor_drive.lib(mc_driver.o)
+    0x08002b88   0x08002b88   0x000001b0   Code   RO         8723    i.Run_step          motor_drive.lib(mc_driver.o)
     0x08002d38   0x08002d38   0x0000001c   Code   RO         1279    i.SCU_Config_Init   bsp_scu.o
     0x08002d54   0x08002d54   0x0000017c   Code   RO         1531    i.SPI_MASTER_0_lInit  spi_master_conf.o
     0x08002ed0   0x08002ed0   0x0000006a   Code   RO         1369    i.SPI_MASTER_Transfer  spi_master.o
     0x08002f3a   0x08002f3a   0x00000236   Code   RO         1374    i.SPI_MASTER_lReceivePolling  spi_master.o
     0x08003170   0x08003170   0x00000012   Code   RO         1377    i.SPI_MASTER_lStdRBUFFlush  spi_master.o
     0x08003182   0x08003182   0x00000002   PAD
-    0x08003184   0x08003184   0x00000830   Code   RO         8065    i.SVPWM_t_calc      motor_drive.lib(app_svpwm.o)
+    0x08003184   0x08003184   0x00000830   Code   RO         8126    i.SVPWM_t_calc      motor_drive.lib(app_svpwm.o)
     0x080039b4   0x080039b4   0x000000e8   Code   RO         2050    i.SewingReverse     action.o
-    0x08003a9c   0x08003a9c   0x00000078   Code   RO         7912    i.SimulateSpiCmd    motor_drive.lib(motor_drive.o)
+    0x08003a9c   0x08003a9c   0x00000078   Code   RO         7973    i.SimulateSpiCmd    motor_drive.lib(motor_drive.o)
     0x08003b14   0x08003b14   0x0000010c   Code   RO          659    i.SingleIo_Init     bsp_gpio.o
-    0x08003c20   0x08003c20   0x00000014   Code   RO         8066    i.Start_Pwm         motor_drive.lib(app_svpwm.o)
-    0x08003c34   0x08003c34   0x00000014   Code   RO         8468    i.Start_StepPwm     motor_drive.lib(app_stepwm.o)
-    0x08003c48   0x08003c48   0x000000ec   Code   RO         8414    i.StepContrl        motor_drive.lib(mc_step.o)
-    0x08003d34   0x08003d34   0x00000064   Code   RO         8610    i.StepLoop_Init     motor_drive.lib(mc_curve.o)
-    0x08003d98   0x08003d98   0x000000c0   Code   RO         8612    i.StepLoop_Init_reload  motor_drive.lib(mc_curve.o)
-    0x08003e58   0x08003e58   0x0000022c   Code   RO         8702    i.StepLoop_Update_close  motor_drive.lib(mc_stamach.o)
-    0x08004084   0x08004084   0x000001a6   Code   RO         8372    i.StepM_CurCtrl     motor_drive.lib(mc_control.o)
+    0x08003c20   0x08003c20   0x00000014   Code   RO         8127    i.Start_Pwm         motor_drive.lib(app_svpwm.o)
+    0x08003c34   0x08003c34   0x00000014   Code   RO         8529    i.Start_StepPwm     motor_drive.lib(app_stepwm.o)
+    0x08003c48   0x08003c48   0x000000ec   Code   RO         8475    i.StepContrl        motor_drive.lib(mc_step.o)
+    0x08003d34   0x08003d34   0x00000064   Code   RO         8671    i.StepLoop_Init     motor_drive.lib(mc_curve.o)
+    0x08003d98   0x08003d98   0x000000c0   Code   RO         8673    i.StepLoop_Init_reload  motor_drive.lib(mc_curve.o)
+    0x08003e58   0x08003e58   0x0000022c   Code   RO         8763    i.StepLoop_Update_close  motor_drive.lib(mc_stamach.o)
+    0x08004084   0x08004084   0x000001a6   Code   RO         8433    i.StepM_CurCtrl     motor_drive.lib(mc_control.o)
     0x0800422a   0x0800422a   0x00000002   PAD
-    0x0800422c   0x0800422c   0x000001e0   Code   RO         8373    i.StepM_Para_init   motor_drive.lib(mc_control.o)
-    0x0800440c   0x0800440c   0x00000072   Code   RO         8374    i.StepM_PosCtrl     motor_drive.lib(mc_control.o)
+    0x0800422c   0x0800422c   0x000001e0   Code   RO         8434    i.StepM_Para_init   motor_drive.lib(mc_control.o)
+    0x0800440c   0x0800440c   0x00000072   Code   RO         8435    i.StepM_PosCtrl     motor_drive.lib(mc_control.o)
     0x0800447e   0x0800447e   0x00000002   PAD
-    0x08004480   0x08004480   0x00000250   Code   RO         8469    i.StepM_SPWM_calc   motor_drive.lib(app_stepwm.o)
-    0x080046d0   0x080046d0   0x000000b6   Code   RO         8375    i.StepM_SpdCtrl     motor_drive.lib(mc_control.o)
+    0x08004480   0x08004480   0x00000250   Code   RO         8530    i.StepM_SPWM_calc   motor_drive.lib(app_stepwm.o)
+    0x080046d0   0x080046d0   0x000000b6   Code   RO         8436    i.StepM_SpdCtrl     motor_drive.lib(mc_control.o)
     0x08004786   0x08004786   0x00000002   PAD
-    0x08004788   0x08004788   0x0000000c   Code   RO         7913    i.StepMotor1CurveBind  motor_drive.lib(motor_drive.o)
-    0x08004794   0x08004794   0x00000024   Code   RO         7914    i.StepMotor1ParamBind  motor_drive.lib(motor_drive.o)
-    0x080047b8   0x080047b8   0x00000048   Code   RO         8470    i.StepPwm_Update    motor_drive.lib(app_stepwm.o)
-    0x08004800   0x08004800   0x00000090   Code   RO         8067    i.Stop_Pwm          motor_drive.lib(app_svpwm.o)
-    0x08004890   0x08004890   0x00000058   Code   RO         8471    i.Stop_StepPwm      motor_drive.lib(app_stepwm.o)
-    0x080048e8   0x080048e8   0x00000844   Code   RO         8703    i.Stp_StaMach       motor_drive.lib(mc_stamach.o)
-    0x0800512c   0x0800512c   0x00000058   Code   RO         8068    i.Svpwm_Update      motor_drive.lib(app_svpwm.o)
+    0x08004788   0x08004788   0x0000000c   Code   RO         7974    i.StepMotor1CurveBind  motor_drive.lib(motor_drive.o)
+    0x08004794   0x08004794   0x00000024   Code   RO         7975    i.StepMotor1ParamBind  motor_drive.lib(motor_drive.o)
+    0x080047b8   0x080047b8   0x00000048   Code   RO         8531    i.StepPwm_Update    motor_drive.lib(app_stepwm.o)
+    0x08004800   0x08004800   0x00000090   Code   RO         8128    i.Stop_Pwm          motor_drive.lib(app_svpwm.o)
+    0x08004890   0x08004890   0x00000058   Code   RO         8532    i.Stop_StepPwm      motor_drive.lib(app_stepwm.o)
+    0x080048e8   0x080048e8   0x00000844   Code   RO         8764    i.Stp_StaMach       motor_drive.lib(mc_stamach.o)
+    0x0800512c   0x0800512c   0x00000058   Code   RO         8129    i.Svpwm_Update      motor_drive.lib(app_svpwm.o)
     0x08005184   0x08005184   0x00000114   Code   RO         1882    i.Sys_Watch         watch.o
-    0x08005298   0x08005298   0x00000214   Code   RO         3680    i.SystemCoreClockSetup  system_xmc4400.o
-    0x080054ac   0x080054ac   0x000000a4   Code   RO         3681    i.SystemCoreClockUpdate  system_xmc4400.o
-    0x08005550   0x08005550   0x00000058   Code   RO         3682    i.SystemCoreSetup   system_xmc4400.o
-    0x080055a8   0x080055a8   0x0000002c   Code   RO         3683    i.SystemInit        system_xmc4400.o
+    0x08005298   0x08005298   0x00000214   Code   RO         3741    i.SystemCoreClockSetup  system_xmc4400.o
+    0x080054ac   0x080054ac   0x000000a4   Code   RO         3742    i.SystemCoreClockUpdate  system_xmc4400.o
+    0x08005550   0x08005550   0x00000058   Code   RO         3743    i.SystemCoreSetup   system_xmc4400.o
+    0x080055a8   0x080055a8   0x0000002c   Code   RO         3744    i.SystemInit        system_xmc4400.o
     0x080055d4   0x080055d4   0x00000070   Code   RO          445    i.System_Init       app_init.o
-    0x08005644   0x08005644   0x0000005c   Code   RO         2671    i.USIC0_0_IRQHandler  communication.o
-    0x080056a0   0x080056a0   0x00000018   Code   RO         2672    i.USIC0_1_IRQHandler  communication.o
+    0x08005644   0x08005644   0x0000005c   Code   RO         2675    i.USIC0_0_IRQHandler  communication.o
+    0x080056a0   0x080056a0   0x00000018   Code   RO         2676    i.USIC0_1_IRQHandler  communication.o
     0x080056b8   0x080056b8   0x00000002   Code   RO         1532    i.USIC0_3_IRQHandler  spi_master_conf.o
     0x080056ba   0x080056ba   0x00000002   Code   RO         1533    i.USIC0_5_IRQHandler  spi_master_conf.o
     0x080056bc   0x080056bc   0x00000002   Code   RO          879    i.USIC1_3_IRQHandler  bsp_uart.o
     0x080056be   0x080056be   0x00000002   PAD
     0x080056c0   0x080056c0   0x0000006c   Code   RO          880    i.USIC1_4_IRQHandler  bsp_uart.o
-    0x0800572c   0x0800572c   0x00000048   Code   RO         3583    i.Us100_Int_Hook    debug.o
-    0x08005774   0x08005774   0x00000002   Code   RO         3584    i.Us500_Int_Hook    debug.o
+    0x0800572c   0x0800572c   0x00000048   Code   RO         3587    i.Us100_Int_Hook    debug.o
+    0x08005774   0x08005774   0x00000002   Code   RO         3588    i.Us500_Int_Hook    debug.o
     0x08005776   0x08005776   0x00000002   PAD
-    0x08005778   0x08005778   0x00000200   Code   RO         7251    i.VADC0_G0_0_IRQHandler  motor_drive.lib(app_adc.o)
-    0x08005978   0x08005978   0x00000224   Code   RO         7504    i.VADC_Config_Init  motor_drive.lib(bsp_adc.o)
-    0x08005b9c   0x08005b9c   0x0000003e   Code   RO         3793    i.XMC_CAN_AllocateMOtoNodeList  xmc_can.o
+    0x08005778   0x08005778   0x00000200   Code   RO         7312    i.VADC0_G0_0_IRQHandler  motor_drive.lib(app_adc.o)
+    0x08005978   0x08005978   0x00000224   Code   RO         7565    i.VADC_Config_Init  motor_drive.lib(bsp_adc.o)
+    0x08005b9c   0x08005b9c   0x0000003e   Code   RO         3854    i.XMC_CAN_AllocateMOtoNodeList  xmc_can.o
     0x08005bda   0x08005bda   0x00000002   PAD
-    0x08005bdc   0x08005bdc   0x0000002c   Code   RO         3795    i.XMC_CAN_Enable    xmc_can.o
-    0x08005c08   0x08005c08   0x000000ba   Code   RO         3797    i.XMC_CAN_Init      xmc_can.o
+    0x08005bdc   0x08005bdc   0x0000002c   Code   RO         3856    i.XMC_CAN_Enable    xmc_can.o
+    0x08005c08   0x08005c08   0x000000ba   Code   RO         3858    i.XMC_CAN_Init      xmc_can.o
     0x08005cc2   0x08005cc2   0x00000002   PAD
-    0x08005cc4   0x08005cc4   0x000000b8   Code   RO         3798    i.XMC_CAN_MO_Config  xmc_can.o
+    0x08005cc4   0x08005cc4   0x000000b8   Code   RO         3859    i.XMC_CAN_MO_Config  xmc_can.o
     0x08005d7c   0x08005d7c   0x0000000c   Code   RO         1636    i.XMC_CAN_MO_EnableEvent  can_node.o
     0x08005d88   0x08005d88   0x00000018   Code   RO         1637    i.XMC_CAN_MO_SetEventNodePointer  can_node.o
-    0x08005da0   0x08005da0   0x0000003c   Code   RO         3806    i.XMC_CAN_MO_UpdateData  xmc_can.o
-    0x08005ddc   0x08005ddc   0x00000016   Code   RO         3808    i.XMC_CAN_NODE_EnableEvent  xmc_can.o
-    0x08005df2   0x08005df2   0x00000144   Code   RO         3809    i.XMC_CAN_NODE_NominalBitTimeConfigure  xmc_can.o
+    0x08005da0   0x08005da0   0x0000003c   Code   RO         3867    i.XMC_CAN_MO_UpdateData  xmc_can.o
+    0x08005ddc   0x08005ddc   0x00000016   Code   RO         3869    i.XMC_CAN_NODE_EnableEvent  xmc_can.o
+    0x08005df2   0x08005df2   0x00000144   Code   RO         3870    i.XMC_CAN_NODE_NominalBitTimeConfigure  xmc_can.o
     0x08005f36   0x08005f36   0x00000014   Code   RO         1638    i.XMC_CAN_NODE_SetEventNodePointer  can_node.o
-    0x08005f4a   0x08005f4a   0x0000000c   Code   RO         8523    i.XMC_CCU4_EnableClock  motor_drive.lib(bsp_ccu4.o)
+    0x08005f4a   0x08005f4a   0x0000000c   Code   RO         8584    i.XMC_CCU4_EnableClock  motor_drive.lib(bsp_ccu4.o)
     0x08005f56   0x08005f56   0x00000002   PAD
-    0x08005f58   0x08005f58   0x00000094   Code   RO         3946    i.XMC_CCU4_EnableModule  xmc_ccu4.o
-    0x08005fec   0x08005fec   0x00000004   Code   RO         8524    i.XMC_CCU4_EnableShadowTransfer  motor_drive.lib(bsp_ccu4.o)
-    0x08005ff0   0x08005ff0   0x00000026   Code   RO         3948    i.XMC_CCU4_Init     xmc_ccu4.o
-    0x08006016   0x08006016   0x00000010   Code   RO         3949    i.XMC_CCU4_SLICE_Capture0Config  xmc_ccu4.o
-    0x08006026   0x08006026   0x00000010   Code   RO         3950    i.XMC_CCU4_SLICE_Capture1Config  xmc_ccu4.o
-    0x08006036   0x08006036   0x00000020   Code   RO         3951    i.XMC_CCU4_SLICE_CaptureInit  xmc_ccu4.o
+    0x08005f58   0x08005f58   0x00000094   Code   RO         4007    i.XMC_CCU4_EnableModule  xmc_ccu4.o
+    0x08005fec   0x08005fec   0x00000004   Code   RO         8585    i.XMC_CCU4_EnableShadowTransfer  motor_drive.lib(bsp_ccu4.o)
+    0x08005ff0   0x08005ff0   0x00000026   Code   RO         4009    i.XMC_CCU4_Init     xmc_ccu4.o
+    0x08006016   0x08006016   0x00000010   Code   RO         4010    i.XMC_CCU4_SLICE_Capture0Config  xmc_ccu4.o
+    0x08006026   0x08006026   0x00000010   Code   RO         4011    i.XMC_CCU4_SLICE_Capture1Config  xmc_ccu4.o
+    0x08006036   0x08006036   0x00000020   Code   RO         4012    i.XMC_CCU4_SLICE_CaptureInit  xmc_ccu4.o
     0x08006056   0x08006056   0x00000010   Code   RO         1306    i.XMC_CCU4_SLICE_ClearEvent  bsp_delay.o
-    0x08006066   0x08006066   0x00000030   Code   RO         3952    i.XMC_CCU4_SLICE_CompareInit  xmc_ccu4.o
-    0x08006096   0x08006096   0x0000005e   Code   RO         3953    i.XMC_CCU4_SLICE_ConfigureEvent  xmc_ccu4.o
-    0x080060f4   0x080060f4   0x00000010   Code   RO         3955    i.XMC_CCU4_SLICE_CountConfig  xmc_ccu4.o
-    0x08006104   0x08006104   0x00000010   Code   RO         3956    i.XMC_CCU4_SLICE_DirectionConfig  xmc_ccu4.o
-    0x08006114   0x08006114   0x0000000c   Code   RO         3959    i.XMC_CCU4_SLICE_GetCaptureRegisterValue  xmc_ccu4.o
+    0x08006066   0x08006066   0x00000030   Code   RO         4013    i.XMC_CCU4_SLICE_CompareInit  xmc_ccu4.o
+    0x08006096   0x08006096   0x0000005e   Code   RO         4014    i.XMC_CCU4_SLICE_ConfigureEvent  xmc_ccu4.o
+    0x080060f4   0x080060f4   0x00000010   Code   RO         4016    i.XMC_CCU4_SLICE_CountConfig  xmc_ccu4.o
+    0x08006104   0x08006104   0x00000010   Code   RO         4017    i.XMC_CCU4_SLICE_DirectionConfig  xmc_ccu4.o
+    0x08006114   0x08006114   0x0000000c   Code   RO         4020    i.XMC_CCU4_SLICE_GetCaptureRegisterValue  xmc_ccu4.o
     0x08006120   0x08006120   0x00000016   Code   RO         1307    i.XMC_CCU4_SLICE_GetEvent  bsp_delay.o
-    0x08006136   0x08006136   0x00000056   Code   RO         3964    i.XMC_CCU4_SLICE_SetInterruptNode  xmc_ccu4.o
-    0x0800618c   0x0800618c   0x00000004   Code   RO         8525    i.XMC_CCU4_SLICE_SetTimerCompareMatch  motor_drive.lib(bsp_ccu4.o)
-    0x08006190   0x08006190   0x00000016   Code   RO         3967    i.XMC_CCU4_SLICE_SetTimerCountingMode  xmc_ccu4.o
-    0x080061a6   0x080061a6   0x00000004   Code   RO         8526    i.XMC_CCU4_SLICE_SetTimerPeriodMatch  motor_drive.lib(bsp_ccu4.o)
+    0x08006136   0x08006136   0x00000056   Code   RO         4025    i.XMC_CCU4_SLICE_SetInterruptNode  xmc_ccu4.o
+    0x0800618c   0x0800618c   0x00000004   Code   RO         8586    i.XMC_CCU4_SLICE_SetTimerCompareMatch  motor_drive.lib(bsp_ccu4.o)
+    0x08006190   0x08006190   0x00000016   Code   RO         4028    i.XMC_CCU4_SLICE_SetTimerCountingMode  xmc_ccu4.o
+    0x080061a6   0x080061a6   0x00000004   Code   RO         8587    i.XMC_CCU4_SLICE_SetTimerPeriodMatch  motor_drive.lib(bsp_ccu4.o)
     0x080061aa   0x080061aa   0x00000004   Code   RO         1308    i.XMC_CCU4_SLICE_SetTimerValue  bsp_delay.o
-    0x080061ae   0x080061ae   0x00000006   Code   RO         8269    i.XMC_CCU4_SLICE_StartTimer  motor_drive.lib(bsp_posif.o)
-    0x080061b4   0x080061b4   0x00000010   Code   RO         3973    i.XMC_CCU4_SetModuleClock  xmc_ccu4.o
-    0x080061c4   0x080061c4   0x0000000a   Code   RO         8527    i.XMC_CCU4_StartPrescaler  motor_drive.lib(bsp_ccu4.o)
-    0x080061ce   0x080061ce   0x0000000c   Code   RO         8314    i.XMC_CCU8_EnableClock  motor_drive.lib(bsp_svpwm.o)
+    0x080061ae   0x080061ae   0x00000006   Code   RO         8330    i.XMC_CCU4_SLICE_StartTimer  motor_drive.lib(bsp_posif.o)
+    0x080061b4   0x080061b4   0x00000010   Code   RO         4034    i.XMC_CCU4_SetModuleClock  xmc_ccu4.o
+    0x080061c4   0x080061c4   0x0000000a   Code   RO         8588    i.XMC_CCU4_StartPrescaler  motor_drive.lib(bsp_ccu4.o)
+    0x080061ce   0x080061ce   0x0000000c   Code   RO         8375    i.XMC_CCU8_EnableClock  motor_drive.lib(bsp_svpwm.o)
     0x080061da   0x080061da   0x00000002   PAD
-    0x080061dc   0x080061dc   0x00000050   Code   RO         4147    i.XMC_CCU8_EnableModule  xmc_ccu8.o
-    0x0800622c   0x0800622c   0x00000004   Code   RO         8069    i.XMC_CCU8_EnableShadowTransfer  motor_drive.lib(app_svpwm.o)
-    0x08006230   0x08006230   0x00000004   Code   RO         8315    i.XMC_CCU8_EnableShadowTransfer  motor_drive.lib(bsp_svpwm.o)
-    0x08006234   0x08006234   0x00000004   Code   RO         8472    i.XMC_CCU8_EnableShadowTransfer  motor_drive.lib(app_stepwm.o)
-    0x08006238   0x08006238   0x00000026   Code   RO         4149    i.XMC_CCU8_Init     xmc_ccu8.o
-    0x0800625e   0x0800625e   0x0000003c   Code   RO         4153    i.XMC_CCU8_SLICE_CompareInit  xmc_ccu8.o
-    0x0800629a   0x0800629a   0x0000005e   Code   RO         4155    i.XMC_CCU8_SLICE_ConfigureEvent  xmc_ccu8.o
-    0x080062f8   0x080062f8   0x0000000e   Code   RO         4159    i.XMC_CCU8_SLICE_DeadTimeInit  xmc_ccu8.o
-    0x08006306   0x08006306   0x0000005e   Code   RO         4172    i.XMC_CCU8_SLICE_SetInterruptNode  xmc_ccu8.o
-    0x08006364   0x08006364   0x00000016   Code   RO         8316    i.XMC_CCU8_SLICE_SetShadowTransferMode  motor_drive.lib(bsp_svpwm.o)
-    0x0800637a   0x0800637a   0x0000000a   Code   RO         4176    i.XMC_CCU8_SLICE_SetTimerCompareMatch  xmc_ccu8.o
-    0x08006384   0x08006384   0x00000004   Code   RO         4178    i.XMC_CCU8_SLICE_SetTimerPeriodMatch  xmc_ccu8.o
-    0x08006388   0x08006388   0x00000024   Code   RO         4180    i.XMC_CCU8_SLICE_StartConfig  xmc_ccu8.o
-    0x080063ac   0x080063ac   0x00000010   Code   RO         4184    i.XMC_CCU8_SetModuleClock  xmc_ccu8.o
-    0x080063bc   0x080063bc   0x0000000a   Code   RO         8317    i.XMC_CCU8_StartPrescaler  motor_drive.lib(bsp_svpwm.o)
-    0x080063c6   0x080063c6   0x0000003e   Code   RO         4485    i.XMC_DAC_CH_Init   xmc_dac.o
-    0x08006404   0x08006404   0x0000003e   Code   RO         4486    i.XMC_DAC_CH_SetFrequency  xmc_dac.o
-    0x08006442   0x08006442   0x00000016   Code   RO         4487    i.XMC_DAC_CH_SetMode  xmc_dac.o
-    0x08006458   0x08006458   0x0000001a   Code   RO         4490    i.XMC_DAC_CH_SetTrigger  xmc_dac.o
-    0x08006472   0x08006472   0x00000044   Code   RO         4491    i.XMC_DAC_CH_StartDataMode  xmc_dac.o
+    0x080061dc   0x080061dc   0x00000050   Code   RO         4208    i.XMC_CCU8_EnableModule  xmc_ccu8.o
+    0x0800622c   0x0800622c   0x00000004   Code   RO         8130    i.XMC_CCU8_EnableShadowTransfer  motor_drive.lib(app_svpwm.o)
+    0x08006230   0x08006230   0x00000004   Code   RO         8376    i.XMC_CCU8_EnableShadowTransfer  motor_drive.lib(bsp_svpwm.o)
+    0x08006234   0x08006234   0x00000004   Code   RO         8533    i.XMC_CCU8_EnableShadowTransfer  motor_drive.lib(app_stepwm.o)
+    0x08006238   0x08006238   0x00000026   Code   RO         4210    i.XMC_CCU8_Init     xmc_ccu8.o
+    0x0800625e   0x0800625e   0x0000003c   Code   RO         4214    i.XMC_CCU8_SLICE_CompareInit  xmc_ccu8.o
+    0x0800629a   0x0800629a   0x0000005e   Code   RO         4216    i.XMC_CCU8_SLICE_ConfigureEvent  xmc_ccu8.o
+    0x080062f8   0x080062f8   0x0000000e   Code   RO         4220    i.XMC_CCU8_SLICE_DeadTimeInit  xmc_ccu8.o
+    0x08006306   0x08006306   0x0000005e   Code   RO         4233    i.XMC_CCU8_SLICE_SetInterruptNode  xmc_ccu8.o
+    0x08006364   0x08006364   0x00000016   Code   RO         8377    i.XMC_CCU8_SLICE_SetShadowTransferMode  motor_drive.lib(bsp_svpwm.o)
+    0x0800637a   0x0800637a   0x0000000a   Code   RO         4237    i.XMC_CCU8_SLICE_SetTimerCompareMatch  xmc_ccu8.o
+    0x08006384   0x08006384   0x00000004   Code   RO         4239    i.XMC_CCU8_SLICE_SetTimerPeriodMatch  xmc_ccu8.o
+    0x08006388   0x08006388   0x00000024   Code   RO         4241    i.XMC_CCU8_SLICE_StartConfig  xmc_ccu8.o
+    0x080063ac   0x080063ac   0x00000010   Code   RO         4245    i.XMC_CCU8_SetModuleClock  xmc_ccu8.o
+    0x080063bc   0x080063bc   0x0000000a   Code   RO         8378    i.XMC_CCU8_StartPrescaler  motor_drive.lib(bsp_svpwm.o)
+    0x080063c6   0x080063c6   0x0000003e   Code   RO         4546    i.XMC_DAC_CH_Init   xmc_dac.o
+    0x08006404   0x08006404   0x0000003e   Code   RO         4547    i.XMC_DAC_CH_SetFrequency  xmc_dac.o
+    0x08006442   0x08006442   0x00000016   Code   RO         4548    i.XMC_DAC_CH_SetMode  xmc_dac.o
+    0x08006458   0x08006458   0x0000001a   Code   RO         4551    i.XMC_DAC_CH_SetTrigger  xmc_dac.o
+    0x08006472   0x08006472   0x00000044   Code   RO         4552    i.XMC_DAC_CH_StartDataMode  xmc_dac.o
     0x080064b6   0x080064b6   0x00000002   PAD
-    0x080064b8   0x080064b8   0x00000018   Code   RO         4497    i.XMC_DAC_Enable    xmc_dac.o
-    0x080064d0   0x080064d0   0x00000026   Code   RO         4589    i.XMC_DMA_CH_ClearEventStatus  xmc_dma.o
+    0x080064b8   0x080064b8   0x00000018   Code   RO         4558    i.XMC_DAC_Enable    xmc_dac.o
+    0x080064d0   0x080064d0   0x00000026   Code   RO         4650    i.XMC_DMA_CH_ClearEventStatus  xmc_dma.o
     0x080064f6   0x080064f6   0x0000000c   Code   RO         1109    i.XMC_DMA_CH_Enable  bsp_spiflash.o
-    0x08006502   0x08006502   0x00000028   Code   RO         4599    i.XMC_DMA_CH_EnableEvent  xmc_dma.o
+    0x08006502   0x08006502   0x00000028   Code   RO         4660    i.XMC_DMA_CH_EnableEvent  xmc_dma.o
     0x0800652a   0x0800652a   0x00000002   PAD
-    0x0800652c   0x0800652c   0x00000324   Code   RO         4603    i.XMC_DMA_CH_Init   xmc_dma.o
-    0x08006850   0x08006850   0x00000016   Code   RO         4604    i.XMC_DMA_CH_IsEnabled  xmc_dma.o
+    0x0800652c   0x0800652c   0x00000324   Code   RO         4664    i.XMC_DMA_CH_Init   xmc_dma.o
+    0x08006850   0x08006850   0x00000016   Code   RO         4665    i.XMC_DMA_CH_IsEnabled  xmc_dma.o
     0x08006866   0x08006866   0x00000010   Code   RO         1110    i.XMC_DMA_CH_SetBlockSize  bsp_spiflash.o
     0x08006876   0x08006876   0x00000010   Code   RO         1111    i.XMC_DMA_CH_SetDestinationAddress  bsp_spiflash.o
     0x08006886   0x08006886   0x00000002   PAD
-    0x08006888   0x08006888   0x0000000c   Code   RO         4608    i.XMC_DMA_CH_SetEventHandler  xmc_dma.o
+    0x08006888   0x08006888   0x0000000c   Code   RO         4669    i.XMC_DMA_CH_SetEventHandler  xmc_dma.o
     0x08006894   0x08006894   0x0000000e   Code   RO         1112    i.XMC_DMA_CH_SetSourceAddress  bsp_spiflash.o
     0x080068a2   0x080068a2   0x00000002   PAD
-    0x080068a4   0x080068a4   0x0000001c   Code   RO         4616    i.XMC_DMA_Enable    xmc_dma.o
-    0x080068c0   0x080068c0   0x00000038   Code   RO         4617    i.XMC_DMA_EnableRequestLine  xmc_dma.o
-    0x080068f8   0x080068f8   0x00000148   Code   RO         4619    i.XMC_DMA_IRQHandler  xmc_dma.o
-    0x08006a40   0x08006a40   0x0000000c   Code   RO         4620    i.XMC_DMA_Init      xmc_dma.o
-    0x08006a4c   0x08006a4c   0x0000003c   Code   RO         4621    i.XMC_DMA_IsEnabled  xmc_dma.o
-    0x08006a88   0x08006a88   0x0000002e   Code   RO         4951    i.XMC_ERU_ETL_Init  xmc_eru.o
+    0x080068a4   0x080068a4   0x0000001c   Code   RO         4677    i.XMC_DMA_Enable    xmc_dma.o
+    0x080068c0   0x080068c0   0x00000038   Code   RO         4678    i.XMC_DMA_EnableRequestLine  xmc_dma.o
+    0x080068f8   0x080068f8   0x00000148   Code   RO         4680    i.XMC_DMA_IRQHandler  xmc_dma.o
+    0x08006a40   0x08006a40   0x0000000c   Code   RO         4681    i.XMC_DMA_Init      xmc_dma.o
+    0x08006a4c   0x08006a4c   0x0000003c   Code   RO         4682    i.XMC_DMA_IsEnabled  xmc_dma.o
+    0x08006a88   0x08006a88   0x0000002e   Code   RO         5012    i.XMC_ERU_ETL_Init  xmc_eru.o
     0x08006ab6   0x08006ab6   0x00000002   PAD
-    0x08006ab8   0x08006ab8   0x00000020   Code   RO         6157    i.XMC_ERU_Enable    xmc4_eru.o
-    0x08006ad8   0x08006ad8   0x0000001a   Code   RO         4960    i.XMC_ERU_OGU_Init  xmc_eru.o
+    0x08006ab8   0x08006ab8   0x00000020   Code   RO         6218    i.XMC_ERU_Enable    xmc4_eru.o
+    0x08006ad8   0x08006ad8   0x0000001a   Code   RO         5021    i.XMC_ERU_OGU_Init  xmc_eru.o
     0x08006af2   0x08006af2   0x0000000c   Code   RO         1884    i.XMC_GPIO_GetInput  watch.o
-    0x08006afe   0x08006afe   0x0000000c   Code   RO         3293    i.XMC_GPIO_GetInput  io_function.o
-    0x08006b0a   0x08006b0a   0x0000000c   Code   RO         7595    i.XMC_GPIO_GetInput  motor_drive.lib(mc_pmsm.o)
-    0x08006b16   0x08006b16   0x0000000c   Code   RO         8179    i.XMC_GPIO_GetInput  motor_drive.lib(app_spi.o)
-    0x08006b22   0x08006b22   0x0000000c   Code   RO         3294    i.XMC_GPIO_GetOutput  io_function.o
+    0x08006afe   0x08006afe   0x0000000c   Code   RO         3297    i.XMC_GPIO_GetInput  io_function.o
+    0x08006b0a   0x08006b0a   0x0000000c   Code   RO         7656    i.XMC_GPIO_GetInput  motor_drive.lib(mc_pmsm.o)
+    0x08006b16   0x08006b16   0x0000000c   Code   RO         8240    i.XMC_GPIO_GetInput  motor_drive.lib(app_spi.o)
+    0x08006b22   0x08006b22   0x0000000c   Code   RO         3298    i.XMC_GPIO_GetOutput  io_function.o
     0x08006b2e   0x08006b2e   0x00000002   PAD
-    0x08006b30   0x08006b30   0x000000b0   Code   RO         6354    i.XMC_GPIO_Init     xmc4_gpio.o
+    0x08006b30   0x08006b30   0x000000b0   Code   RO         6415    i.XMC_GPIO_Init     xmc4_gpio.o
     0x08006be0   0x08006be0   0x00000008   Code   RO          788    i.XMC_GPIO_SetOutputHigh  bsp_rs485.o
-    0x08006be8   0x08006be8   0x00000008   Code   RO         3295    i.XMC_GPIO_SetOutputLevel  io_function.o
+    0x08006be8   0x08006be8   0x00000008   Code   RO         3299    i.XMC_GPIO_SetOutputLevel  io_function.o
     0x08006bf0   0x08006bf0   0x0000000a   Code   RO          446    i.XMC_GPIO_SetOutputLow  app_init.o
     0x08006bfa   0x08006bfa   0x0000000a   Code   RO          789    i.XMC_GPIO_SetOutputLow  bsp_rs485.o
-    0x08006c04   0x08006c04   0x0000000a   Code   RO         7596    i.XMC_GPIO_SetOutputLow  motor_drive.lib(mc_pmsm.o)
-    0x08006c0e   0x08006c0e   0x0000000a   Code   RO         3296    i.XMC_GPIO_ToggleOutput  io_function.o
-    0x08006c18   0x08006c18   0x0000003c   Code   RO         5293    i.XMC_POSIF_Enable  xmc_posif.o
-    0x08006c54   0x08006c54   0x0000001a   Code   RO         5295    i.XMC_POSIF_Init    xmc_posif.o
-    0x08006c6e   0x08006c6e   0x00000028   Code   RO         5297    i.XMC_POSIF_QD_Init  xmc_posif.o
+    0x08006c04   0x08006c04   0x0000000a   Code   RO         7657    i.XMC_GPIO_SetOutputLow  motor_drive.lib(mc_pmsm.o)
+    0x08006c0e   0x08006c0e   0x0000000a   Code   RO         3300    i.XMC_GPIO_ToggleOutput  io_function.o
+    0x08006c18   0x08006c18   0x0000003c   Code   RO         5354    i.XMC_POSIF_Enable  xmc_posif.o
+    0x08006c54   0x08006c54   0x0000001a   Code   RO         5356    i.XMC_POSIF_Init    xmc_posif.o
+    0x08006c6e   0x08006c6e   0x00000028   Code   RO         5358    i.XMC_POSIF_QD_Init  xmc_posif.o
     0x08006c96   0x08006c96   0x00000002   PAD
-    0x08006c98   0x08006c98   0x00000018   Code   RO         6469    i.XMC_SCU_CLOCK_DisableSystemPll  xmc4_scu.o
-    0x08006cb0   0x08006cb0   0x0000000c   Code   RO         6471    i.XMC_SCU_CLOCK_EnableClock  xmc4_scu.o
-    0x08006cbc   0x08006cbc   0x00000048   Code   RO         6472    i.XMC_SCU_CLOCK_EnableHighPerformanceOscillator  xmc4_scu.o
-    0x08006d04   0x08006d04   0x0000006c   Code   RO         6474    i.XMC_SCU_CLOCK_EnableLowPowerOscillator  xmc4_scu.o
-    0x08006d70   0x08006d70   0x00000018   Code   RO         6476    i.XMC_SCU_CLOCK_EnableSystemPll  xmc4_scu.o
-    0x08006d88   0x08006d88   0x0000001c   Code   RO         6483    i.XMC_SCU_CLOCK_GetPeripheralClockFrequency  xmc4_scu.o
-    0x08006da4   0x08006da4   0x000000a0   Code   RO         6490    i.XMC_SCU_CLOCK_Init  xmc4_scu.o
-    0x08006e44   0x08006e44   0x0000001c   Code   RO         6492    i.XMC_SCU_CLOCK_IsHighPerformanceOscillatorStable  xmc4_scu.o
-    0x08006e60   0x08006e60   0x00000010   Code   RO         6493    i.XMC_SCU_CLOCK_IsLowPowerOscillatorStable  xmc4_scu.o
-    0x08006e70   0x08006e70   0x00000024   Code   RO         6494    i.XMC_SCU_CLOCK_IsPeripheralClockGated  xmc4_scu.o
-    0x08006e94   0x08006e94   0x0000003c   Code   RO         6497    i.XMC_SCU_CLOCK_SetBackupClockCalibrationMode  xmc4_scu.o
-    0x08006ed0   0x08006ed0   0x00000018   Code   RO         6498    i.XMC_SCU_CLOCK_SetCcuClockDivider  xmc4_scu.o
-    0x08006ee8   0x08006ee8   0x00000018   Code   RO         6499    i.XMC_SCU_CLOCK_SetCpuClockDivider  xmc4_scu.o
-    0x08006f00   0x08006f00   0x00000018   Code   RO         6502    i.XMC_SCU_CLOCK_SetPeripheralClockDivider  xmc4_scu.o
-    0x08006f18   0x08006f18   0x00000018   Code   RO         6503    i.XMC_SCU_CLOCK_SetSystemClockDivider  xmc4_scu.o
-    0x08006f30   0x08006f30   0x00000014   Code   RO         6504    i.XMC_SCU_CLOCK_SetSystemClockSource  xmc4_scu.o
-    0x08006f44   0x08006f44   0x00000028   Code   RO         6505    i.XMC_SCU_CLOCK_SetSystemPllClockSource  xmc4_scu.o
-    0x08006f6c   0x08006f6c   0x00000134   Code   RO         6510    i.XMC_SCU_CLOCK_StartSystemPll  xmc4_scu.o
-    0x080070a0   0x080070a0   0x00000058   Code   RO         6511    i.XMC_SCU_CLOCK_StartUsbPll  xmc4_scu.o
-    0x080070f8   0x080070f8   0x00000024   Code   RO         6512    i.XMC_SCU_CLOCK_StepSystemPllFrequency  xmc4_scu.o
-    0x0800711c   0x0800711c   0x00000018   Code   RO         6515    i.XMC_SCU_CLOCK_UngatePeripheralClock  xmc4_scu.o
-    0x08007134   0x08007134   0x0000004c   Code   RO         6528    i.XMC_SCU_HIB_EnableHibernateDomain  xmc4_scu.o
-    0x08007180   0x08007180   0x0000002c   Code   RO         6545    i.XMC_SCU_HIB_SetRtcClockSource  xmc4_scu.o
-    0x080071ac   0x080071ac   0x0000002c   Code   RO         6548    i.XMC_SCU_HIB_SetStandbyClockSource  xmc4_scu.o
-    0x080071d8   0x080071d8   0x00000018   Code   RO         6576    i.XMC_SCU_RESET_DeassertPeripheralReset  xmc4_scu.o
-    0x080071f0   0x080071f0   0x00000024   Code   RO         6577    i.XMC_SCU_RESET_IsPeripheralResetAsserted  xmc4_scu.o
-    0x08007214   0x08007214   0x0000002c   Code   RO         6590    i.XMC_SCU_lDelay    xmc4_scu.o
+    0x08006c98   0x08006c98   0x00000018   Code   RO         6530    i.XMC_SCU_CLOCK_DisableSystemPll  xmc4_scu.o
+    0x08006cb0   0x08006cb0   0x0000000c   Code   RO         6532    i.XMC_SCU_CLOCK_EnableClock  xmc4_scu.o
+    0x08006cbc   0x08006cbc   0x00000048   Code   RO         6533    i.XMC_SCU_CLOCK_EnableHighPerformanceOscillator  xmc4_scu.o
+    0x08006d04   0x08006d04   0x0000006c   Code   RO         6535    i.XMC_SCU_CLOCK_EnableLowPowerOscillator  xmc4_scu.o
+    0x08006d70   0x08006d70   0x00000018   Code   RO         6537    i.XMC_SCU_CLOCK_EnableSystemPll  xmc4_scu.o
+    0x08006d88   0x08006d88   0x0000001c   Code   RO         6544    i.XMC_SCU_CLOCK_GetPeripheralClockFrequency  xmc4_scu.o
+    0x08006da4   0x08006da4   0x000000a0   Code   RO         6551    i.XMC_SCU_CLOCK_Init  xmc4_scu.o
+    0x08006e44   0x08006e44   0x0000001c   Code   RO         6553    i.XMC_SCU_CLOCK_IsHighPerformanceOscillatorStable  xmc4_scu.o
+    0x08006e60   0x08006e60   0x00000010   Code   RO         6554    i.XMC_SCU_CLOCK_IsLowPowerOscillatorStable  xmc4_scu.o
+    0x08006e70   0x08006e70   0x00000024   Code   RO         6555    i.XMC_SCU_CLOCK_IsPeripheralClockGated  xmc4_scu.o
+    0x08006e94   0x08006e94   0x0000003c   Code   RO         6558    i.XMC_SCU_CLOCK_SetBackupClockCalibrationMode  xmc4_scu.o
+    0x08006ed0   0x08006ed0   0x00000018   Code   RO         6559    i.XMC_SCU_CLOCK_SetCcuClockDivider  xmc4_scu.o
+    0x08006ee8   0x08006ee8   0x00000018   Code   RO         6560    i.XMC_SCU_CLOCK_SetCpuClockDivider  xmc4_scu.o
+    0x08006f00   0x08006f00   0x00000018   Code   RO         6563    i.XMC_SCU_CLOCK_SetPeripheralClockDivider  xmc4_scu.o
+    0x08006f18   0x08006f18   0x00000018   Code   RO         6564    i.XMC_SCU_CLOCK_SetSystemClockDivider  xmc4_scu.o
+    0x08006f30   0x08006f30   0x00000014   Code   RO         6565    i.XMC_SCU_CLOCK_SetSystemClockSource  xmc4_scu.o
+    0x08006f44   0x08006f44   0x00000028   Code   RO         6566    i.XMC_SCU_CLOCK_SetSystemPllClockSource  xmc4_scu.o
+    0x08006f6c   0x08006f6c   0x00000134   Code   RO         6571    i.XMC_SCU_CLOCK_StartSystemPll  xmc4_scu.o
+    0x080070a0   0x080070a0   0x00000058   Code   RO         6572    i.XMC_SCU_CLOCK_StartUsbPll  xmc4_scu.o
+    0x080070f8   0x080070f8   0x00000024   Code   RO         6573    i.XMC_SCU_CLOCK_StepSystemPllFrequency  xmc4_scu.o
+    0x0800711c   0x0800711c   0x00000018   Code   RO         6576    i.XMC_SCU_CLOCK_UngatePeripheralClock  xmc4_scu.o
+    0x08007134   0x08007134   0x0000004c   Code   RO         6589    i.XMC_SCU_HIB_EnableHibernateDomain  xmc4_scu.o
+    0x08007180   0x08007180   0x0000002c   Code   RO         6606    i.XMC_SCU_HIB_SetRtcClockSource  xmc4_scu.o
+    0x080071ac   0x080071ac   0x0000002c   Code   RO         6609    i.XMC_SCU_HIB_SetStandbyClockSource  xmc4_scu.o
+    0x080071d8   0x080071d8   0x00000018   Code   RO         6637    i.XMC_SCU_RESET_DeassertPeripheralReset  xmc4_scu.o
+    0x080071f0   0x080071f0   0x00000024   Code   RO         6638    i.XMC_SCU_RESET_IsPeripheralResetAsserted  xmc4_scu.o
+    0x08007214   0x08007214   0x0000002c   Code   RO         6651    i.XMC_SCU_lDelay    xmc4_scu.o
     0x08007240   0x08007240   0x00000008   Code   RO         1379    i.XMC_SPI_CH_ClearStatusFlag  spi_master.o
-    0x08007248   0x08007248   0x00000008   Code   RO         5056    i.XMC_SPI_CH_ClearStatusFlag  xmc_spi.o
-    0x08007250   0x08007250   0x0000001a   Code   RO         5057    i.XMC_SPI_CH_DisableEvent  xmc_spi.o
-    0x0800726a   0x0800726a   0x00000016   Code   RO         5058    i.XMC_SPI_CH_DisableSlaveSelect  xmc_spi.o
-    0x08007280   0x08007280   0x0000001a   Code   RO         5059    i.XMC_SPI_CH_EnableEvent  xmc_spi.o
-    0x0800729a   0x0800729a   0x00000010   Code   RO         5060    i.XMC_SPI_CH_EnableSlaveSelect  xmc_spi.o
-    0x080072aa   0x080072aa   0x0000001a   Code   RO         5061    i.XMC_SPI_CH_GetReceivedData  xmc_spi.o
-    0x080072c4   0x080072c4   0x00000040   Code   RO         5062    i.XMC_SPI_CH_Init   xmc_spi.o
+    0x08007248   0x08007248   0x00000008   Code   RO         5117    i.XMC_SPI_CH_ClearStatusFlag  xmc_spi.o
+    0x08007250   0x08007250   0x0000001a   Code   RO         5118    i.XMC_SPI_CH_DisableEvent  xmc_spi.o
+    0x0800726a   0x0800726a   0x00000016   Code   RO         5119    i.XMC_SPI_CH_DisableSlaveSelect  xmc_spi.o
+    0x08007280   0x08007280   0x0000001a   Code   RO         5120    i.XMC_SPI_CH_EnableEvent  xmc_spi.o
+    0x0800729a   0x0800729a   0x00000010   Code   RO         5121    i.XMC_SPI_CH_EnableSlaveSelect  xmc_spi.o
+    0x080072aa   0x080072aa   0x0000001a   Code   RO         5122    i.XMC_SPI_CH_GetReceivedData  xmc_spi.o
+    0x080072c4   0x080072c4   0x00000040   Code   RO         5123    i.XMC_SPI_CH_Init   xmc_spi.o
     0x08007304   0x08007304   0x0000000a   Code   RO         1113    i.XMC_SPI_CH_SetTransmitMode  bsp_spiflash.o
     0x0800730e   0x0800730e   0x0000000a   Code   RO         1381    i.XMC_SPI_CH_SetTransmitMode  spi_master.o
-    0x08007318   0x08007318   0x0000001a   Code   RO         5494    i.XMC_UART_CH_GetReceivedData  xmc_uart.o
-    0x08007332   0x08007332   0x00000074   Code   RO         5495    i.XMC_UART_CH_Init  xmc_uart.o
-    0x080073a6   0x080073a6   0x0000002c   Code   RO         5498    i.XMC_UART_CH_Transmit  xmc_uart.o
+    0x08007318   0x08007318   0x0000001a   Code   RO         5555    i.XMC_UART_CH_GetReceivedData  xmc_uart.o
+    0x08007332   0x08007332   0x00000074   Code   RO         5556    i.XMC_UART_CH_Init  xmc_uart.o
+    0x080073a6   0x080073a6   0x0000002c   Code   RO         5559    i.XMC_UART_CH_Transmit  xmc_uart.o
     0x080073d2   0x080073d2   0x00000002   PAD
-    0x080073d4   0x080073d4   0x00000058   Code   RO         5557    i.XMC_USIC_CH_Enable  xmc_usic.o
+    0x080073d4   0x080073d4   0x00000058   Code   RO         5618    i.XMC_USIC_CH_Enable  xmc_usic.o
     0x0800742c   0x0800742c   0x00000008   Code   RO          790    i.XMC_USIC_CH_EnableEvent  bsp_rs485.o
     0x08007434   0x08007434   0x00000008   Code   RO          881    i.XMC_USIC_CH_EnableEvent  bsp_uart.o
     0x0800743c   0x0800743c   0x0000000a   Code   RO         1382    i.XMC_USIC_CH_GetReceiveBufferStatus  spi_master.o
     0x08007446   0x08007446   0x0000000a   Code   RO         1383    i.XMC_USIC_CH_GetTransmitBufferStatus  spi_master.o
-    0x08007450   0x08007450   0x00000030   Code   RO         5558    i.XMC_USIC_CH_RXFIFO_Configure  xmc_usic.o
+    0x08007450   0x08007450   0x00000030   Code   RO         5619    i.XMC_USIC_CH_RXFIFO_Configure  xmc_usic.o
     0x08007480   0x08007480   0x0000000c   Code   RO         1384    i.XMC_USIC_CH_RXFIFO_IsEmpty  spi_master.o
-    0x0800748c   0x0800748c   0x00000018   Code   RO         5559    i.XMC_USIC_CH_RXFIFO_SetInterruptNodePointer  xmc_usic.o
-    0x080074a4   0x080074a4   0x00000098   Code   RO         5561    i.XMC_USIC_CH_SetBaudrate  xmc_usic.o
-    0x0800753c   0x0800753c   0x00000014   Code   RO         5562    i.XMC_USIC_CH_SetInterruptNodePointer  xmc_usic.o
-    0x08007550   0x08007550   0x0000002c   Code   RO         5563    i.XMC_USIC_CH_TXFIFO_Configure  xmc_usic.o
+    0x0800748c   0x0800748c   0x00000018   Code   RO         5620    i.XMC_USIC_CH_RXFIFO_SetInterruptNodePointer  xmc_usic.o
+    0x080074a4   0x080074a4   0x00000098   Code   RO         5622    i.XMC_USIC_CH_SetBaudrate  xmc_usic.o
+    0x0800753c   0x0800753c   0x00000014   Code   RO         5623    i.XMC_USIC_CH_SetInterruptNodePointer  xmc_usic.o
+    0x08007550   0x08007550   0x0000002c   Code   RO         5624    i.XMC_USIC_CH_TXFIFO_Configure  xmc_usic.o
     0x0800757c   0x0800757c   0x0000000a   Code   RO         1386    i.XMC_USIC_CH_TXFIFO_PutDataHPCMode  spi_master.o
-    0x08007586   0x08007586   0x00000018   Code   RO         5564    i.XMC_USIC_CH_TXFIFO_SetInterruptNodePointer  xmc_usic.o
+    0x08007586   0x08007586   0x00000018   Code   RO         5625    i.XMC_USIC_CH_TXFIFO_SetInterruptNodePointer  xmc_usic.o
     0x0800759e   0x0800759e   0x0000000a   Code   RO         1387    i.XMC_USIC_CH_WriteToTBUFTCI  spi_master.o
-    0x080075a8   0x080075a8   0x00000038   Code   RO         5567    i.XMC_USIC_Enable   xmc_usic.o
-    0x080075e0   0x080075e0   0x00000010   Code   RO         5663    i.XMC_VADC_GLOBAL_EnableModule  xmc_vadc.o
-    0x080075f0   0x080075f0   0x00000032   Code   RO         5665    i.XMC_VADC_GLOBAL_Init  xmc_vadc.o
+    0x080075a8   0x080075a8   0x00000038   Code   RO         5628    i.XMC_USIC_Enable   xmc_usic.o
+    0x080075e0   0x080075e0   0x00000010   Code   RO         5724    i.XMC_VADC_GLOBAL_EnableModule  xmc_vadc.o
+    0x080075f0   0x080075f0   0x00000032   Code   RO         5726    i.XMC_VADC_GLOBAL_Init  xmc_vadc.o
     0x08007622   0x08007622   0x00000002   PAD
-    0x08007624   0x08007624   0x0000003c   Code   RO         5671    i.XMC_VADC_GLOBAL_StartupCalibration  xmc_vadc.o
-    0x08007660   0x08007660   0x00000076   Code   RO         5676    i.XMC_VADC_GROUP_ChannelInit  xmc_vadc.o
-    0x080076d6   0x080076d6   0x0000000e   Code   RO         7252    i.XMC_VADC_GROUP_GetResult  motor_drive.lib(app_adc.o)
-    0x080076e4   0x080076e4   0x00000092   Code   RO         5692    i.XMC_VADC_GROUP_Init  xmc_vadc.o
-    0x08007776   0x08007776   0x0000006e   Code   RO         5693    i.XMC_VADC_GROUP_InputClassInit  xmc_vadc.o
-    0x080077e4   0x080077e4   0x0000000e   Code   RO         5697    i.XMC_VADC_GROUP_QueueDisableArbitrationSlot  xmc_vadc.o
-    0x080077f2   0x080077f2   0x0000006c   Code   RO         5701    i.XMC_VADC_GROUP_QueueInit  xmc_vadc.o
-    0x0800785e   0x0800785e   0x0000000a   Code   RO         7505    i.XMC_VADC_GROUP_QueueInsertChannel  motor_drive.lib(bsp_adc.o)
-    0x08007868   0x08007868   0x00000012   Code   RO         5706    i.XMC_VADC_GROUP_QueueSetReqSrcEventInterruptNode  xmc_vadc.o
-    0x0800787a   0x0800787a   0x0000000e   Code   RO         7506    i.XMC_VADC_GROUP_ResultInit  motor_drive.lib(bsp_adc.o)
-    0x08007888   0x08007888   0x00000012   Code   RO         5720    i.XMC_VADC_GROUP_SetPowerMode  xmc_vadc.o
-    0x0800789a   0x0800789a   0x00000002   Code   RO         3585    i.Z_Int_Hook        debug.o
+    0x08007624   0x08007624   0x0000003c   Code   RO         5732    i.XMC_VADC_GLOBAL_StartupCalibration  xmc_vadc.o
+    0x08007660   0x08007660   0x00000076   Code   RO         5737    i.XMC_VADC_GROUP_ChannelInit  xmc_vadc.o
+    0x080076d6   0x080076d6   0x0000000e   Code   RO         7313    i.XMC_VADC_GROUP_GetResult  motor_drive.lib(app_adc.o)
+    0x080076e4   0x080076e4   0x00000092   Code   RO         5753    i.XMC_VADC_GROUP_Init  xmc_vadc.o
+    0x08007776   0x08007776   0x0000006e   Code   RO         5754    i.XMC_VADC_GROUP_InputClassInit  xmc_vadc.o
+    0x080077e4   0x080077e4   0x0000000e   Code   RO         5758    i.XMC_VADC_GROUP_QueueDisableArbitrationSlot  xmc_vadc.o
+    0x080077f2   0x080077f2   0x0000006c   Code   RO         5762    i.XMC_VADC_GROUP_QueueInit  xmc_vadc.o
+    0x0800785e   0x0800785e   0x0000000a   Code   RO         7566    i.XMC_VADC_GROUP_QueueInsertChannel  motor_drive.lib(bsp_adc.o)
+    0x08007868   0x08007868   0x00000012   Code   RO         5767    i.XMC_VADC_GROUP_QueueSetReqSrcEventInterruptNode  xmc_vadc.o
+    0x0800787a   0x0800787a   0x0000000e   Code   RO         7567    i.XMC_VADC_GROUP_ResultInit  motor_drive.lib(bsp_adc.o)
+    0x08007888   0x08007888   0x00000012   Code   RO         5781    i.XMC_VADC_GROUP_SetPowerMode  xmc_vadc.o
+    0x0800789a   0x0800789a   0x00000002   Code   RO         3589    i.Z_Int_Hook        debug.o
     0x0800789c   0x0800789c   0x0000001a   Code   RO          791    i.__NVIC_EnableIRQ  bsp_rs485.o
     0x080078b6   0x080078b6   0x0000001a   Code   RO          882    i.__NVIC_EnableIRQ  bsp_uart.o
     0x080078d0   0x080078d0   0x0000001a   Code   RO         1017    i.__NVIC_EnableIRQ  bsp_spibus.o
@@ -6187,7 +6213,7 @@ Memory Map of the image
     0x080078fc   0x080078fc   0x00000028   Code   RO          792    i.__NVIC_SetPriority  bsp_rs485.o
     0x08007924   0x08007924   0x00000028   Code   RO          883    i.__NVIC_SetPriority  bsp_uart.o
     0x0800794c   0x0800794c   0x00000028   Code   RO         1019    i.__NVIC_SetPriority  bsp_spibus.o
-    0x08007974   0x08007974   0x00000070   Code   RO         9208    i.__hardfp_floorf   m_wm.l(floorf.o)
+    0x08007974   0x08007974   0x00000070   Code   RO         9269    i.__hardfp_floorf   m_wm.l(floorf.o)
     0x080079e4   0x080079e4   0x00000058   Code   RO         2051    i.add_one_action    action.o
     0x08007a3c   0x08007a3c   0x00000010   Code   RO            4    i.app_Can_Init      app_can.o
     0x08007a4c   0x08007a4c   0x00000018   Code   RO          116    i.app_DacInit       app_dac.o
@@ -6225,50 +6251,50 @@ Memory Map of the image
     0x080088b0   0x080088b0   0x000001f0   Code   RO         1025    i.bsp_Spi_Master_Init  bsp_spibus.o
     0x08008aa0   0x08008aa0   0x000000ec   Code   RO          885    i.bsp_UartInit      bsp_uart.o
     0x08008b8c   0x08008b8c   0x000000f0   Code   RO         1581    i.bsp_Watch_Init    bsp_watch.o
-    0x08008c7c   0x08008c7c   0x00000108   Code   RO         7597    i.cal_pid_p_stopn   motor_drive.lib(mc_pmsm.o)
+    0x08008c7c   0x08008c7c   0x00000108   Code   RO         7658    i.cal_pid_p_stopn   motor_drive.lib(mc_pmsm.o)
     0x08008d84   0x08008d84   0x000002bc   Code   RO         2054    i.calculate_angle   action.o
     0x08009040   0x08009040   0x00000074   Code   RO         2055    i.calculate_continue_move_time  action.o
     0x080090b4   0x080090b4   0x00000ae0   Code   RO         2056    i.check_data        action.o
     0x08009b94   0x08009b94   0x00000054   Code   RO         2057    i.check_foot_status  action.o
-    0x08009be8   0x08009be8   0x000001ca   Code   RO         3448    i.check_motor_cfg_para  stepper_function.o
+    0x08009be8   0x08009be8   0x000001ca   Code   RO         3452    i.check_motor_cfg_para  stepper_function.o
     0x08009db2   0x08009db2   0x00000002   PAD
-    0x08009db4   0x08009db4   0x00000058   Code   RO         3449    i.check_physical_port_used_or_not  stepper_function.o
+    0x08009db4   0x08009db4   0x00000058   Code   RO         3453    i.check_physical_port_used_or_not  stepper_function.o
     0x08009e0c   0x08009e0c   0x00000078   Code   RO         2058    i.check_sewing_range  action.o
-    0x08009e84   0x08009e84   0x00000024   Code   RO         3142    i.checki03_status   system.o
-    0x08009ea8   0x08009ea8   0x0000055c   Code   RO         3143    i.checki04_status   system.o
-    0x0800a404   0x0800a404   0x000001e8   Code   RO         3144    i.checki05_status   system.o
-    0x0800a5ec   0x0800a5ec   0x0000027c   Code   RO         3145    i.checki06_status   system.o
-    0x0800a868   0x0800a868   0x00000024   Code   RO         3146    i.checki07_status   system.o
-    0x0800a88c   0x0800a88c   0x00000070   Code   RO         3147    i.checki08_status   system.o
-    0x0800a8fc   0x0800a8fc   0x0000029c   Code   RO         3148    i.checki10_status   system.o
-    0x0800ab98   0x0800ab98   0x00000024   Code   RO         3149    i.checki11_status   system.o
-    0x0800abbc   0x0800abbc   0x00000050   Code   RO         8070    i.clarke_calc       motor_drive.lib(app_svpwm.o)
-    0x0800ac0c   0x0800ac0c   0x00000024   Code   RO         2673    i.com_error         communication.o
-    0x0800ac30   0x0800ac30   0x00000094   Code   RO         2783    i.config_mainmotor  initial.o
+    0x08009e84   0x08009e84   0x00000024   Code   RO         3146    i.checki03_status   system.o
+    0x08009ea8   0x08009ea8   0x0000055c   Code   RO         3147    i.checki04_status   system.o
+    0x0800a404   0x0800a404   0x000001e8   Code   RO         3148    i.checki05_status   system.o
+    0x0800a5ec   0x0800a5ec   0x0000027c   Code   RO         3149    i.checki06_status   system.o
+    0x0800a868   0x0800a868   0x00000024   Code   RO         3150    i.checki07_status   system.o
+    0x0800a88c   0x0800a88c   0x00000070   Code   RO         3151    i.checki08_status   system.o
+    0x0800a8fc   0x0800a8fc   0x0000029c   Code   RO         3152    i.checki10_status   system.o
+    0x0800ab98   0x0800ab98   0x00000024   Code   RO         3153    i.checki11_status   system.o
+    0x0800abbc   0x0800abbc   0x00000050   Code   RO         8131    i.clarke_calc       motor_drive.lib(app_svpwm.o)
+    0x0800ac0c   0x0800ac0c   0x00000024   Code   RO         2677    i.com_error         communication.o
+    0x0800ac30   0x0800ac30   0x00000094   Code   RO         2787    i.config_mainmotor  initial.o
     0x0800acc4   0x0800acc4   0x00000400   Code   RO         2059    i.conprocess_data   action.o
     0x0800b0c4   0x0800b0c4   0x00000044   Code   RO         2060    i.coor_com_fun      action.o
     0x0800b108   0x0800b108   0x000002ec   Code   RO         2061    i.course_back       action.o
-    0x0800b3f4   0x0800b3f4   0x00000020   Code   RO         2827    i.cpy_para_buff     parameter.o
-    0x0800b414   0x0800b414   0x0000003a   Code   RO         2908    i.crc_calcu1        step_motor_drv.o
+    0x0800b3f4   0x0800b3f4   0x00000020   Code   RO         2831    i.cpy_para_buff     parameter.o
+    0x0800b414   0x0800b414   0x0000003a   Code   RO         2912    i.crc_calcu1        step_motor_drv.o
     0x0800b44e   0x0800b44e   0x00000002   PAD
-    0x0800b450   0x0800b450   0x00000028   Code   RO         3586    i.debug_mode_init   debug.o
-    0x0800b478   0x0800b478   0x00000018   Code   RO         3684    i.delay             system_xmc4400.o
-    0x0800b490   0x0800b490   0x0000001e   Code   RO         2753    i.delay_ms          delay.o
+    0x0800b450   0x0800b450   0x00000028   Code   RO         3590    i.debug_mode_init   debug.o
+    0x0800b478   0x0800b478   0x00000018   Code   RO         3745    i.delay             system_xmc4400.o
+    0x0800b490   0x0800b490   0x0000001e   Code   RO         2757    i.delay_ms          delay.o
     0x0800b4ae   0x0800b4ae   0x00000002   PAD
     0x0800b4b0   0x0800b4b0   0x0000018c   Code   RO         2064    i.delay_process     action.o
-    0x0800b63c   0x0800b63c   0x0000000c   Code   RO         2754    i.delay_us          delay.o
+    0x0800b63c   0x0800b63c   0x0000000c   Code   RO         2758    i.delay_us          delay.o
     0x0800b648   0x0800b648   0x00000070   Code   RO         2065    i.detect_position   action.o
     0x0800b6b8   0x0800b6b8   0x00000044   Code   RO         2066    i.do_pat_point_add_one  action.o
     0x0800b6fc   0x0800b6fc   0x00000064   Code   RO         2067    i.do_pat_point_sub_one  action.o
-    0x0800b760   0x0800b760   0x000001c0   Code   RO         3150    i.download_drv_status  system.o
-    0x0800b920   0x0800b920   0x000000c0   Code   RO         3151    i.download_multipul_program_status  system.o
-    0x0800b9e0   0x0800b9e0   0x00000002   Code   RO         3152    i.download_status   system.o
-    0x0800b9e2   0x0800b9e2   0x0000002a   Code   RO         3297    i.dsp1_output_control  io_function.o
+    0x0800b760   0x0800b760   0x000001c0   Code   RO         3154    i.download_drv_status  system.o
+    0x0800b920   0x0800b920   0x000000c0   Code   RO         3155    i.download_multipul_program_status  system.o
+    0x0800b9e0   0x0800b9e0   0x00000002   Code   RO         3156    i.download_status   system.o
+    0x0800b9e2   0x0800b9e2   0x0000002a   Code   RO         3301    i.dsp1_output_control  io_function.o
     0x0800ba0c   0x0800ba0c   0x00000002   Code   RO         2068    i.emergency         action.o
     0x0800ba0e   0x0800ba0e   0x00000002   PAD
-    0x0800ba10   0x0800ba10   0x00000370   Code   RO         3153    i.error_status      system.o
+    0x0800ba10   0x0800ba10   0x00000370   Code   RO         3157    i.error_status      system.o
     0x0800bd80   0x0800bd80   0x00000150   Code   RO         2069    i.find_dead_center  action.o
-    0x0800bed0   0x0800bed0   0x00000310   Code   RO         3154    i.finish_status     system.o
+    0x0800bed0   0x0800bed0   0x00000310   Code   RO         3158    i.finish_status     system.o
     0x0800c1e0   0x0800c1e0   0x00000060   Code   RO         2070    i.foot_down         action.o
     0x0800c240   0x0800c240   0x00000030   Code   RO         2071    i.foot_half_down    action.o
     0x0800c270   0x0800c270   0x00000028   Code   RO         2072    i.foot_half_up      action.o
@@ -6277,10 +6303,10 @@ Memory Map of the image
     0x0800c358   0x0800c358   0x00000058   Code   RO         2075    i.footer_both_up    action.o
     0x0800c3b0   0x0800c3b0   0x00000130   Code   RO         2076    i.footer_procedure  action.o
     0x0800c4e0   0x0800c4e0   0x0000079c   Code   RO         1963    i.function_1ms_hook  main.o
-    0x0800cc7c   0x0800cc7c   0x00000038   Code   RO         8181    i.g_SpiMode_CmdTip  motor_drive.lib(app_spi.o)
-    0x0800ccb4   0x0800ccb4   0x00000040   Code   RO         3450    i.get_motor_cfg     stepper_function.o
-    0x0800ccf4   0x0800ccf4   0x00000032   Code   RO         3451    i.get_origin_state  stepper_function.o
-    0x0800cd26   0x0800cd26   0x00000092   Code   RO         3452    i.get_physical_num_and_channel  stepper_function.o
+    0x0800cc7c   0x0800cc7c   0x00000038   Code   RO         8242    i.g_SpiMode_CmdTip  motor_drive.lib(app_spi.o)
+    0x0800ccb4   0x0800ccb4   0x00000040   Code   RO         3454    i.get_motor_cfg     stepper_function.o
+    0x0800ccf4   0x0800ccf4   0x00000032   Code   RO         3455    i.get_origin_state  stepper_function.o
+    0x0800cd26   0x0800cd26   0x00000092   Code   RO         3456    i.get_physical_num_and_channel  stepper_function.o
     0x0800cdb8   0x0800cdb8   0x000004a4   Code   RO         2077    i.go_beginpoint     action.o
     0x0800d25c   0x0800d25c   0x00000134   Code   RO         2078    i.go_commandpoint   action.o
     0x0800d390   0x0800d390   0x000002b8   Code   RO         2079    i.go_origin_allmotor  action.o
@@ -6291,77 +6317,77 @@ Memory Map of the image
     0x0800d98c   0x0800d98c   0x00000074   Code   RO         2084    i.go_origin_zx      action.o
     0x0800da00   0x0800da00   0x000002e4   Code   RO         2085    i.go_setoutpoint    action.o
     0x0800dce4   0x0800dce4   0x00000164   Code   RO         2086    i.go_startpoint     action.o
-    0x0800de48   0x0800de48   0x0000007e   Code   RO         7598    i.holding_axes      motor_drive.lib(mc_pmsm.o)
+    0x0800de48   0x0800de48   0x0000007e   Code   RO         7659    i.holding_axes      motor_drive.lib(mc_pmsm.o)
     0x0800dec6   0x0800dec6   0x00000002   PAD
-    0x0800dec8   0x0800dec8   0x00000068   Code   RO         2674    i.init_comm         communication.o
-    0x0800df30   0x0800df30   0x00000096   Code   RO         3453    i.init_motor_handler_sturct  stepper_function.o
+    0x0800dec8   0x0800dec8   0x00000068   Code   RO         2678    i.init_comm         communication.o
+    0x0800df30   0x0800df30   0x00000096   Code   RO         3457    i.init_motor_handler_sturct  stepper_function.o
     0x0800dfc6   0x0800dfc6   0x00000002   PAD
-    0x0800dfc8   0x0800dfc8   0x0000116c   Code   RO         2784    i.init_var          initial.o
-    0x0800f134   0x0800f134   0x00000018   Code   RO         2785    i.initial           initial.o
+    0x0800dfc8   0x0800dfc8   0x0000116c   Code   RO         2788    i.init_var          initial.o
+    0x0800f134   0x0800f134   0x00000018   Code   RO         2789    i.initial           initial.o
     0x0800f14c   0x0800f14c   0x0000003c   Code   RO         2087    i.initial_mainmotor  action.o
     0x0800f188   0x0800f188   0x000000ac   Code   RO         2088    i.inpress_down      action.o
     0x0800f234   0x0800f234   0x000000a0   Code   RO         2089    i.inpress_to        action.o
     0x0800f2d4   0x0800f2d4   0x000000bc   Code   RO         2091    i.inpress_up        action.o
-    0x0800f390   0x0800f390   0x000007f4   Code   RO         3298    i.io_function_init  io_function.o
-    0x0800fb84   0x0800fb84   0x00000090   Code   RO         3299    i.io_get_logic_inout  io_function.o
-    0x0800fc14   0x0800fc14   0x000001f4   Code   RO         3300    i.io_get_physical_input  io_function.o
-    0x0800fe08   0x0800fe08   0x000001fc   Code   RO         3301    i.io_get_physical_output  io_function.o
-    0x08010004   0x08010004   0x0000015c   Code   RO         3303    i.io_sc0719_bsp_init  io_function.o
-    0x08010160   0x08010160   0x00000150   Code   RO         3304    i.io_sc0720_bsp_init  io_function.o
-    0x080102b0   0x080102b0   0x00000148   Code   RO         3305    i.io_sc0720a_bsp_init  io_function.o
-    0x080103f8   0x080103f8   0x00000148   Code   RO         3306    i.io_sc0723_bsp_init  io_function.o
-    0x08010540   0x08010540   0x000000cc   Code   RO         3307    i.io_set_logic_output  io_function.o
-    0x0801060c   0x0801060c   0x00000280   Code   RO         3308    i.io_set_physical_output  io_function.o
-    0x0801088c   0x0801088c   0x00000098   Code   RO         3309    i.io_toggle_logic_output  io_function.o
-    0x08010924   0x08010924   0x0000022c   Code   RO         3310    i.io_toggle_physical_output  io_function.o
-    0x08010b50   0x08010b50   0x00000048   Code   RO         3311    i.io_translate_logic_to_physical  io_function.o
-    0x08010b98   0x08010b98   0x0000008c   Code   RO         8071    i.ipark_calc        motor_drive.lib(app_svpwm.o)
-    0x08010c24   0x08010c24   0x000000e4   Code   RO         2913    i.jump_to_begin     step_motor_drv.o
+    0x0800f390   0x0800f390   0x000007f4   Code   RO         3302    i.io_function_init  io_function.o
+    0x0800fb84   0x0800fb84   0x00000090   Code   RO         3303    i.io_get_logic_inout  io_function.o
+    0x0800fc14   0x0800fc14   0x000001f4   Code   RO         3304    i.io_get_physical_input  io_function.o
+    0x0800fe08   0x0800fe08   0x000001fc   Code   RO         3305    i.io_get_physical_output  io_function.o
+    0x08010004   0x08010004   0x0000015c   Code   RO         3307    i.io_sc0719_bsp_init  io_function.o
+    0x08010160   0x08010160   0x00000150   Code   RO         3308    i.io_sc0720_bsp_init  io_function.o
+    0x080102b0   0x080102b0   0x00000148   Code   RO         3309    i.io_sc0720a_bsp_init  io_function.o
+    0x080103f8   0x080103f8   0x00000148   Code   RO         3310    i.io_sc0723_bsp_init  io_function.o
+    0x08010540   0x08010540   0x000000cc   Code   RO         3311    i.io_set_logic_output  io_function.o
+    0x0801060c   0x0801060c   0x00000280   Code   RO         3312    i.io_set_physical_output  io_function.o
+    0x0801088c   0x0801088c   0x00000098   Code   RO         3313    i.io_toggle_logic_output  io_function.o
+    0x08010924   0x08010924   0x0000022c   Code   RO         3314    i.io_toggle_physical_output  io_function.o
+    0x08010b50   0x08010b50   0x00000048   Code   RO         3315    i.io_translate_logic_to_physical  io_function.o
+    0x08010b98   0x08010b98   0x0000008c   Code   RO         8132    i.ipark_calc        motor_drive.lib(app_svpwm.o)
+    0x08010c24   0x08010c24   0x000000e4   Code   RO         2917    i.jump_to_begin     step_motor_drv.o
     0x08010d08   0x08010d08   0x000000e8   Code   RO         2092    i.keep_running_for_dead_center  action.o
     0x08010df0   0x08010df0   0x00000002   Code   RO         2094    i.laser_timer_start  action.o
     0x08010df2   0x08010df2   0x00000002   Code   RO         2095    i.laser_timer_stop  action.o
-    0x08010df4   0x08010df4   0x00000130   Code   RO         7599    i.mPmsm1ParaActive  motor_drive.lib(mc_pmsm.o)
-    0x08010f24   0x08010f24   0x0000043a   Code   RO         7600    i.m_start           motor_drive.lib(mc_pmsm.o)
+    0x08010df4   0x08010df4   0x00000130   Code   RO         7660    i.mPmsm1ParaActive  motor_drive.lib(mc_pmsm.o)
+    0x08010f24   0x08010f24   0x0000043a   Code   RO         7661    i.m_start           motor_drive.lib(mc_pmsm.o)
     0x0801135e   0x0801135e   0x00000002   PAD
     0x08011360   0x08011360   0x0000029c   Code   RO         1964    i.main              main.o
-    0x080115fc   0x080115fc   0x0000000e   Code   RO         3814    i.min               xmc_can.o
+    0x080115fc   0x080115fc   0x0000000e   Code   RO         3875    i.min               xmc_can.o
     0x0801160a   0x0801160a   0x00000002   PAD
-    0x0801160c   0x0801160c   0x000005f8   Code   RO         7602    i.motor1_control    motor_drive.lib(mc_pmsm.o)
+    0x0801160c   0x0801160c   0x000005f8   Code   RO         7663    i.motor1_control    motor_drive.lib(mc_pmsm.o)
     0x08011c04   0x08011c04   0x00000080   Code   RO         2096    i.move_back         action.o
     0x08011c84   0x08011c84   0x000000f4   Code   RO         2097    i.move_continue_back  action.o
     0x08011d78   0x08011d78   0x000000f0   Code   RO         2098    i.move_continue_next  action.o
     0x08011e68   0x08011e68   0x00000068   Code   RO         2099    i.move_next         action.o
     0x08011ed0   0x08011ed0   0x00000064   Code   RO         2100    i.move_startpoint   action.o
     0x08011f34   0x08011f34   0x00000324   Code   RO         2101    i.move_xy           action.o
-    0x08012258   0x08012258   0x00000080   Code   RO         2915    i.movestep_x        step_motor_drv.o
-    0x080122d8   0x080122d8   0x00000088   Code   RO         2916    i.movestep_y        step_motor_drv.o
-    0x08012360   0x08012360   0x00000020   Code   RO         2918    i.movestep_zx       step_motor_drv.o
-    0x08012380   0x08012380   0x0000002c   Code   RO         2919    i.multipule_program_beginning  step_motor_drv.o
-    0x080123ac   0x080123ac   0x00000028   Code   RO         2920    i.multipule_program_end  step_motor_drv.o
-    0x080123d4   0x080123d4   0x00000014   Code   RO         2828    i.mymemcpy          parameter.o
-    0x080123e8   0x080123e8   0x00000010   Code   RO         2829    i.mymemset          parameter.o
+    0x08012258   0x08012258   0x00000080   Code   RO         2919    i.movestep_x        step_motor_drv.o
+    0x080122d8   0x080122d8   0x00000088   Code   RO         2920    i.movestep_y        step_motor_drv.o
+    0x08012360   0x08012360   0x00000020   Code   RO         2922    i.movestep_zx       step_motor_drv.o
+    0x08012380   0x08012380   0x0000002c   Code   RO         2923    i.multipule_program_beginning  step_motor_drv.o
+    0x080123ac   0x080123ac   0x00000028   Code   RO         2924    i.multipule_program_end  step_motor_drv.o
+    0x080123d4   0x080123d4   0x00000014   Code   RO         2832    i.mymemcpy          parameter.o
+    0x080123e8   0x080123e8   0x00000010   Code   RO         2833    i.mymemset          parameter.o
     0x080123f8   0x080123f8   0x00000070   Code   RO         2102    i.needle_down       action.o
-    0x08012468   0x08012468   0x00000090   Code   RO         8072    i.park_calc         motor_drive.lib(app_svpwm.o)
+    0x08012468   0x08012468   0x00000090   Code   RO         8133    i.park_calc         motor_drive.lib(app_svpwm.o)
     0x080124f8   0x080124f8   0x000001f0   Code   RO         2103    i.pause_stop        action.o
-    0x080126e8   0x080126e8   0x0000079c   Code   RO         7603    i.pmsm1_100us_task  motor_drive.lib(mc_pmsm.o)
-    0x08012e84   0x08012e84   0x00000002   Code   RO         3155    i.poweroff_status   system.o
+    0x080126e8   0x080126e8   0x0000079c   Code   RO         7664    i.pmsm1_100us_task  motor_drive.lib(mc_pmsm.o)
+    0x08012e84   0x08012e84   0x00000002   Code   RO         3159    i.poweroff_status   system.o
     0x08012e86   0x08012e86   0x00000002   PAD
-    0x08012e88   0x08012e88   0x000003c0   Code   RO         3156    i.pre_running       system.o
-    0x08013248   0x08013248   0x000005d8   Code   RO         3157    i.preedit_status    system.o
-    0x08013820   0x08013820   0x00000190   Code   RO         3158    i.prewind_status    system.o
+    0x08012e88   0x08012e88   0x000003c0   Code   RO         3160    i.pre_running       system.o
+    0x08013248   0x08013248   0x000005d8   Code   RO         3161    i.preedit_status    system.o
+    0x08013820   0x08013820   0x00000190   Code   RO         3162    i.prewind_status    system.o
     0x080139b0   0x080139b0   0x000003c4   Code   RO         2104    i.process_data      action.o
     0x08013d74   0x08013d74   0x0000036c   Code   RO         2105    i.process_making_pen_signal  action.o
     0x080140e0   0x080140e0   0x0000028c   Code   RO         2106    i.process_nop_move_pause  action.o
-    0x0801436c   0x0801436c   0x00003718   Code   RO         2675    i.protocol          communication.o
-    0x08017a84   0x08017a84   0x0000002c   Code   RO         2922    i.read_multipule_program_status  step_motor_drv.o
-    0x08017ab0   0x08017ab0   0x00000022   Code   RO         2830    i.read_par          parameter.o
-    0x08017ad2   0x08017ad2   0x00000014   Code   RO         2831    i.read_para_group   parameter.o
+    0x0801436c   0x0801436c   0x00003718   Code   RO         2679    i.protocol          communication.o
+    0x08017a84   0x08017a84   0x0000002c   Code   RO         2926    i.read_multipule_program_status  step_motor_drv.o
+    0x08017ab0   0x08017ab0   0x00000022   Code   RO         2834    i.read_par          parameter.o
+    0x08017ad2   0x08017ad2   0x00000014   Code   RO         2835    i.read_para_group   parameter.o
     0x08017ae6   0x08017ae6   0x00000002   PAD
-    0x08017ae8   0x08017ae8   0x00000090   Code   RO         2923    i.read_stepmotor_config_para  step_motor_drv.o
-    0x08017b78   0x08017b78   0x00000054   Code   RO         2924    i.read_stepmotor_curve_crc  step_motor_drv.o
-    0x08017bcc   0x08017bcc   0x00000058   Code   RO         2925    i.read_stepmotor_up_drv  step_motor_drv.o
-    0x08017c24   0x08017c24   0x0000113c   Code   RO         3159    i.ready_status      system.o
-    0x08018d60   0x08018d60   0x00000020   Code   RO         2676    i.rec_com           communication.o
+    0x08017ae8   0x08017ae8   0x00000090   Code   RO         2927    i.read_stepmotor_config_para  step_motor_drv.o
+    0x08017b78   0x08017b78   0x00000054   Code   RO         2928    i.read_stepmotor_curve_crc  step_motor_drv.o
+    0x08017bcc   0x08017bcc   0x00000058   Code   RO         2929    i.read_stepmotor_up_drv  step_motor_drv.o
+    0x08017c24   0x08017c24   0x0000113c   Code   RO         3163    i.ready_status      system.o
+    0x08018d60   0x08018d60   0x00000020   Code   RO         2680    i.rec_com           communication.o
     0x08018d80   0x08018d80   0x00000080   Code   RO         2107    i.remove_01         action.o
     0x08018e00   0x08018e00   0x0000004c   Code   RO         2108    i.remove_03         action.o
     0x08018e4c   0x08018e4c   0x00000080   Code   RO         2109    i.remove_04         action.o
@@ -6371,20 +6397,20 @@ Memory Map of the image
     0x08018fdc   0x08018fdc   0x00000080   Code   RO         2113    i.remove_10         action.o
     0x0801905c   0x0801905c   0x00000048   Code   RO         2114    i.remove_12         action.o
     0x080190a4   0x080190a4   0x0000001c   Code   RO         2115    i.remove_stop       action.o
-    0x080190c0   0x080190c0   0x00000070   Code   RO         2832    i.restore_para45_from_eeprom  parameter.o
-    0x08019130   0x08019130   0x0000003c   Code   RO         2833    i.restore_para_from_eeprom  parameter.o
-    0x0801916c   0x0801916c   0x00001690   Code   RO         3160    i.run_status        system.o
-    0x0801a7fc   0x0801a7fc   0x00000030   Code   RO         2926    i.send_dsp1_command  step_motor_drv.o
-    0x0801a82c   0x0801a82c   0x00000030   Code   RO         2927    i.send_dsp2_command  step_motor_drv.o
-    0x0801a85c   0x0801a85c   0x00000030   Code   RO         2928    i.send_dsp3_command  step_motor_drv.o
-    0x0801a88c   0x0801a88c   0x00000030   Code   RO         2929    i.send_dsp4_command  step_motor_drv.o
-    0x0801a8bc   0x0801a8bc   0x000000ec   Code   RO         2930    i.send_dsp_command  step_motor_drv.o
-    0x0801a9a8   0x0801a9a8   0x0000005c   Code   RO         2931    i.send_multipule_program_data  step_motor_drv.o
-    0x0801aa04   0x0801aa04   0x0000002c   Code   RO         2932    i.send_stepmotor_end_drv  step_motor_drv.o
-    0x0801aa30   0x0801aa30   0x00000060   Code   RO         2933    i.send_stepmotor_up_drv  step_motor_drv.o
+    0x080190c0   0x080190c0   0x00000070   Code   RO         2836    i.restore_para45_from_eeprom  parameter.o
+    0x08019130   0x08019130   0x0000003c   Code   RO         2837    i.restore_para_from_eeprom  parameter.o
+    0x0801916c   0x0801916c   0x00001690   Code   RO         3164    i.run_status        system.o
+    0x0801a7fc   0x0801a7fc   0x00000030   Code   RO         2930    i.send_dsp1_command  step_motor_drv.o
+    0x0801a82c   0x0801a82c   0x00000030   Code   RO         2931    i.send_dsp2_command  step_motor_drv.o
+    0x0801a85c   0x0801a85c   0x00000030   Code   RO         2932    i.send_dsp3_command  step_motor_drv.o
+    0x0801a88c   0x0801a88c   0x00000030   Code   RO         2933    i.send_dsp4_command  step_motor_drv.o
+    0x0801a8bc   0x0801a8bc   0x000000ec   Code   RO         2934    i.send_dsp_command  step_motor_drv.o
+    0x0801a9a8   0x0801a9a8   0x0000005c   Code   RO         2935    i.send_multipule_program_data  step_motor_drv.o
+    0x0801aa04   0x0801aa04   0x0000002c   Code   RO         2936    i.send_stepmotor_end_drv  step_motor_drv.o
+    0x0801aa30   0x0801aa30   0x00000060   Code   RO         2937    i.send_stepmotor_up_drv  step_motor_drv.o
     0x0801aa90   0x0801aa90   0x00000044   Code   RO         2116    i.set_mainmotor_stop_angle  action.o
     0x0801aad4   0x0801aad4   0x0000005c   Code   RO         2117    i.set_tension_value  action.o
-    0x0801ab30   0x0801ab30   0x00000494   Code   RO         3161    i.setout_status     system.o
+    0x0801ab30   0x0801ab30   0x00000494   Code   RO         3165    i.setout_status     system.o
     0x0801afc4   0x0801afc4   0x00000018   Code   RO         2118    i.sewing_stop       action.o
     0x0801afdc   0x0801afdc   0x00000090   Code   RO         2119    i.shift_01          action.o
     0x0801b06c   0x0801b06c   0x0000005c   Code   RO         2120    i.shift_03          action.o
@@ -6404,53 +6430,53 @@ Memory Map of the image
     0x0801c1ac   0x0801c1ac   0x00000190   Code   RO         2134    i.single_next       action.o
     0x0801c33c   0x0801c33c   0x00000044   Code   RO         2135    i.single_start      action.o
     0x0801c380   0x0801c380   0x00000030   Code   RO         2136    i.single_stop       action.o
-    0x0801c3b0   0x0801c3b0   0x00000494   Code   RO         3162    i.slack_status      system.o
+    0x0801c3b0   0x0801c3b0   0x00000494   Code   RO         3166    i.slack_status      system.o
     0x0801c844   0x0801c844   0x00000384   Code   RO         2137    i.special_sewing    action.o
-    0x0801cbc8   0x0801cbc8   0x00001058   Code   RO         8182    i.spi_fifo_recISR   motor_drive.lib(app_spi.o)
+    0x0801cbc8   0x0801cbc8   0x00001058   Code   RO         8243    i.spi_fifo_recISR   motor_drive.lib(app_spi.o)
     0x0801dc20   0x0801dc20   0x00000024   Code   RO         1130    i.spi_flash_dma_rx_handler  bsp_spiflash.o
     0x0801dc44   0x0801dc44   0x00000002   Code   RO         1131    i.spi_flash_dma_tx_handler  bsp_spiflash.o
     0x0801dc46   0x0801dc46   0x00000002   PAD
-    0x0801dc48   0x0801dc48   0x000000a0   Code   RO         2934    i.spi_read_wirte_lowlevel  step_motor_drv.o
-    0x0801dce8   0x0801dce8   0x000002f0   Code   RO         3454    i.stepper_check_error  stepper_function.o
-    0x0801dfd8   0x0801dfd8   0x00000078   Code   RO         3455    i.stepper_check_motion_done  stepper_function.o
-    0x0801e050   0x0801e050   0x000000b4   Code   RO         3456    i.stepper_get_z_status  stepper_function.o
-    0x0801e104   0x0801e104   0x000001be   Code   RO         3457    i.stepper_go_origin  stepper_function.o
+    0x0801dc48   0x0801dc48   0x000000a0   Code   RO         2938    i.spi_read_wirte_lowlevel  step_motor_drv.o
+    0x0801dce8   0x0801dce8   0x000002f0   Code   RO         3458    i.stepper_check_error  stepper_function.o
+    0x0801dfd8   0x0801dfd8   0x00000078   Code   RO         3459    i.stepper_check_motion_done  stepper_function.o
+    0x0801e050   0x0801e050   0x000000b4   Code   RO         3460    i.stepper_get_z_status  stepper_function.o
+    0x0801e104   0x0801e104   0x000001be   Code   RO         3461    i.stepper_go_origin  stepper_function.o
     0x0801e2c2   0x0801e2c2   0x00000002   PAD
-    0x0801e2c4   0x0801e2c4   0x00000928   Code   RO         3458    i.stepper_go_origin_multiple  stepper_function.o
-    0x0801ebec   0x0801ebec   0x0000024c   Code   RO         3459    i.stepper_init      stepper_function.o
-    0x0801ee38   0x0801ee38   0x00000170   Code   RO         3460    i.stepper_motor_move  stepper_function.o
-    0x0801efa8   0x0801efa8   0x000000c0   Code   RO         3461    i.stepper_motor_move_sync  stepper_function.o
-    0x0801f068   0x0801f068   0x0000006e   Code   RO         3462    i.stepper_motor_sync_angle  stepper_function.o
+    0x0801e2c4   0x0801e2c4   0x00000928   Code   RO         3462    i.stepper_go_origin_multiple  stepper_function.o
+    0x0801ebec   0x0801ebec   0x0000024c   Code   RO         3463    i.stepper_init      stepper_function.o
+    0x0801ee38   0x0801ee38   0x00000170   Code   RO         3464    i.stepper_motor_move  stepper_function.o
+    0x0801efa8   0x0801efa8   0x000000c0   Code   RO         3465    i.stepper_motor_move_sync  stepper_function.o
+    0x0801f068   0x0801f068   0x0000006e   Code   RO         3466    i.stepper_motor_sync_angle  stepper_function.o
     0x0801f0d6   0x0801f0d6   0x00000002   PAD
-    0x0801f0d8   0x0801f0d8   0x00000140   Code   RO         3463    i.stepper_pause     stepper_function.o
-    0x0801f218   0x0801f218   0x00000054   Code   RO         3464    i.stepper_refresh_mc_para  stepper_function.o
-    0x0801f26c   0x0801f26c   0x000000f8   Code   RO         3465    i.stepper_refresh_para  stepper_function.o
-    0x0801f364   0x0801f364   0x00000136   Code   RO         3466    i.stepper_setup_motor  stepper_function.o
+    0x0801f0d8   0x0801f0d8   0x00000140   Code   RO         3467    i.stepper_pause     stepper_function.o
+    0x0801f218   0x0801f218   0x00000054   Code   RO         3468    i.stepper_refresh_mc_para  stepper_function.o
+    0x0801f26c   0x0801f26c   0x000000f8   Code   RO         3469    i.stepper_refresh_para  stepper_function.o
+    0x0801f364   0x0801f364   0x00000136   Code   RO         3470    i.stepper_setup_motor  stepper_function.o
     0x0801f49a   0x0801f49a   0x00000002   PAD
     0x0801f49c   0x0801f49c   0x00000040   Code   RO         2138    i.stretch_foot_in   action.o
     0x0801f4dc   0x0801f4dc   0x00000040   Code   RO         2139    i.stretch_foot_out  action.o
     0x0801f51c   0x0801f51c   0x000000f4   Code   RO         2140    i.tail_sewing       action.o
-    0x0801f610   0x0801f610   0x00000084   Code   RO         2677    i.tra_com           communication.o
+    0x0801f610   0x0801f610   0x00000084   Code   RO         2681    i.tra_com           communication.o
     0x0801f694   0x0801f694   0x00000244   Code   RO         2141    i.trim_action       action.o
-    0x0801f8d8   0x0801f8d8   0x0000016c   Code   RO         2678    i.ui_receive_fsm    communication.o
-    0x0801fa44   0x0801fa44   0x0000001a   Code   RO         2679    i.verify            communication.o
+    0x0801f8d8   0x0801f8d8   0x0000016c   Code   RO         2682    i.ui_receive_fsm    communication.o
+    0x0801fa44   0x0801fa44   0x0000001a   Code   RO         2683    i.verify            communication.o
     0x0801fa5e   0x0801fa5e   0x00000002   PAD
-    0x0801fa60   0x0801fa60   0x00000020   Code   RO         2680    i.verify_code       communication.o
-    0x0801fa80   0x0801fa80   0x00000078   Code   RO         2935    i.version_check     step_motor_drv.o
-    0x0801faf8   0x0801faf8   0x000000e8   Code   RO         3163    i.wind_status       system.o
-    0x0801fbe0   0x0801fbe0   0x00000034   Code   RO         2835    i.write_par         parameter.o
-    0x0801fc14   0x0801fc14   0x00000014   Code   RO         2836    i.write_para_group  parameter.o
-    0x0801fc28   0x0801fc28   0x000000b0   Code   RO         2936    i.write_stepmotor_config_para  step_motor_drv.o
-    0x0801fcd8   0x0801fcd8   0x000000ec   Code   RO         2937    i.write_stepmotor_curve  step_motor_drv.o
-    0x0801fdc4   0x0801fdc4   0x00000018   Code   RO         2938    i.x_quickmove       step_motor_drv.o
-    0x0801fddc   0x0801fddc   0x00000018   Code   RO         2939    i.y_quickmove       step_motor_drv.o
+    0x0801fa60   0x0801fa60   0x00000020   Code   RO         2684    i.verify_code       communication.o
+    0x0801fa80   0x0801fa80   0x00000078   Code   RO         2939    i.version_check     step_motor_drv.o
+    0x0801faf8   0x0801faf8   0x000000e8   Code   RO         3167    i.wind_status       system.o
+    0x0801fbe0   0x0801fbe0   0x00000034   Code   RO         2839    i.write_par         parameter.o
+    0x0801fc14   0x0801fc14   0x00000014   Code   RO         2840    i.write_para_group  parameter.o
+    0x0801fc28   0x0801fc28   0x000000b0   Code   RO         2940    i.write_stepmotor_config_para  step_motor_drv.o
+    0x0801fcd8   0x0801fcd8   0x000000ec   Code   RO         2941    i.write_stepmotor_curve  step_motor_drv.o
+    0x0801fdc4   0x0801fdc4   0x00000018   Code   RO         2942    i.x_quickmove       step_motor_drv.o
+    0x0801fddc   0x0801fddc   0x00000018   Code   RO         2943    i.y_quickmove       step_motor_drv.o
     0x0801fdf4   0x0801fdf4   0x000000d8   Code   RO         2142    i.yj_follow_udctos  action.o
     0x0801fecc   0x0801fecc   0x00000178   Code   RO         2143    i.zoom_in_one_stitch  action.o
     0x08020044   0x08020044   0x000000d0   Code   RO         2144    i.zpl_process       action.o
-    0x08020114   0x08020114   0x00000018   Code   RO         2940    i.zx_quickmove      step_motor_drv.o
-    0x0802012c   0x0802012c   0x00000800   Code   RO         9168    isqrt_table         motor_drive.lib(IQtables.o)
-    0x0802092c   0x0802092c   0x0000000a   Code   RO         9346    x$fpl$fpinit        g_wm.l(fpinit.o)
-    0x08020936   0x08020936   0x00000000   Code   RO         9231    x$fpl$usenofp       g_wm.l(usenofp.o)
+    0x08020114   0x08020114   0x00000018   Code   RO         2944    i.zx_quickmove      step_motor_drv.o
+    0x0802012c   0x0802012c   0x00000800   Code   RO         9229    isqrt_table         motor_drive.lib(IQtables.o)
+    0x0802092c   0x0802092c   0x0000000a   Code   RO         9407    x$fpl$fpinit        g_wm.l(fpinit.o)
+    0x08020936   0x08020936   0x00000000   Code   RO         9292    x$fpl$usenofp       g_wm.l(usenofp.o)
     0x08020936   0x08020936   0x00000002   PAD
     0x08020938   0x08020938   0x00000018   Data   RO          660    .constdata          bsp_gpio.o
     0x08020950   0x08020950   0x00000030   Data   RO          798    .constdata          bsp_rs485.o
@@ -6463,10 +6489,10 @@ Memory Map of the image
     0x08020b9c   0x08020b9c   0x000000e0   Data   RO         1759    .constdata          can_node_conf.o
     0x08020c7c   0x08020c7c   0x000003e7   Data   RO         2145    .constdata          action.o
     0x08021063   0x08021063   0x00000001   PAD
-    0x08021064   0x08021064   0x00002710   Data   RO         3468    .constdata          stepper_function.o
-    0x08023774   0x08023774   0x00000010   Data   RO         5728    .constdata          xmc_vadc.o
-    0x08023784   0x08023784   0x00000804   Data   RO         9141    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
-    0x08023f88   0x08023f88   0x00000020   Data   RO         9408    Region$$Table       anon$$obj.o
+    0x08021064   0x08021064   0x00002710   Data   RO         3472    .constdata          stepper_function.o
+    0x08023774   0x08023774   0x00000010   Data   RO         5789    .constdata          xmc_vadc.o
+    0x08023784   0x08023784   0x00000804   Data   RO         9202    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
+    0x08023f88   0x08023f88   0x00000020   Data   RO         9469    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08023fa8, Size: 0x000099b8, Max: 0x0000ffc0, ABSOLUTE, COMPRESSED[0x00000260])
@@ -6486,44 +6512,44 @@ Memory Map of the image
     0x200004e8   COMPRESSED   0x00000013   Data   RW         1885    .data               watch.o
     0x200004fb   COMPRESSED   0x00000001   PAD
     0x200004fc   COMPRESSED   0x00000024   Data   RW         1965    .data               main.o
-    0x20000520   COMPRESSED   0x0000000c   Data   RW         2682    .data               communication.o
-    0x2000052c   COMPRESSED   0x00000012   Data   RW         2787    .data               initial.o
-    0x2000053e   COMPRESSED   0x0000002c   Data   RW         2941    .data               step_motor_drv.o
-    0x2000056a   COMPRESSED   0x0000000a   Data   RW         3313    .data               io_function.o
-    0x20000574   COMPRESSED   0x0000014c   Data   RW         3469    .data               stepper_function.o
-    0x200006c0   COMPRESSED   0x00000038   Data   RW         7253    .data               motor_drive.lib(app_adc.o)
-    0x200006f8   COMPRESSED   0x000000e4   Data   RW         7509    .data               motor_drive.lib(bsp_adc.o)
-    0x200007dc   COMPRESSED   0x0000018c   Data   RW         7605    .data               motor_drive.lib(mc_pmsm.o)
-    0x20000968   COMPRESSED   0x000000b0   Data   RW         8073    .data               motor_drive.lib(app_svpwm.o)
-    0x20000a18   COMPRESSED   0x00000014   Data   RW         8149    .data               motor_drive.lib(app_stepposif.o)
-    0x20000a2c   COMPRESSED   0x00000006   Data   RW         8183    .data               motor_drive.lib(app_spi.o)
+    0x20000520   COMPRESSED   0x0000000c   Data   RW         2686    .data               communication.o
+    0x2000052c   COMPRESSED   0x00000012   Data   RW         2791    .data               initial.o
+    0x2000053e   COMPRESSED   0x0000002c   Data   RW         2945    .data               step_motor_drv.o
+    0x2000056a   COMPRESSED   0x0000000a   Data   RW         3317    .data               io_function.o
+    0x20000574   COMPRESSED   0x0000014c   Data   RW         3473    .data               stepper_function.o
+    0x200006c0   COMPRESSED   0x00000038   Data   RW         7314    .data               motor_drive.lib(app_adc.o)
+    0x200006f8   COMPRESSED   0x000000e4   Data   RW         7570    .data               motor_drive.lib(bsp_adc.o)
+    0x200007dc   COMPRESSED   0x0000018c   Data   RW         7666    .data               motor_drive.lib(mc_pmsm.o)
+    0x20000968   COMPRESSED   0x000000b0   Data   RW         8134    .data               motor_drive.lib(app_svpwm.o)
+    0x20000a18   COMPRESSED   0x00000014   Data   RW         8210    .data               motor_drive.lib(app_stepposif.o)
+    0x20000a2c   COMPRESSED   0x00000006   Data   RW         8244    .data               motor_drive.lib(app_spi.o)
     0x20000a32   COMPRESSED   0x00000002   PAD
-    0x20000a34   COMPRESSED   0x00000048   Data   RW         8271    .data               motor_drive.lib(bsp_posif.o)
-    0x20000a7c   COMPRESSED   0x0000007c   Data   RW         8318    .data               motor_drive.lib(bsp_svpwm.o)
-    0x20000af8   COMPRESSED   0x00000004   Data   RW         8415    .data               motor_drive.lib(mc_step.o)
-    0x20000afc   COMPRESSED   0x00000334   Data   RW         8444    .data               motor_drive.lib(all_globalvars.o)
-    0x20000e30   COMPRESSED   0x0000003c   Data   RW         8528    .data               motor_drive.lib(bsp_ccu4.o)
-    0x20000e6c   COMPRESSED   0x00000002   Data   RW         8579    .data               motor_drive.lib(mc_config.o)
+    0x20000a34   COMPRESSED   0x00000048   Data   RW         8332    .data               motor_drive.lib(bsp_posif.o)
+    0x20000a7c   COMPRESSED   0x0000007c   Data   RW         8379    .data               motor_drive.lib(bsp_svpwm.o)
+    0x20000af8   COMPRESSED   0x00000004   Data   RW         8476    .data               motor_drive.lib(mc_step.o)
+    0x20000afc   COMPRESSED   0x00000334   Data   RW         8505    .data               motor_drive.lib(all_globalvars.o)
+    0x20000e30   COMPRESSED   0x0000003c   Data   RW         8589    .data               motor_drive.lib(bsp_ccu4.o)
+    0x20000e6c   COMPRESSED   0x00000002   Data   RW         8640    .data               motor_drive.lib(mc_config.o)
     0x20000e6e   COMPRESSED   0x00000002   PAD
-    0x20000e70   COMPRESSED   0x00000008   Data   RW         8613    .data               motor_drive.lib(mc_curve.o)
-    0x20000e78   COMPRESSED   0x00000024   Data   RW         8704    .data               motor_drive.lib(mc_stamach.o)
+    0x20000e70   COMPRESSED   0x00000008   Data   RW         8674    .data               motor_drive.lib(mc_curve.o)
+    0x20000e78   COMPRESSED   0x00000024   Data   RW         8765    .data               motor_drive.lib(mc_stamach.o)
     0x20000e9c        -       0x00000258   Zero   RW          888    .bss                bsp_uart.o
     0x200010f4        -       0x00001000   Zero   RW         1132    .bss                bsp_spiflash.o
     0x200020f4        -       0x00000014   Zero   RW         1534    .bss                spi_master_conf.o
     0x20002108        -       0x00006308   Zero   RW         1843    .bss                sys_variable.o
-    0x20008410        -       0x00000387   Zero   RW         2681    .bss                communication.o
-    0x20008797        -       0x00000009   Zero   RW         2786    .bss                initial.o
-    0x200087a0        -       0x00000400   Zero   RW         3312    .bss                io_function.o
-    0x20008ba0        -       0x00000168   Zero   RW         3467    .bss                stepper_function.o
-    0x20008d08        -       0x0000000c   Zero   RW         3587    .bss                debug.o
-    0x20008d14        -       0x00000020   Zero   RW         4622    .bss                xmc_dma.o
-    0x20008d34        -       0x00000084   Zero   RW         7604    .bss                motor_drive.lib(mc_pmsm.o)
-    0x20008db8        -       0x0000000c   Zero   RW         8270    .bss                motor_drive.lib(bsp_posif.o)
-    0x20008dc4        -       0x00000190   Zero   RW         8443    .bss                motor_drive.lib(all_globalvars.o)
-    0x20008f54        -       0x00000060   Zero   RW         9276    .bss                c_w.l(libspace.o)
+    0x20008410        -       0x00000387   Zero   RW         2685    .bss                communication.o
+    0x20008797        -       0x00000009   Zero   RW         2790    .bss                initial.o
+    0x200087a0        -       0x00000400   Zero   RW         3316    .bss                io_function.o
+    0x20008ba0        -       0x00000168   Zero   RW         3471    .bss                stepper_function.o
+    0x20008d08        -       0x0000000c   Zero   RW         3591    .bss                debug.o
+    0x20008d14        -       0x00000020   Zero   RW         4683    .bss                xmc_dma.o
+    0x20008d34        -       0x00000084   Zero   RW         7665    .bss                motor_drive.lib(mc_pmsm.o)
+    0x20008db8        -       0x0000000c   Zero   RW         8331    .bss                motor_drive.lib(bsp_posif.o)
+    0x20008dc4        -       0x00000190   Zero   RW         8504    .bss                motor_drive.lib(all_globalvars.o)
+    0x20008f54        -       0x00000060   Zero   RW         9337    .bss                c_w.l(libspace.o)
     0x20008fb4   COMPRESSED   0x00000004   PAD
-    0x20008fb8        -       0x00000200   Zero   RW         3670    HEAP                startup_xmc4402.o
-    0x200091b8        -       0x00000800   Zero   RW         3669    STACK               startup_xmc4402.o
+    0x20008fb8        -       0x00000200   Zero   RW         3731    HEAP                startup_xmc4402.o
+    0x200091b8        -       0x00000800   Zero   RW         3730    STACK               startup_xmc4402.o
 
 
 
@@ -6533,7 +6559,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x2000ffc0        -       0x00000004   Zero   RW         3685    .ARM.__AT_0x2000FFC0  system_xmc4400.o
+    0x2000ffc0        -       0x00000004   Zero   RW         3746    .ARM.__AT_0x2000FFC0  system_xmc4400.o
 
 
 
@@ -6543,7 +6569,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x2000ffc4        -       0x00000010   Zero   RW         3686    .ARM.__AT_0x2000FFC4  system_xmc4400.o
+    0x2000ffc4        -       0x00000010   Zero   RW         3747    .ARM.__AT_0x2000FFC4  system_xmc4400.o
 
 
 
@@ -6553,7 +6579,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x2000ffd4        -       0x0000000c   Zero   RW         3687    .ARM.__AT_0x2000FFD4  system_xmc4400.o
+    0x2000ffd4        -       0x0000000c   Zero   RW         3748    .ARM.__AT_0x2000FFD4  system_xmc4400.o
 
 
 ==============================================================================
@@ -6563,7 +6589,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-     26770       4028        999          0          0      76240   action.o
+     26770       4028        999          0          0      76256   action.o
         16          6          0          0          0     505891   app_can.o
         52          0          0          0          0       1714   app_dac.o
        122         14          0          0          0       8174   app_init.o
@@ -6613,7 +6639,7 @@ Image component sizes
        658          4         16          0          0      26785   xmc_vadc.o
 
     ----------------------------------------------------------------------
-    102304      13872      12396       1728      35000    1355513   Object Totals
+    102304      13872      12396       1728      35000    1355529   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         68          0          1          6          0          0   (incl. Padding)
 
@@ -6700,8 +6726,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    132920      18958      14448       3740      35644    2583794   Grand Totals
-    132920      18958      14448        608      35644    2583794   ELF Image Totals (compressed)
+    132920      18958      14448       3740      35644    2583810   Grand Totals
+    132920      18958      14448        608      35644    2583810   ELF Image Totals (compressed)
     132920      18958      14448        608          0          0   ROM Totals
 
 ==============================================================================

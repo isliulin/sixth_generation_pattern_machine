@@ -47,6 +47,7 @@
 ".\objects\stepper_function.o"
 ".\objects\debug.o"
 ".\objects\rc522_codebar.o"
+".\objects\nopmove_speed.o"
 ".\objects\startup_xmc4402.o"
 ".\objects\system_xmc4400.o"
 ".\objects\xmc_acmp.o"

@@ -27,3 +27,4 @@
 .\objects\action.o: ..\..\Applications\User\inc\communication.h
 .\objects\action.o: ..\..\Applications\User\inc\initial.h
 .\objects\action.o: ..\..\Applications\User\inc\stepper_function.h
+.\objects\action.o: ..\..\Applications\User\inc\action.h
