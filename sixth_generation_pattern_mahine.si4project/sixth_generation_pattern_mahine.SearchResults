@@ -1,39 +1,23 @@
----- pedal_state Matches (38 in 4 files) ----
-action.c (project_code\Applications\User\src) line 6208 : pedal_state:4        0         1         2		    3            
-yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 0;
-yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 1;
-yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 2;
-yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 3;
-yj_follow_udctos in action.c (project_code\Applications\User\src) : 		pedal_state = 4;
-function_1ms_hook in main.c (project_code\Applications\User\src) : 				pedal_state = 0;
-function_1ms_hook in main.c (project_code\Applications\User\src) : 				pedal_state = 2;
-function_1ms_hook in main.c (project_code\Applications\User\src) : 				pedal_state = 3;					
-function_1ms_hook in main.c (project_code\Applications\User\src) : 					pedal_state = 3;
-function_1ms_hook in main.c (project_code\Applications\User\src) : 					pedal_state = 2;
-pre_running in system.c (project_code\Applications\User\src) : 	pedal_state = 0;   
-ready_status in system.c (project_code\Applications\User\src) : 		  	if( pedal_state == 2)           				
-ready_status in system.c (project_code\Applications\User\src) : 				pedal_state = 0;
-ready_status in system.c (project_code\Applications\User\src) : 			if(pedal_state == 2) 
-ready_status in system.c (project_code\Applications\User\src) : 				pedal_state=0;			
-ready_status in system.c (project_code\Applications\User\src) : 			if( ((pedal_state == 3)||(software_key_run == 1) )&&(single_flag ==0)&&(pattern_change_flag == 0) )
-ready_status in system.c (project_code\Applications\User\src) : 				pedal_state = 0;
-error_status in system.c (project_code\Applications\User\src) : 	pedal_state = 0;
-prewind_status in system.c (project_code\Applications\User\src) : 		if( pedal_state == 2)
-prewind_status in system.c (project_code\Applications\User\src) : 			pedal_state = 0;
-prewind_status in system.c (project_code\Applications\User\src) : 		if( pedal_state == 3)
-prewind_status in system.c (project_code\Applications\User\src) : 			pedal_state = 0;
-wind_status in system.c (project_code\Applications\User\src) : 	if( (pedal_state == 3)|| (pause_flag == 1) )
-wind_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
-preedit_status in system.c (project_code\Applications\User\src) : 	if(pedal_state == 2)           		
-preedit_status in system.c (project_code\Applications\User\src) :    	    pedal_state = 0;
-checki06_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 3)
-checki06_status in system.c (project_code\Applications\User\src) : 		pedal_state	= 0;	
-checki06_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 2)	
-checki06_status in system.c (project_code\Applications\User\src) : 		pedal_state	= 0;
-checki10_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 3 )   
-checki10_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
-download_drv_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 2)  
-download_drv_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
-download_drv_status in system.c (project_code\Applications\User\src) : 	if( pedal_state == 3)  
-download_drv_status in system.c (project_code\Applications\User\src) : 		pedal_state = 0;
-sys_variable.h (project_code\Applications\System\inc) line 23 : extern uint8_t pedal_state;
+---- LOGIC_IN_PAUSE Matches (22 in 5 files) ----
+protocol in communication.c (project_code\Applications\User\src) : 				if(io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_ON)
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].physical_number = 20;//PHYSICAL_IN_20
+io_function_init in io_function.c (project_code\Applications\User\src) : 		//io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].active_value = 0;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		//io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].inactive_value = 1;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].physical_number = 14;//PHYSICAL_IN_14
+io_function_init in io_function.c (project_code\Applications\User\src) :         //io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].active_value = 0;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		//io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].inactive_value = 1;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].physical_number = 20;//PHYSICAL_IN_20
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].active_value = 0;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].inactive_value = 1;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].physical_number = 20;//PHYSICAL_IN_20
+io_function_init in io_function.c (project_code\Applications\User\src) : 		//io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].active_value = 0;
+io_function_init in io_function.c (project_code\Applications\User\src) : 		//io_in_reflection_table[LOGIC_INPUT_NUMBER_CLERA_DIR(LOGIC_IN_PAUSE)].inactive_value = 1;
+io_function.h (project_code\Applications\User\inc) line 169 : #define	LOGIC_IN_PAUSE				LOGIC_INPUT_NUMBER_ADD_DIR(9)	//	急停按钮
+IS_LOGIC_IN_NUMBER_METHOD1 in io_function.h (project_code\Applications\User\inc) : 													((LOGIC_NUM) == LOGIC_IN_MOTOR1_ERR) || ((LOGIC_NUM) == LOGIC_IN_NEEDLE_COVER) || ((LOGIC_NUM) == LOGIC_IN_ADTC) || ((LOGIC_NUM) == LOGIC_IN_PAUSE) || ((LOGIC_NUM) == LOGIC_IN_DVA)	|| \
+main in main.c (project_code\Applications\User\src) : 	if( (io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_OFF) )
+main in main.c (project_code\Applications\User\src) : 	//if( (io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_OFF) )
+main in main.c (project_code\Applications\User\src) : 		if( (io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_OFF) )
+function_1ms_hook in main.c (project_code\Applications\User\src) :   	  	if( (io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_ON) )
+ready_status in system.c (project_code\Applications\User\src) : 		while(io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_ON)
+error_status in system.c (project_code\Applications\User\src) : 			if( io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_OFF)
+error_status in system.c (project_code\Applications\User\src) : 				if( io_get_logic_inout(LOGIC_IN_PAUSE) == PAUSE_OFF)

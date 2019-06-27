@@ -1077,6 +1077,10 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>DLGUARM</Key>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>PWSTATINFO</Key>
           <Name>200,50,700</Name>
         </SetRegEntry>
@@ -1136,117 +1140,67 @@
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>g_SpiMode</ItemText>
+          <ItemText>stepper_debug_flag,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>stepper_debug_flag,0x0A</ItemText>
+          <ItemText>stepper_debug_dis,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>stepper_debug_dis,0x0A</ItemText>
+          <ItemText>stepper_debug_time,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>stepper_debug_time,0x0A</ItemText>
+          <ItemText>connect_flag</ItemText>
         </Ww>
         <Ww>
           <count>8</count>
           <WinNumber>1</WinNumber>
-          <ItemText>connect_flag</ItemText>
+          <ItemText>motor_control_start_flag,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>9</count>
           <WinNumber>1</WinNumber>
-          <ItemText>motor_control_start_flag,0x0A</ItemText>
+          <ItemText>motor_control_speed,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>10</count>
           <WinNumber>1</WinNumber>
-          <ItemText>motor_control_speed,0x0A</ItemText>
+          <ItemText>motor_control_stop_angle,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>11</count>
           <WinNumber>1</WinNumber>
-          <ItemText>motor_control_stop_angle,0x0A</ItemText>
+          <ItemText>angle_adjusted,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>12</count>
           <WinNumber>1</WinNumber>
-          <ItemText>angle_adjusted,0x0A</ItemText>
+          <ItemText>ui_comm,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>13</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ui_comm,0x0A</ItemText>
+          <ItemText>connect_flag</ItemText>
         </Ww>
         <Ww>
           <count>14</count>
           <WinNumber>1</WinNumber>
-          <ItemText>u37</ItemText>
+          <ItemText>AdjustAngle,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>15</count>
           <WinNumber>1</WinNumber>
-          <ItemText>u38</ItemText>
+          <ItemText>nopmove_speed_para,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>16</count>
           <WinNumber>1</WinNumber>
-          <ItemText>u39</ItemText>
-        </Ww>
-        <Ww>
-          <count>17</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>u48</ItemText>
-        </Ww>
-        <Ww>
-          <count>18</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>super_pattern_flag</ItemText>
-        </Ww>
-        <Ww>
-          <count>19</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>connect_flag</ItemText>
-        </Ww>
-        <Ww>
-          <count>20</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>ret</ItemText>
-        </Ww>
-        <Ww>
-          <count>21</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>connect_flag</ItemText>
-        </Ww>
-        <Ww>
-          <count>22</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>z_motor_handle</ItemText>
-        </Ww>
-        <Ww>
-          <count>23</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>x_motor_handle</ItemText>
-        </Ww>
-        <Ww>
-          <count>24</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>AdjustAngle,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>25</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>u42</ItemText>
-        </Ww>
-        <Ww>
-          <count>26</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>u236,0x0A</ItemText>
+          <ItemText>delay_of_nop_move</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -1278,92 +1232,82 @@
         <Ww>
           <count>5</count>
           <WinNumber>2</WinNumber>
-          <ItemText>u16_temp_data</ItemText>
+          <ItemText>mc_stepper_para,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>2</WinNumber>
-          <ItemText>recieve_x,0x10</ItemText>
+          <ItemText>mc_stepper_curve</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>2</WinNumber>
-          <ItemText>mc_stepper_para,0x0A</ItemText>
+          <ItemText>sys_para,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>8</count>
           <WinNumber>2</WinNumber>
-          <ItemText>mc_stepper_curve</ItemText>
+          <ItemText>x_move_frame_para</ItemText>
         </Ww>
         <Ww>
           <count>9</count>
           <WinNumber>2</WinNumber>
-          <ItemText>\\XmcProject\../../Applications/User/src/stepper_function.c\x_motor_handle</ItemText>
+          <ItemText>y_move_frame_para</ItemText>
         </Ww>
         <Ww>
           <count>10</count>
           <WinNumber>2</WinNumber>
-          <ItemText>sys_para,0x0A</ItemText>
+          <ItemText>io_debug_flag</ItemText>
         </Ww>
         <Ww>
           <count>11</count>
           <WinNumber>2</WinNumber>
-          <ItemText>pedal_state</ItemText>
+          <ItemText>io_logic_num,0x10</ItemText>
         </Ww>
         <Ww>
           <count>12</count>
           <WinNumber>2</WinNumber>
-          <ItemText>pedal_style</ItemText>
+          <ItemText>io_active_level</ItemText>
         </Ww>
         <Ww>
           <count>13</count>
           <WinNumber>2</WinNumber>
-          <ItemText>stepmotor_comm,0x0A</ItemText>
+          <ItemText>io_active_level_get</ItemText>
         </Ww>
         <Ww>
           <count>14</count>
           <WinNumber>2</WinNumber>
-          <ItemText>inpress_origin,0x0A</ItemText>
+          <ItemText>_debug_buf_disp,0x10</ItemText>
         </Ww>
         <Ww>
           <count>15</count>
           <WinNumber>2</WinNumber>
-          <ItemText>x_move_frame_para</ItemText>
+          <ItemText>test_nopmove_flag,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>16</count>
           <WinNumber>2</WinNumber>
-          <ItemText>y_move_frame_para</ItemText>
+          <ItemText>test_nopmove_x,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>17</count>
           <WinNumber>2</WinNumber>
-          <ItemText>opl_origin_flag</ItemText>
+          <ItemText>test_nopmove_y,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>18</count>
           <WinNumber>2</WinNumber>
-          <ItemText>io_debug_flag</ItemText>
+          <ItemText>test_nopmove_speed,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>19</count>
           <WinNumber>2</WinNumber>
-          <ItemText>io_logic_num,0x10</ItemText>
+          <ItemText>test_nopmove_time,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>20</count>
           <WinNumber>2</WinNumber>
-          <ItemText>io_active_level</ItemText>
-        </Ww>
-        <Ww>
-          <count>21</count>
-          <WinNumber>2</WinNumber>
-          <ItemText>io_active_level_get</ItemText>
-        </Ww>
-        <Ww>
-          <count>22</count>
-          <WinNumber>2</WinNumber>
-          <ItemText>_debug_buf_disp,0x10</ItemText>
+          <ItemText>speed_group_1_sorted</ItemText>
         </Ww>
       </WatchWindow2>
       <MemoryWindow1>

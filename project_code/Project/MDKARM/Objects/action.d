@@ -28,3 +28,4 @@
 .\objects\action.o: ..\..\Applications\User\inc\initial.h
 .\objects\action.o: ..\..\Applications\User\inc\stepper_function.h
 .\objects\action.o: ..\..\Applications\User\inc\action.h
+.\objects\action.o: ..\..\Applications\User\inc\nopmove_speed.h

@@ -39,3 +39,4 @@
 .\objects\system.o: ..\..\Applications\User\inc\step_motor_drv.h
 .\objects\system.o: ..\..\Applications\User\inc\parameter.h
 .\objects\system.o: ..\..\Applications\User\inc\stepper_function.h
+.\objects\system.o: ..\..\Applications\User\inc\nopmove_speed.h
