@@ -961,8 +961,10 @@ Section Cross References
     communication.o(i.tra_com) refers to communication.o(.data) for trans_in_processing
     communication.o(i.tra_com) refers to communication.o(.bss) for tra_buf
     communication.o(i.tra_com) refers to sys_variable.o(.data) for find_communication_start_flag
+    communication.o(i.tra_com) refers to sys_variable.o(.bss) for ui_comm
     communication.o(i.ui_receive_fsm) refers to communication.o(i.verify) for verify
-    communication.o(i.ui_receive_fsm) refers to sys_variable.o(.bss) for ui_comm
+    communication.o(i.ui_receive_fsm) refers to sys_variable.o(.data) for _____recieve_date_index
+    communication.o(i.ui_receive_fsm) refers to sys_variable.o(.bss) for _____recieve_date
     communication.o(i.ui_receive_fsm) refers to communication.o(.bss) for rec_buf
     communication.o(i.verify_code) refers to communication.o(.bss) for send_command
     delay.o(i.delay_ms) refers to bsp_delay.o(i.bsp_DelayMs) for bsp_DelayMs
@@ -4039,40 +4041,40 @@ Image Symbol Table
     i.stretch_foot_out                       0x0801fce4   Section        0  action.o(i.stretch_foot_out)
     i.tail_sewing                            0x0801fd24   Section        0  action.o(i.tail_sewing)
     i.tra_com                                0x0801fe18   Section        0  communication.o(i.tra_com)
-    i.trim_action                            0x0801fee4   Section        0  action.o(i.trim_action)
-    i.ui_receive_fsm                         0x08020128   Section        0  communication.o(i.ui_receive_fsm)
-    i.verify                                 0x0802029c   Section        0  communication.o(i.verify)
-    i.verify_code                            0x080202b8   Section        0  communication.o(i.verify_code)
-    i.version_check                          0x080202d8   Section        0  step_motor_drv.o(i.version_check)
-    i.wind_status                            0x08020350   Section        0  system.o(i.wind_status)
-    i.write_par                              0x08020438   Section        0  parameter.o(i.write_par)
-    i.write_para_group                       0x0802046c   Section        0  parameter.o(i.write_para_group)
-    i.write_stepmotor_config_para            0x08020480   Section        0  step_motor_drv.o(i.write_stepmotor_config_para)
-    i.write_stepmotor_curve                  0x08020530   Section        0  step_motor_drv.o(i.write_stepmotor_curve)
-    i.x_quickmove                            0x0802061c   Section        0  step_motor_drv.o(i.x_quickmove)
-    i.y_quickmove                            0x08020634   Section        0  step_motor_drv.o(i.y_quickmove)
-    i.yj_follow_udctos                       0x0802064c   Section        0  action.o(i.yj_follow_udctos)
-    i.zoom_in_one_stitch                     0x08020724   Section        0  action.o(i.zoom_in_one_stitch)
-    i.zpl_process                            0x0802089c   Section        0  action.o(i.zpl_process)
-    i.zx_quickmove                           0x0802096c   Section        0  step_motor_drv.o(i.zx_quickmove)
-    isqrt_table                              0x08020984   Section     2048  IQtables.o(isqrt_table)
-    x$fpl$fpinit                             0x08021184   Section       10  fpinit.o(x$fpl$fpinit)
-    $v0                                      0x08021184   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$usenofp                            0x0802118e   Section        0  usenofp.o(x$fpl$usenofp)
-    .constdata                               0x08021190   Section       24  bsp_gpio.o(.constdata)
-    .constdata                               0x080211a8   Section       48  bsp_rs485.o(.constdata)
-    .constdata                               0x080211d8   Section       36  bsp_uart.o(.constdata)
-    .constdata                               0x080211fc   Section      108  bsp_spibus.o(.constdata)
-    .constdata                               0x08021268   Section      116  bsp_spiflash.o(.constdata)
-    .constdata                               0x080212dc   Section       20  bsp_scu.o(.constdata)
-    .constdata                               0x080212f0   Section      248  spi_master_conf.o(.constdata)
-    .constdata                               0x080213e8   Section       12  bsp_watch.o(.constdata)
-    .constdata                               0x080213f4   Section      224  can_node_conf.o(.constdata)
-    .constdata                               0x080214d4   Section      999  action.o(.constdata)
-    .constdata                               0x080218bc   Section    10000  stepper_function.o(.constdata)
-    .constdata                               0x08023fcc   Section       16  xmc_vadc.o(.constdata)
-    g_xmc_vadc_group_array                   0x08023fcc   Data          16  xmc_vadc.o(.constdata)
-    .constdata                               0x08023fdc   Section     2052  arm_common_tables.o(.constdata)
+    i.trim_action                            0x0801fef0   Section        0  action.o(i.trim_action)
+    i.ui_receive_fsm                         0x08020134   Section        0  communication.o(i.ui_receive_fsm)
+    i.verify                                 0x080202cc   Section        0  communication.o(i.verify)
+    i.verify_code                            0x080202e8   Section        0  communication.o(i.verify_code)
+    i.version_check                          0x08020308   Section        0  step_motor_drv.o(i.version_check)
+    i.wind_status                            0x08020380   Section        0  system.o(i.wind_status)
+    i.write_par                              0x08020468   Section        0  parameter.o(i.write_par)
+    i.write_para_group                       0x0802049c   Section        0  parameter.o(i.write_para_group)
+    i.write_stepmotor_config_para            0x080204b0   Section        0  step_motor_drv.o(i.write_stepmotor_config_para)
+    i.write_stepmotor_curve                  0x08020560   Section        0  step_motor_drv.o(i.write_stepmotor_curve)
+    i.x_quickmove                            0x0802064c   Section        0  step_motor_drv.o(i.x_quickmove)
+    i.y_quickmove                            0x08020664   Section        0  step_motor_drv.o(i.y_quickmove)
+    i.yj_follow_udctos                       0x0802067c   Section        0  action.o(i.yj_follow_udctos)
+    i.zoom_in_one_stitch                     0x08020754   Section        0  action.o(i.zoom_in_one_stitch)
+    i.zpl_process                            0x080208cc   Section        0  action.o(i.zpl_process)
+    i.zx_quickmove                           0x0802099c   Section        0  step_motor_drv.o(i.zx_quickmove)
+    isqrt_table                              0x080209b4   Section     2048  IQtables.o(isqrt_table)
+    x$fpl$fpinit                             0x080211b4   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x080211b4   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$usenofp                            0x080211be   Section        0  usenofp.o(x$fpl$usenofp)
+    .constdata                               0x080211c0   Section       24  bsp_gpio.o(.constdata)
+    .constdata                               0x080211d8   Section       48  bsp_rs485.o(.constdata)
+    .constdata                               0x08021208   Section       36  bsp_uart.o(.constdata)
+    .constdata                               0x0802122c   Section      108  bsp_spibus.o(.constdata)
+    .constdata                               0x08021298   Section      116  bsp_spiflash.o(.constdata)
+    .constdata                               0x0802130c   Section       20  bsp_scu.o(.constdata)
+    .constdata                               0x08021320   Section      248  spi_master_conf.o(.constdata)
+    .constdata                               0x08021418   Section       12  bsp_watch.o(.constdata)
+    .constdata                               0x08021424   Section      224  can_node_conf.o(.constdata)
+    .constdata                               0x08021504   Section      999  action.o(.constdata)
+    .constdata                               0x080218ec   Section    10000  stepper_function.o(.constdata)
+    .constdata                               0x08023ffc   Section       16  xmc_vadc.o(.constdata)
+    g_xmc_vadc_group_array                   0x08023ffc   Data          16  xmc_vadc.o(.constdata)
+    .constdata                               0x0802400c   Section     2052  arm_common_tables.o(.constdata)
     .data                                    0x20000000   Section        8  bsp_uart.o(.data)
     .data                                    0x20000008   Section        7  bsp_spiflash.o(.data)
     dma_ch_tx_number                         0x2000000c   Data           1  bsp_spiflash.o(.data)
@@ -4083,8 +4085,8 @@ Image Symbol Table
     .data                                    0x2000007c   Section        8  bsp_watch.o(.data)
     .data                                    0x20000088   Section       48  can_node_conf.o(.data)
     .data                                    0x200000b8   Section       12  global_can_conf.o(.data)
-    .data                                    0x200000c4   Section     1069  sys_variable.o(.data)
-    .data                                    0x200004f2   Section       19  watch.o(.data)
+    .data                                    0x200000c4   Section     1072  sys_variable.o(.data)
+    .data                                    0x200004f4   Section       19  watch.o(.data)
     .data                                    0x20000508   Section       36  main.o(.data)
     .data                                    0x2000052c   Section       12  communication.o(.data)
     .data                                    0x20000538   Section       18  initial.o(.data)
@@ -4142,26 +4144,26 @@ Image Symbol Table
     .bss                                     0x2000110c   Section     4096  bsp_spiflash.o(.bss)
     SpiFlashPageBuf                          0x2000110c   Data        4096  bsp_spiflash.o(.bss)
     .bss                                     0x2000210c   Section       20  spi_master_conf.o(.bss)
-    .bss                                     0x20002120   Section    25356  sys_variable.o(.bss)
-    .bss                                     0x2000842c   Section      903  communication.o(.bss)
-    .bss                                     0x200087b3   Section        9  initial.o(.bss)
-    .bss                                     0x200087bc   Section     1024  io_function.o(.bss)
-    .bss                                     0x20008bbc   Section      360  stepper_function.o(.bss)
-    .bss                                     0x20008d24   Section       12  debug.o(.bss)
-    .bss                                     0x20008d30   Section      360  nopmove_speed.o(.bss)
-    speed_group_1_sorted                     0x20008df8   Data          80  nopmove_speed.o(.bss)
-    speed_group_2_sorted                     0x20008e48   Data          80  nopmove_speed.o(.bss)
-    .bss                                     0x20008e98   Section       32  xmc_dma.o(.bss)
-    .bss                                     0x20008eb8   Section      132  mc_pmsm.o(.bss)
-    mc_int_ptr                               0x20008ecc   Data          12  mc_pmsm.o(.bss)
-    .bss                                     0x20008f3c   Section       12  bsp_posif.o(.bss)
-    .bss                                     0x20008f48   Section      400  all_globalvars.o(.bss)
-    .bss                                     0x200090d8   Section       96  libspace.o(.bss)
-    HEAP                                     0x20009138   Section      512  startup_xmc4402.o(HEAP)
-    Heap_Mem                                 0x20009138   Data         512  startup_xmc4402.o(HEAP)
-    STACK                                    0x20009338   Section     2048  startup_xmc4402.o(STACK)
-    Stack_Mem                                0x20009338   Data        2048  startup_xmc4402.o(STACK)
-    __initial_sp                             0x20009b38   Data           0  startup_xmc4402.o(STACK)
+    .bss                                     0x20002120   Section    26356  sys_variable.o(.bss)
+    .bss                                     0x20008814   Section      903  communication.o(.bss)
+    .bss                                     0x20008b9b   Section        9  initial.o(.bss)
+    .bss                                     0x20008ba4   Section     1024  io_function.o(.bss)
+    .bss                                     0x20008fa4   Section      360  stepper_function.o(.bss)
+    .bss                                     0x2000910c   Section       12  debug.o(.bss)
+    .bss                                     0x20009118   Section      360  nopmove_speed.o(.bss)
+    speed_group_1_sorted                     0x200091e0   Data          80  nopmove_speed.o(.bss)
+    speed_group_2_sorted                     0x20009230   Data          80  nopmove_speed.o(.bss)
+    .bss                                     0x20009280   Section       32  xmc_dma.o(.bss)
+    .bss                                     0x200092a0   Section      132  mc_pmsm.o(.bss)
+    mc_int_ptr                               0x200092b4   Data          12  mc_pmsm.o(.bss)
+    .bss                                     0x20009324   Section       12  bsp_posif.o(.bss)
+    .bss                                     0x20009330   Section      400  all_globalvars.o(.bss)
+    .bss                                     0x200094c0   Section       96  libspace.o(.bss)
+    HEAP                                     0x20009520   Section      512  startup_xmc4402.o(HEAP)
+    Heap_Mem                                 0x20009520   Data         512  startup_xmc4402.o(HEAP)
+    STACK                                    0x20009720   Section     2048  startup_xmc4402.o(STACK)
+    Stack_Mem                                0x20009720   Data        2048  startup_xmc4402.o(STACK)
+    __initial_sp                             0x20009f20   Data           0  startup_xmc4402.o(STACK)
     .ARM.__AT_0x2000FFC0                     0x2000ffc0   Section        4  system_xmc4400.o(.ARM.__AT_0x2000FFC0)
     .ARM.__AT_0x2000FFC4                     0x2000ffc4   Section       16  system_xmc4400.o(.ARM.__AT_0x2000FFC4)
     .ARM.__AT_0x2000FFD4                     0x2000ffd4   Section       12  system_xmc4400.o(.ARM.__AT_0x2000FFD4)
@@ -4786,59 +4788,59 @@ Image Symbol Table
     stretch_foot_in                          0x0801fca5   Thumb Code    46  action.o(i.stretch_foot_in)
     stretch_foot_out                         0x0801fce5   Thumb Code    48  action.o(i.stretch_foot_out)
     tail_sewing                              0x0801fd25   Thumb Code   190  action.o(i.tail_sewing)
-    tra_com                                  0x0801fe19   Thumb Code   174  communication.o(i.tra_com)
-    trim_action                              0x0801fee5   Thumb Code   490  action.o(i.trim_action)
-    ui_receive_fsm                           0x08020129   Thumb Code   364  communication.o(i.ui_receive_fsm)
-    verify                                   0x0802029d   Thumb Code    26  communication.o(i.verify)
-    verify_code                              0x080202b9   Thumb Code    26  communication.o(i.verify_code)
-    version_check                            0x080202d9   Thumb Code   102  step_motor_drv.o(i.version_check)
-    wind_status                              0x08020351   Thumb Code   198  system.o(i.wind_status)
-    write_par                                0x08020439   Thumb Code    52  parameter.o(i.write_par)
-    write_para_group                         0x0802046d   Thumb Code    20  parameter.o(i.write_para_group)
-    write_stepmotor_config_para              0x08020481   Thumb Code   170  step_motor_drv.o(i.write_stepmotor_config_para)
-    write_stepmotor_curve                    0x08020531   Thumb Code   222  step_motor_drv.o(i.write_stepmotor_curve)
-    x_quickmove                              0x0802061d   Thumb Code    20  step_motor_drv.o(i.x_quickmove)
-    y_quickmove                              0x08020635   Thumb Code    20  step_motor_drv.o(i.y_quickmove)
-    yj_follow_udctos                         0x0802064d   Thumb Code   196  action.o(i.yj_follow_udctos)
-    zoom_in_one_stitch                       0x08020725   Thumb Code   336  action.o(i.zoom_in_one_stitch)
-    zpl_process                              0x0802089d   Thumb Code   166  action.o(i.zpl_process)
-    zx_quickmove                             0x0802096d   Thumb Code    20  step_motor_drv.o(i.zx_quickmove)
-    isqrt_table                              0x08020984   Data           0  IQtables.o(isqrt_table)
-    _fp_init                                 0x08021185   Thumb Code    10  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x0802118d   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x0802118d   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __I$use$fp                               0x0802118e   Number         0  usenofp.o(x$fpl$usenofp)
-    gpio_out_pin_config                      0x08021190   Data          12  bsp_gpio.o(.constdata)
-    gpio_in_pin_config                       0x0802119c   Data          12  bsp_gpio.o(.constdata)
-    SCUclock_config                          0x080212dc   Data          20  bsp_scu.o(.constdata)
-    SPI_MASTER_0_MOSI                        0x080212f0   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_MISO                        0x080212f8   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SCLKOUT                     0x08021300   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SCLKOUT_Config              0x08021308   Data          20  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_0                        0x0802131c   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_0_Config                 0x08021324   Data          20  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_1                        0x08021338   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_2                        0x08021340   Data           8  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_SS_2_Config                 0x08021348   Data          20  spi_master_conf.o(.constdata)
-    SPI_MASTER_0_Config                      0x0802135c   Data         140  spi_master_conf.o(.constdata)
-    CAN_NODE_0_gpio_out                      0x080213f4   Data           8  can_node_conf.o(.constdata)
-    CAN_NODE_0_gpio_out_config               0x080213fc   Data          12  can_node_conf.o(.constdata)
-    CAN_NODE_0_gpio_in                       0x08021408   Data           8  can_node_conf.o(.constdata)
-    CAN_NODE_0_gpio_in_config                0x08021410   Data          12  can_node_conf.o(.constdata)
-    CAN_NODE_0_sr                            0x0802141c   Data           4  can_node_conf.o(.constdata)
-    CAN_NODE_0_LMO_01_Config                 0x08021420   Data          12  can_node_conf.o(.constdata)
-    CAN_NODE_0                               0x0802142c   Data         168  can_node_conf.o(.constdata)
-    X2_tab                                   0x080214d4   Data         512  action.o(.constdata)
-    spdlimit_10080_345_tab                   0x080216d4   Data         254  action.o(.constdata)
-    MoveTime_Limtit                          0x080217d2   Data          33  action.o(.constdata)
-    MoveStartAngle_10080_y                   0x080217f4   Data          66  action.o(.constdata)
-    MoveTime_Speed_10080_y                   0x08021836   Data          33  action.o(.constdata)
-    MoveStartAngle_10080_x                   0x08021858   Data          66  action.o(.constdata)
-    MoveTime_Speed_10080_x                   0x0802189a   Data          33  action.o(.constdata)
-    mc_stepper_curve                         0x080218bc   Data       10000  stepper_function.o(.constdata)
-    sinTable_f32                             0x08023fdc   Data        2052  arm_common_tables.o(.constdata)
-    Region$$Table$$Base                      0x080247e0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08024800   Number         0  anon$$obj.o(Region$$Table)
+    tra_com                                  0x0801fe19   Thumb Code   184  communication.o(i.tra_com)
+    trim_action                              0x0801fef1   Thumb Code   490  action.o(i.trim_action)
+    ui_receive_fsm                           0x08020135   Thumb Code   390  communication.o(i.ui_receive_fsm)
+    verify                                   0x080202cd   Thumb Code    26  communication.o(i.verify)
+    verify_code                              0x080202e9   Thumb Code    26  communication.o(i.verify_code)
+    version_check                            0x08020309   Thumb Code   102  step_motor_drv.o(i.version_check)
+    wind_status                              0x08020381   Thumb Code   198  system.o(i.wind_status)
+    write_par                                0x08020469   Thumb Code    52  parameter.o(i.write_par)
+    write_para_group                         0x0802049d   Thumb Code    20  parameter.o(i.write_para_group)
+    write_stepmotor_config_para              0x080204b1   Thumb Code   170  step_motor_drv.o(i.write_stepmotor_config_para)
+    write_stepmotor_curve                    0x08020561   Thumb Code   222  step_motor_drv.o(i.write_stepmotor_curve)
+    x_quickmove                              0x0802064d   Thumb Code    20  step_motor_drv.o(i.x_quickmove)
+    y_quickmove                              0x08020665   Thumb Code    20  step_motor_drv.o(i.y_quickmove)
+    yj_follow_udctos                         0x0802067d   Thumb Code   196  action.o(i.yj_follow_udctos)
+    zoom_in_one_stitch                       0x08020755   Thumb Code   336  action.o(i.zoom_in_one_stitch)
+    zpl_process                              0x080208cd   Thumb Code   166  action.o(i.zpl_process)
+    zx_quickmove                             0x0802099d   Thumb Code    20  step_motor_drv.o(i.zx_quickmove)
+    isqrt_table                              0x080209b4   Data           0  IQtables.o(isqrt_table)
+    _fp_init                                 0x080211b5   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x080211bd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x080211bd   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __I$use$fp                               0x080211be   Number         0  usenofp.o(x$fpl$usenofp)
+    gpio_out_pin_config                      0x080211c0   Data          12  bsp_gpio.o(.constdata)
+    gpio_in_pin_config                       0x080211cc   Data          12  bsp_gpio.o(.constdata)
+    SCUclock_config                          0x0802130c   Data          20  bsp_scu.o(.constdata)
+    SPI_MASTER_0_MOSI                        0x08021320   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_MISO                        0x08021328   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SCLKOUT                     0x08021330   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SCLKOUT_Config              0x08021338   Data          20  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_0                        0x0802134c   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_0_Config                 0x08021354   Data          20  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_1                        0x08021368   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_2                        0x08021370   Data           8  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_SS_2_Config                 0x08021378   Data          20  spi_master_conf.o(.constdata)
+    SPI_MASTER_0_Config                      0x0802138c   Data         140  spi_master_conf.o(.constdata)
+    CAN_NODE_0_gpio_out                      0x08021424   Data           8  can_node_conf.o(.constdata)
+    CAN_NODE_0_gpio_out_config               0x0802142c   Data          12  can_node_conf.o(.constdata)
+    CAN_NODE_0_gpio_in                       0x08021438   Data           8  can_node_conf.o(.constdata)
+    CAN_NODE_0_gpio_in_config                0x08021440   Data          12  can_node_conf.o(.constdata)
+    CAN_NODE_0_sr                            0x0802144c   Data           4  can_node_conf.o(.constdata)
+    CAN_NODE_0_LMO_01_Config                 0x08021450   Data          12  can_node_conf.o(.constdata)
+    CAN_NODE_0                               0x0802145c   Data         168  can_node_conf.o(.constdata)
+    X2_tab                                   0x08021504   Data         512  action.o(.constdata)
+    spdlimit_10080_345_tab                   0x08021704   Data         254  action.o(.constdata)
+    MoveTime_Limtit                          0x08021802   Data          33  action.o(.constdata)
+    MoveStartAngle_10080_y                   0x08021824   Data          66  action.o(.constdata)
+    MoveTime_Speed_10080_y                   0x08021866   Data          33  action.o(.constdata)
+    MoveStartAngle_10080_x                   0x08021888   Data          66  action.o(.constdata)
+    MoveTime_Speed_10080_x                   0x080218ca   Data          33  action.o(.constdata)
+    mc_stepper_curve                         0x080218ec   Data       10000  stepper_function.o(.constdata)
+    sinTable_f32                             0x0802400c   Data        2052  arm_common_tables.o(.constdata)
+    Region$$Table$$Base                      0x08024810   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08024830   Number         0  anon$$obj.o(Region$$Table)
     uart_tx_read                             0x20000000   Data           2  bsp_uart.o(.data)
     uart_tx_write                            0x20000002   Data           2  bsp_uart.o(.data)
     uart_rx_read                             0x20000004   Data           2  bsp_uart.o(.data)
@@ -5582,14 +5584,15 @@ Image Symbol Table
     test_nopmove_speed                       0x200004ec   Data           2  sys_variable.o(.data)
     test_nopmove_time                        0x200004ee   Data           2  sys_variable.o(.data)
     test_nopmove_flag                        0x200004f0   Data           1  sys_variable.o(.data)
-    Sys                                      0x200004f2   Data           6  watch.o(.data)
-    qf_count                                 0x200004f8   Data           2  watch.o(.data)
-    ac_count                                 0x200004fa   Data           2  watch.o(.data)
-    uzkin_count                              0x200004fc   Data           2  watch.o(.data)
-    source_count                             0x200004fe   Data           2  watch.o(.data)
-    ipm_count                                0x20000500   Data           2  watch.o(.data)
-    fan_count                                0x20000502   Data           2  watch.o(.data)
-    Watch_cofig                              0x20000504   Data           1  watch.o(.data)
+    _____recieve_date_index                  0x200004f2   Data           2  sys_variable.o(.data)
+    Sys                                      0x200004f4   Data           6  watch.o(.data)
+    qf_count                                 0x200004fa   Data           2  watch.o(.data)
+    ac_count                                 0x200004fc   Data           2  watch.o(.data)
+    uzkin_count                              0x200004fe   Data           2  watch.o(.data)
+    source_count                             0x20000500   Data           2  watch.o(.data)
+    ipm_count                                0x20000502   Data           2  watch.o(.data)
+    fan_count                                0x20000504   Data           2  watch.o(.data)
+    Watch_cofig                              0x20000506   Data           1  watch.o(.data)
     Para                                     0x20000508   Data          32  main.o(.data)
     main_ret                                 0x20000528   Data           4  main.o(.data)
     tra_ind_r                                0x2000052c   Data           2  communication.o(.data)
@@ -5854,25 +5857,26 @@ Image Symbol Table
     y_move_frame_para                        0x20008326   Data         200  sys_variable.o(.bss)
     ui_comm                                  0x200083f0   Data          20  sys_variable.o(.bss)
     _debug_buf_disp                          0x20008404   Data          40  sys_variable.o(.bss)
-    tra_buf                                  0x2000842c   Data         301  communication.o(.bss)
-    rec_buf                                  0x20008559   Data         301  communication.o(.bss)
-    send_command                             0x20008686   Data         301  communication.o(.bss)
-    ee                                       0x200087b3   Data           9  initial.o(.bss)
-    io_out_reflection_table                  0x200087bc   Data         512  io_function.o(.bss)
-    io_in_reflection_table                   0x200089bc   Data         512  io_function.o(.bss)
-    x_motor_handle                           0x20008bbc   Data         120  stepper_function.o(.bss)
-    y_motor_handle                           0x20008c34   Data         120  stepper_function.o(.bss)
-    z_motor_handle                           0x20008cac   Data         120  stepper_function.o(.bss)
-    debug                                    0x20008d24   Data          12  debug.o(.bss)
-    nopmove_speed_para                       0x20008d30   Data         200  nopmove_speed.o(.bss)
-    dma0_event_handlers                      0x20008e98   Data          32  xmc_dma.o(.bss)
-    m1_p                                     0x20008eb8   Data          20  mc_pmsm.o(.bss)
-    pmsm1                                    0x20008ed8   Data          68  mc_pmsm.o(.bss)
-    timer_buf                                0x20008f1c   Data          32  mc_pmsm.o(.bss)
-    Pmsm1Z_pin_config                        0x20008f3c   Data          12  bsp_posif.o(.bss)
-    pattern_buf                              0x20008f48   Data         400  all_globalvars.o(.bss)
-    __libspace_start                         0x200090d8   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x20009138   Data           0  libspace.o(.bss)
+    _____recieve_date                        0x2000842c   Data        1000  sys_variable.o(.bss)
+    tra_buf                                  0x20008814   Data         301  communication.o(.bss)
+    rec_buf                                  0x20008941   Data         301  communication.o(.bss)
+    send_command                             0x20008a6e   Data         301  communication.o(.bss)
+    ee                                       0x20008b9b   Data           9  initial.o(.bss)
+    io_out_reflection_table                  0x20008ba4   Data         512  io_function.o(.bss)
+    io_in_reflection_table                   0x20008da4   Data         512  io_function.o(.bss)
+    x_motor_handle                           0x20008fa4   Data         120  stepper_function.o(.bss)
+    y_motor_handle                           0x2000901c   Data         120  stepper_function.o(.bss)
+    z_motor_handle                           0x20009094   Data         120  stepper_function.o(.bss)
+    debug                                    0x2000910c   Data          12  debug.o(.bss)
+    nopmove_speed_para                       0x20009118   Data         200  nopmove_speed.o(.bss)
+    dma0_event_handlers                      0x20009280   Data          32  xmc_dma.o(.bss)
+    m1_p                                     0x200092a0   Data          20  mc_pmsm.o(.bss)
+    pmsm1                                    0x200092c0   Data          68  mc_pmsm.o(.bss)
+    timer_buf                                0x20009304   Data          32  mc_pmsm.o(.bss)
+    Pmsm1Z_pin_config                        0x20009324   Data          12  bsp_posif.o(.bss)
+    pattern_buf                              0x20009330   Data         400  all_globalvars.o(.bss)
+    __libspace_start                         0x200094c0   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20009520   Data           0  libspace.o(.bss)
     SystemCoreClock                          0x2000ffc0   Data           4  system_xmc4400.o(.ARM.__AT_0x2000FFC0)
     g_chipid                                 0x2000ffc4   Data          16  system_xmc4400.o(.ARM.__AT_0x2000FFC4)
     g_hrpwm_char_data                        0x2000ffd4   Data          12  system_xmc4400.o(.ARM.__AT_0x2000FFD4)
@@ -5885,9 +5889,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000201
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000256b4, Max: 0x00040000, ABSOLUTE, COMPRESSED[0x00024a70])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000256e4, Max: 0x00040000, ABSOLUTE, COMPRESSED[0x00024aa0])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00024800, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00024830, Max: 0x00040000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -6492,46 +6496,46 @@ Memory Map of the image
     0x0801fca4   0x0801fca4   0x00000040   Code   RO         2136    i.stretch_foot_in   action.o
     0x0801fce4   0x0801fce4   0x00000040   Code   RO         2137    i.stretch_foot_out  action.o
     0x0801fd24   0x0801fd24   0x000000f4   Code   RO         2138    i.tail_sewing       action.o
-    0x0801fe18   0x0801fe18   0x000000cc   Code   RO         2685    i.tra_com           communication.o
-    0x0801fee4   0x0801fee4   0x00000244   Code   RO         2139    i.trim_action       action.o
-    0x08020128   0x08020128   0x00000174   Code   RO         2686    i.ui_receive_fsm    communication.o
-    0x0802029c   0x0802029c   0x0000001a   Code   RO         2687    i.verify            communication.o
-    0x080202b6   0x080202b6   0x00000002   PAD
-    0x080202b8   0x080202b8   0x00000020   Code   RO         2688    i.verify_code       communication.o
-    0x080202d8   0x080202d8   0x00000078   Code   RO         2957    i.version_check     step_motor_drv.o
-    0x08020350   0x08020350   0x000000e8   Code   RO         3185    i.wind_status       system.o
-    0x08020438   0x08020438   0x00000034   Code   RO         2857    i.write_par         parameter.o
-    0x0802046c   0x0802046c   0x00000014   Code   RO         2858    i.write_para_group  parameter.o
-    0x08020480   0x08020480   0x000000b0   Code   RO         2958    i.write_stepmotor_config_para  step_motor_drv.o
-    0x08020530   0x08020530   0x000000ec   Code   RO         2959    i.write_stepmotor_curve  step_motor_drv.o
-    0x0802061c   0x0802061c   0x00000018   Code   RO         2960    i.x_quickmove       step_motor_drv.o
-    0x08020634   0x08020634   0x00000018   Code   RO         2961    i.y_quickmove       step_motor_drv.o
-    0x0802064c   0x0802064c   0x000000d8   Code   RO         2140    i.yj_follow_udctos  action.o
-    0x08020724   0x08020724   0x00000178   Code   RO         2141    i.zoom_in_one_stitch  action.o
-    0x0802089c   0x0802089c   0x000000d0   Code   RO         2142    i.zpl_process       action.o
-    0x0802096c   0x0802096c   0x00000018   Code   RO         2962    i.zx_quickmove      step_motor_drv.o
-    0x08020984   0x08020984   0x00000800   Code   RO         9247    isqrt_table         motor_drive.lib(IQtables.o)
-    0x08021184   0x08021184   0x0000000a   Code   RO         9425    x$fpl$fpinit        g_wm.l(fpinit.o)
-    0x0802118e   0x0802118e   0x00000000   Code   RO         9310    x$fpl$usenofp       g_wm.l(usenofp.o)
-    0x0802118e   0x0802118e   0x00000002   PAD
-    0x08021190   0x08021190   0x00000018   Data   RO          660    .constdata          bsp_gpio.o
-    0x080211a8   0x080211a8   0x00000030   Data   RO          797    .constdata          bsp_rs485.o
-    0x080211d8   0x080211d8   0x00000024   Data   RO          884    .constdata          bsp_uart.o
-    0x080211fc   0x080211fc   0x0000006c   Data   RO         1024    .constdata          bsp_spibus.o
-    0x08021268   0x08021268   0x00000074   Data   RO         1131    .constdata          bsp_spiflash.o
-    0x080212dc   0x080212dc   0x00000014   Data   RO         1278    .constdata          bsp_scu.o
-    0x080212f0   0x080212f0   0x000000f8   Data   RO         1533    .constdata          spi_master_conf.o
-    0x080213e8   0x080213e8   0x0000000c   Data   RO         1580    .constdata          bsp_watch.o
-    0x080213f4   0x080213f4   0x000000e0   Data   RO         1757    .constdata          can_node_conf.o
-    0x080214d4   0x080214d4   0x000003e7   Data   RO         2143    .constdata          action.o
-    0x080218bb   0x080218bb   0x00000001   PAD
-    0x080218bc   0x080218bc   0x00002710   Data   RO         3490    .constdata          stepper_function.o
-    0x08023fcc   0x08023fcc   0x00000010   Data   RO         5807    .constdata          xmc_vadc.o
-    0x08023fdc   0x08023fdc   0x00000804   Data   RO         9220    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
-    0x080247e0   0x080247e0   0x00000020   Data   RO         9487    Region$$Table       anon$$obj.o
+    0x0801fe18   0x0801fe18   0x000000d8   Code   RO         2685    i.tra_com           communication.o
+    0x0801fef0   0x0801fef0   0x00000244   Code   RO         2139    i.trim_action       action.o
+    0x08020134   0x08020134   0x00000198   Code   RO         2686    i.ui_receive_fsm    communication.o
+    0x080202cc   0x080202cc   0x0000001a   Code   RO         2687    i.verify            communication.o
+    0x080202e6   0x080202e6   0x00000002   PAD
+    0x080202e8   0x080202e8   0x00000020   Code   RO         2688    i.verify_code       communication.o
+    0x08020308   0x08020308   0x00000078   Code   RO         2957    i.version_check     step_motor_drv.o
+    0x08020380   0x08020380   0x000000e8   Code   RO         3185    i.wind_status       system.o
+    0x08020468   0x08020468   0x00000034   Code   RO         2857    i.write_par         parameter.o
+    0x0802049c   0x0802049c   0x00000014   Code   RO         2858    i.write_para_group  parameter.o
+    0x080204b0   0x080204b0   0x000000b0   Code   RO         2958    i.write_stepmotor_config_para  step_motor_drv.o
+    0x08020560   0x08020560   0x000000ec   Code   RO         2959    i.write_stepmotor_curve  step_motor_drv.o
+    0x0802064c   0x0802064c   0x00000018   Code   RO         2960    i.x_quickmove       step_motor_drv.o
+    0x08020664   0x08020664   0x00000018   Code   RO         2961    i.y_quickmove       step_motor_drv.o
+    0x0802067c   0x0802067c   0x000000d8   Code   RO         2140    i.yj_follow_udctos  action.o
+    0x08020754   0x08020754   0x00000178   Code   RO         2141    i.zoom_in_one_stitch  action.o
+    0x080208cc   0x080208cc   0x000000d0   Code   RO         2142    i.zpl_process       action.o
+    0x0802099c   0x0802099c   0x00000018   Code   RO         2962    i.zx_quickmove      step_motor_drv.o
+    0x080209b4   0x080209b4   0x00000800   Code   RO         9247    isqrt_table         motor_drive.lib(IQtables.o)
+    0x080211b4   0x080211b4   0x0000000a   Code   RO         9425    x$fpl$fpinit        g_wm.l(fpinit.o)
+    0x080211be   0x080211be   0x00000000   Code   RO         9310    x$fpl$usenofp       g_wm.l(usenofp.o)
+    0x080211be   0x080211be   0x00000002   PAD
+    0x080211c0   0x080211c0   0x00000018   Data   RO          660    .constdata          bsp_gpio.o
+    0x080211d8   0x080211d8   0x00000030   Data   RO          797    .constdata          bsp_rs485.o
+    0x08021208   0x08021208   0x00000024   Data   RO          884    .constdata          bsp_uart.o
+    0x0802122c   0x0802122c   0x0000006c   Data   RO         1024    .constdata          bsp_spibus.o
+    0x08021298   0x08021298   0x00000074   Data   RO         1131    .constdata          bsp_spiflash.o
+    0x0802130c   0x0802130c   0x00000014   Data   RO         1278    .constdata          bsp_scu.o
+    0x08021320   0x08021320   0x000000f8   Data   RO         1533    .constdata          spi_master_conf.o
+    0x08021418   0x08021418   0x0000000c   Data   RO         1580    .constdata          bsp_watch.o
+    0x08021424   0x08021424   0x000000e0   Data   RO         1757    .constdata          can_node_conf.o
+    0x08021504   0x08021504   0x000003e7   Data   RO         2143    .constdata          action.o
+    0x080218eb   0x080218eb   0x00000001   PAD
+    0x080218ec   0x080218ec   0x00002710   Data   RO         3490    .constdata          stepper_function.o
+    0x08023ffc   0x08023ffc   0x00000010   Data   RO         5807    .constdata          xmc_vadc.o
+    0x0802400c   0x0802400c   0x00000804   Data   RO         9220    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
+    0x08024810   0x08024810   0x00000020   Data   RO         9487    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08024800, Size: 0x00009b38, Max: 0x0000ffc0, ABSOLUTE, COMPRESSED[0x00000270])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08024830, Size: 0x00009f20, Max: 0x0000ffc0, ABSOLUTE, COMPRESSED[0x00000270])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -6544,10 +6548,9 @@ Memory Map of the image
     0x20000084   COMPRESSED   0x00000004   PAD
     0x20000088   COMPRESSED   0x00000030   Data   RW         1758    .data               can_node_conf.o
     0x200000b8   COMPRESSED   0x0000000c   Data   RW         1816    .data               global_can_conf.o
-    0x200000c4   COMPRESSED   0x0000042d   Data   RW         1842    .data               sys_variable.o
-    0x200004f1   COMPRESSED   0x00000001   PAD
-    0x200004f2   COMPRESSED   0x00000013   Data   RW         1883    .data               watch.o
-    0x20000505   COMPRESSED   0x00000003   PAD
+    0x200000c4   COMPRESSED   0x00000430   Data   RW         1842    .data               sys_variable.o
+    0x200004f4   COMPRESSED   0x00000013   Data   RW         1883    .data               watch.o
+    0x20000507   COMPRESSED   0x00000001   PAD
     0x20000508   COMPRESSED   0x00000024   Data   RW         1963    .data               main.o
     0x2000052c   COMPRESSED   0x0000000c   Data   RW         2690    .data               communication.o
     0x20000538   COMPRESSED   0x00000012   Data   RW         2809    .data               initial.o
@@ -6575,20 +6578,20 @@ Memory Map of the image
     0x20000eb4        -       0x00000258   Zero   RW          883    .bss                bsp_uart.o
     0x2000110c        -       0x00001000   Zero   RW         1130    .bss                bsp_spiflash.o
     0x2000210c        -       0x00000014   Zero   RW         1532    .bss                spi_master_conf.o
-    0x20002120        -       0x0000630c   Zero   RW         1841    .bss                sys_variable.o
-    0x2000842c        -       0x00000387   Zero   RW         2689    .bss                communication.o
-    0x200087b3        -       0x00000009   Zero   RW         2808    .bss                initial.o
-    0x200087bc        -       0x00000400   Zero   RW         3334    .bss                io_function.o
-    0x20008bbc        -       0x00000168   Zero   RW         3489    .bss                stepper_function.o
-    0x20008d24        -       0x0000000c   Zero   RW         3609    .bss                debug.o
-    0x20008d30        -       0x00000168   Zero   RW         3700    .bss                nopmove_speed.o
-    0x20008e98        -       0x00000020   Zero   RW         4701    .bss                xmc_dma.o
-    0x20008eb8        -       0x00000084   Zero   RW         7683    .bss                motor_drive.lib(mc_pmsm.o)
-    0x20008f3c        -       0x0000000c   Zero   RW         8349    .bss                motor_drive.lib(bsp_posif.o)
-    0x20008f48        -       0x00000190   Zero   RW         8522    .bss                motor_drive.lib(all_globalvars.o)
-    0x200090d8        -       0x00000060   Zero   RW         9355    .bss                c_w.l(libspace.o)
-    0x20009138        -       0x00000200   Zero   RW         3749    HEAP                startup_xmc4402.o
-    0x20009338        -       0x00000800   Zero   RW         3748    STACK               startup_xmc4402.o
+    0x20002120        -       0x000066f4   Zero   RW         1841    .bss                sys_variable.o
+    0x20008814        -       0x00000387   Zero   RW         2689    .bss                communication.o
+    0x20008b9b        -       0x00000009   Zero   RW         2808    .bss                initial.o
+    0x20008ba4        -       0x00000400   Zero   RW         3334    .bss                io_function.o
+    0x20008fa4        -       0x00000168   Zero   RW         3489    .bss                stepper_function.o
+    0x2000910c        -       0x0000000c   Zero   RW         3609    .bss                debug.o
+    0x20009118        -       0x00000168   Zero   RW         3700    .bss                nopmove_speed.o
+    0x20009280        -       0x00000020   Zero   RW         4701    .bss                xmc_dma.o
+    0x200092a0        -       0x00000084   Zero   RW         7683    .bss                motor_drive.lib(mc_pmsm.o)
+    0x20009324        -       0x0000000c   Zero   RW         8349    .bss                motor_drive.lib(bsp_posif.o)
+    0x20009330        -       0x00000190   Zero   RW         8522    .bss                motor_drive.lib(all_globalvars.o)
+    0x200094c0        -       0x00000060   Zero   RW         9355    .bss                c_w.l(libspace.o)
+    0x20009520        -       0x00000200   Zero   RW         3749    HEAP                startup_xmc4402.o
+    0x20009720        -       0x00000800   Zero   RW         3748    STACK               startup_xmc4402.o
 
 
 
@@ -6638,13 +6641,13 @@ Image component sizes
        268         34         24          0          0       1417   bsp_gpio.o
        504         46         48          0          0      51065   bsp_rs485.o
         28          4         20          0          0        816   bsp_scu.o
-       738         50        108          0          0      58935   bsp_spibus.o
+       738         50        108          0          0      58931   bsp_spibus.o
       2572        134        116          7       4096      72768   bsp_spiflash.o
        420         48         36          8        600      26277   bsp_uart.o
        340         44         12          8          0      43413   bsp_watch.o
        486          0          0          0          0      18087   can_node.o
          0          0        224         48          0       1251   can_node_conf.o
-     15210       2144          0         12        903      29694   communication.o
+     15258       2156          0         12        903      29714   communication.o
        116         20          0          0         12       2409   debug.o
         42          0          0          0          0       1206   delay.o
         30          0          0          0          0       1826   global_can.o
@@ -6659,7 +6662,7 @@ Image component sizes
         56         32        512          0       2560        488   startup_xmc4402.o
       2450        330          0         44          0      19315   step_motor_drv.o
       7018        140      10000        332        360      25685   stepper_function.o
-         0          0          0       1069      25356      35373   sys_variable.o
+         0          0          0       1072      26356      35503   sys_variable.o
      21568       3236          0          0          0      29632   system.o
        860         96          0          0         32       7176   system_xmc4400.o
        368         48          0         19          0      19886   watch.o
@@ -6679,9 +6682,9 @@ Image component sizes
        658          4         16          0          0      26785   xmc_vadc.o
 
     ----------------------------------------------------------------------
-    104440      14020      12396       1752      35364    1388517   Object Totals
+    104488      14032      12396       1752      36364    1388663   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        72          0          1         11          0          0   (incl. Padding)
+        72          0          1          8          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -6766,15 +6769,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    135056      19106      14448       3764      36004    2616198   Grand Totals
-    135056      19106      14448        624      36004    2616198   ELF Image Totals (compressed)
-    135056      19106      14448        624          0          0   ROM Totals
+    135104      19118      14448       3764      37004    2616344   Grand Totals
+    135104      19118      14448        624      37004    2616344   ELF Image Totals (compressed)
+    135104      19118      14448        624          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               149504 ( 146.00kB)
-    Total RW  Size (RW Data + ZI Data)             39768 (  38.84kB)
-    Total ROM Size (Code + RO Data + RW Data)     150128 ( 146.61kB)
+    Total RO  Size (Code + RO Data)               149552 ( 146.05kB)
+    Total RW  Size (RW Data + ZI Data)             40768 (  39.81kB)
+    Total ROM Size (Code + RO Data + RW Data)     150176 ( 146.66kB)
 
 ==============================================================================
 

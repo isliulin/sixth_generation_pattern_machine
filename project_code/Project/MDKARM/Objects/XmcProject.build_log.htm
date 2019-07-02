@@ -27,76 +27,12 @@ Project File Date:  06/26/2019
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Debug'
-compiling bsp_uart.c...
 compiling main.c...
-compiling sys_variable.c...
-compiling action.c...
-..\..\Applications\User\src\action.c(2784): warning:  #550-D: variable "c_flag"  was set but never used
-  	uint8_t temp8,max8,c_flag;
-..\..\Applications\User\src\action.c(2798): warning:  #177-D: variable "_temp_speed"  was declared but never referenced
-  	uint16_t _temp_speed = 0;
-..\..\Applications\User\src\action.c(5633): warning:  #550-D: variable "action_flag0"  was set but never used
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4,action_flag5;
-..\..\Applications\User\src\action.c(5633): warning:  #550-D: variable "action_flag1"  was set but never used
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4,action_flag5;
-..\..\Applications\User\src\action.c(5634): warning:  #177-D: variable "max_angle"  was declared but never referenced
-  	int16_t inpress_up_angle,inpress_down_angle,max_angle;
-..\..\Applications\User\src\action.c(5847): warning:  #177-D: variable "tmp"  was declared but never referenced
-  	int8_t tmp_x,tmp_y,remain_x,remain_y,i,tmp,flag;
-..\..\Applications\User\src\action.c(5847): warning:  #177-D: variable "flag"  was declared but never referenced
-  	int8_t tmp_x,tmp_y,remain_x,remain_y,i,tmp,flag;
-..\..\Applications\User\src\action.c(5849): warning:  #177-D: variable "action_flag0"  was declared but never referenced
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4;
-..\..\Applications\User\src\action.c(5849): warning:  #177-D: variable "action_flag1"  was declared but never referenced
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4;
-..\..\Applications\User\src\action.c(5849): warning:  #177-D: variable "action_flag2"  was declared but never referenced
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4;
-..\..\Applications\User\src\action.c(5849): warning:  #177-D: variable "action_flag3"  was declared but never referenced
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4;
-..\..\Applications\User\src\action.c(5849): warning:  #177-D: variable "action_flag4"  was declared but never referenced
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4;
-..\..\Applications\User\src\action.c: 12 warnings, 0 errors
-compiling initial.c...
-compiling communication.c...
-..\..\Applications\User\src\communication.c(46): warning:  #177-D: variable "i"  was declared but never referenced
-  	uint16_t i= 1300;
-..\..\Applications\User\src\communication.c: 1 warning, 0 errors
-compiling parameter.c...
-compiling delay.c...
-compiling io_function.c...
-compiling step_motor_drv.c...
-compiling system.c...
-..\..\Applications\User\src\system.c(210): warning:  #177-D: variable "ret"  was declared but never referenced
-  	int8_t ret;
-..\..\Applications\User\src\system.c(1156): warning:  #550-D: variable "flag1"  was set but never used
-  	int8_t tmp_stitchs,flag1;
-..\..\Applications\User\src\system.c(1161): warning:  #177-D: variable "temp_speed"  was declared but never referenced
-  	uint16_t temp_speed,dly,tmp_angle;
-..\..\Applications\User\src\system.c(1161): warning:  #177-D: variable "tmp_angle"  was declared but never referenced
-  	uint16_t temp_speed,dly,tmp_angle;
-..\..\Applications\User\src\system.c(1162): warning:  #177-D: variable "x_temp"  was declared but never referenced
-  	int16_t x_temp,y_temp;
-..\..\Applications\User\src\system.c(1162): warning:  #177-D: variable "y_temp"  was declared but never referenced
-  	int16_t x_temp,y_temp;
-..\..\Applications\User\src\system.c(1163): warning:  #177-D: variable "max_angle"  was declared but never referenced
-  	int16_t max_angle,inpress_position_tmp;
-..\..\Applications\User\src\system.c(1163): warning:  #177-D: variable "inpress_position_tmp"  was declared but never referenced
-  	int16_t max_angle,inpress_position_tmp;
-..\..\Applications\User\src\system.c(1164): warning:  #550-D: variable "action_flag4"  was set but never used
-  	uint8_t action_flag0,action_flag1,action_flag2,action_flag3,action_flag4;
-..\..\Applications\User\src\system.c: 9 warnings, 0 errors
-compiling stepper_function.c...
-..\..\Applications\User\src\stepper_function.c(2303): warning:  #550-D: variable "u16_temp_data"  was set but never used
-  	uint16_t u16_temp_data=0;//要发送的协议数据暂存
-..\..\Applications\User\src\stepper_function.c: 1 warning, 0 errors
-compiling debug.c...
-compiling rc522_codebar.c...
-compiling nopmove_speed.c...
 linking...
-Program Size: Code=135056 RO-data=14448 RW-data=3764 ZI-data=36004  
+Program Size: Code=135104 RO-data=14448 RW-data=3764 ZI-data=37004  
 FromELF: creating hex file...
 After Build - User command #1: fromelf --bin --output "E:\zla_git\sixth_generation_pattern_machine\project_code\Project\MDKARM\Objects\XmcProject.bin"  "E:\zla_git\sixth_generation_pattern_machine\project_code\Project\MDKARM\Objects\XmcProject.axf"
-".\Objects\XmcProject.axf" - 0 Error(s), 23 Warning(s).
+".\Objects\XmcProject.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -122,7 +58,7 @@ Package Vendor: Infineon
    * Component: ARM::CMSIS:DSP:1.5.2
       Include file:  CMSIS\Include\arm_math.h
       Library file:  CMSIS\Lib\ARM\arm_cortexM4lf_math.lib
-Build Time Elapsed:  00:00:18
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

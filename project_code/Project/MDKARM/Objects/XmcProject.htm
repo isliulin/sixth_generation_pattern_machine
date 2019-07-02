@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\XmcProject.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\XmcProject.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Jul 02 13:18:28 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Jul 02 16:56:28 2019
 <BR><P>
 <H3>Maximum Stack Usage =        576 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1312,8 +1312,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU8_SLICE_SetTimerCompareMatch
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_CCU8_EnableShadowTransfer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CCU40_2_IRQHandler
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmsm1_100us_task
+<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmsm1_100us_task
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CCU40_2_IRQHandler
 </UL>
 
 <P><STRONG><a name="[cb]"></a>Stop_StepPwm</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, app_stepwm.o(i.Stop_StepPwm))
@@ -5200,7 +5200,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;run_status
 </UL>
 
-<P><STRONG><a name="[246]"></a>tra_com</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, communication.o(i.tra_com))
+<P><STRONG><a name="[246]"></a>tra_com</STRONG> (Thumb, 184 bytes, Stack size 16 bytes, communication.o(i.tra_com))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tra_com &rArr; Rs485_WriteEn
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XMC_UART_CH_Transmit
@@ -5231,7 +5231,7 @@ Global Symbols
 <LI><a href="#[23c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pause_stop
 </UL>
 
-<P><STRONG><a name="[12d]"></a>ui_receive_fsm</STRONG> (Thumb, 364 bytes, Stack size 8 bytes, communication.o(i.ui_receive_fsm))
+<P><STRONG><a name="[12d]"></a>ui_receive_fsm</STRONG> (Thumb, 390 bytes, Stack size 8 bytes, communication.o(i.ui_receive_fsm))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ui_receive_fsm &rArr; verify
 </UL>
 <BR>[Calls]<UL><LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;verify
@@ -5829,8 +5829,8 @@ Local Symbols
 <P><STRONG><a name="[9b]"></a>XMC_GPIO_GetInput</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, mc_pmsm.o(i.XMC_GPIO_GetInput))
 <BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pmsm1PowerOnWatch
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pmsm1FindZero
-<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CCU40_2_IRQHandler
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmsm1_100us_task
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CCU40_2_IRQHandler
 </UL>
 
 <P><STRONG><a name="[d9]"></a>XMC_GPIO_SetOutputLow</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mc_pmsm.o(i.XMC_GPIO_SetOutputLow))

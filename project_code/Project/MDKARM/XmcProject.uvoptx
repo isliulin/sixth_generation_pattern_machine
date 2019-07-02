@@ -1110,7 +1110,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>Lw茔?茔?趏?</Name>
+          <Name>Lw赞?赞?趏AW</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -1213,7 +1213,7 @@
         <Ww>
           <count>12</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ui_comm,0x0A</ItemText>
+          <ItemText>ui_comm,0x10</ItemText>
         </Ww>
         <Ww>
           <count>13</count>
@@ -1357,12 +1357,17 @@
           <WinNumber>2</WinNumber>
           <ItemText>receice.z</ItemText>
         </Ww>
+        <Ww>
+          <count>23</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>_____recieve_date</ItemText>
+        </Ww>
       </WatchWindow2>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>0x200047E8</ItemText>
+          <ItemText>0x2000842C</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>
